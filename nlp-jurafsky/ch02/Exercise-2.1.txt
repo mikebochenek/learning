@@ -1,1 +1,6 @@
-1.  The set of all alphabetic strings
+﻿1.  The set of all alphabetic strings;
+2.  The set of all lower case alphabetic strings ending in a b;
+3.  the set of all strings with two consecutive repeated words (e.g. "Humbert Humbert" and "the the", but not "the bug" or "the big bug")
+4.  the set of all strings from the alphabet a,b such that 
+
+

@@ -1,0 +1,13 @@
+PS1="[ \d \t \w ] "
+
+alias cdjboss='cd ~/Dev/jboss-as-7.1.1.Final/bin'
+alias jboss='cdjboss && ./standalone.sh'
+alias amazon='ssh -v -i ~/.ssh/vankey.pem bitnami@54.243.250.136'
+
+
+alias cdworkspace='cd ~/Dev/vantaa4'
+alias build='cdworkspace && mvn clean package jboss-as:deploy'
+
+export DART_SDK=/home/mike/Dev/dart-sdk
+export PATH=$PATH:$DART_SDK/bin
+export PATH=$PATH:/usr/local/go/bin

@@ -8,6 +8,21 @@ alias amazon='ssh -v -i ~/.ssh/vankey.pem bitnami@54.243.250.136'
 alias cdworkspace='cd ~/Dev/vantaa4'
 alias build='cdworkspace && mvn clean package jboss-as:deploy'
 
+alias build2='cdworkspace2 && mvn clean package jboss-as:deploy'
+alias cdworkspace2='cd /home/mike/Dev/workspace/cvparse'
+
+alias revelgo='revel run myapp0'
+alias liteide='~/Dev/liteide/bin/liteide &'
+
 export DART_SDK=/home/mike/Dev/dart-sdk
 export PATH=$PATH:$DART_SDK/bin
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/Dev/gocode
+export GOROOT=/usr/local/go
+export GOBIN=/usr/local/go/bin
+export PATH="$PATH:$GOPATH/bin"
+
+export JETTY_HOME="~/Dev/jetty-distribution-9.0.3.v20130506" 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

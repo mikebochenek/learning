@@ -1,0 +1,6 @@
+sudo apt-get upgrade
+sudo apt-get update
+
+find . -name '*.java' | xargs wc -l
+
+shutdown -P 200

@@ -1,6 +1,7 @@
 sudo apt-get upgrade
 sudo apt-get update
 
+# find and count
 find . -name '*.java' | xargs wc -l
 
 shutdown -P 200

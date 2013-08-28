@@ -6,3 +6,8 @@ find . -name '*.java' | xargs wc -l
 
 # shutdown the computer in 3+ hours
 shutdown -P 200
+
+# mounting external android storage
+go-mtpfs /media/MyAndroid
+fusermount -u /media/MyAndroid
+

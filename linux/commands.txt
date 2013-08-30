@@ -1,3 +1,4 @@
+# update system
 sudo apt-get upgrade
 sudo apt-get update
 
@@ -11,3 +12,7 @@ shutdown -P 200
 go-mtpfs /media/MyAndroid
 fusermount -u /media/MyAndroid
 
+# show current aliases 
+alias
+
+# my favorite prompt PS1="[ \d \t \w ] "

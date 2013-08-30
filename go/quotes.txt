@@ -1,0 +1,107 @@
+http://go-lang.cat-v.org/quotes
+
+Quotes About Go Programming
+“After Go, programming in anything else seems as difficult as balancing the State of California’s budget.” — Charles Thompson
+
+“Most of the appeal for me is not the features that Go has, but rather the features that have been intentionally left out.” — txxxxd in Hacker News
+
+“Go is not meant to innovate programming theory. It’s meant to innovate programming practice.” — Samuel Tesla
+
+“One of the reasons I enjoy working with Go is that I can mostly hold the spec in my head – and when I do misremember parts it’s a few seconds' work to correct myself. It’s quite possibly the only non-trivial language I’ve worked with where this is the case.” — Eleanor McHugh
+
+“In Go, the code does exactly what it says on the page.” — Andrew Gerrand
+
+“[the Go authors] designed a language that met the needs of the problems they were facing, rather than fulfilling a feature checklist” — ywgdana in reddit
+
+“I have reimplemented a networking project from Scala to Go. Scala code is 6000 lines. Go is about 3000. Even though Go does not have the power of abbreviation, the flexible type system seems to out-run Scala when the programs start getting longer. Hence, Go produces much shorter code asymptotically.” — Petar Maymounko
+
+“Go seems to be a counterpoint to the old stroustop adage ‘There are only two kinds of languages: the ones people complain about and the ones nobody uses.’ Go seems to be a language people complain about without being used.” — tef in reddit.
+
+“Go is like a better C, from the guys that didn’t bring you C++” — Ikai Lan
+
+“Go doesn’t implicitly anything.” — Steven in golang-nuts
+
+“If the few lines [of Go] are that difficult for you, then go type away in Java for a few minutes, then come back and tell Rob, Ian, Ken, and Russ that they aren’t mad geniuses.” — Cory Mainwaring
+
+“From the tutorial: "The language forces the brace style to some extent.” Well, that’s it. If I can’t have a brace-war tearing the dev group apart for months and kill productivity, I want nothing to do with that language.“ — SoftwareMaven in hackernews
+
+“I like that Go forces you to clean up little messes, like unused variables, for example.” — @jkakar (Jamu Kakar)
+
+“Go is no Erlang, Smalltalk or Scheme, nothing pure. But it works great and is fun!” — Frank Mueller (@themue)
+
+“If I had to describe Go with one word it’d be ‘sensible’.” — Christoffer Hallas
+
+“Go isn’t functional, it’s pragmatical. Why pure paradigms like FP or OOP are always a must? (sigh)” — Frank Mueller (@themue)
+
+“C++ is about objects. Go is about algorithms.” — Unknown
+
+[Go] really fells like “the C for the 21st century” — Petr Hošek
+
+“Oh I love Go. I’ve spent more time coding than debugging and it’s so simple, fast and funny…” — Roberto Costumero (@rcostu)
+
+“Why would you have a language that is not theoretically exciting? Because it’s very useful.” — Rob Pike paraphrased by Roger Peppe
+
+“Go is such a refreshing language to program in, there is very little clutter just the stuff you need to get the job done” — Matt West
+
+“Porting my code review tools to Go from Python. Surprised to see a reduction in line counts.” — Scott Dunlop
+
+“as someone who has written a fair bit of code in functional languages and a fair bit of Go, I find that the more Go I write the less I care about the language features (or lack thereof) that I was horrified by at first, and the more I see most other languages as overcomplicated. Go isn’t a very good language in theory, but it’s a great language in practice, and practice is all I care about, so I like it quite a bit.” — supersillyus in hackernews (full post)
+
+“Porting a Google App Engine app written in Python to Go: Although I’m new to Go I get much quicker results than I’ve got with Python. Never used a language before that empowers you to solve problems as quick as Go does” — Alexander Orlov
+
+“Go has turned into my go to language when i need to hack stuff. Really a pleasure to use.” — Aschobel, Co-founder of Catch.com
+
+“The more i think about what a good language should do for us, i am more and more convinced that Go is the best language we have so far.” “Ruby deliberately fights against the SOLID principles, whereas Go encourages them” — Steven Degutis, former Go-skeptic
+
+“We used it to write our own simple distributed computing software after realizing hadoop was too complicated (and thus bug prone) for our embarrassingly parallel needs. It took us less time to get the system written, stable and up and running then it had to get hadoop setup” — micro_cam in Hacker News
+
+“Go is like a very delicious trifle – the further into it you go, the more delicious things you find. The quality is clear throughout. Go is very unassuming. You start by wondering what the big deal is + getting annoyed with the minor differences from other C-syntax languages before slowly progressing towards quite liking it, then eventually once you grok how simple + elegant and well engineered it is you come to love it.” — Lorenzo Stoakes
+
+“[Go] is the most elegant imperative language ever (including dynamic ones like Lua, Ruby, and Python)” — Quoc Anh Trinh
+
+“Go is most fun I’ve had with a compiled PL since I’ve discovered Turbo Pascal as a kid.” — Bojan Marković
+
+“Go has brought together a set of features that make it compact, fast, readable, expressive and fun to program in. I’ve programmed seriously in tons of languages (both functional and not) and Go is the most fun I’ve had in a long time.” — John Graham-Cumming
+
+“Go is that awkward, silent girl that always sits in the back of the bus. Nobody quite knows what to make of her, but if you make a tiny bit of effort to get to know her, the sex is amazing.” — Jim Teeuwen
+
+“Go is like an oasis in the middle of the desert.” — nsf
+
+“Programming in Go is like being young again (but more productive!).” — Anneli
+
+What Other Language Designers Say about Go
+“I like a lot of the design decisions they made in the [Go] language. Basically, I like all of them.” — Martin Odersky, creator of Scala
+
+“I think it goes back to the Unix C traditions back to basics and other compiled languages and it remedies other deficiencies in C, I don’t think C++ was an improvement but I do think Go is a definite improvement on C and we’ve got Kernighan and things in the background there and obviously they’ve got wonderful experience on building languages. It’s very nicely engineered and actually when it even came out impressive documentation, and all this stuff that you need. Even when it first came out it has a level of maturity that you would think would actually have been there for many years, so it is very impressive actually.” — Joe Armstrong, co-inventor of Erlang
+
+“[Go] just works. I don’t have any problems, which is the reason I am writing this post. I have used C++, C, and script languages for many years, but started to use Go at about a year ago. I am surprised how efficient and effective it is for me. When I design a new algorithm, it just works at the first attempt surprisingly often. Suddenly, programming is much more fun. I can’t say for sure why, but I think it is a combination of many factors.” — Lars Pensjö creator of LPMud and the LPC programming language.
+
+“Go is an awesome language and, as this talk illustrates, we aren’t competing with Go; Go and Rust have totally different goals and Rob Pike’s languages were quite the influence on Rust.” — pcwalton of the Rust Mozilla team
+
+“The complexity of C++ (even more complexity has been added in the new C++), and the resulting impact on productivity, is no longer justified. All the hoops that the C++ programmer had to jump through in order to use a C-compatible language make no sense anymore — they’re just a waste of time and effort. Now, Go makes much more sense for the class of problems that C++ was originally intended to solve.” — Bruce Eckel, author and founding member of the ANSI/ISO C++ standard committee.
+
+“Four out of five language designers agree: Go sucks. The fifth was too busy [to answer] actually writing code [in Go].” — aiju
+
+About (Missing) Features
+Generics
+
+“The more I use Go, the more I think generics would be a useless misfeature, why do so many people think they need them” — Aram Hăvărneanu (@aramh)
+
+“I’ve been programming Go "professionally” for months now without a single “oh, generics would make this easier” moment outside of reading mailing list posts about algorithms and math.“ — Kyle Lemons
+
+List Comprehension
+
+“I thought I would miss list comprehensions a lot, but I find that their absence results in cleaner code that is easier to understand even when compared to relatively simple list comprehensions [in Python].” — Thirsteh
+
+Exceptions
+
+“The way errors are handled in Go as opposed to the old exception model is huge. I’m talking the next evolution of programming languages huge. Knowing where nearly all your points of failure are and deciding what to do with them before you role a product out to a client is priceless.” — Michael Schneider
+
+Fortunes
+To be taken very seriously.
+
+[Go] is a WTF-language. Compiler fails (not warns) if you have any unused variables, even though it has garbage collection — @myfreeweb
+everytime I get [a variable not used] error I’m like “come on compiler, give me a break. ok, ok, you’re right, thanks for not letting me code too much like a pig.”
+I really dislike Dart. If you like Java, you’ll like Dart… but I use Go is because I dislike Java. — Raul San
+go is not interesting at all. i debug 3 times less than before with it, where is all the fun? :(
+reddit argument clinic — statement: “developers who have written a non-trivial amount of code in Go do not complain about this”; response: “The developers have their heads in the sand”

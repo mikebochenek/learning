@@ -181,9 +181,24 @@ int main(int argc, char **argv)
           /* It is necessary to convert the keycode to a
            * keysym before checking if it is an escape */
           kevent = (XKeyEvent *) &event;
-          if (   (XLookupString((XKeyEvent *)&event,buffer,1,&keysym,NULL) == 1)
-              && (keysym == (KeySym)XK_Escape) )
+
+          (XLookupString((XKeyEvent *)&event,buffer,1,&keysym,NULL));
+
+          if (keysym == (KeySym)XK_Escape)
             exit(0);
+          if (keysym == (KeySym)XK_F1) {
+            recalcModelView = GL_TRUE;
+            xAngle += 2;
+          }
+          if (keysym == (KeySym)XK_F2) {
+            recalcModelView = GL_TRUE;
+            yAngle += 2;
+          }
+          if (keysym == (KeySym)XK_F3) {
+            recalcModelView = GL_TRUE;
+            zAngle += 2;
+          }
+
           break;
         }
         case ButtonPress:

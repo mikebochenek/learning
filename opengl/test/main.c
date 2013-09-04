@@ -122,7 +122,7 @@ int main(int argc, char **argv) {
     swa.event_mask = KeyPressMask    | ExposureMask
                      | ButtonPressMask | StructureNotifyMask;
     win = XCreateWindow(dpy, RootWindow(dpy, vi->screen), 0, 0,
-                        300, 300, 0, vi->depth, InputOutput, vi->visual,
+                        800, 800, 0, vi->depth, InputOutput, vi->visual,
                         CWBorderPixel | CWColormap | CWEventMask, &swa);
     XSetStandardProperties(dpy, win, "main", "main", None,
                            argv, argc, NULL);
@@ -151,11 +151,6 @@ int main(int argc, char **argv) {
     /* establish initial viewport */
     /* pedantic, full window size is default viewport */
     glViewport(0, 0, 300, 300);
-
-    printf( "Press left mouse button to rotate around X axis\n" );
-    printf( "Press middle mouse button to rotate around Y axis\n" );
-    printf( "Press right mouse button to rotate around Z axis\n" );
-    printf( "Press ESC to quit the application\n" );
 
     /*** (9) dispatch X events ***/
 

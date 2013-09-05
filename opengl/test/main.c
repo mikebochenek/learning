@@ -4,6 +4,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include <GL/glx.h>    /* this includes the necessary X headers */
 #include <GL/gl.h>
@@ -223,12 +224,12 @@ int main(int argc, char **argv) {
             glRotatef(yAngle, 0.0, 0.1, 0.0);
             glRotatef(zAngle, 0.0, 0.0, 1.0);
 
-            recalcModelView = GL_FALSE;
+            //recalcModelView = GL_FALSE;
             needRedraw = GL_TRUE;
         }
         if (needRedraw) {
             redraw();
-            needRedraw = GL_FALSE;
+            //needRedraw = GL_FALSE;
         }
     }
 

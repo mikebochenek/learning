@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <pthread.h>
 
 #include <GL/glx.h>    /* this includes the necessary X headers */
 #include <GL/gl.h>
@@ -15,9 +16,14 @@
 static int snglBuf[] = {GLX_RGBA, GLX_DEPTH_SIZE, 16, None};
 static int dblBuf[]  = {GLX_RGBA, GLX_DEPTH_SIZE, 16, GLX_DOUBLEBUFFER, None};
 
+int thread_args[1];
+int rc, i;
+pthread_t thread;
+
 Display   *dpy;
 Window     win;
 GLfloat    xAngle = 42.0, yAngle = 82.0, zAngle = 112.0;
+GLfloat    xAngleDelta = 0.0, yAngleDelta = 0.0, zAngleDelta = 0.0;
 GLboolean  doubleBuffer = GL_TRUE;
 
 void fatalError(char *message) {
@@ -72,6 +78,39 @@ void redraw(void) {
         glXSwapBuffers(dpy, win);/* buffer swap does implicit glFlush */
     else
         glFlush();  /* explicit flush for single buffered case */
+}
+
+void *animate(void *arg) {
+
+    struct timespec tim, tim2;
+    tim.tv_sec  = 0;
+    tim.tv_nsec = 500000000L;
+
+    while(1) {
+
+        glMatrixMode(GL_MODELVIEW);
+
+        /* reset modelview matrix to the identity matrix */
+        glLoadIdentity();
+
+        /* move the camera back three units */
+        glTranslatef(0.0, 0.0, -3.0);
+
+        xAngle += xAngleDelta;
+        yAngle += yAngleDelta;
+        zAngle += zAngleDelta;
+
+        /* rotate by X, Y, and Z angles */
+        glRotatef(xAngle, 0.1, 0.0, 0.0);
+        glRotatef(yAngle, 0.0, 0.1, 0.0);
+        glRotatef(zAngle, 0.0, 0.0, 1.0);
+
+        printf("should be redrawing now\n");
+
+        redraw();
+        nanosleep(&tim , &tim2);
+    }
+
 }
 
 int main(int argc, char **argv) {
@@ -155,6 +194,9 @@ int main(int argc, char **argv) {
 
     /*** (9) dispatch X events ***/
 
+    printf("In main: creating thread %d\n", i);
+    pthread_create(&thread, NULL, animate, (void *) &thread_args[0]);
+
     while (1) {
         do {
             XNextEvent(dpy, &event);
@@ -173,15 +215,15 @@ int main(int argc, char **argv) {
                     exit(0);
                 if (keysym == (KeySym)XK_F1) {
                     recalcModelView = GL_TRUE;
-                    xAngle += 2;
+                    xAngleDelta = 2;
                 }
                 if (keysym == (KeySym)XK_F2) {
                     recalcModelView = GL_TRUE;
-                    yAngle += 2;
+                    yAngleDelta = 2;
                 }
                 if (keysym == (KeySym)XK_F3) {
                     recalcModelView = GL_TRUE;
-                    zAngle += 2;
+                    zAngleDelta = 2;
                 }
 
                 break;
@@ -210,28 +252,8 @@ int main(int argc, char **argv) {
             }
         } while(XPending(dpy)); /* loop to compress events */
 
-        if (recalcModelView) {
-            glMatrixMode(GL_MODELVIEW);
-
-            /* reset modelview matrix to the identity matrix */
-            glLoadIdentity();
-
-            /* move the camera back three units */
-            glTranslatef(0.0, 0.0, -3.0);
-
-            /* rotate by X, Y, and Z angles */
-            glRotatef(xAngle, 0.1, 0.0, 0.0);
-            glRotatef(yAngle, 0.0, 0.1, 0.0);
-            glRotatef(zAngle, 0.0, 0.0, 1.0);
-
-            //recalcModelView = GL_FALSE;
-            needRedraw = GL_TRUE;
-        }
-        if (needRedraw) {
-            redraw();
-            //needRedraw = GL_FALSE;
-        }
     }
 
     return 0;
 }
+

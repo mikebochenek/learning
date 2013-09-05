@@ -80,13 +80,14 @@ void redraw(void) {
         glFlush();  /* explicit flush for single buffered case */
 }
 
-void *animate(void *arg) {
+//void *animate(void *arg) {
+void animate() {
 
     struct timespec tim, tim2;
     tim.tv_sec  = 0;
     tim.tv_nsec = 500000000L;
 
-    while(1) {
+    //while(1) {
 
         glMatrixMode(GL_MODELVIEW);
 
@@ -108,8 +109,8 @@ void *animate(void *arg) {
         printf("should be redrawing now\n");
 
         redraw();
-        nanosleep(&tim , &tim2);
-    }
+    //    nanosleep(&tim , &tim2);
+    //}
 
 }
 
@@ -194,10 +195,14 @@ int main(int argc, char **argv) {
 
     /*** (9) dispatch X events ***/
 
-    printf("In main: creating thread %d\n", i);
-    pthread_create(&thread, NULL, animate, (void *) &thread_args[0]);
+//    printf("In main: creating thread %d\n", i);
+//    pthread_create(&thread, NULL, animate, (void *) &thread_args[0]);
 
     while (1) {
+        //do {
+            animate();
+        //} while (1);
+
         do {
             XNextEvent(dpy, &event);
             switch (event.type) {

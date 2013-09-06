@@ -10,6 +10,12 @@ import (
  * Three ways to use a Timer from http://golang-examples.tumblr.com/
  */
 func main() {
+	for p := 32; p > 0; p-- {
+		time.AfterFunc(500*time.Millisecond, func() {
+			fmt.Printf(".\n") // but this is not what I had ordered at all...
+		})
+	}
+
 	// (A)
 	time.AfterFunc(5*time.Second, func() {
 		fmt.Printf("(A) expired \n")

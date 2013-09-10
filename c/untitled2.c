@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
 
    gettimeofday(&cur_time1,NULL);
    
-   for (i = 0; i < 100; i++) {
+   for (i = 0; i < 10000; i++) {
       if(nanosleep(&tim , &tim2) < 0 ) {
          printf("Nano sleep system call failed \n");
          return -1;

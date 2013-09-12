@@ -7,9 +7,11 @@
 	<X11/X.h>
 	<X11/keysym.h>
 
-1378324581 source:/home/mike/Dev/learning/opengl/test/main.c
+1378410743 source:/home/mike/Dev/learning/opengl/test/main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	<pthread.h>
 	<GL/glx.h>
 	<GL/gl.h>
 	<X11/X.h>

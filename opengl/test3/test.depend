@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1359664800 source:/home/mike/Dev/openGL-1/test/main.c
+	<stdio.h>
+	<stdlib.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+
+1378410743 source:/home/mike/Dev/learning/opengl/test/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<pthread.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+
+1379185704 source:/home/mike/Dev/learning/opengl/test3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<pthread.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+

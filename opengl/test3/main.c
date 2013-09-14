@@ -75,8 +75,13 @@ void redraw(void) {
         glVertex3f(-1.0, -1.0, -1.0);
         glEnd();
 
+        // http://www.glprogramming.com/red/chapter02.html
+        // drawing lines in 2D is trickier then I thought
+        // because I don't know this 3D stuff nor the openGL API
         glColor3f (1.0, 1.0, 1.0);
         drawOneLine (1.0, -1.0, 0.5, -0.5);
+        drawOneLine (1.0, -5.0, 0.5, 1.5);
+        drawOneLine (1.0, -2.0, 0.5, 2.5);
 
         glEndList();
         displayListInited = GL_TRUE;

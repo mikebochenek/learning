@@ -1,0 +1,10 @@
+
+http://androidforums.com/android-media/316831-how-play-avi-mkv-wmv-mov-more-android-phone.html
+
+Android phone only supports relatively few video formats (only supports H.263, H.264 AVC, MPEG-4 SP video format). 
+
+So if you want to play AVI, Xvid, DivX, MKV, WMV, RM, FLV, SWF, ASF, MPG, MOV, MPEG, HD, MTS, M2TS, and TS on your Android phone like Samsung i7500, Samsung Galaxy, HTC Hero, HTC Legend, HTC Desire HD, HTC Wildfire, Motorola Droid, Motorola Flipout, Sony Ericsson Xperia X10, LG Ally and etc, you need to convert them to android phone compatible video format like mpeg-4
+
+NiceJane is wrong. Using the MoboPlayer, I can play AVI, WMV, FLV, MPG, MOV, & MP4 files on my Android 2.2-based LG Optimus S, which only has a 600MHz ARM6 CPU and is far less powerful than the Galaxy. Android only natively supports these video file formats, but software developers are free to write software to decode whatever file format they like. You really just need good media player software. Try MoboPlayer or RockPlayer.
+
+However, just because a particular format is supported by a media player, that doesn't mean that your phone has the horsepower to smoothly decode and display higher definition video files. For example, my lowly LG Optimus can play relatively low-resolution AVI files smoothly, but it can't smoothly play high-resolution AVI files.

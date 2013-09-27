@@ -1,4 +1,5 @@
-// hello_worker
+// +build hello_worker
+
 package main
 
 import (

@@ -1,4 +1,5 @@
-// timer
+// +build timer
+
 package main
 
 import (

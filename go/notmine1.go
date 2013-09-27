@@ -1,4 +1,5 @@
-// notmine1
+// +build notmine1
+
 // http://play.golang.org/p/eGRSgZqJyQ
 package main
 

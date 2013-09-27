@@ -1,4 +1,5 @@
-// worker
+// +build worker
+
 package main
 
 import (

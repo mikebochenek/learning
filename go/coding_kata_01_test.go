@@ -1,5 +1,3 @@
-// +build coding_kata_01
-
 package main
 
 import (
@@ -9,17 +7,19 @@ import (
 )
 
 func TestCheck(t *testing.T) {
-
 	if x := check(17); x != 1 {
 		t.Errorf("check(17) = %v, want 1", x)
 	}
 
-	/*
-		check(17)         //1
-		check(1073741824) //30
-		check(25)         //2
-	*/
+	if x := check(1073741824); x != 30 {
+		t.Errorf("check(1073741824) = %v, want 30", x)
+	}
+
+	if x := check(25); x != 2 {
+		t.Errorf("check(25) = %v, want 2", x)
+	}
 }
+
 func check(input int) int {
 	for y := 1; y <= int(math.Sqrt(float64(input))); y++ {
 		for p := 32; p > 0; p-- {

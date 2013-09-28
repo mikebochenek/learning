@@ -10,4 +10,5 @@ various learning notes and exercises
 * linux
 * nlp-jurafsky
 * opengl
+* other
 * scea

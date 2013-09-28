@@ -5,12 +5,20 @@ package main
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
-func main() {
-	check(17)
-	check(1073741824)
-	check(25)
+func TestCheck(t *testing.T) {
+
+	if x := check(17); x != 1 {
+		t.Errorf("check(17) = %v, want 1", x)
+	}
+
+	/*
+		check(17)         //1
+		check(1073741824) //30
+		check(25)         //2
+	*/
 }
 func check(input int) int {
 	for y := 1; y <= int(math.Sqrt(float64(input))); y++ {

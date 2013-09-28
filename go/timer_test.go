@@ -12,7 +12,7 @@ import (
 func TestTimer(t *testing.T) {
 	for p := 32; p > 0; p-- {
 		time.AfterFunc(500*time.Millisecond, func() {
-			fmt.Printf(".\n") // but this is not what I had ordered at all...
+			fmt.Printf(".") // but this is not what I had ordered at all...
 		})
 	}
 

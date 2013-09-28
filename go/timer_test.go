@@ -1,16 +1,15 @@
-// +build timer
-
 package main
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
 /**
  * Three ways to use a Timer from http://golang-examples.tumblr.com/
  */
-func main() {
+func TestTimer(t *testing.T) {
 	for p := 32; p > 0; p-- {
 		time.AfterFunc(500*time.Millisecond, func() {
 			fmt.Printf(".\n") // but this is not what I had ordered at all...

@@ -1,6 +1,8 @@
 // +build notmine1
 
-// http://play.golang.org/p/eGRSgZqJyQ
+/**
+ * cut and paste from  http://play.golang.org/p/eGRSgZqJyQ
+ */
 package main
 
 type I interface {

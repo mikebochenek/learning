@@ -3,12 +3,12 @@ learning
 
 various learning notes and exercises
 
-* appway
-* c
+* appway (java, uml)
+* c 
 * dart
 * go
-* linux
-* nlp-jurafsky
+* linux (syntax, configs, alias, etc.) 
+* nlp-jurafsky (natural language processing, questions, diagrams)
 * opengl
-* other
-* scea
+* other (android)
+* scea (diagrams, pdfs)

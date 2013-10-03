@@ -10,6 +10,6 @@ import (
 
 func main() {
 	now := time.Now()
-	fmt.Printf("hello, world with fmt %d\n", now)
-	log.Printf("hello, world with log %d\n", now)
+	fmt.Printf("\nhello, world with fmt [ %v ]\n", now)
+	log.Printf("\nhello, world with log [ %v ]\n", now)
 }

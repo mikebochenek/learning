@@ -43,9 +43,11 @@ func TestPrime(t *testing.T) {
 		859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941,
 		947, 953, 967, 971, 977, 983, 991, 997}
 
-	for i := 0; i < len(primes); i++ {
-		if x := prime(primes[i]); x != true {
-			t.Errorf("prime(%v) is false, but got %v", primes[i], x)
+	for j := 0; j < 10000; j++ {
+		for i := 0; i < len(primes); i++ {
+			if x := prime(primes[i]); x != true {
+				t.Errorf("prime(%v) is false, but got %v", primes[i], x)
+			}
 		}
 	}
 }

@@ -1,0 +1,379 @@
+[ Thu Oct 10 21:32:52 ~/Dev/learning ] java -versoin
+Unrecognized option: -versoin
+Could not create the Java virtual machine.
+[ Thu Oct 10 21:32:55 ~/Dev/learning ] java -version
+java version "1.6.0_27"
+OpenJDK Runtime Environment (IcedTea6 1.12.6) (6b27-1.12.6-1ubuntu0.12.04.2)
+OpenJDK Server VM (build 20.0-b12, mixed mode)
+[ Thu Oct 10 21:32:57 ~/Dev/learning ] sudo add-apt-repository ppa:webupd8team/java
+[sudo] password for mike: 
+You are about to add the following PPA to your system:
+ Oracle Java (JDK) Installer (automatically downloads and installs Oracle JDK6 / JDK7 / JDK8). There are no actual Java files in this PPA. More info: http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
+
+Debian installation instructions: http://www.webupd8.org/2012/06/how-to-install-oracle-java-7-in-debian.html
+ More info: https://launchpad.net/~webupd8team/+archive/java
+Press [ENTER] to continue or ctrl-c to cancel adding it
+
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.9quDUtjXz2 --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
+gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
+gpg: key EEA14886: "Launchpad VLC" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+[ Thu Oct 10 21:39:28 ~/Dev/learning ] sudo apt-get update
+Hit http://archive.ubuntu.com precise Release.gpg
+Get:1 http://archive.ubuntu.com precise-updates Release.gpg [198 B]                                                    
+Get:2 http://ppa.launchpad.net precise Release.gpg [316 B]                                                             
+Hit http://ppa.launchpad.net precise Release.gpg                                                                       
+Hit http://archive.canonical.com precise Release.gpg                                                                   
+Get:3 http://ppa.launchpad.net precise Release [11.9 kB]                                                               
+Hit http://archive.canonical.com precise Release                                                                       
+Hit http://archive.ubuntu.com precise Release                                                                          
+Ign http://packages.medibuntu.org precise Release.gpg                                                                  
+Hit http://archive.canonical.com precise/partner i386 Packages                                                         
+Get:4 http://archive.ubuntu.com precise-updates Release [49.6 kB]                                                      
+Hit http://ppa.launchpad.net precise Release                                                                           
+Ign http://archive.canonical.com precise/partner TranslationIndex                                                      
+Get:5 http://ppa.launchpad.net precise/main Sources [1,207 B]                                                          
+Get:6 http://ppa.launchpad.net precise/main i386 Packages [2,820 B]                                                    
+Get:7 http://security.ubuntu.com precise-security Release.gpg [198 B]                                                  
+Ign http://ppa.launchpad.net precise/main TranslationIndex                                                             
+Ign http://packages.medibuntu.org precise Release                                                                      
+Hit http://ppa.launchpad.net precise/main Sources                                                                      
+Hit http://ppa.launchpad.net precise/main i386 Packages                                                                
+Ign http://ppa.launchpad.net precise/main TranslationIndex                                                             
+Hit http://archive.ubuntu.com precise/main i386 Packages                                                               
+Hit http://archive.ubuntu.com precise/restricted i386 Packages                                                         
+Hit http://archive.ubuntu.com precise/universe i386 Packages                                                           
+Hit http://archive.ubuntu.com precise/multiverse i386 Packages                                                         
+Hit http://archive.ubuntu.com precise/main TranslationIndex                                                            
+Hit http://archive.ubuntu.com precise/multiverse TranslationIndex                                                      
+Hit http://archive.ubuntu.com precise/restricted TranslationIndex                                                      
+Hit http://archive.ubuntu.com precise/universe TranslationIndex                                                        
+Ign http://packages.medibuntu.org precise/free i386 Packages/DiffIndex                                                 
+Get:8 http://archive.ubuntu.com precise-updates/main i386 Packages [715 kB]                                            
+Ign http://packages.medibuntu.org precise/non-free i386 Packages/DiffIndex                                             
+Ign http://packages.medibuntu.org precise/free TranslationIndex                                                        
+Ign http://packages.medibuntu.org precise/non-free TranslationIndex                                                    
+Get:9 http://security.ubuntu.com precise-security Release [49.6 kB]                                                    
+Ign http://archive.canonical.com precise/partner Translation-en_US                                                     
+Ign http://archive.canonical.com precise/partner Translation-en                                                        
+Get:10 http://archive.ubuntu.com precise-updates/restricted i386 Packages [11.4 kB]                                    
+Get:11 http://archive.ubuntu.com precise-updates/universe i386 Packages [223 kB]                                       
+Get:12 http://archive.ubuntu.com precise-updates/multiverse i386 Packages [14.0 kB]                                    
+Hit http://archive.ubuntu.com precise-updates/main TranslationIndex                                                    
+Hit http://archive.ubuntu.com precise-updates/multiverse TranslationIndex                                              
+Get:13 http://security.ubuntu.com precise-security/main i386 Packages [344 kB]                                         
+Hit http://archive.ubuntu.com precise-updates/restricted TranslationIndex                                              
+Hit http://archive.ubuntu.com precise-updates/universe TranslationIndex                                                
+Hit http://archive.ubuntu.com precise/main Translation-en                                                              
+Hit http://archive.ubuntu.com precise/multiverse Translation-en                                                        
+Hit http://archive.ubuntu.com precise/restricted Translation-en                                                        
+Ign http://ppa.launchpad.net precise/main Translation-en_US                                                            
+Hit http://archive.ubuntu.com precise/universe Translation-en                                                          
+Ign http://ppa.launchpad.net precise/main Translation-en                                                               
+Ign http://ppa.launchpad.net precise/main Translation-en_US                                                            
+Ign http://ppa.launchpad.net precise/main Translation-en                                                               
+Hit http://archive.ubuntu.com precise-updates/main Translation-en                                                      
+Hit http://archive.ubuntu.com precise-updates/multiverse Translation-en                                                
+Hit http://archive.ubuntu.com precise-updates/restricted Translation-en                                                
+Hit http://archive.ubuntu.com precise-updates/universe Translation-en                                                  
+Hit http://toolbelt.heroku.com ./ Release.gpg                                                                          
+Err http://packages.medibuntu.org precise/free i386 Packages                                                           
+  404  Not Found
+Err http://packages.medibuntu.org precise/non-free i386 Packages                                                       
+  404  Not Found
+Ign http://packages.medibuntu.org precise/free Translation-en_US                                                       
+Ign http://packages.medibuntu.org precise/free Translation-en                                                          
+Ign http://packages.medibuntu.org precise/non-free Translation-en_US                                                   
+Ign http://packages.medibuntu.org precise/non-free Translation-en                                                      
+Hit http://toolbelt.heroku.com ./ Release                                                                              
+Get:14 http://security.ubuntu.com precise-security/restricted i386 Packages [4,620 B]                                  
+Get:15 http://security.ubuntu.com precise-security/universe i386 Packages [86.7 kB]                                    
+Get:16 http://security.ubuntu.com precise-security/multiverse i386 Packages [2,640 B]                                  
+Hit http://security.ubuntu.com precise-security/main TranslationIndex                                                  
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex                                            
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndex                                            
+Hit http://security.ubuntu.com precise-security/universe TranslationIndex                                              
+Hit http://security.ubuntu.com precise-security/main Translation-en                                                    
+Hit http://security.ubuntu.com precise-security/multiverse Translation-en                              
+Hit http://security.ubuntu.com precise-security/restricted Translation-en                              
+Hit http://toolbelt.heroku.com ./ Packages                                                             
+Hit http://security.ubuntu.com precise-security/universe Translation-en                                
+Get:17 http://packages.linuxmint.com maya Release.gpg [198 B]                                                          
+Get:18 http://packages.linuxmint.com maya Release [18.6 kB]                                                   
+Get:19 http://packages.linuxmint.com maya/main i386 Packages [18.6 kB]           
+Get:20 http://packages.linuxmint.com maya/upstream i386 Packages [10.6 kB]
+Get:21 http://packages.linuxmint.com maya/import i386 Packages [41.7 kB]                                
+Ign http://packages.linuxmint.com maya/import TranslationIndex                                                         
+Ign http://packages.linuxmint.com maya/main TranslationIndex                                                  
+Ign http://packages.linuxmint.com maya/upstream TranslationIndex                                              
+Ign http://toolbelt.heroku.com ./ Translation-en_US                                                                    
+Ign http://packages.linuxmint.com maya/import Translation-en_US                                                        
+Ign http://toolbelt.heroku.com ./ Translation-en                                                                       
+Ign http://packages.linuxmint.com maya/import Translation-en                                                           
+Ign http://packages.linuxmint.com maya/main Translation-en_US                                                          
+Ign http://packages.linuxmint.com maya/main Translation-en                                                             
+Ign http://packages.linuxmint.com maya/upstream Translation-en_US                                                      
+Ign http://packages.linuxmint.com maya/upstream Translation-en                                                         
+Fetched 1,606 kB in 9s (167 kB/s)                                                                                      
+W: Failed to fetch http://packages.medibuntu.org/dists/precise/free/binary-i386/Packages  404  Not Found
+
+W: Failed to fetch http://packages.medibuntu.org/dists/precise/non-free/binary-i386/Packages  404  Not Found
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+[ Thu Oct 10 21:39:48 ~/Dev/learning ] udo add-apt-repository ppa:webupd8team/java
+The program 'udo' is currently not installed.  You can install it by typing:
+sudo apt-get install udo
+[ Thu Oct 10 21:40:43 ~/Dev/learning ] sudo add-apt-repository ppa:webupd8team/java
+You are about to add the following PPA to your system:
+ Oracle Java (JDK) Installer (automatically downloads and installs Oracle JDK6 / JDK7 / JDK8). There are no actual Java files in this PPA. More info: http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
+
+Debian installation instructions: http://www.webupd8.org/2012/06/how-to-install-oracle-java-7-in-debian.html
+ More info: https://launchpad.net/~webupd8team/+archive/java
+Press [ENTER] to continue or ctrl-c to cancel adding it
+
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.d6htUI8UZy --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver hkp://keyserver.ubuntu.com:80/ --recv 7B2C3B0889BF5709A105D03AC2518248EEA14886
+gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com
+gpg: key EEA14886: "Launchpad VLC" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+[ Thu Oct 10 21:40:50 ~/Dev/learning ] sudo apt-get update
+Hit http://ppa.launchpad.net precise Release.gpg
+Hit http://ppa.launchpad.net precise Release.gpg                                                                       
+Hit http://archive.canonical.com precise Release.gpg                                                                   
+Hit http://ppa.launchpad.net precise Release                                                                           
+Ign http://packages.medibuntu.org precise Release.gpg                                                                  
+Hit http://archive.canonical.com precise Release                                                                       
+Hit http://ppa.launchpad.net precise Release                                                                           
+Hit http://ppa.launchpad.net precise/main Sources                                                                      
+Hit http://ppa.launchpad.net precise/main i386 Packages                                                                
+Ign http://ppa.launchpad.net precise/main TranslationIndex                                                             
+Hit http://archive.canonical.com precise/partner i386 Packages                                                         
+Hit http://ppa.launchpad.net precise/main Sources                                                                      
+Hit http://ppa.launchpad.net precise/main i386 Packages                                                                
+Ign http://ppa.launchpad.net precise/main TranslationIndex                                                             
+Ign http://archive.canonical.com precise/partner TranslationIndex                                                      
+Hit http://security.ubuntu.com precise-security Release.gpg                                                            
+Ign http://packages.medibuntu.org precise Release                                                                      
+Get:1 http://packages.linuxmint.com maya Release.gpg [198 B]                                                           
+Hit http://archive.ubuntu.com precise Release.gpg                                                                      
+Hit http://archive.ubuntu.com precise-updates Release.gpg                                                              
+Ign http://packages.medibuntu.org precise/free i386 Packages/DiffIndex                                                 
+Ign http://packages.medibuntu.org precise/non-free i386 Packages/DiffIndex                                             
+Ign http://packages.medibuntu.org precise/free TranslationIndex                                                        
+Ign http://packages.medibuntu.org precise/non-free TranslationIndex                                                    
+Hit http://security.ubuntu.com precise-security Release                                                                
+Hit http://archive.ubuntu.com precise Release                                                                          
+Get:2 http://packages.linuxmint.com maya Release [18.6 kB]                                                             
+Hit http://security.ubuntu.com precise-security/main i386 Packages                                                     
+Hit http://toolbelt.heroku.com ./ Release.gpg                                                                          
+Hit http://archive.ubuntu.com precise-updates Release                                                                  
+Hit http://security.ubuntu.com precise-security/restricted i386 Packages                                               
+Hit http://security.ubuntu.com precise-security/universe i386 Packages                                                 
+Hit http://security.ubuntu.com precise-security/multiverse i386 Packages                                               
+Hit http://security.ubuntu.com precise-security/main TranslationIndex                                                  
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex                                            
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndex                                            
+Hit http://security.ubuntu.com precise-security/universe TranslationIndex                                              
+Ign http://archive.canonical.com precise/partner Translation-en_US                                                     
+Ign http://ppa.launchpad.net precise/main Translation-en_US                                                            
+Ign http://archive.canonical.com precise/partner Translation-en                                                        
+Ign http://ppa.launchpad.net precise/main Translation-en                                                               
+Ign http://ppa.launchpad.net precise/main Translation-en_US                                                            
+Hit http://archive.ubuntu.com precise/main i386 Packages                                                               
+Hit http://archive.ubuntu.com precise/restricted i386 Packages                                                    
+Hit http://archive.ubuntu.com precise/universe i386 Packages                                                           
+Hit http://archive.ubuntu.com precise/multiverse i386 Packages                                                         
+Hit http://archive.ubuntu.com precise/main TranslationIndex                                                            
+Hit http://archive.ubuntu.com precise/multiverse TranslationIndex                                                      
+Hit http://archive.ubuntu.com precise/restricted TranslationIndex                                                      
+Hit http://archive.ubuntu.com precise/universe TranslationIndex                                                        
+Ign http://ppa.launchpad.net precise/main Translation-en                                                               
+Get:3 http://packages.linuxmint.com maya/main i386 Packages [18.6 kB]                                                  
+Hit http://security.ubuntu.com precise-security/main Translation-en                                                    
+Hit http://security.ubuntu.com precise-security/multiverse Translation-en                                              
+Hit http://security.ubuntu.com precise-security/restricted Translation-en                                              
+Hit http://security.ubuntu.com precise-security/universe Translation-en                                                
+Hit http://archive.ubuntu.com precise-updates/main i386 Packages                                                       
+Hit http://archive.ubuntu.com precise-updates/restricted i386 Packages                                                 
+Hit http://archive.ubuntu.com precise-updates/universe i386 Packages                                                   
+Hit http://archive.ubuntu.com precise-updates/multiverse i386 Packages                                                 
+Hit http://archive.ubuntu.com precise-updates/main TranslationIndex                                                    
+Hit http://archive.ubuntu.com precise-updates/multiverse TranslationIndex                                              
+Hit http://archive.ubuntu.com precise-updates/restricted TranslationIndex                                              
+Hit http://archive.ubuntu.com precise-updates/universe TranslationIndex                                                
+Hit http://archive.ubuntu.com precise/main Translation-en                                                              
+Get:4 http://packages.linuxmint.com maya/upstream i386 Packages [10.6 kB]                                              
+Get:5 http://packages.linuxmint.com maya/import i386 Packages [41.7 kB]                                                
+Hit http://archive.ubuntu.com precise/multiverse Translation-en                                                        
+Hit http://archive.ubuntu.com precise/restricted Translation-en                                                        
+Hit http://archive.ubuntu.com precise/universe Translation-en                                         
+Hit http://archive.ubuntu.com precise-updates/main Translation-en               
+Hit http://archive.ubuntu.com precise-updates/multiverse Translation-en         
+Hit http://archive.ubuntu.com precise-updates/restricted Translation-en                               
+Ign http://packages.linuxmint.com maya/import TranslationIndex                                        
+Hit http://toolbelt.heroku.com ./ Release                                                                              
+Err http://packages.medibuntu.org precise/free i386 Packages                                                           
+  404  Not Found
+Hit http://archive.ubuntu.com precise-updates/universe Translation-en                                                
+Err http://packages.medibuntu.org precise/non-free i386 Packages                                                     
+  404  Not Found
+Ign http://packages.medibuntu.org precise/free Translation-en_US                                                
+Ign http://packages.medibuntu.org precise/free Translation-en                                                          
+Ign http://packages.medibuntu.org precise/non-free Translation-en_US                                                   
+Ign http://packages.medibuntu.org precise/non-free Translation-en                                                      
+Hit http://toolbelt.heroku.com ./ Packages                                                                             
+Ign http://packages.linuxmint.com maya/main TranslationIndex                                                           
+Ign http://packages.linuxmint.com maya/upstream TranslationIndex                 
+Ign http://packages.linuxmint.com maya/import Translation-en_US            
+Ign http://packages.linuxmint.com maya/import Translation-en
+Ign http://packages.linuxmint.com maya/main Translation-en_US                  
+Ign http://packages.linuxmint.com maya/main Translation-en                     
+Ign http://packages.linuxmint.com maya/upstream Translation-en_US
+Ign http://packages.linuxmint.com maya/upstream Translation-en
+Ign http://toolbelt.heroku.com ./ Translation-en_US                                                                    
+Ign http://toolbelt.heroku.com ./ Translation-en                                                                       
+Fetched 89.7 kB in 7s (11.3 kB/s)                                                                                      
+W: Failed to fetch http://packages.medibuntu.org/dists/precise/free/binary-i386/Packages  404  Not Found
+
+W: Failed to fetch http://packages.medibuntu.org/dists/precise/non-free/binary-i386/Packages  404  Not Found
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+[ Thu Oct 10 21:41:02 ~/Dev/learning ] sudo apt-get install oracle-java8-installer
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  gsfonts-x11
+Suggested packages:
+  visualvm ttf-kochi-gothic ttf-sazanami-gothic ttf-kochi-mincho ttf-sazanami-mincho ttf-arphic-uming
+The following NEW packages will be installed:
+  gsfonts-x11 oracle-java8-installer
+0 upgraded, 2 newly installed, 0 to remove and 46 not upgraded.
+Need to get 26.7 kB of archives.
+After this operation, 227 kB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+Get:1 http://ppa.launchpad.net/webupd8team/java/ubuntu/ precise/main oracle-java8-installer all 8b109-0~webupd8~0 [17.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ precise/main gsfonts-x11 all 0.22 [9,108 B]                 
+Fetched 26.7 kB in 0s (83.3 kB/s)      
+Preconfiguring packages ...
+Selecting previously unselected package oracle-java8-installer.
+(Reading database ... 200490 files and directories currently installed.)
+Unpacking oracle-java8-installer (from .../oracle-java8-installer_8b109-0~webupd8~0_all.deb) ...
+Selecting previously unselected package gsfonts-x11.
+Unpacking gsfonts-x11 (from .../gsfonts-x11_0.22_all.deb) ...
+Processing triggers for bamfdaemon ...
+Rebuilding /usr/share/applications/bamf.index...
+Processing triggers for desktop-file-utils ...
+Processing triggers for shared-mime-info ...
+Processing triggers for fontconfig ...
+Setting up oracle-java8-installer (8b109-0~webupd8~0) ...
+Downloading Oracle Java 8...
+--2013-10-10 21:41:27--  http://www.java.net/download/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz
+Resolving www.java.net (www.java.net)... 209.189.227.38
+Connecting to www.java.net (www.java.net)|209.189.227.38|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://www.java.net//download/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz [following]
+--2013-10-10 21:41:28--  https://www.java.net//download/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz
+Connecting to www.java.net (www.java.net)|209.189.227.38|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: http://download.java.net/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz?q=download/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz [following]
+--2013-10-10 21:41:29--  http://download.java.net/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz?q=download/jdk8/archive/b109/binaries/jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz
+Resolving download.java.net (download.java.net)... 137.254.120.26
+Connecting to download.java.net (download.java.net)|137.254.120.26|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 110525844 (105M) [application/gzip]
+Saving to: `jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz'
+
+     0K ........ ........ ........ ........ ........ ........  2%  376K 4m39s
+  3072K ........ ........ ........ ........ ........ ........  5%  393K 4m25s
+  6144K ........ ........ ........ ........ ........ ........  8%  357K 4m23s
+  9216K ........ ........ ........ ........ ........ ........ 11%  394K 4m12s
+ 12288K ........ ........ ........ ........ ........ ........ 14%  391K 4m3s
+ 15360K ........ ........ ........ ........ ........ ........ 17%  396K 3m53s
+ 18432K ........ ........ ........ ........ ........ ........ 19% 6.40K 35m22s
+ 21504K ........ ........ ........ ........ ........ ........ 22%  167K 30m53s
+ 24576K ........ ........ ........ ........ ........ ........ 25%  358K 26m51s
+ 27648K ........ ........ ........ ........ ........ ........ 28%  397K 23m34s
+ 30720K ........ ........ ........ ........ ........ ........ 31%  350K 20m54s
+ 33792K ........ ........ ........ ........ ........ ........ 34%  357K 18m38s
+ 36864K ........ ........ ........ ........ ........ ........ 36%  392K 16m41s
+ 39936K ........ ........ ........ ........ ........ ........ 39%  359K 15m0s
+ 43008K ........ ........ ........ ........ ........ ........ 42%  390K 13m31s
+ 46080K ........ ........ ........ ........ ........ ........ 45%  392K 12m12s
+ 49152K ........ ........ ........ ........ ........ ........ 48%  364K 11m2s
+ 52224K ........ ........ ........ ........ ........ ........ 51%  389K 9m58s
+ 55296K ........ ........ ........ ........ ........ ........ 54%  399K 9m0s
+ 58368K ........ ........ ........ ........ ........ ........ 56%  395K 8m7s
+ 61440K ........ ........ ........ ........ ........ ........ 59%  288K 7m21s
+ 64512K ........ ........ ........ ........ ........ ........ 62%  404K 6m35s
+ 67584K ........ ........ ........ ........ ........ ........ 65%  399K 5m53s
+ 70656K ........ ........ ........ ........ ........ ........ 68%  394K 5m14s
+ 73728K ........ ........ ........ ........ ........ ........ 71%  399K 4m38s
+ 76800K ........ ........ ........ ........ ........ ........ 73%  395K 4m4s
+ 79872K ........ ........ ........ ........ ........ ........ 76%  391K 3m31s
+ 82944K ........ ........ ........ ........ ........ ........ 79%  388K 3m1s
+ 86016K ........ ........ ........ ........ ........ ........ 82%  395K 2m32s
+ 89088K ........ ........ ........ ........ ........ ........ 85%  399K 2m4s
+ 92160K ........ ........ ........ ........ ........ ........ 88%  388K 98s
+ 95232K ........ ........ ........ ........ ........ ........ 91%  391K 73s
+ 98304K ........ ........ ........ ........ ........ ........ 93%  399K 48s
+101376K ........ ........ ........ ........ ........ ........ 96%  396K 25s
+104448K ........ ........ ........ ........ ........ ........ 99%  393K 3s
+107520K ......                                               100%  384K=12m45s
+
+2013-10-10 21:54:14 (141 KB/s) - `jdk-8-ea-bin-b109-linux-i586-26_sep_2013.tar.gz' saved [110525844/110525844]
+
+Download done.
+Removing outdated cached downloads...
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/ControlPanel to provide /usr/bin/ControlPanel (ControlPanel) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/java to provide /usr/bin/java (java) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/javaws to provide /usr/bin/javaws (javaws) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jcontrol to provide /usr/bin/jcontrol (jcontrol) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jar to provide /usr/bin/jar (jar) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javac to provide /usr/bin/javac (javac) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javafxpackager to provide /usr/bin/javafxpackager (javafxpackager) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javah to provide /usr/bin/javah (javah) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/javap to provide /usr/bin/javap (javap) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jps to provide /usr/bin/jps (jps) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/jvisualvm to provide /usr/bin/jvisualvm (jvisualvm) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode.
+update-alternatives: using /usr/lib/jvm/java-8-oracle/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode.
+update-binfmts: warning: current package is oracle-java8, but binary format already installed by openjdk-6
+Oracle JDK 8 installed
+update-alternatives: using /usr/lib/jvm/java-8-oracle/jre/lib/i386/libnpjp2.so to provide /usr/lib/mozilla/plugins/libjavaplugin.so (mozilla-javaplugin.so) in auto mode.
+Oracle JRE 8 browser plugin installed
+Setting up gsfonts-x11 (0.22) ...
+[ Thu Oct 10 21:54:29 ~/Dev/learning ] 

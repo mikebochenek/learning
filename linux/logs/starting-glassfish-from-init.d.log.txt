@@ -1,0 +1,111 @@
+
+http://www.physics.usyd.edu.au/~rennie/glassfish.html
+
+
+[ Fri Oct 11 22:30:13 ~ ] ./glassfish.sh status
+# GlassFish at /home/mike/Dev/glassfish4:
+domain1 running
+Up 2 mins 56 secs
+
+# Deployed applications:
+NAME         TYPE   STATUS   
+byteslounge  <web>  enabled  
+
+# JDBC resources:
+jdbc/__TimerPool
+jdbc/__default
+
+# Derby:
+Connection obtained for host: localhost, port number 1527.
+
+
+[ Fri Oct 11 22:25:31 ~ ] sudo update-rc.d glassfish.sh defaults
+ Adding system startup for /etc/init.d/glassfish.sh ...
+   /etc/rc0.d/K20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc1.d/K20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc6.d/K20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc2.d/S20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc3.d/S20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc4.d/S20glassfish.sh -> ../init.d/glassfish.sh
+   /etc/rc5.d/S20glassfish.sh -> ../init.d/glassfish.sh
+
+
+
+
+mike-HP-Pavilion-dv8000-EE944AV init.d # ./glassfish.sh start
+Starting GlassFish from /home/mike/Dev/glassfish4
+Starting database in Network Server mode on host 0.0.0.0 and port 1527.
+--------- Derby Network Server Information --------
+Version: CSS10090/10.9.1.0 - (1344872)  Build: 1344872  DRDA Product Id: CSS10090
+-- listing properties --
+derby.drda.traceDirectory=/home/mike/Dev/glassfish4/glassfish/d...
+derby.drda.maxThreads=0
+derby.drda.sslMode=off
+derby.drda.keepAlive=true
+derby.drda.minThreads=0
+derby.drda.portNumber=1527
+derby.drda.logConnections=false
+derby.drda.timeSlice=0
+derby.drda.startNetworkServer=false
+derby.drda.host=0.0.0.0
+derby.drda.traceAll=false
+------------------ Java Information ------------------
+Java Version:    1.8.0-ea
+Java Vendor:     Oracle Corporation
+Java home:       /usr/lib/jvm/java-8-oracle/jre
+Java classpath:  /home/mike/Dev/glassfish4/glassfish/lib/asadmin/cli-optional.jar:/home/mike/Dev/glassfish4/javadb/lib/derby.jar:/home/mike/Dev/glassfish4/javadb/lib/derbytools.jar:/home/mike/Dev/glassfish4/javadb/lib/derbynet.jar:/home/mike/Dev/glassfish4/javadb/lib/derbyclient.jar
+OS name:         Linux
+OS architecture: i386
+OS version:      3.2.0-23-generic
+Java user name:  mike
+Java user home:  /home/mike
+Java user dir:   /etc/init.d
+java.specification.name: Java Platform API Specification
+java.specification.version: 1.8
+java.runtime.version: 1.8.0-ea-b109
+--------- Derby Information --------
+[/home/mike/Dev/glassfish4/javadb/lib/derby.jar] 10.9.1.0 - (1344872)
+[/home/mike/Dev/glassfish4/javadb/lib/derbytools.jar] 10.9.1.0 - (1344872)
+[/home/mike/Dev/glassfish4/javadb/lib/derbynet.jar] 10.9.1.0 - (1344872)
+[/home/mike/Dev/glassfish4/javadb/lib/derbyclient.jar] 10.9.1.0 - (1344872)
+------------------------------------------------------
+----------------- Locale Information -----------------
+Current Locale :  [English/United States [en_US]]
+Found support for locale: [cs]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [de_DE]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [es]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [fr]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [hu]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [it]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [ja_JP]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [ko_KR]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [pl]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [pt_BR]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [ru]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [zh_CN]
+	 version: 10.9.1.0 - (1344872)
+Found support for locale: [zh_TW]
+	 version: 10.9.1.0 - (1344872)
+------------------------------------------------------
+
+Starting database in the background.
+Log redirected to /home/mike/Dev/glassfish4/glassfish/databases/derby.log.
+Command start-database executed successfully.
+Waiting for domain1 to start ...........
+Successfully started the domain : domain1
+domain  Location: /home/mike/Dev/glassfish4/glassfish/domains/domain1
+Log File: /home/mike/Dev/glassfish4/glassfish/domains/domain1/logs/server.log
+Admin Port: 4848
+Command start-domain executed successfully.
+mike-HP-Pavilion-dv8000-EE944AV init.d # 

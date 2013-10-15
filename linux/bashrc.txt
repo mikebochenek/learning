@@ -11,8 +11,13 @@ alias build='cdworkspace && mvn clean package jboss-as:deploy'
 alias build2='cdworkspace2 && mvn clean package jboss-as:deploy'
 alias cdworkspace2='cd /home/mike/Dev/workspace/cvparse'
 
+alias build3='cdworkspace3 && mvn install glassfish:redeploy'
+alias cdworkspace3='cd ~/Dev/workspace/brainstorm'
+
 alias revelgo='revel run myapp0'
 alias liteide='~/Dev/liteide/bin/liteide &'
+
+alias selenium='~/Dev/learning/linux/selenium.sh'
 
 export DART_SDK=/home/mike/Dev/dart-sdk
 export PATH=$PATH:$DART_SDK/bin
@@ -26,3 +31,6 @@ export JETTY_HOME="~/Dev/jetty-distribution-9.0.3.v20130506"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="/home/mike/Dev/adt-bundle-linux-x86-20130522/sdk/platform-tools:$PATH"
+export PATH="/home/mike/Dev/adt-bundle-linux-x86-20130522/sdk/tools:$PATH"

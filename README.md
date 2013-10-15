@@ -13,4 +13,5 @@ various learning notes and exercises
 * other (android)
 * puzzles (programming, math, logic, etc).
 * scea (diagrams, pdfs)
+* selenium (trivial tests...)
 

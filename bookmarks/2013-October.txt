@@ -1,4 +1,9 @@
 
+24.10.2013 20:48:28
+
+http://blog.codeclimate.com/blog/2013/10/24/code-climate-for-javascript/
+http://blog.nickwinter.net/codecombat-in-y-combinator
+
 22.10.2013 20:19:43
 
 http://pythonsweetness.tumblr.com/post/64740079543/how-to-lose-172-222-a-second-for-45-minutes

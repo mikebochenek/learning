@@ -3,6 +3,7 @@
 
 http://blog.codeclimate.com/blog/2013/10/24/code-climate-for-javascript/
 http://blog.nickwinter.net/codecombat-in-y-combinator
+http://www.pamelafox.org/
 
 22.10.2013 20:19:43
 

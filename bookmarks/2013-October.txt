@@ -1,4 +1,10 @@
 
+31.10.2013 19:19:46
+
+http://www.youtube.com/watch?v=8bVAl73JvLM
+http://differential.io/blog/meteor-killin-rails
+https://www.schneier.com/blog/archives/2013/10/the_battle_for_1.html
+
 24.10.2013 20:48:28
 
 http://blog.codeclimate.com/blog/2013/10/24/code-climate-for-javascript/

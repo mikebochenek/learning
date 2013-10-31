@@ -16,3 +16,6 @@ fusermount -u /media/MyAndroid
 alias
 
 # my favorite prompt PS1="[ \d \t \w ] "
+
+
+python -m SimpleHTTPServer 8000 .

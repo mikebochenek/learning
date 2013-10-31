@@ -4,6 +4,7 @@
 http://www.youtube.com/watch?v=8bVAl73JvLM
 http://differential.io/blog/meteor-killin-rails
 https://www.schneier.com/blog/archives/2013/10/the_battle_for_1.html
+http://diveintohtml5.info/canvas.html
 
 24.10.2013 20:48:28
 

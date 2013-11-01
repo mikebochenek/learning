@@ -1,0 +1,11 @@
+
+Matasano - New York City, Chicago, San Francisco Bay Area
+We test software for vulnerabilities.
+Sorry, that's too clinical - the reality is that we torture and flay software, twisting it to serve our nefarious ends.
+If that sounds like fun, consider applying.
+NO PRIOR APPSEC EXPERIENCE IS REQUIRED. Just a keen technical acumen and a thirst for blood.
+Perks: crazy-smart coworkers, health benefits, free books, etc. For more information, visit http://www.matasano.com/careers/
+FEED YOUR HEAD:
+As a bonus, try your hand at this problem from our never-before-published set of crypto challenges: https://gist.github.com/sdevlin/52e1d8898bda7ad35567
+It's not required, but writing code to solve this problem would be a good way to get our attention. For more information on the crypto challenges, visit http://www.matasano.com/articles/crypto-challenges/
+

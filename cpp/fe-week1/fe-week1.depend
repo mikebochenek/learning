@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1383422928 source:/home/mike/Dev/learning/cpp/fe-week1/main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+

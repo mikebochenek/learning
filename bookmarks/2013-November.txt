@@ -5,6 +5,7 @@ http://www.theatlantic.com/business/archive/2013/11/how-to-write-the-worst-possi
 http://www.huffingtonpost.com/seth-adam-smith/marriage-isnt-for-you_b_4209837.html
 https://weworkremotely.com/
 http://influxdb.org/
+http://sathyamvellal.in/blog/cool-c-programming/?d=5
 
 04.11.2013 20:25:22
 

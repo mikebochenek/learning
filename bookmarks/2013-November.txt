@@ -1,4 +1,12 @@
 
+09.11.2013 21:01:39
+
+http://www.stefankendall.com/2013/11/10-questions-to-ask-your-potential.html
+http://preshing.com/20110926/high-resolution-mandelbrot-in-obfuscated-python/
+http://www.cafepress.com/preshing
+https://ryanseys.com/blog/177-days-of-github/
+http://christian-fei.com/understand-closures/
+
 06.11.2013 20:17:57
 
 http://khamidou.github.io/kite/

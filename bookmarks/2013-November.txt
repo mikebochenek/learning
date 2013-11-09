@@ -6,6 +6,9 @@ http://preshing.com/20110926/high-resolution-mandelbrot-in-obfuscated-python/
 http://www.cafepress.com/preshing
 https://ryanseys.com/blog/177-days-of-github/
 http://christian-fei.com/understand-closures/
+http://www.javacodegeeks.com/2013/11/testing-html5-canvas-applications-with-sikuli-and-arquillian.html
+http://en.wikipedia.org/wiki/Kubb
+http://qz.com/139794/inside-googles-new-1-million-square-foot-london-office-three-years-before-its-ready/
 
 06.11.2013 20:17:57
 

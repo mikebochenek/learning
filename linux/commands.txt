@@ -21,3 +21,5 @@ alias
 python -m SimpleHTTPServer 8000 .
 
 tail -f ~/Dev/glassfish4/glassfish/domains/domain1/logs/server.log
+
+top -b -n 1

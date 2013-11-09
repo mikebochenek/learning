@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <sys/time.h>
 
 using namespace std;
 
@@ -39,6 +40,10 @@ int timeexample() {
    tim.tv_sec  = 0;
    tim.tv_nsec = 100000000L;
    int i = 0;
+   timespec ts;
+
+   // http://stackoverflow.com/questions/275004/c-timer-function-to-provide-time-in-nano-seconds
+   //clock_gettime(CLOCK_REALTIME, &ts); // Works on Linux
 
    for (i = 0; i < 10; i++) {
       if(nanosleep(&tim , &tim2) < 0 ) {

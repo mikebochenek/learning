@@ -2,6 +2,10 @@
 13.11.2013 21:33:47
 
 http://jsfiddle.net/ondras/hYfN3/
+http://blog.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/
+http://www.rereadit.co/
+http://martinsdeveloperworld.wordpress.com/2013/11/04/testing-html5-canvas-applications-with-sikuli-and-arquillian/
+https://github.com/siom79/html5-sikuli
 
 09.11.2013 21:01:39
 

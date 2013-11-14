@@ -23,4 +23,4 @@ git clone https://github.com/mikebochenek/cvparse
 cd /tmp
 tar cvf backup-$MYNOW.tar /tmp/backup-$MYNOW/*
 gzip backup-$MYNOW.tar
-ls -la backup*
+cp backup*.gz ~/Dropbox/backups/

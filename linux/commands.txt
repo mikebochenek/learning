@@ -17,9 +17,11 @@ alias
 
 # my favorite prompt PS1="[ \d \t \w ] "
 
-
 python -m SimpleHTTPServer 8000 .
 
 tail -f ~/Dev/glassfish4/glassfish/domains/domain1/logs/server.log
 
 top -b -n 1
+
+# in chrome & firefox bring-up javascript console  :shift + control + j 
+

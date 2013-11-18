@@ -23,5 +23,6 @@ tail -f ~/Dev/glassfish4/glassfish/domains/domain1/logs/server.log
 
 top -b -n 1
 
-# in chrome & firefox bring-up javascript console  :shift + control + j 
+# in chrome & firefox bring-up javascript console: shift + control + j 
 
+# in linux mint - open a new termainal with: shift + control + t

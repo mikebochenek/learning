@@ -26,3 +26,6 @@ top -b -n 1
 # in chrome & firefox bring-up javascript console: shift + control + j 
 
 # in linux mint - open a new termainal with: shift + control + t
+
+# Alt+F1  = open the Application Menu
+# Alt+F2  = Open the Run Application window

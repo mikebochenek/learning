@@ -1,4 +1,11 @@
 
+09.12.2013 20:40:35
+
+http://kafka.apache.org/documentation.html#introduction
+http://blog.sucuri.net/2013/12/how-we-decoded-some-nasty-multi-level-encoded-malware.html
+http://blog.42floors.com/absurdly-high-valuations/
+http://blog.samaltman.com/employee-retention
+
 08.12.2013 19:41:12
 
 http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/

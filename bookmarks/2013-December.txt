@@ -1,4 +1,11 @@
 
+10.12.2013 19:42:45
+
+http://www.infoq.com/articles/HIgh-Performance-Parsers-in-Java-V2
+http://www.tomdispatch.com/blog/175781/
+http://blog.aerofs.com/the-aerofs-private-cloud/
+http://firstround.com/article/Evernotes-CTO-on-Your-Biggest-Security-Worries-From-Three-Employees-to-300
+
 09.12.2013 20:40:35
 
 http://kafka.apache.org/documentation.html#introduction

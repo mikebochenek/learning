@@ -1,10 +1,20 @@
 
+11.12.2013 20:36:08
+
+http://bitmason.blogspot.ca/2013/09/what-are-containers-anyway.html
+http://blog.campoy.cat/2013/12/writing-moder-web-app-with-go-tdd-rest.html
+http://da-data.blogspot.ch/2013/12/briefly-profitable-alt-coin-mining-on.html
+http://www.vim3d.com/
+http://www.f-secure.com/weblog/archives/00002647.html
+
 10.12.2013 19:42:45
 
 http://www.infoq.com/articles/HIgh-Performance-Parsers-in-Java-V2
 http://www.tomdispatch.com/blog/175781/
 http://blog.aerofs.com/the-aerofs-private-cloud/
 http://firstround.com/article/Evernotes-CTO-on-Your-Biggest-Security-Worries-From-Three-Employees-to-300
+http://mattermark.com/app/Benchmarking
+http://www.jemurai.com/simple-burp-intro.html
 
 09.12.2013 20:40:35
 

@@ -1,0 +1,9 @@
+# how to execute a unix command at a specified time...
+# http://www.thegeekstuff.com/2010/06/at-atq-atrm-batch-command-examples/
+# http://stackoverflow.com/questions/5734365/run-a-command-at-a-specific-time
+
+atq - list
+atrm - remove
+at 1623 <<< 'rm *.ear'
+at 1800 <<< './do stop'
+at 1632 <<< './do stop'

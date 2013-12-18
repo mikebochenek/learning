@@ -1,0 +1,10 @@
+
+# http://stackoverflow.com/questions/479953/how-to-find-out-which-processes-are-swapping-in-linux
+# http://www.linuxforums.org/articles/using-top-more-efficiently_89.html
+# http://www.linux.com/learn/tutorials/42048-uncover-the-meaning-of-tops-statistics
+
+# in batch mode, show current usage but only once
+top -b -n -i
+
+# in interactive mode, enter o to 'o'rder and sort by PageSize
+top o P enter

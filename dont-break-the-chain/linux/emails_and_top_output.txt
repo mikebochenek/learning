@@ -1,0 +1,21 @@
+# sending emails from telnet
+# http://www.yuki-onna.co.uk/email/smtp.html
+
+telnet old.mailserver.net 25
+HELO localhost
+MAIL FROM: test@from.com
+RCPT TO: me@from.com
+RCPT TO: su@from.com
+
+
+telnet test.mailserver.net 25
+HELO localhost
+MAIL FROM: su@from.com
+RCPT TO: su@from.com
+
+
+# top output in detail:
+# 
+# cumulative counts, with the file name `total'.  The counts are printed
+# in this order: newlines, words, characters, bytes, maximum line length.
+# Each count is printed right-justified in a field with at least one

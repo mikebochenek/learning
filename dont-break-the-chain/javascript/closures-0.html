@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>javascript closures example from late 2012</p>
+
+<script type="text/javascript" src="robust_log.js" ></script>
+
+<script type="text/javascript">
+/* 
+ * High level concepts to remember
+ * 1. Functions can refer to variables defined in outer scopes.
+ * 2. Closures can outlive the function that creates them.
+ * 3. Closures internally store references to their outer variables, and can both read and update their stored variables.
+ */
+ 
+// Example #1
+function sandwichMaker(magicIngredient) {
+    return function(filling) {
+        return magicIngredient + " and " + filling;
+    };
+}
+
+// Example #2
+function box() {
+    var val = undefined;
+    return {
+        set: function(newVal) { val = newVal; },
+        get: function() { return val; },
+        type: function() { return typeof val; }
+    };
+}
+
+console.log('starting my super cool example');
+var b = box();
+console.log(b.type()); // "undefined"
+b.set(98.6);
+console.log(b.get());  // 98.6
+console.log(b.type()); // "number"
+
+/*
+ * This example produces an object containing three closures, its set, get, 
+ * and type properties. Each of these closures shares access to the val variable. 
+ * The set closure updates the value of val, and subsequently calling 
+ * get and type sees the results of the update.
+ */
+
+/* 
+ * http://www.sitepoint.com/javascript-closures-demystified/
+ * http://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+ * http://jibbering.com/faq/notes/closures/
+ */
+</script>
+
+</body>
+</html>
+
+
+
+

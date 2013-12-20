@@ -1,4 +1,12 @@
 
+19.12.2013 20:50:26
+
+http://blog.lescapadou.com/2013/12/my-experience-in-education-apps-market.html?hn
+http://security.stackexchange.com/questions/13010/what-is-the-point-of-the-same-domain-rule-for-xmlhttprequest-when-script-tags-js
+http://security.stackexchange.com/questions/46670/does-using-wpa2-enterprise-just-change-the-attack-model-vs-wpa2-psk
+http://open.bufferapp.com/introducing-open-salaries-at-buffer-including-our-transparent-formula-and-all-individual-salaries/
+http://www.bloomberg.com/news/2013-12-12/japan-passes-u-s-as-top-app-spender-on-smartphone-penetration.html
+
 18.12.2013 20:06:20
 
 http://people.csail.mit.edu/sperezde/gitless/
@@ -6,6 +14,8 @@ http://mobileopportunity.blogspot.co.uk/2013/12/has-microsoft-gone-nuts.html
 http://news.drweb.com/show/?i=4167&lng=en&c=5#.UrC9v9hSLc8.twitter
 http://vicara.ch/
 http://scn.sap.com/community/erp/hcm/blog/2013/12/18/successfactors-november-release-employee-central
+http://tech.eu/features/186/ignorance-is-remiss/
+http://www.unrealhawaii.com/2011/07/kalalau-trail/
 
 16.12.2013 23:09:33
 

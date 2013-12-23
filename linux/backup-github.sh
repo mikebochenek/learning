@@ -8,17 +8,22 @@ MYNOW=$(date +"%F-%H.%M.%S")
 mkdir backup-$MYNOW
 cd backup-$MYNOW
 
+# my repos
 git clone https://github.com/mikebochenek/html5
 git clone https://github.com/mikebochenek/learning
 git clone https://github.com/mikebochenek/brainstorm
 git clone https://github.com/mikebochenek/zoo-mint
 git clone https://github.com/mikebochenek/adt-workspace
+git clone https://github.com/mikebochenek/adt-workspace3
 git clone https://github.com/mikebochenek/myapp0
 git clone https://github.com/mikebochenek/zoo
 git clone https://github.com/mikebochenek/vantaa
 git clone https://github.com/mikebochenek/mychat
 git clone https://github.com/mikebochenek/college
 git clone https://github.com/mikebochenek/cvparse
+
+# other repos
+git clone https://github.com/jjenkov/scale
 
 cd /tmp
 tar cvf backup-$MYNOW.tar /tmp/backup-$MYNOW/*

@@ -1,4 +1,32 @@
 
+http://www.washingtonpost.com/blogs/innovations/wp/2014/01/02/how-the-united-states-is-reinventing-itself-yet-again/
+http://dhruvbhatia.com/thoughts/kaggle-data-science-competitions/
+http://avandeursen.com/2013/12/30/teaching-software-architecture-with-github/
+http://coingen.io/
+http://recode.net/2014/01/02/twitter-svp-chris-fry-breaks-down-how-his-engineering-org-works/
+http://www.jollausers.com/2014/01/jolla-outsells-iphone-5s-and-5c-in-finland/
+http://blogs.mathworks.com/seth/2013/11/22/hyperloop-not-so-fast/
+http://recode.net/2014/01/01/can-do-vs-cant-do-culture/
+http://blog.priceintelligently.com/blog/bid/192297/The-Saddest-SaaS-Pricing-Pages-of-the-Year
+
+http://jvns.ca/blog/2014/01/04/4-paths-to-being-a-kernel-hacker/
+http://blogs.smithsonianmag.com/science/2014/01/five-reasons-why-you-should-probably-stop-using-antibacterial-soap/?utm_source=facebook.com&utm_medium=socialmedia&utm_campaign=01032014&utm_content=surprisingscienceantibacterialsoap
+http://jasonkincaid.net/2014/01/evernote-the-bug-ridden-elephant/
+
+https://github.com/barcelona-js/barcelonajs.org/commit/4742f0fa900892c8fd00d145db3ab0f4b5805e81
+
+https://www.odesk.com/o/profiles/users/_~01dc7de76943380070/
+
+http://www.scottsbarlow.com/100-awesome-business-ideas-for-2014/
+
+http://www.wordle.net/
+https://github.com/jasondavies/d3-cloud
+http://www.edudemic.com/9-word-cloud-generators-that-arent-wordle/
+http://timc.idv.tw/wordcloud/#feed:http://www.nytimes.com/services/xml/rss/nyt/GlobalHome.xml
+http://timc.idv.tw/wordcloud/#wikipedia:Cloud
+https://github.com/timdream/wordcloud
+
+
 23.12.2013 18:28:24
 
 http://git-scm.com/book/en/Git-Basics-Tagging

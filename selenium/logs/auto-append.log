@@ -208,3 +208,13 @@ Please refer to /home/mike/Dev/workspace/zoo-mint/target/surefire-reports for th
 [INFO] Finished at: Fri Dec 20 21:50:47 CET 2013
 [INFO] Final Memory: 32M/146M
 [INFO] ------------------------------------------------------------------------
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 33 seconds
+[INFO] Finished at: Fri Jan 10 20:55:22 CET 2014
+[INFO] Final Memory: 33M/173M
+[INFO] ------------------------------------------------------------------------

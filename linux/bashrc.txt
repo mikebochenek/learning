@@ -1,6 +1,6 @@
 PS1="[ \d \t \w ] "
 
-alias cdjboss='cd ~/Dev/jboss-as-7.1.1.Final/bin'
+alias cdjboss='cd ~/Dev/wildfly-8.0.0.CR1/bin'
 alias jboss='cdjboss && ./standalone.sh'
 alias amazon='ssh -v -i ~/.ssh/vankey.pem bitnami@54.243.250.136'
 

@@ -218,3 +218,13 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Finished at: Fri Jan 10 20:55:22 CET 2014
 [INFO] Final Memory: 33M/173M
 [INFO] ------------------------------------------------------------------------
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37 seconds
+[INFO] Finished at: Sat Jan 11 20:53:42 CET 2014
+[INFO] Final Memory: 32M/146M
+[INFO] ------------------------------------------------------------------------

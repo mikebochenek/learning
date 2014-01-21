@@ -18,6 +18,7 @@ alias revelgo='revel run myapp0'
 alias liteide='~/Dev/liteide/bin/liteide &'
 
 alias selenium='~/Dev/learning/linux/selenium.sh'
+alias bitcoin='~/Dev/learning/linux/bitcoin-wallets.sh'
 
 export DART_SDK=/home/mike/Dev/dart-sdk
 export PATH=$PATH:$DART_SDK/bin

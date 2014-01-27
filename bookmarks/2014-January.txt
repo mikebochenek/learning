@@ -1,4 +1,51 @@
 
+27.01.2014 20:28:59
+
+http://www.dailystormer.com/im-sick-of-pretending-i-dont-get-art/
+https://soundcloud.com/bleego/sets/bioluminescence-ep
+https://news.ycombinator.com/item?id=7132329
+http://www.bbc.co.uk/news/technology-25919482
+http://beatrixapp.com/blog/12-amazing-bootstrapped-companies.html
+http://braythwayt.com/2014/01/27/you-can-do-it.html
+http://mitopencourseware.wordpress.com/ocw-bookshelf/
+https://dornea.nu/blog/2014/01/24h-android-sniffing-using-tcpdump
+https://leanpub.com/javascript-allonge/read
+
+26.01.2014 12:20:39
+
+http://insideparadeplatz.ch/
+https://www.youtube.com/watch?v=OINa46HeWg8#t=120
+http://bitcoin.stackexchange.com/
+https://blockchain.info/wallet/features
+https://blockchain.info/api
+
+24.01.2014 21:26:03
+
+http://justinjackson.ca/where-do-you-find-the-time-for-side-projects/
+http://blog.spiderlabs.com/2014/01/beware-bats-hide-in-your-jquery-.html
+https://www.aerofs.com/careers?source=HackerNews
+http://www.theage.com.au/technology/technology-news/the-rise-and-rise-of-dogecoin-the-internets-hottest-cryptocurrency-20140124-31d24.html
+http://mondrian.io/contributing
+http://ariannasimpson.com/post/74400025051/this-is-what-its-like-to-be-a-woman-at-a-bitcoin
+http://www.abcoin.net/post/74401339267/why-dogecoin-is-important
+http://coinmarketcap.com/
+
+23.01.2014 20:55:51
+
+http://techcrunch.com/2014/01/23/operas-former-ceo-launches-vivaldi-a-new-community-site-and-email-service/
+http://ibuildings.nl/blog/2013/03/4-http-security-headers-you-should-always-be-using
+http://www.wired.com/opinion/2014/01/using-computer-drug-war-decade-dangerous-excessive-punishment-consequences/
+http://www.openculture.com/2010/07/tarkovksy.html
+http://www.openculture.com/freeaudiobooks
+
+22.01.2014 20:11:38
+
+http://business.financialpost.com/2014/01/21/scaling-tools-that-make-a-team-of-1-%C2%BE-feel-like-a-team-of-10/?__lsa=dcae-8e35
+http://www.newpaloaltohouse.com/
+http://blog.quarkslab.com/tcp-backdoor-32764-or-how-we-could-patch-the-internet-or-part-of-it.html
+http://arstechnica.com/information-technology/2014/01/build-your-own-dropbox-service-aerofs-releases-ios-app-for-private-clouds/
+http://dealbook.nytimes.com/2014/01/22/vmware-buys-mobile-security-firm-for-1-54-billion/?_php=true&_type=blogs&_r=0
+
 21.01.2014 20:20:41
 
 http://engineering.hackerearth.com/2014/01/21/introducing-codeplayer/

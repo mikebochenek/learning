@@ -29,3 +29,7 @@ top -b -n 1
 
 # Alt+F1  = open the Application Menu
 # Alt+F2  = Open the Run Application window
+
+# chromium allowing ALL Access-Control-Allow-Origin
+/usr/bin/chromium-browser %U --allow-outdated-plugins --disable-web-security
+

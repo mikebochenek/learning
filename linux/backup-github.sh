@@ -9,6 +9,7 @@ mkdir backup-$MYNOW
 cd backup-$MYNOW
 
 # my repos
+git clone https://github.com/mikebochenek/angular-jboss-blog
 git clone https://github.com/mikebochenek/html5
 git clone https://github.com/mikebochenek/learning
 git clone https://github.com/mikebochenek/brainstorm

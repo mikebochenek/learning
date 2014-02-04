@@ -17,10 +17,13 @@ alias
 
 # my favorite prompt PS1="[ \d \t \w ] "
 
+# simple http server on port 8000
 python -m SimpleHTTPServer 8000 .
 
+# tail glassfish server log
 tail -f ~/Dev/glassfish4/glassfish/domains/domain1/logs/server.log
 
+# top in batch mode
 top -b -n 1
 
 # in chrome & firefox bring-up javascript console: shift + control + j 
@@ -33,3 +36,5 @@ top -b -n 1
 # chromium allowing ALL Access-Control-Allow-Origin
 /usr/bin/chromium-browser %U --allow-outdated-plugins --disable-web-security
 
+# show all java processes
+ps aux | grep java

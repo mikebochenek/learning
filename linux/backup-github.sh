@@ -22,6 +22,8 @@ git clone https://github.com/mikebochenek/vantaa
 git clone https://github.com/mikebochenek/mychat
 git clone https://github.com/mikebochenek/college
 git clone https://github.com/mikebochenek/cvparse
+git clone https://github.com/mikebochenek/idone
+
 
 # other repos
 git clone https://github.com/jjenkov/scale

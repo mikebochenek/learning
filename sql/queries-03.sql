@@ -4,6 +4,24 @@ SELECT * FROM test.item;
 INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
 VALUES ( 1, 1, 'created new github project - idone', now(), now(), false );
 
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 2, 1, 'finally filled in bonviva gold application', now(), now(), false );
+
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 3, 1, 'idone basic project scaffolding', now(), now(), false );
+
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 4, 1, 'ebanking and bonviva balance', now(), now(), false );
+
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 5, 1, '54. Edge of Dark Water by Joe Lansdale [library]', now(), now(), false );
+
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 6, 1, 'dealextreme order headphones, arduino, etc.', now(), now(), false );
+
+INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
+VALUES ( 7, 1, 'mikey320b account on codewars.com and first two catas completed', now(), now(), false );
+
 /*
 use test;
 

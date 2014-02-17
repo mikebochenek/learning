@@ -38,3 +38,7 @@ top -b -n 1
 
 # show all java processes
 ps aux | grep java
+
+# clear bash history http://askubuntu.com/questions/191999/how-to-clear-bash-history-completely
+history -w
+history -c

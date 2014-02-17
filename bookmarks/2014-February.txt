@@ -1,10 +1,81 @@
 
+17.02.2014 20:26:48
+
+http://www.danielmiessler.com/blog/collection-of-less-commonly-used-unix-commands
+http://www.theguardian.com/media-network/media-network-blog/2014/feb/17/europe-silicon-valley-tech-startups-funding
+http://www.fizerkhan.com/blog/posts/Free-Static-Page-Hosting-on-Google-App-Engine-in-a-5-minutes.html
+https://github.com/philnate
+http://philnate.me/
+
+16.02.2014 20:18:53
+
+https://news.ycombinator.com/item?id=7248460
+http://lucumr.pocoo.org/2014/2/16/a-case-for-upserts/
+http://www.geektime.com/2014/02/16/google-acquires-slicklogin/
+http://comcastmyths.tumblr.com/
+
+15.02.2014 20:35:08
+
+http://www.economist.com/news/britain/21579018-health-clinics-immigrant-poles-reveal-nhss-shortcomings-another-kind-health-tourism
+http://jeffarchibald.ca/60-hour-work-week-badge-honour/
+https://raw.github.com/git/git/master/Documentation/RelNotes/1.9.0.txt
+http://swombat.com/2011/2/3/analysis-of-32-startup-post-mortems
+
+14.02.2014 20:40:42
+
+http://ipinfo.io/
+http://www.muppetlabs.com/~breadbox/txt/acre.html
+http://blog.fullstackacademy.com/post/76605703216/romance-js-programming-valentines-day-poetry
+https://keybase.io/
+http://derekslager.com/puz/
+http://www.pthealth.ca/
+https://gist.github.com/discover?page=2
+https://idonethis.com/security/
+http://youtu.be/YvfiWQwsGfI
+https://www.digitalocean.com/community/articles/how-to-install-and-setup-postfix-on-ubuntu-12-04
+http://www.cyberciti.biz/faq/linux-unix-bsd-postfix-forward-email-to-another-account/
+http://www.postfix.org/VIRTUAL_README.html
+http://en.wikipedia.org/wiki/Virtual_hosting
+https://docs.jboss.org/jbossas/guides/webguide/r2/en/html/ch07.html
+https://www.digitalocean.com/community/articles/how-to-set-up-apache-virtual-hosts-on-ubuntu-12-04-lts
+http://www.codewars.com/?language=javascript
+
+02.13.2014 20:46:11
+
+http://businessofsoftware.org/2011/09/from-0-100million-with-no-sales-people-the-atlassian-10-commandments-for-startups/
+http://www.businessinsider.com.au/atlassian-the-untold-story-how-two-australian-young-guns-built-a-company-headed-for-a-billion-dollar-ipo-2014-2
+http://news.fiddlewax.com/
+http://swombat.com/2014/2/13/mutual-respect
+http://www.dallasobserver.com/2014-02-13/news/the-facebook-comment-that-ruined-a-life/full/
+http://www.huffingtonpost.com/jordan-price/why-i-quit-my-job-at-apple_b_4769885.html?utm_hp_ref=tw
+https://bugcrowd.com/list-of-bug-bounty-programs/
+http://www.bugsheet.com/bug-bounties
+https://www.coindrawer.com/whitehat/
+https://bounty.github.com/
+http://codex.galleryproject.org/Bounties
+http://www.google.com/about/appsecurity/reward-program/
+http://magento.com/security
+http://www.tumblr.com/docs/en/bug_bounty
+https://www.facebook.com/whitehat
+http://www.etsy.com/help/article/2463
+http://docs.kaneva.com/mediawiki/index.php/Bug_Bounty
+https://www.box.com/about-us/security/
+http://about.pinterest.com/terms/responsible-disclosure/
+https://www.engineyard.com/policies/responsible-disclosure-policy
+http://cpanel.net/cpanel-security-bounty/
+https://crypto.cat/bughunt/
+
 08.02.2014 09:56:27
 
 https://www.owasp.org/index.php/Cheat_Sheets
 https://github.com/takezoe/gitbucket/blob/master/README.md
 http://techcrunch.com/2014/02/07/russia-bans-bitcoin/
 http://jamesavery.io/how-i-learned-to-stop-giving-advice/
+http://ponzi.io/
+http://www.thebusinessofbitcoin.com/2014/02/bitcoin-for-b2c-payments-part2.html
+http://www.coindesk.com/mt-gox-first-bitcoin-exchange-dead/
+http://howtobuybitcoins.info/ch.html
+https://www.virwox.com/
 
 07.02.2014 10:31:23
 

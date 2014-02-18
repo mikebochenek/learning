@@ -1,4 +1,14 @@
 
+18.02.2014 20:29:35
+
+http://blog.samaltman.com/the-engineer-crunch
+http://www.codinghorror.com/blog/2014/02/complaint-driven-development.html
+http://blog.ketyov.com/2013/04/why-i-chose-academia.html
+http://mattermark.com/fundersclub-irr/
+http://www.slate.com/blogs/atlas_obscura/2014/02/18/ladonia_in_sweden_is_a_micronation_built_around_nimis_a_driftwood_sculpture.html
+http://irrationalgames.com/
+http://embeddedgurus.com/state-space/2014/02/are-we-shooting-ourselves-in-the-foot-with-stack-overflow/
+
 17.02.2014 20:26:48
 
 http://www.danielmiessler.com/blog/collection-of-less-commonly-used-unix-commands
@@ -6,6 +16,7 @@ http://www.theguardian.com/media-network/media-network-blog/2014/feb/17/europe-s
 http://www.fizerkhan.com/blog/posts/Free-Static-Page-Hosting-on-Google-App-Engine-in-a-5-minutes.html
 https://github.com/philnate
 http://philnate.me/
+http://www.rdegges.com/my-startup-a-retrospective/
 
 16.02.2014 20:18:53
 

@@ -1,6 +1,14 @@
 
+19.02.2014 20:29:14
+
+https://fiber.google.com/newcities/
+http://ianlotinsky.wordpress.com/2014/02/14/the-10x-engineer-and-delegated-responsibility/
+http://www.newscientist.com/article/dn25068-wikipediasize-maths-proof-too-big-for-humans-to-check.html#.UwUHnN8bcRh
+http://blog.simplelegal.com/top-4-reasons-companies-should-buy-from-startups
+
 18.02.2014 20:29:35
 
+http://sukharevd.net/encrypt-your-sensitive-data-in-command-line-under-linux.html
 http://blog.samaltman.com/the-engineer-crunch
 http://www.codinghorror.com/blog/2014/02/complaint-driven-development.html
 http://blog.ketyov.com/2013/04/why-i-chose-academia.html

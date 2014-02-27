@@ -9,7 +9,7 @@ alias cdworkspace='cd ~/Dev/vantaa4'
 alias build='cdworkspace && mvn clean package jboss-as:deploy'
 
 alias build2='cdworkspace2 && mvn clean package jboss-as:deploy'
-alias cdworkspace2='cd /home/mike/Dev/workspace/cvparse'
+alias cdworkspace2='cd /home/mike/Dev/workspace/idone'
 
 alias build3='cdworkspace3 && mvn install glassfish:redeploy'
 alias cdworkspace3='cd ~/Dev/workspace/brainstorm'

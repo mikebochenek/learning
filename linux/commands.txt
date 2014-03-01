@@ -42,3 +42,7 @@ ps aux | grep java
 # clear bash history http://askubuntu.com/questions/191999/how-to-clear-bash-history-completely
 history -w
 history -c
+
+# create symbolic links - for example from /var/www/
+ln -s /home/mike/Dev/AptanaWorkspace/bochenek-ch bochenek
+ln -s /home/mike/Dev/AptanaWorkspace/idone-bootstrap idone

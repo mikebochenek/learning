@@ -6,6 +6,7 @@ mkdir backup-idoneweb-$MYNOW
 cd backup-idoneweb-$MYNOW
 
 cp -r /home/mike/Dev/AptanaWorkspace/idone-bootstrap/ .
+cp -r /home/mike/Dev/AptanaWorkspace/bochenek-ch/ .
 
 cd /tmp
 tar cvf backup-idoneweb-$MYNOW.tar /tmp/backup-idoneweb-$MYNOW/*

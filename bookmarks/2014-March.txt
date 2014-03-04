@@ -1,5 +1,35 @@
 
+
+04.03.2014 20:34:07
+
+https://01.org/clear-sans
+http://blog.zactownsend.com/going-through-y-combinator-s13-nine-lessons-learned
+http://asia.nikkei.com/Politics-Economy/Policy-Politics/Japan-to-regulate-Bitcoin-trades-impose-taxes
+http://arstechnica.com/security/2014/03/critical-crypto-bug-leaves-linux-hundreds-of-apps-open-to-eavesdropping/
+http://blog.sourcing.io/visa-guide?
+http://www.devttys0.com/2014/02/cracking-linksys-crypto/
+http://www.michaelbromley.co.uk/blog/65/confessions-of-an-intermediate-programmer
+http://anothersb.blogspot.co.uk/2014/02/goodbye-academia.html?m=1
+
+03.03.2014 20:46:40
+
+http://www.bbc.com/news/world-europe-26421703
+https://code.google.com/p/androidproxy/
+http://blog.opensecurityresearch.com/2012/07/proxying-android-40-ics-and-fs-cert.html
+http://rebelbas.es/ermablerg/2013/47/
+http://blog.42floors.com/i-dont-know/
+http://blog.fourthbit.com/2014/03/01/the-best-programming-language-or-how-to-stop-worrying-and-love-the-code#.UxRMIIfvkjI.hackernews
+https://plivo.com/blog/what-happened-when-our-oss-project-stayed-on-the-front-page-of-hacker-news-for-24hrs/
+
 01.03.2014 21:27:56
 
 http://www.tedunangst.com/flak/post/a-brief-history-of-one-line-fixes
 http://www.theguardian.com/lifeandstyle/2014/mar/01/how-stay-calm-by-people-stressful-jobs
+http://www.airpair.com/
+https://pressfreedomfoundation.org/blog/2014/02/why-its-vital-public-fund-open-source-encryption-tools
+https://blog.thijsalkema.de/blog/2013/10/08/piercing-through-whatsapp-s-encryption/
+https://github.com/xnyhps
+http://code.google.com/p/openid-filter/wiki/GettingStarted
+http://crisdev.wordpress.com/2011/03/23/openid4java-login-example/
+http://agorava.org/doc/getting-started/
+

@@ -7,6 +7,8 @@ https://www.crypto101.io/
 http://blogmaverick.com/2014/03/19/the-back-to-the-future-arbitrage-of-silicon-valley-and-what-it-will-take-to-beat-it/
 http://chrisinmaryville.net/eric-holder-gives-pass-banking-criminals-credit-suisse.html
 http://www.artima.com/pins1ed/
+http://www.scalatest.org/
+http://www.scalatest.org/user_guide/using_selenium
 
 18.03.2014 20:09:14
 

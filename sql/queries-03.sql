@@ -1,4 +1,8 @@
 
+select * from test.user;
+delete from test.usre where id = 523;
+ commit;
+
 SELECT * FROM test.item;
 
 INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
@@ -37,3 +41,20 @@ CREATE TABLE `item` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=latin1$$
 */
+
+
+drop table  `test.user`
+
+delimiter $$
+
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL,
+  `createdate` datetime DEFAULT NULL,
+  `deleted` bit(1) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `settings` longtext,
+  `username` varchar(255) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `openidtoken` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1$$

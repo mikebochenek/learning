@@ -6,7 +6,7 @@ sudo apt-get update
 find . -name '*.java' | xargs wc -l
 
 # shutdown the computer in 3+ hours
-shutdown -P 200
+sudo shutdown -P 200
 
 # mounting external android storage
 go-mtpfs /media/MyAndroid
@@ -46,3 +46,9 @@ history -c
 # create symbolic links - for example from /var/www/
 ln -s /home/mike/Dev/AptanaWorkspace/bochenek-ch bochenek
 ln -s /home/mike/Dev/AptanaWorkspace/idone-bootstrap idone
+
+# change java version (from 8 to 7, and vice versa)
+cd /etc/alternatives
+ln -f -s /usr/lib/jvm/java-7-oracle/jre/bin/java java
+ln -f -s /usr/lib/jvm/java-7-oracle/bin/javac javac
+

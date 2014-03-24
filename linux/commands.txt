@@ -52,3 +52,6 @@ cd /etc/alternatives
 ln -f -s /usr/lib/jvm/java-7-oracle/jre/bin/java java
 ln -f -s /usr/lib/jvm/java-7-oracle/bin/javac javac
 
+
+# start rabbit MQ
+~/Dev/rabbitmq_server-3.2.4/sbin/rabbitmq-server 

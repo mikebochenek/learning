@@ -1,0 +1,26 @@
+http://docs.mongodb.org/manual/tutorial/getting-started/
+http://docs.mongodb.org/manual/reference/sql-comparison/
+
+[ Fri Mar 21 23:28:18 ~ ] mongo
+MongoDB shell version: 2.0.4
+connecting to: test
+> show dbs
+local	(empty)
+> use mydb
+switched to db mydb
+> show dbs
+local	(empty)
+> j = { name : "mongo" }
+{ "name" : "mongo" }
+> k = { x : 3 }
+{ "x" : 3 }
+> db.testData.insert( j )
+> db.testData.insert( k )
+> show collections;
+system.indexes
+testData
+> db.testData.find()
+{ "_id" : ObjectId("532cbd6bf3a4fb09ac141ad4"), "name" : "mongo" }
+{ "_id" : ObjectId("532cbd6bf3a4fb09ac141ad5"), "x" : 3 }
+> 
+

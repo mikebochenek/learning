@@ -1,4 +1,72 @@
 
+28.03.2014 20:33:30
+
+http://www.managementexchange.com/hack/butterflyden
+http://lockerdome.com/menshumor/6169672236142657/6478221545851410
+http://www.omniref.com/blog/blog/2014/03/27/ruby-garbage-collection-still-not-ready-for-production/
+http://edition.cnn.com/2014/03/27/living/student-money-saving-typeface-garamond-schools/index.html?hpt=hp_bn11
+https://medium.com/journalism-deliberated/6809e83f355e
+http://scala-ide.org/docs/tutorials/play/index.html#what-is-in-this-guide
+https://www.openshift.com/blogs/day-30-play-framework-a-java-developer-dream-framework
+https://github.com/playframework/playframework/tree/master/samples/scala/zentasks
+
+27.03.2014 20:22:28
+
+http://libccv.org/post/ccv-0.6-open-sources-near-state-of-the-art-image-classifier-under-creative-commons/
+http://blog.highfive.com/the-day-i-met-jeff-bezos-
+http://blogs.reuters.com/felix-salmon/2014/03/26/mark-zuckerberg-the-warren-buffett-of-technology/
+https://www.kaggle.com/
+
+26.03.2014 20:36:03
+
+http://www.haskell.org/haskellwiki/ZuriHac2014
+http://www.erudify.com/en/
+http://www.oddcrunch.com/divorced-man-words/0
+http://boards.greenhouse.io/codility/jobs/8568#.UzMuIt8bcRi
+http://engineering.imvu.com/2014/03/24/what-its-like-to-use-haskell/
+https://getmogochat.com/
+http://www.erudify.com/en/open-roles/software-engineer
+http://www.crunchbase.com/company/oculus-vr
+http://www.haskell.org/haskellwiki/Books
+http://en.wikibooks.org/wiki/Haskell
+http://codegolf.stackexchange.com/questions/24922/circles-dividing-the-plane
+http://stackoverflow.com/tags/scala/info
+
+25.03.2014 20:13:22
+
+http://distractify.com/culture/32-surreal-places-that-actually-exist-on-earth-i-cant-believe-this-isnt-photoshopped/
+http://www.wellandtribune.ca/2014/03/25/energex-tube-plant-idled-in-welland
+http://www.theatlantic.com/business/archive/2014/03/americas-workers-stressed-out-overwhelmed-totally-exhausted/284615/
+http://www.theodinproject.com/
+http://scott.a16z.com/2014/03/24/were-fd-its-over-coming-back-from-the-brink/?utm_content=bufferc2fec&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+http://mattermark.com/app/research/y-combinator-winter-2014
+http://things.gnod.com/flashdrives/
+http://www.nytimes.com/2014/03/30/magazine/who-needs-a-boss.html?hp&pagewanted=all&_r=1
+
+23.03.2014 20:04:29
+
+https://plus.google.com/u/0/+JakobJenkov/posts/hkEbXYALh4e?cfem=1
+http://frankgroeneveld.nl/2014/03/23/basic-concepts-of-high-availability-linux/
+http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/
+http://heidiroizen.tumblr.com/post/80368150370/what-i-learned-negotiating-with-steve-jobs
+
+22.03.2014 21:30:59
+
+http://techcrunch.com/2014/03/22/the-real-engines-of-growth-on-the-internet/
+http://steveridout.com/2014/03/22/readlang-my-bootstrapped-language-learning-web-app.html
+
+21.03.2014 21:01:11
+
+http://newsinportcolborne.com/2014/03/joshs-desk-welland-pains-deindustrialization/
+https://play.google.com/store/apps/details?id=com.scl
+https://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/
+http://blogs.hbr.org/2012/12/how-corruption-is-strangling-us-innovation/?utm_campaign=Socialflow&utm_source=Socialflow&utm_medium=Tweet
+http://infolab.stanford.edu/~sergey/
+http://izbicki.me/blog/markov-networks-monoids-and-futurama
+http://blogs.wsj.com/digits/2014/03/21/zuckerberg-musk-invest-in-artificial-intelligence-company-vicarious/
+http://orchestrate.io/blog/2014/03/21/voices-tristan-sloughter-on-erlang-nosql-and-technologys-effect-on-economics-and-culture/
+http://scriptogr.am/rafaelcastrocouto
+
 19.03.2014 20:52:33
 
 http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/

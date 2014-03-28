@@ -1,0 +1,30 @@
+Error: JAVA_HOME is not set and could not be found.
+
+[ Thu Mar 27 21:50:07 ~/Dev/hadoop-2.3.0 ] find . | grep 'hadoop-env.sh'
+./etc/hadoop/hadoop-env.sh
+[ Thu Mar 27 21:50:17 ~/Dev/hadoop-2.3.0 ] cd etc/hadoop/
+
+# The java implementation to use.
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+
+~/Dev/hadoop-2.3.0/bin/hadoop
+
+http://www.nber.org/patents/
+
+cd ~/Dev/hadoop-2.3.0/
+mkdir input
+
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.3.0.jar \
+        -input input/cite75_99.txt \
+        -output output \
+        -mapper 'cut -f 2 -d ,' \
+        -reducer 'uniq' 
+
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.3.0.jar \
+        -input output \
+        -output output_a \
+        -mapper 'wc -l' \
+        -D mapred.reduce.tasks=0
+
+
+http://docs.mongodb.org/ecosystem/use-cases/hadoop/

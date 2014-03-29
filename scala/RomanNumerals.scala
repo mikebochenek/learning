@@ -50,6 +50,8 @@ class RomanNumerals {
 
     if (y >= 5) { s += "V"; y -= 5; }
     
+    if (y >= 4) { s += "IV"; y -= 4; }
+
     for (i <- y until 0 by -1) { s += "I"; }
 
     return s;
@@ -65,6 +67,8 @@ class RomanNumerals {
   def testNovaRomaOrg() {
     assertEquals("MCCCXCII", convert(1392));
     assertEquals("MCMLXXIX", convert(1979));
+    assertEquals("DCCCXLII", convert(842));
+    assertEquals("MCCXXXIV", convert(1234));
   }
 
 }

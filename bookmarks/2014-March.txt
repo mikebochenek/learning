@@ -1,4 +1,28 @@
 
+30.03.2014 20:18:11
+
+http://1024monkeys.wordpress.com/2014/04/01/game-servers-udp-vs-tcp/
+http://raganwald.com/2014/03/31/class-hierarchies-dont-do-that.html
+http://www.nytimes.com/2014/03/30/opinion/sunday/abstract-ideas-dont-deserve-patents.html?_r=0
+http://www.ft.com/cms/s/2/21a6e7d8-b479-11e3-a09a-00144feabdc0.html#axzz2xS1VXiUc
+https://sivers.org/zipit
+http://www.crunchbase.com/company/textsave
+http://www.exposingthetruth.co/man-detained-psychiatric-ward-giving-hundreds-dollars-strangers/#axzz2xZOGAgVE
+http://www.mysliderule.com/web-dev
+http://blog.lizdenys.com/2014/03/31/refusing-to-verify-myself/
+http://codegeekz.com/30-best-tools-for-data-visualization/
+
+29.03.2014 20:38:39
+
+http://4am.tw/
+https://labs.mwrinfosecurity.com/advisories/2014/03/10/paypal-remote-code-execution/
+http://blog.ramen.is/design/we-lost-a-customer-this-is-how-we-found-out/
+http://blogs.hbr.org/2014/03/googles-scientific-approach-to-work-life-balance-and-much-more/
+http://www.sqaki.com/
+http://techcrunch.com/2014/03/25/the-creator-of-doom-is-now-a-facebook-employee/?source=gravity&cps=gravity
+http://techcrunch.com/2014/03/25/frances-greatest-strength-might-just-be-leaving-france/?source=gravity&cps=gravity
+http://www.pctipp.ch/news/firmen/artikel/ubisoft-zuerich-schliesst-69825/
+
 28.03.2014 20:33:30
 
 http://www.managementexchange.com/hack/butterflyden
@@ -9,6 +33,8 @@ https://medium.com/journalism-deliberated/6809e83f355e
 http://scala-ide.org/docs/tutorials/play/index.html#what-is-in-this-guide
 https://www.openshift.com/blogs/day-30-play-framework-a-java-developer-dream-framework
 https://github.com/playframework/playframework/tree/master/samples/scala/zentasks
+http://whyjava.wordpress.com/
+http://cacasian-cho.ch/
 
 27.03.2014 20:22:28
 

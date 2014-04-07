@@ -14,4 +14,5 @@ cd ~/Dev/AptanaWorkspace/html5 && pwd && git status -s
 cd ~/Dev/college && pwd && git status -s
 cd ~/Dev/adt-workspace && pwd && git status -s
 cd ~/Dev/adt-workspace3 && pwd && git status -s
+cd ~/Dev/adt-workspace4 && pwd && git status -s
 

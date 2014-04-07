@@ -16,6 +16,7 @@ git clone https://github.com/mikebochenek/brainstorm
 git clone https://github.com/mikebochenek/zoo-mint
 git clone https://github.com/mikebochenek/adt-workspace
 git clone https://github.com/mikebochenek/adt-workspace3
+git clone https://github.com/mikebochenek/adt-workspace4
 git clone https://github.com/mikebochenek/myapp0
 git clone https://github.com/mikebochenek/zoo
 git clone https://github.com/mikebochenek/vantaa

@@ -1,4 +1,16 @@
 
+11.04.2014 20:50:51
+
+http://bit.ly/1hyGcPh
+http://ejohn.org/blog/write-code-every-day/
+http://brikis98.blogspot.ch/2014/04/six-programming-paradigms-that-will.html
+http://xkcd.com/1354/
+http://blog.detectify.com/post/82370846588/how-we-got-read-access-on-googles-production-servers
+http://hackerretreat.com/europe-alternative-hacker-school/
+http://nymag.com/daily/intelligencer/2014/04/problem-with-profitless-start-ups.html
+http://blog.fastmail.fm/2014/04/10/when-two-factor-authentication-is-not-enough/
+http://priceonomics.com/can-you-buy-a-license-to-speed/
+
 09.04.2014 20:32:25
 
 http://codecondo.com/jquery-plugins-manipulating-world-maps/

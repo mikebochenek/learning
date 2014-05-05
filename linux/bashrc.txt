@@ -35,3 +35,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="/home/mike/Dev/adt-bundle-linux-x86-20130522/sdk/platform-tools:$PATH"
 export PATH="/home/mike/Dev/adt-bundle-linux-x86-20130522/sdk/tools:$PATH"
+export PATH="/home/mike/Dev/eclipse-scala/sbt/bin:$PATH"

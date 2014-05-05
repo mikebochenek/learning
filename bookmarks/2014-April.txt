@@ -1,4 +1,48 @@
 
+30.04.2014 21:01:07
+
+http://stilldrinking.org/programming-sucks?utm_content=bufferb69b5&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+https://boily.me/heartbleed-cheatsheet.html
+http://blog.42floors.com/absurdity-linkedin/
+http://www.solipsys.co.uk/new/SoftwareChecklist.html?SoftwareChecklist&utm_content=buffercb9f5&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+http://www.quora.com/SpaceX/Can-I-get-a-job-at-SpaceX-after-graduating-from-a-low-ranked-engineering-program
+http://www.quora.com/Startups/Which-is-the-best-To-Do-List-Task-Management-application-that-also-has-Project-Management-features-tasks-as-part-of-a-project
+https://donedesk.com/
+
+29.04.2014 21:35:54
+
+http://xkcd.com/1361/
+http://www.availlang.org/
+http://www.insidesources.com/outbox-vs-usps-how-the-post-office-killed-digital-mail/
+http://matt.aimonetti.net/posts/2014/04/28/refactoring-go-code/
+https://squareup.com/pickup
+http://macgyverdev.blogspot.ch/2014/04/become-better-programmer-with.html
+
+23.04.2014 14:42:39
+
+http://www.eventbrite.com/e/japanese-toys-from-kokeshi-to-kaiju-discussion-guided-tour-tickets-10982004471?aff=efbnen
+http://phys.org/news11251.html
+http://www.scarymommy.com/ten-things-they-wont-tell-you-but-i-will/
+http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html
+http://codeofrob.com/entries/you-have-ruined-javascript.html
+http://oneplus.net/one
+http://www.thenordicweb.com/2014/04/23/what-you-really-need-to-know-about-the-zendesk-ipo/
+http://www.quora.com/Photography/What-is-the-most-amazing-photograph-you-have-ever-taken
+http://blakecaldwell.net/blog/2014/4/23/solving-a-2014-google-io-secret-invite-puzzle.html
+http://fivethirtyeight.com/datalab/which-cities-sleep-in-and-which-get-to-work-early/
+
+22.04.2014 14:27:29
+
+http://travel.stackexchange.com/questions/16581/does-browsing-ticket-sites-in-incognito-mode-and-or-from-different-ips-result-i
+http://www.radiolab.org/story/60-words/
+http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/
+http://blog.tjll.net/please-stop-hashing-passwords/
+http://blog.interfacevision.com/design/design-visual-progarmming-languages-snapshots/
+https://flynn.io/#preview-release
+https://medium.com/p/2fe173c44215
+https://angel.co/kennyvz
+http://www.bbc.com/news/technology-27069716
+
 21.04.2014 16:36:34
 
 http://www.economist.com/blogs/easternapproaches/2013/11/baltic-sea
@@ -6,6 +50,7 @@ http://getfreelancy.com/
 http://fivethirtyeight.com/features/when-to-hold-out-for-a-lower-airfare/
 http://blog.helloworldopen.com/post/83402776977/java-is-back-programming-language-trends-in-hwo
 http://www.frogdesign.com/techtrends2014/
+http://blogs.reuters.com/felix-salmon/2014/04/21/the-most-expensive-lottery-ticket-in-the-world/
 
 19.04.2014 13:37:34
 

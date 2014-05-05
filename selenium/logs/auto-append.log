@@ -258,3 +258,13 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Finished at: Tue Jan 21 21:44:32 CET 2014
 [INFO] Final Memory: 33M/174M
 [INFO] ------------------------------------------------------------------------
+[INFO] There are test failures.
+
+Please refer to /home/mike/Dev/workspace/zoo-mint/target/surefire-reports for the individual test results.
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1 minute 16 seconds
+[INFO] Finished at: Mon May 05 22:13:13 CEST 2014
+[INFO] Final Memory: 30M/177M
+[INFO] ------------------------------------------------------------------------

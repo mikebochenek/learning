@@ -6,6 +6,7 @@ mkdir backup-android-$MYNOW
 cd backup-android-$MYNOW
 
 cp -r /home/mike/Dev/adt-workspace4/fitness/ .
+cp -r /home/mike/Dev/adt-workspace4/TouchMemoryCH/ .
 
 cd /tmp
 tar cvf backup-android-$MYNOW.tar /tmp/backup-android-$MYNOW/*

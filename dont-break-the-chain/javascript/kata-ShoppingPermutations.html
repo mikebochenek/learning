@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>coding cata 11.03.2014</p>
+
+<div>/questions/39479/coding-kata-shopping-permutations</div>
+
+<hr>
+
+<div>interesting discoveries</div>
+<ol>
+<li>closures work differently that I originally understood</li>
+<li>for the algorithm to work, I need to first sort the inventory by price (ascending)</li>
+<li>there are "duplicates" in my result because I consider A,B,C different from A,C,B</li> 
+</ol>
+
+<script type="text/javascript">
+function spend(money, catalog, cart) {
+	for (var i = 0; catalog != undefined && i < catalog.items.length; i++) {
+		
+		var newcart = []; // strange how I need this because of the for loop and closures
+		for (var k = 0; k < cart.length; k++) {
+			newcart[k] = cart[k];
+		}
+		
+		if (catalog.items[i].price <= money) {
+			//console.log('yes, we can afford to buy ' + catalog.items[i].item);
+			newcart[newcart.length] = catalog.items[i];
+			var newMoney = money - catalog.items[i].price;
+			if (newMoney > 0) {
+				spend(newMoney, catalog, newcart);
+			} else if (newMoney == 0) { 
+				var result = "";
+				for (var j = 0; j < newcart.length; j++) {
+					result += ((j == 0) ? '' : " + ") + newcart[j].item + ' @ ' + newcart[j].price + 'p';
+				}
+				console.log(result); 
+			}
+		} else {
+			return;
+		}
+	}
+};
+
+var start = new Date();
+spend(10, { 'items' : [ 
+	{ 'item': 'Gingerbread man', 'price': 1},
+	{ 'item': 'Chocolate', 'price': 2},
+	{ 'item': 'Milkshake', 'price': 3},
+	{ 'item' : 'Muffin', 'price' : 5} // manually ordered inventory
+	] }, []);
+console.log("time expired: " + (new Date() - start) + "ms");
+
+</script>
+
+<hr/>
+
+<p>You are in a shop and have 10p. The following items are for sale:</p>
+
+<ul>
+<li>Muffin - 5p</li>
+<li>Milkshake - 3p</li>
+<li>Chocolate - 2p</li>
+<li>Gingerbread man - 1p</li>
+</ul>
+
+<p>You need to spend ALL your money. What combinations of items can you buy such that you spend all 10p?</p>
+
+</body>
+</html>
+
+
+<!-- 
+ output:
+
+ Muffin @ 5p + Muffin @ 5p 
+ Milkshake @ 3p + Chocolate @ 2p + Muffin @ 5p 
+ Milkshake @ 3p + Gingerbread man @ 1p + Gingerbread man @ 1p + Muffin @ 5p 
+ Chocolate @ 2p + Milkshake @ 3p + Muffin @ 5p 
+ Chocolate @ 2p + Chocolate @ 2p + Gingerbread man @ 1p + Muffin @ 5p 
+ Chocolate @ 2p + Gingerbread man @ 1p + Chocolate @ 2p + Muffin @ 5p 
+ Chocolate @ 2p + Gingerbread man @ 1p + Gingerbread man @ 1p + Gingerbread man @ 1p + Muffin @ 5p 
+ Gingerbread man @ 1p + Milkshake @ 3p + Gingerbread man @ 1p + Muffin @ 5p 
+ Gingerbread man @ 1p + Chocolate @ 2p + Chocolate @ 2p + Muffin @ 5p 
+ Gingerbread man @ 1p + Chocolate @ 2p + Gingerbread man @ 1p + Gingerbread man @ 1p + Muffin @ 5p 
+ Gingerbread man @ 1p + Gingerbread man @ 1p + Milkshake @ 3p + Muffin @ 5p 
+ Gingerbread man @ 1p + Gingerbread man @ 1p + Chocolate @ 2p + Gingerbread man @ 1p + Muffin @ 5p 
+ Gingerbread man @ 1p + Gingerbread man @ 1p + Gingerbread man @ 1p + Chocolate @ 2p + Muffin @ 5p 
+ Gingerbread man @ 1p + Gingerbread man @ 1p + Gingerbread man @ 1p + Gingerbread man @ 1p + Gingerbread man @ 1p + Muffin @ 5p 
+ time expired: 0ms 
+
+-->
+

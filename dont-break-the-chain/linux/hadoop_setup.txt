@@ -1,0 +1,54 @@
+
+$ ls -la had*
+	----------+ 1 A  232826880 Mar 18 08:58 hadoop-2.3.0.tar
+
+$ gunzip hadoop-2.3.0.tar 
+
+$ ls -la *.gz
+	----------+ 1 A  133136805 Mar 18 08:58 hadoop-2.3.0.tar.gz
+
+% tar xvf hadoop-2.3.0.tar
+
+% cd /cygdrive/c/data/hadoop-2.3.0
+
+
+
+bin/hadoop jar hadoop-*-examples.jar wordcount
+
+mkdir input
+
+bin/hadoop jar hadoop-*-examples.jar wordcount input output
+more output/*
+
+cp src/examples/org/apache/hadoop/examples/WordCount.java playground/src/WordCount.java
+
+
+#### chapter 2 ####
+
+cat masters
+cat slaves
+ 
+bin/hadoop namenode -format
+ 
+bin/start-all.sh
+jps
+bin/stop-all.sh
+
+
+50070
+50030
+
+#### chapter 3 ####
+
+hadoop fs -cmd <args>
+
+hadoop fs –mkdir /user/chuck
+
+hadoop fs -ls /
+hadoop fs -lsr 
+
+hadoop fs -put example.txt /user/chuck/
+
+hadoop fs -get example.txt
+
+# rm, tail etc...

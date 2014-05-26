@@ -8,7 +8,7 @@ mkdir backup-jekyllsite-$MYNOW
 
 cd backup-jekyllsite-$MYNOW
 
-cp -r cd ~/Dev/learning/blog/_site/ .
+cp -r ~/Dev/learning/blog/_site/ .
 cd /tmp
 tar cvf backup-jekyllsite-$MYNOW.tar /tmp/backup-jekyllsite-$MYNOW/*
 gzip backup-jekyllsite-$MYNOW.tar

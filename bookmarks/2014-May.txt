@@ -1,4 +1,33 @@
 
+26.05.2014 20:40:31
+
+http://iqtell.com/2014/02/are-we-managing-our-to-do-lists-all-wrong/?utm_content=buffer3cea9&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+http://lists.w3.org/Archives/Public/ietf-http-wg/2014AprJun/0815.html
+http://www.cs.rochester.edu/u/michael/PODC96.html
+http://www.random.org/lessness/
+http://serendipity.ruwenzori.net/index.php/2014/05/26/school-spyware-in-coursebooks
+http://www.linkedin.com/today/post/article/20140526124453-61882519-what-app-developers-should-know-before-developing-the-app-for-google-glass?trk=tod-home-art-list-small_1
+http://www.businessweek.com/articles/2014-05-23/nobody-cares-how-awesome-you-are-at-your-job
+http://www.kulakowski.org/
+http://www.blurb.com/
+http://stackoverflow.com/questions/7694887/is-there-a-command-line-utility-for-rendering-github-flavored-markdown
+http://jekyllrb.com/docs/installation/
+
+25.05.2014 19:17:23
+
+http://www.randalolson.com/2014/05/24/a-data-driven-exploration-of-the-evolution-of-chess-match-lengths-and-outcomes/
+http://www.bunniestudios.com/blog/?p=4018
+http://westleyargentum.github.io/blog/2014/05/18/using-genetic-algorithms-to-break-things/
+http://www.dougsblog.org/
+https://github.com/WestleyArgentum/WestleyArgentum.github.io/blob/source/README.md
+http://julialang.org/
+
+24.05.2014 20:43:10
+
+http://brikis98.blogspot.ch/2014/05/dont-learn-to-code-learn-to-think.html
+http://www.salon.com/2014/05/22/dear_graduates_dont_follow_your_dreams_commencement_speech_for_the_mediocre/
+https://www.investiere.ch/companies
+
 23.05.2014 20:47:08
 
 http://www.slate.com/articles/business/how_failure_breeds_success/2014/05/peter_thiel_drop_out_grant_encouraging_students_to_stop_out_of_college.html
@@ -6,6 +35,7 @@ http://gigapan.com/gigapans/48492
 http://see.stanford.edu/see/courseInfo.aspx?coll=84d174c2-d74f-493d-92ae-c3f45c0ee091
 http://www.geekyboy.com/archives/880
 https://keybase.io/docs/server_security
+http://economictimes.indiatimes.com/markets/global-markets/credit-suisse-deutsche-bank-surprise-with-yankee-bonds/articleshow/35505570.cms
 
 22.05.2014 20:30:04
 

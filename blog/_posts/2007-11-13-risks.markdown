@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Risks"
+date:   2007-11-13 16:27:22
+categories: thoughts
+---
+
+Consider how (potential) income/reward increases with risk:
+
+- gambling / day trading
+- starting your own company
+- working for startup
+- working for corporate
+- working for government
+- studying

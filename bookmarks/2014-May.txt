@@ -9,6 +9,8 @@ http://wildlyinaccurate.com/a-hackers-guide-to-git
 http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
 http://www.thereformedbroker.com/2014/05/22/how-big-is-the-global-stock-market/?utm_source=dlvr.it&utm_medium=twitter
 http://blog.wh1t3rabbit.net/
+http://letitcrash.com/
+http://blog.comsysto.com/2014/05/09/reactive-programming-with-akka-and-scala/
 
 26.05.2014 20:40:31
 

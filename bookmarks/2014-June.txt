@@ -1,0 +1,14 @@
+
+02.06.2014 21:43:37
+
+https://developer.apple.com/swift/
+http://www.apple.com/ios/ios8/
+https://www.digitalocean.com/community/articles/5-common-server-setups-for-your-web-application
+http://www.tewari.info/2014/05/31/do-not-learn-another-programming-language/
+http://www.cs.cornell.edu/jif/swift/doc/index.html
+http://www.bennjordan.com/blog/?p=590
+http://www.newyorker.com/online/blogs/currency/2014/01/the-open-office-trap.html?mobify=0
+http://www.kpcb.com/internet-trends
+http://www.citizen-times.com/story/opinion/contributors/2014/06/01/stupid-just-plain-stupid/9778529/
+http://scala.micronauticsresearch.com/sbt/useful-sbt-commands
+

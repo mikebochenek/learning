@@ -1,0 +1,9 @@
+
+# common git commands
+git log --pretty=format:"%H %an %ad" --date=short
+git log --pretty=oneline
+git add .
+git status
+
+# count lines of code of all java files
+find . -name '*.java' | xargs wc -l

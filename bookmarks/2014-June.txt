@@ -8,6 +8,8 @@ http://www.businessinsider.com/silicon-valley-culture-2014-6
 http://simplystatistics.org/2014/06/30/piketty-in-r-markdown-we-need-some-help-from-the-crowd/
 http://www.bbc.com/news/business-28041975?ocid=socialflow_twitter
 https://typesafe.com/blog/scala-days-presentation-roundup
+https://www.gitbook.io/
+http://www.blog.project13.pl/
 
 27.06.2014 20:51:21
 

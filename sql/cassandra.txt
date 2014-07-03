@@ -1,0 +1,56 @@
+
+# http://wiki.apache.org/cassandra/GettingStarted
+# http://www.unixmen.com/install-nosql-cassandra-db-in-ubuntu-via-ppa-repository/
+
+
+[ Thu Jul 03 22:17:40 ~/Dev/apache-cassandra-2.0.9 ] bin/cassandra -f
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /var/log/cassandra/system.log (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	
+
+ INFO 22:17:46,128 JNA not found. Native methods will be disabled.
+ERROR 22:17:46,147 Directory /var/lib/cassandra/data doesn't exist
+ERROR 22:17:46,147 Has no permission to create /var/lib/cassandra/data directory
+
+
+[ Thu Jul 03 22:18:49 /var/log ] sudo mkdir cassandra
+[ Thu Jul 03 22:19:09 /var/log ] sudo chmod 777 cassandra
+
+
+[ Thu Jul 03 22:19:29 /var/lib ] sudo mkdir cassandra
+[ Thu Jul 03 22:19:32 /var/lib ] sudo chmod 777 cassandra/
+[ Thu Jul 03 22:19:36 /var/lib ] cd cassandra/
+[ Thu Jul 03 22:19:38 /var/lib/cassandra ] mkdir data
+[ Thu Jul 03 22:19:40 /var/lib/cassandra ] sudo chmod 777 data/
+
+
+~/Dev/apache-cassandra-2.0.9 
+
+ bin/cassandra -f
+ bin/cqlsh
+
+CREATE KEYSPACE mykeyspace
+WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+
+USE mykeyspace;
+
+CREATE TABLE users (
+  user_id int PRIMARY KEY,
+  fname text,
+  lname text
+);
+
+INSERT INTO users (user_id,  fname, lname)
+  VALUES (1745, 'john', 'smith');
+INSERT INTO users (user_id,  fname, lname)
+  VALUES (1744, 'john', 'doe');
+INSERT INTO users (user_id,  fname, lname)
+  VALUES (1746, 'john', 'smith');
+  
+  
+SELECT * FROM users;
+
+
+CREATE INDEX ON users (lname);

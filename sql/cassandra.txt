@@ -1,4 +1,10 @@
 
+cd ~/Dev/apache-cassandra-2.0.9 
+
+ bin/cassandra -f
+ bin/cqlsh
+
+
 # http://wiki.apache.org/cassandra/GettingStarted
 # http://www.unixmen.com/install-nosql-cassandra-db-in-ubuntu-via-ppa-repository/
 
@@ -26,10 +32,6 @@ ERROR 22:17:46,147 Has no permission to create /var/lib/cassandra/data directory
 [ Thu Jul 03 22:19:40 /var/lib/cassandra ] sudo chmod 777 data/
 
 
-~/Dev/apache-cassandra-2.0.9 
-
- bin/cassandra -f
- bin/cqlsh
 
 CREATE KEYSPACE mykeyspace
 WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
@@ -41,6 +43,15 @@ CREATE TABLE users (
   fname text,
   lname text
 );
+
+CREATE TABLE samples (
+  id int PRIMARY KEY,
+  repeatProbability int
+);
+
+# https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data
+COPY samples (id,  repeatProbability) FROM 'sampleSubmission.csv' WITH HEADER = TRUE;
+
 
 INSERT INTO users (user_id,  fname, lname)
   VALUES (1745, 'john', 'smith');

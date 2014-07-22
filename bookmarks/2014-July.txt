@@ -1,4 +1,75 @@
 
+21.07.2014 21:43:44
+
+http://tux.so/journal:2014:07:21:the_talk_about_de-anonymizing_tor_at_the_blackhat_conference_has_been_removed
+http://highscalability.com/blog/2014/7/21/stackoverflow-update-560m-pageviews-a-month-25-servers-and-i.html
+http://chrisrisner.com/31-Days-of-Android--Day-6%E2%80%93Options-Menus-and-Base-Activities
+
+20.07.2014 22:31:08
+
+http://www.nytimes.com/2014/07/20/opinion/sunday/arthur-c-brooks-love-people-not-pleasure.html?_r=0
+http://www.addictinginfo.org/2014/07/15/this-guy-put-his-hospital-bill-online-now-the-whole-world-is-talking-about-it/
+http://www.wired.com/2013/10/topology-data-sets/all/
+http://techcrunch.com/2014/07/20/the-problem-with-founders/
+
+16.07.2014 21:59:01
+
+https://www.airbnb.co.uk/rooms/3135070
+http://relayto.com/post/yncEA8Kf
+http://relayto.com/post/1BHr0rZb
+http://boingboing.net/2014/07/02/irs-says-free-software-project.html
+http://boingboing.net/2014/07/16/tom-the-dancing-bug-bible-sto.html?utm_campaign=moreatbbmetadata&utm_medium=referral&utm_source=boingboing.net
+http://blog.ycombinator.com/yc-portfolio-stats
+http://www.polygon.com/2014/7/15/5897811/ninja-pizza-girl-teenage-girls-family-dev
+
+15.07.2014 21:05:12
+
+http://www.sfgate.com/business/article/http%3A//www.sfgate.com/business/article/20-most-powerful-CEOs-in-the-Bay-Area-5620355.php
+http://uk.pangoly.com/en/
+https://dribbble.com/shots/1642582-Dribbble/attachments/257249
+https://www.behance.net/gallery/13639487/this-is-sport
+https://www.behance.net/gallery/13780395/Life-Edited-Apartment-NYC
+https://www.behance.net/gallery/17910799/RemoteThink
+http://blogs.hbr.org/2014/07/act-like-an-entrepreneur-inside-your-organization/?utm_source=Socialflow&utm_medium=Tweet&utm_campaign=Socialflow
+
+15.07.2014 10:14:23
+
+http://stackoverflow.com/questions/63998/hidden-features-of-ruby
+http://bit.ly/pocketscan
+http://www.wabe3.ch/Wabe_3_GmbH/Home.html
+
+14.07.2014 20:34:44
+
+http://www.raspberrypi.org/introducing-raspberry-pi-model-b-plus/
+https://github.com/sausheong/polyglot
+http://blog.samaltman.com/net-neutrality
+http://markboulton.co.uk/journal/my-handbook-environment
+http://www.hamsterforce.com/
+http://www.romanochristen.ch/
+http://antirez.com/news/78
+http://blogs.hbr.org/2014/07/act-like-an-entrepreneur-inside-your-organization/?utm_source=Socialflow&utm_medium=Tweet&utm_campaign=Socialflow
+https://github.com/dreamr/beautiful-ruby-code
+http://vanillaforums.org/discussion/2012/wow-ruby-is-one-beautiful-language
+http://www.akitaonrails.com/2012/09/02/ruby-is-beautiful-what-is-beauty#.U8RDHd97gRg
+https://ariejan.net/projects/
+https://rubygems.org/
+https://atom.io/packages/ask-stack
+
+12.07.2014 20:29:31
+
+http://shipilev.net/blog/2014/jmm-pragmatics/
+http://aprilzero.com/#
+http://news.genius.com/Nicholas-carlson-inside-geniuss-s40-million-fundraise-annotated
+http://www.getunik.com/
+http://www.ifi.uzh.ch/ee/index.php?id=61
+https://cs.uwaterloo.ca/~tito/papers/
+http://clerezza.apache.org/
+https://github.com/retog
+https://www.kickstarter.com/projects/260259550/sputnik-zurich-reflect-your-style?ref=home_location
+https://www.kickstarter.com/projects/114216817/dizmo-a-new-revolutionary-user-interface?ref=discovery
+https://www.kickstarter.com/projects/2138407051/motivschweiz-pure-photography?ref=discovery
+http://www.dizmo.com/
+
 10.07.2014 20:33:08
 
 http://www.dose.com/lists/3099/23-Photos-Of-Animals-And-Their-Parents-That-Will-Melt-Your-Heart-The-Otters-Are-TOO-MUCH
@@ -10,6 +81,10 @@ http://www.businessinsider.com/a-closer-look-at-introbizcom-2014-7?utm_source=tw
 http://www.businessinsider.com/cynk-technology-2014-7
 http://rayslinux.blogspot.ch/2013/06/installing-picasa-39-in-linux-mint-15.html
 http://mashable.com/2014/07/07/google-founders-interview-khosla/?utm_cid=Mash-Prod-RSS-Feedburner-All-Partial&utm_reader=feedly&utm_content=buffer46c0e&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+http://vimeo.com/100195272
+http://instagram.com/capricecrane
+http://www.myswitzerland.com/en-ch/hiking-and-aescher-cliff-restaurant.html
+http://www.ebenalp.ch/de/sommer/wandern
 
 07.07.2014 20:58:50
 

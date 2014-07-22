@@ -13,4 +13,4 @@ tar cvf backup-android-$MYNOW.tar /tmp/backup-android-$MYNOW/*
 gzip backup-android-$MYNOW.tar
 cp backup*.gz ~/Dropbox/backups/
 mv /tmp/backup-android-$MYNOW.tar.gz /tmp/current-version-android.tar.gz
-mv /tmp/current-version-android.tar.gz ~/Dropbox/fitness_app/
+# mv /tmp/current-version-android.tar.gz ~/Dropbox/fitness_app/

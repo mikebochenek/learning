@@ -19,3 +19,23 @@ class TestSimpleNumber < Test::Unit::TestCase
   end
 end
 
+
+# page 164 of Discrete Mathematics and Its Applications by Kenneth H. Rosen
+# question #6. Given a positive integer, determine whether it is prime.
+def is_prime(i)
+  return false if i <= 1
+  2.upto(Math.sqrt(i).to_i) do |x|
+    return false if i % x == 0
+  end
+  true
+end
+
+puts "19 should be prime: " + is_prime(19).to_s
+puts "23244 shoult not be prime: " + is_prime(23244).to_s # 23244 = 2 x 2 x 3 x 13 x 149 
+
+# but wait, there is more, ruby actually has this built in... 
+require 'prime'
+
+Prime.take(10) #=> [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+Prime.take_while {|p| p < 10 } #=> [2, 3, 5, 7]
+puts Prime.prime?(19) #=> true

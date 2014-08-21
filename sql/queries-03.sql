@@ -73,3 +73,27 @@ CREATE TABLE `user` (
   `openidtoken` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
+
+
+
+SELECT count(*), municipality, year 
+FROM test.incomes 
+where municipality = 'Zollikon'
+group by municipality, year;
+
+SELECT income_group, tax_rate, num_taxpayers
+FROM test.incomes 
+where municipality = 'Zollikon' and year = 2010
+order by income_group asc;
+
+SELECT income_group, sum(num_taxpayers)
+FROM test.incomes 
+where municipality like /*'Zollikon'*/ 'Z%rich' and year = 2010
+group by income_group
+order by income_group asc;
+
+select municipality, count(*) as cc
+FROM test.incomes 
+WHERE municipality <> 'MUNICIPALITY'
+group by municipality
+order by cc desc;

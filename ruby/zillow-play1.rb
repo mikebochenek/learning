@@ -9,7 +9,7 @@
 
 require "mysql"
 require "mysql2"
-
+require "json"
 
 def calc_score(city, year, m)
 
@@ -29,13 +29,18 @@ def calc_score(city, year, m)
     order by income_group asc;"
   rs = m.query(sql2)
   total_score = 0
+  # puts JSON.generate({:city => city})
   rs.each_hash do |row|
     # puts row['income_group'] + '  ' + row['total_count']
     tc = row['total_count']
     ig = row['income_group'] 
     total_score += 1.0 * tc.to_i * ig.to_i / total_taxpayers.to_i
+    puts JSON.generate({:ig => ig, :tc => tc})
   end
-  puts city + " " + year + " total_score: %.2f" % total_score.to_s + "  [" + total_taxpayers + "]"
+  total_score = total_score / 2
+  # puts city + " " + year + " total_score: %.2f" % total_score.to_s + "  [" + total_taxpayers + "]"
+  puts JSON.generate({:total_score => total_score})
+
 
   total_score
 end

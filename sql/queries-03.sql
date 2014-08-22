@@ -97,3 +97,7 @@ FROM test.incomes
 WHERE municipality <> 'MUNICIPALITY'
 group by municipality
 order by cc desc;
+
+SELECT sum(num_taxpayers)
+FROM test.incomes 
+where municipality like 'Zollikon' and year = 2010

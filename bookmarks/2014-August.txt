@@ -9,6 +9,7 @@ http://whiteboardfox.com/
 http://techcrunch.com/2014/08/21/zillabyte-relaunch/
 http://algorithm.dk/posts/rtfm-0day-in-ios-apps-g-gmail-fb-messenger-etc
 http://vizualize.me/andrewscode#.U_ZCAd97gRg
+http://ruby.bastardsbook.com/chapters/sql/
 
 19.08.2014 20:32:44
 

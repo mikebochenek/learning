@@ -10,6 +10,7 @@ cp -r /home/mike/Dev/AptanaWorkspace/idone-coming/ .
 cp -r /home/mike/Dev/AptanaWorkspace/bochenek-ch/ .
 cp -r /home/mike/Dev/AptanaWorkspace/fitness/ .
 cp -r /home/mike/Dev/AptanaWorkspace/play/ .
+cp -r /home/mike/Dev/AptanaWorkspace/maps/ .
 
 cd /tmp
 tar cvf backup-idoneweb-$MYNOW.tar /tmp/backup-idoneweb-$MYNOW/*

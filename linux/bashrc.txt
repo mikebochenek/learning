@@ -19,6 +19,7 @@ alias liteide='~/Dev/liteide/bin/liteide &'
 
 alias selenium='~/Dev/learning/linux/selenium.sh'
 alias bitcoin='~/Dev/learning/linux/bitcoin-wallets.sh'
+alias dropbox='~/.dropbox-dist/dropboxd &'
 
 export DART_SDK=/home/mike/Dev/dart-sdk
 export PATH=$PATH:$DART_SDK/bin

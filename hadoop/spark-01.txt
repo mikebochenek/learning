@@ -1,0 +1,18 @@
+
+03.09.2014 20:55:48
+
+
+https://spark.apache.org/docs/latest/
+
+cd ~/Dev/spark-1.0.2-bin-hadoop2 
+./bin/spark-shell --master local[2]
+
+
+https://spark.apache.org/docs/latest/quick-start.html
+
+val textFile = sc.textFile("README.md")
+textFile.count() // Number of items in this RDD
+
+val linesWithSpark = textFile.filter(line => line.contains("Spark"))
+linesWithSpark.count()
+

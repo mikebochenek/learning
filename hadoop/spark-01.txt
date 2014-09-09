@@ -1,4 +1,49 @@
 
+09.09.2014 22:44:44
+
+--> spark simplified, just add a library with the .jars into scala
+--> and run the scala object (main method) with the below code
+
+package test
+
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import au.com.bytecode.opencsv.CSVReader
+import java.io.StringReader
+
+object Test1 {
+
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setMaster("local").setAppName("My App")
+    val sc = new SparkContext("local", "My App")
+    
+    val lines = sc.textFile("/tmp/test")
+    val count = lines.count()
+    println("count lines " + count)
+    
+    
+    val input = sc.textFile("/tmp/test")
+    val result = input.map{ line =>
+      val reader = new CSVReader(new StringReader(line));
+      reader.readNext();
+    }
+    
+    println ("result size or something " + result.count())
+  }
+}
+
+
+http://opencsv.sourceforge.net/
+
+<dependency>
+	<groupId>net.sf.opencsv</groupId>
+	<artifactId>opencsv</artifactId>
+	<version>2.0</version>
+</dependency>
+
+
+
 03.09.2014 20:55:48
 
 
@@ -15,4 +60,5 @@ textFile.count() // Number of items in this RDD
 
 val linesWithSpark = textFile.filter(line => line.contains("Spark"))
 linesWithSpark.count()
+
 

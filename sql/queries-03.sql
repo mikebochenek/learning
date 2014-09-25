@@ -14,10 +14,17 @@ update test.item set doneday = 2014063 where id in (1,2,3,4);
 
 
 select * from test.user;
+insert into test.user 
 -- delete from test.user where id = 523;
  commit;
 
 SELECT * FROM test.item;
+
+INSERT INTO `test`.`user`
+(`username`,`password`,`email`)
+VALUES
+('test','test','mike@test.com');
+
 
 INSERT INTO `test`.`item` (`id`, `owner`, `donetext`, `donedate`, `createdate`, `deleted`) 
 VALUES ( 1, 1, 'created new github project - idone', now(), now(), false );

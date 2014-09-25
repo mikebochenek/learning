@@ -24,7 +24,7 @@ git clone https://github.com/mikebochenek/mychat
 git clone https://github.com/mikebochenek/college
 git clone https://github.com/mikebochenek/cvparse
 git clone https://github.com/mikebochenek/idone
-
+git clone https://github.com/mikebochenek/eventual
 
 # other repos
 git clone https://github.com/jjenkov/scale

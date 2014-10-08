@@ -11,14 +11,16 @@ SELECT donetext, doneday, id FROM test.item order by id;
 update test.item set doneday = 2014064 where id in (5,6,7);
 update test.item set doneday = 2014063 where id in (1,2,3,4);
 
-
+update test.user set id = 1 where id = 0;
+commit;
 
 select * from test.user;
 insert into test.user 
 -- delete from test.user where id = 523;
  commit;
 
-SELECT * FROM test.item;
+SELECT * FROM test.done;
+update test.done set deleted = 0;
 
 INSERT INTO `test`.`user`
 (`username`,`password`,`email`)

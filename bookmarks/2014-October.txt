@@ -1,4 +1,46 @@
 
+16.10.2014 22:16:05
+
+https://www.ng-book.com/
+http://stackoverflow.com/questions/6332152/how-to-base64-encode-a-sha-1-hash-in-scala-and-play-framework
+http://javascript.info/tutorial/datetime-functions
+http://stackoverflow.com/questions/563406/add-days-to-datetime
+http://stackoverflow.com/questions/8081500/add-days-to-javascript-date-object-and-also-increment-month
+http://jsfiddle.net/sparebytes/XrWzq/
+http://juristr.com/blog/2014/05/angular-baby-steps/
+http://stackoverflow.com/questions/19789493/when-teaching-an-absolute-beginer-angularjs-what-do-you-think-is-the-simplest-s
+http://stackoverflow.com/questions/1075676/scala-match-and-parse-an-integer-string
+http://elitedaily.com/humor/guy-walks-cheating-girlfriend-bed-roommate-photo/801652/
+https://www.bitcoinsuisse.ch/Site/
+
+15.10.2014 20:50:13
+
+https://github.com/pcicman?tab=contributions&from=2014-09-29
+https://www.linkedin.com/pub/peter-cicman/25/3b4/53
+http://www.quora.com/Who-are-the-most-famous-successful-business-people-in-the-world-who-did-not-attend-elite-universities
+http://www.quora.com/I-have-an-idea-for-a-start-up-app-I-wish-to-sell-it-as-I-am-not-interested-in-creating-and-running-the-app-For-what-equity-percentage-should-I-sell-my-idea
+http://www.quora.com/How-do-I-prevent-getting-depressed
+http://www.huffingtonpost.com/bartlett-naylor/credit-suisse-crime-witho_b_5982890.html?utm_hp_ref=business&ir=Business
+http://www.telegraph.co.uk/finance/personalfinance/money-saving-tips/jessicainvestigates/11154244/What-has-happened-to-my-4-account-A-missing-Credit-Suisse-statement.html
+
+https://github.com/angyjoe/eventual
+http://stackoverflow.com/questions/15453254/angular-js-edit-in-place-content-editing
+http://jsfiddle.net/NDFHg/427/
+https://github.com/angyjoe/eventual/blob/master/public/html/detail.html
+http://matthiasnehlsen.com/blog/2013/06/23/angularjs-and-play-framework/
+http://raibledesigns.com/rd/entry/secure_json_services_with_play
+http://stackoverflow.com/questions/13426752/handling-json-requests-in-play-framework-2-0-scala
+
+13.10.2014 21:18:17
+
+http://startupnotes.org/
+http://amigueloferreira.pt/humans-are-no-constraint-solvers/
+http://codegangsta.gitbooks.io/building-web-apps-with-go/
+http://diply.com/trendyjoe/16-parents-who-have-mastered-art-trolling/54973
+http://hol.myschoolapp.com/podium/push/default.aspx?i=127316&s=125&snd=24336e42-a99e-4e6d-870f-7f9ca49fecbd
+http://pastebin.com/dSyh0xCc
+http://www.tsquare.ch/typo3/Aktuelle-Arbeiten.4.0.html
+
 06.10.2014 20:54:18
 
 http://geekxgirls.com/article.php?ID=3297

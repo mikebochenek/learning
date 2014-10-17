@@ -25,6 +25,7 @@ git clone https://github.com/mikebochenek/college
 git clone https://github.com/mikebochenek/cvparse
 git clone https://github.com/mikebochenek/idone
 git clone https://github.com/mikebochenek/eventual
+git clone https://github.com/mikebochenek/idonep
 
 # other repos
 git clone https://github.com/jjenkov/scale

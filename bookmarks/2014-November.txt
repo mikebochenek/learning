@@ -1,4 +1,102 @@
 
+28.11.2014 22:31:37
+
+http://www.bibnetz-onleihe.ch/bibnetz/frontend/mediaList,0-0-0-102-0-0-0-0-400001-0-0.html
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-with-a-free-signed-ssl-certificate-on-a-vps
+https://www.startssl.com/
+https://secure.instantssl.com/products/SSLIdASignup1a
+http://jasoncodes.com/posts/startssl-free-ssl
+http://www.huffingtonpost.com/Mickey-goodman/are-we-raising-a-generati_b_1249706.html
+
+26.11.2014 21:06:14
+
+http://en.webfail.com/221b3072115
+http://aplus.com/a/jono-lancaster-treacher-collins-2-year-old-zackary
+https://www.dunwello.com/
+https://www.cloudscale.ch/
+http://stackoverflow.com/questions/18486070/how-i-do-autoexpand-input-not-textarea
+http://stackoverflow.com/questions/1288297/jquery-auto-size-text-input-not-textarea
+http://alistapart.com/article/expanding-text-areas-made-elegant
+http://stackoverflow.com/questions/10611170/how-to-set-value-of-input-text-using-jquery
+http://www.sitepoint.com/efficient-jquery-selectors/
+https://medium.com/@DanielleMorrill/is-my-startup-burn-rate-normal-882b2bd20f02
+http://correl.phoenixinquis.net/2014/11/25/getting-organized-with-org-mode.html
+
+19.11.2014 20:46:10
+
+http://www.politico.com/magazine/story/2014/11/overtime-pay-obama-congress-112954.html#.VGzzPN8bcRg
+http://www.tickld.com/x/12-things-men-do-differently-to-women-7-is-priceless
+http://diply.com/amusing-world/16-hilarious-then-vs-now-truths-about-life/64149
+http://blog.phraseapp.com/post/99398987122/manage-localization-for-your-play-framework-projects
+https://docs.angularjs.org/api/ngCookies/service/$cookies
+http://journal.stuffwithstuff.com/2014/11/20/how-my-book-launch-went/
+http://techblog.netflix.com/2014/11/nodejs-in-flames.html
+https://http2.golang.org/
+https://news.ycombinator.com/item?id=518803
+https://news.ycombinator.com/item?id=1743898
+http://www.thymer.com/
+http://hamberg.no/gtd/
+
+17.11.2014 21:25:03
+
+http://www.theatlantic.com/health/archive/2014/11/the-four-types-of-sleep-schedules/382596/
+http://www.dailymail.co.uk/news/article-2388674/The-unluckiest-man-world-Meet-Ron-Wayne-Apple-Incs-forgotten-founder.html
+http://www.vanityfair.com/vf-hollywood/annie-leibovitz-taschen-book
+https://janhelwich.wordpress.com/tag/unexpectednullablefound/
+https://www.playframework.com/documentation/2.3.x/ScalaI18N
+http://diply.com/different-solutions/balanced-rocks-michael-grab/59976
+
+15.11.2014 20:20:50
+
+http://youtu.be/GdNo96NlaTc
+http://stackoverflow.com/questions/23525022/play-2-2-for-scala-modifying-acceptlanguage-http-request-header-with-scalainte
+https://www.playframework.com/documentation/2.3.x/ScalaLogging
+
+14.11.2014 10:07:50
+
+http://www.huffingtonpost.com/natasha-craig/10-things-your-mom-never-told-you_b_6096764.html
+http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works
+http://www.tutorialspoint.com/bootstrap/bootstrap_helper_classes.htm
+http://www.quora.com/What-are-10-or-fewer-good-habits-that-changed-your-life
+http://workwithplay.com/blog/2013/05/01/data-submission-and-validation/
+http://stackoverflow.com/questions/15904237/form-binding-with-custom-mapping-to-object-how
+https://www.playframework.com/documentation/2.0/ScalaForms
+http://www.businessinsider.com/credit-suisse-2015-outlook-tweets-2014-11
+http://stackoverflow.com/questions/123/java-lib-or-app-to-convert-csv-to-xml-file
+http://www.huffingtonpost.com/2014/11/11/what-fatherhood-looks-like-photos_n_6017226.html
+http://stackoverflow.com/questions/23525022/play-2-2-for-scala-modifying-acceptlanguage-http-request-header-with-scalainte
+http://whilefalse.blogspot.ch/2012/03/why-im-moving-away-from-play-framework.html
+http://java.dzone.com/articles/play-framework-now-officially
+http://blog.home.ch/?lang=en
+
+07.11.2014 20:53:02
+
+http://theoatmeal.com/comics/atheism
+http://business.financialpost.com/2014/11/06/on-starting-over-press-the-big-reset-button-and-move-on/
+http://www.kalzumeus.com/2014/11/07/doing-business-in-japan/
+http://rustyrussell.github.io/pettycoin/2014/11/05/Playing-with-invertible-bloom-lookup-tables-and-bitcoin-transactions.html
+http://features.jsomers.net/how-i-reverse-engineered-google-docs/
+https://docs.google.com/spreadsheets/d/17Mr201gfDoOTe5ONLS6LYJi1wQbtT26srXeSwUjMK0A/htmlview?usp=sharing&sle=true
+http://theoatmeal.com/blog/net_neutrality
+http://www.englishforum.ch/property-offered/165545-read-first-about-posting-property-offered-area.html
+
+05.11.2014 23:00:05
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-with-a-free-signed-ssl-certificate-on-a-vps
+http://www.tldp.org/HOWTO/Postfix-Cyrus-Web-cyradm-HOWTO/test.html
+http://stackoverflow.com/questions/4798772/postfix-its-installed-but-how-do-i-test
+https://www.digitalocean.com/community/tutorials/how-to-configure-a-mail-server-using-postfix-dovecot-mysql-and-spamassasin
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-with-a-free-signed-ssl-certificate-on-a-vps
+http://www.tutti.ch/zuerich/haushalt/moebel/angebote/antike-authentisch-schreibtisch-aus-kaliforni_5602676.htm
+https://plus.google.com/photos/112504105134363686955/albums/6049391294986878193?authkey=CLvSnvD6gIitEw
+http://weblogs.asp.net/scottgu/announcing-entity-framework-code-first-ctp5-release
+http://dazzlepod.com/uniqpass/
+https://twitter.com/macchai
+http://arstechnica.com/information-technology/2014/03/taking-e-mail-back-part-2-arming-your-server-with-postfix-dovecot/
+
 02.11.2014 20:42:24
 
+http://www.tickld.com/x/capitalism-explained-this-is-so-accurate-it-hurts
 https://www.linkedin.com/pulse/article/20141031215036-921381-the-myths-of-enterprise-start-ups?trk=object-title
+http://qz.com/290029/this-is-googles-incredibly-simple-hiring-formula/
+http://aplus.com/a/jubilee-project-comfortbale-one-question

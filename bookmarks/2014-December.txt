@@ -1,6 +1,28 @@
 
+16.12.2014 21:23:41
+
+https://www.playframework.com/documentation/2.2.x/ScalaFileUpload
+http://mic.com/articles/106442/australians-show-the-world-exactly-how-to-respond-to-terrorism-with-ill-ride-with-you
+http://www.nytimes.com/2014/03/01/opinion/sunday/what-you-learn-in-your-40s.html
+
+09.12.2014 14:02:37
+
+http://www.javacodegeeks.com/2014/07/abstraction-in-java.html
+http://www.buzzfeed.com/johnc4197e36ba/my-sister-in-laws-lonely-christmas-cards-16imt
+http://existentialcomics.com/comic/20
+https://news.ycombinator.com/item?id=8746045
+
+08.12.2014 21:27:22
+
+https://www.quora.com/If-I-just-proved-that-P-NP-how-do-I-start-taking-over-the-world
+http://learni.st/users/jacobrwheeler/boards/30108-controversial-magazine-covers
+http://expandedconsciousness.com/2014/08/25/6-reasons-to-live-in-a-van/
+http://www.momof4istired.com/2013/11/this-blog-is-going-to-embarrass-my.html?spref=fb
+
 06.12.2014 22:31:54
 
+https://github.com/surge/surgemq
+http://zhen.org/blog/surgemq-mqtt-message-queue-750k-mps/
 http://www.boredpanda.com/amazing-dads-fatherhood-win/
 http://www.marcandangel.com/2014/07/06/12-quiet-rituals-of-enormously-successful-humans/
 http://beta.etoro.com/discover/?culture=en-us

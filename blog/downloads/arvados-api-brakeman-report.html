@@ -1,0 +1,1646 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Brakeman Report</title>
+  <script>
+    function toggle(context) {
+      var elem = document.getElementById(context);
+
+      if (elem.style.display != "block")
+        elem.style.display = "block";
+      else
+        elem.style.display = "none";
+
+      elem.parentNode.scrollIntoView();
+    }
+  </script>
+  <style>
+    /* CSS style used for HTML reports */
+
+body {
+  font-family: sans-serif;
+  color: #161616;
+}
+
+a {
+  color: #161616;
+}
+
+p {
+  font-weight: bold;
+  font-size: 11pt;
+  color: #2D0200;
+ }
+
+ th {
+   background-color: #980905;
+   border-bottom: 5px solid #530200;
+   color: white;
+   font-size: 11pt;
+   padding: 1px 8px 1px 8px;
+ }
+
+ td {
+   border-bottom: 2px solid white;
+   font-family: monospace;
+   padding: 5px 8px 1px 8px;
+ }
+
+ table {
+   background-color: #FCF4D4;
+   border-collapse: collapse;
+ }
+
+ h1 {
+   color: #2D0200;
+   font-size: 14pt;
+ }
+
+ h2 {
+   color: #2D0200;
+   font-size: 12pt;
+ }
+
+ span.high-confidence {
+   font-weight:bold;
+   color: red;
+ }
+
+ span.med-confidence {
+ }
+
+ span.weak-confidence {
+   color:gray;
+ }
+
+ div.warning_message {
+   cursor: pointer;
+ }
+
+ div.warning_message:hover {
+   background-color: white;
+ }
+
+ table caption {
+   background-color: #FFE;
+   padding: 2px;
+ }
+
+ table.context {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-left: 1px solid #90e960;
+   color: #212121;
+ }
+
+ tr.context {
+   background-color: white;
+ }
+
+ tr.first {
+   border-top: 1px solid #7ecc54;
+   padding-top: 2px;
+ }
+
+ tr.error {
+  background-color: #f4c1c1 !important
+ }
+
+ tr.near_error {
+  background-color: #f4d4d4 !important
+ }
+
+ tr.alt {
+   background-color: #e8f4d4;
+ }
+
+ td.context {
+   padding: 2px 10px 0px 6px;
+   border-bottom: none;
+ }
+
+ td.context_line {
+   padding: 2px 8px 0px 7px;
+   border-right: 1px solid #b3bda4;
+   border-bottom: none;
+   color: #6e7465;
+ }
+
+ pre.context {
+   margin-bottom: 1px;
+ }
+
+ .user_input {
+   background-color: #fcecab;
+ }
+
+ div.render_path {
+   display: none;
+   background-color: #ffe;
+   padding: 5px;
+   margin: 2px 0px 2px 0px;
+ }
+
+ div.template_name {
+   cursor: pointer;
+ }
+
+ div.template_name:hover {
+   background-color: white;
+ }
+
+  </style>
+</head>
+<body>
+
+<h1>Brakeman Report</h1>
+<table>
+  <tr>
+    <th>Application Path</th>
+    <th>Rails Version</th>
+    <th>Brakeman Version</th>
+    <th>Report Time</th>
+    <th>Checks Performed</th>
+  </tr>
+  <tr>
+    <td>/home/mike/github/arvados/services/api</td>
+    <td>3.2.17</td>
+    <td>3.0.2
+    <td>
+      2015-03-13 06:50:38 +0100<br><br>
+      5.561111123 seconds
+    </td>
+    <td>BasicAuth, ContentTag, CreateWith, CrossSiteScripting, DefaultRoutes, Deserialize, DetailedExceptions, DigestDoS, EscapeFunction, Evaluation, Execute, FileAccess, FileDisclosure, FilterSkipping, ForgerySetting, HeaderDoS, I18nXSS, JRubyXML, JSONParsing, LinkTo, LinkToHref, MailTo, MassAssignment, ModelAttrAccessible, ModelAttributes, ModelSerialize, NestedAttributes, NumberToCurrency, QuoteTableName, Redirect, RegexDoS, Render, RenderDoS, RenderInline, ResponseSplitting, SQL, SQLCVEs, SSLVerify, SafeBufferManipulation, SanitizeMethods, SelectTag, SelectVulnerability, Send, SendFile, SessionSettings, SimpleFormat, SingleQuotes, SkipBeforeFilter, StripTags, SymbolDoSCVE, TranslateBug, UnsafeReflection, ValidationRegex, WithoutProtection, YAMLParsing</td>
+  </tr>
+</table>
+<br>
+<h2 id='summary'>Summary</h2>
+<table>
+  <tr>
+    <th>Scanned/Reported</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Controllers</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Models</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Templates</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Errors</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Security Warnings</td>
+    <td>37 <span class='high-confidence'>(24)</span></td>
+  </tr>
+  
+  <tr>
+    <td>Ignored Warnings</td>
+    <td>0</td>
+  </tr>
+  
+</table>
+<br>
+<table>
+  <tr>
+    <th>Warning Type</th>
+    <th>Total</th>
+  </tr>
+  
+  <tr>
+    <td>Attribute Restriction</td>
+    <td>24</td>
+  </tr>
+  
+  <tr>
+    <td>Command Injection</td>
+    <td>1</td>
+  </tr>
+  
+  <tr>
+    <td>Mass Assignment</td>
+    <td>7</td>
+  </tr>
+  
+  <tr>
+    <td>Redirect</td>
+    <td>1</td>
+  </tr>
+  
+  <tr>
+    <td>Remote Code Execution</td>
+    <td>1</td>
+  </tr>
+  
+  <tr>
+    <td>SQL Injection</td>
+    <td>3</td>
+  </tr>
+  
+</table>
+<br>
+<h2>Security Warnings</h2>  
+<table>
+  <tr>
+    <th>Confidence</th>
+    <th>Class</th>
+    <th>Method</th>
+    <th>Warning Type</th>
+    <th>Message</th>
+  </tr>
+  
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td></td>
+    <td></td>
+    <td><a rel="no-referrer" href="https://groups.google.com/d/msg/rubyonrails-security/wDxePLJGZdI/WP7EasCJTA4J">SQL Injection</a></td>
+    <td><div class='warning_message' onClick="toggle('context12');toggle('message12');toggle('full_message12')" >Rails 3.2.17 contains a SQL injection vulnerability (CVE-2014-3482). Upgrade to 3.2.19 near line 158<table id='context12' class='context' style='display:none'><caption>Gemfile.lock</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>153</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>      rack (&gt;= 0.4)</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>154</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rack-ssl (1.3.4)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>155</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      rack</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>156</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rack-test (0.6.2)</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>157</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      rack (&gt;= 1.0)</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>158</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rails (3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>159</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      actionmailer (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>160</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      actionpack (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>161</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activerecord (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>162</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activeresource (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>163</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activesupport (= 3.2.17)</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td></td>
+    <td></td>
+    <td><a rel="no-referrer" href="https://groups.google.com/d/msg/rubyonrails-security/wDxePLJGZdI/WP7EasCJTA4J">SQL Injection</a></td>
+    <td><div class='warning_message' onClick="toggle('context13');toggle('message13');toggle('full_message13')" >Rails 3.2.17 contains a SQL injection vulnerability (CVE-2014-3483). Upgrade to 3.2.19 near line 158<table id='context13' class='context' style='display:none'><caption>Gemfile.lock</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>153</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>      rack (&gt;= 0.4)</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>154</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rack-ssl (1.3.4)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>155</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      rack</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>156</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rack-test (0.6.2)</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>157</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      rack (&gt;= 1.0)</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>158</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    rails (3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>159</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      actionmailer (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>160</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      actionpack (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>161</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activerecord (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>162</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activeresource (= 3.2.17)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>163</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      activesupport (= 3.2.17)</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='med-confidence'>Medium</span></td>
+    <td>Commit</td>
+    <td>Commit.git_check_ref_format</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/command_injection/">Command Injection</a></td>
+    <td><div class='warning_message' onClick="toggle('context2');toggle('message2');toggle('full_message2')" >Possible command injection near line 9: `git check-ref-format --allow-onelevel #{<span class="user_input">e.shellescape</span>}`<table id='context2' class='context' style='display:none'><caption>app/models/commit.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>4</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>  def self.git_check_ref_format(e)</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>5</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    if !e or e.empty? or e[0] == '-' or e[0] == '$'</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>6</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      # definitely not valid</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>7</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      false</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>8</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    else</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>9</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      `git check-ref-format --allow-onelevel #{e.shellescape}`</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>10</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      $?.success?</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>11</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    end</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>12</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>14</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  def self.find_commit_range(current_user, repository, minimum, maximum, exclude)</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='med-confidence'>Medium</span></td>
+    <td></td>
+    <td></td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/remote_code_execution/">Remote Code Execution</a></td>
+    <td><div class='warning_message' onClick="toggle('context1');toggle('message1');toggle('full_message1')" ><span id='message1' style='display:block' >Rails 3.2.17 with globbing routes is vulnerable to directory traversal and remote code execution. Pat...</span><span id='full_message1' style='display:none'>Rails 3.2.17 with globbing routes is vulnerable to directory traversal and remote code execution. Patch or upgrade to 3.2.18</span><table id='context1' class='context' style='display:none'><caption>config/routes.rb</caption></table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='med-confidence'>Medium</span></td>
+    <td>DatabaseController</td>
+    <td>reset</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/sql_injection/">SQL Injection</a></td>
+    <td><div class='warning_message' onClick="toggle('context11');toggle('message11');toggle('full_message11')" ><span id='message11' style='display:block' >Possible SQL injection near line 40: ActiveRecord::Base.connection.execute(&quot;LOCK TABLE #{((&quot;\&quot;&quot; + Act...</span><span id='full_message11' style='display:none'>Possible SQL injection near line 40: ActiveRecord::Base.connection.execute(&quot;LOCK TABLE #{((&quot;\&quot;&quot; + <span class="user_input">ActiveRecord::Base.connection.tables.join(&quot;ActiveRecord::Base.connection.tables.join(&quot;\&quot;,\&quot;&quot;)quot;,ActiveRecord::Base.connection.tables.join(&quot;\&quot;,\&quot;&quot;)quot;&quot;)</span>) + &quot;\&quot;&quot;)} IN ACCESS EXCLUSIVE MODE&quot;)</span><table id='context11' class='context' style='display:none'><caption>app/controllers/database_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>35</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>    begin</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>36</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      ActiveRecord::Base.transaction do</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>37</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        # Avoid deadlock by locking all tables before doing anything</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>38</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        # drastic.</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>39</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        ActiveRecord::Base.connection.execute \</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>40</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        &quot;LOCK TABLE #{table_names} IN ACCESS EXCLUSIVE MODE&quot;</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>42</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        # Delete existing fixtures (and everything else) from fixture</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>43</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        # tables</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>44</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        fixturesets.each do |x|</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>45</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          x.classify.constantize.unscoped.delete_all</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>Arvados::V1::ApiClientAuthorizationsController</td>
+    <td>create_system_auth</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context3');toggle('message3');toggle('full_message3')" ><span id='message3' style='display:block' >Unprotected mass assignment near line 18: ApiClientAuthorization.new(:user_id =&gt; (system_user.id), :a...</span><span id='full_message3' style='display:none'>Unprotected mass assignment near line 18: ApiClientAuthorization.new(:user_id =&gt; (system_user.id), :api_client_id =&gt; ((params[:api_client_id] or current_api_client.andand.id)), :created_by_ip_address =&gt; (remote_ip), :scopes =&gt; (Oj.load((<span class="user_input">params[:scopes]</span> or &quot;[\&quot;all\&quot;]&quot;))))</span><table id='context3' class='context' style='display:none'><caption>app/controllers/arvados/v1/api_client_authorizations_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>13</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>  def create_system_auth</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>14</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    @object = ApiClientAuthorization.</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>15</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      new(user_id: system_user.id,</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>16</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          api_client_id: params[:api_client_id] || current_api_client.andand.id,</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>17</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          created_by_ip_address: remote_ip,</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>18</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          scopes: Oj.load(params[:scopes] || '[&quot;all&quot;]'))</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>19</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    @object.save!</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>20</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    show</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>21</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>23</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  def create</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>Arvados::V1::KeepDisksController</td>
+    <td>find_object_by_uuid</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context4');toggle('message4');toggle('full_message4')" ><span id='message4' style='display:block' >Unprotected mass assignment near line 39: KeepDisk.new(:filesystem_uuid =&gt; (<span class="user_input">params[:filesystem_uuid]</span>)...</span><span id='full_message4' style='display:none'>Unprotected mass assignment near line 39: KeepDisk.new(:filesystem_uuid =&gt; (<span class="user_input">params[:filesystem_uuid]</span>))</span><table id='context4' class='context' style='display:none'><caption>app/controllers/arvados/v1/keep_disks_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>35</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>  def find_object_by_uuid</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>36</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    @object = KeepDisk.where(uuid: (params[:id] || params[:uuid])).first</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>37</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    if !@object &amp;&amp; current_user.andand.is_admin</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>38</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      # Create a new KeepDisk and ping it.</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>39</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      @object = KeepDisk.new(filesystem_uuid: params[:filesystem_uuid])</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>40</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      @object.save!</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>42</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      # In the first ping from this new filesystem_uuid, we can't</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>43</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      # expect the keep node to know the ping_secret so we made sure</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>44</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      # we got an admin token. Here we add ping_secret to params so</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>Arvados::V1::UserAgreementsController</td>
+    <td>sign</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context7');toggle('message7');toggle('full_message7')" ><span id='message7' style='display:block' >Unprotected mass assignment near line 57: Link.create(:link_class =&gt; &quot;signature&quot;, :name =&gt; &quot;click&quot;, :...</span><span id='full_message7' style='display:none'>Unprotected mass assignment near line 57: Link.create(:link_class =&gt; &quot;signature&quot;, :name =&gt; &quot;click&quot;, :tail_uuid =&gt; (current_user.uuid), :head_uuid =&gt; (<span class="user_input">params.delete(:id)</span>))</span><table id='context7' class='context' style='display:none'><caption>app/controllers/arvados/v1/user_agreements_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>52</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>    current_user_uuid = current_user.uuid</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>53</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    act_as_system_user do</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>54</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      @object = Link.create(link_class: 'signature',</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>55</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            name: 'click',</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>56</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            tail_uuid: current_user_uuid,</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>57</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            head_uuid: params[:uuid])</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>58</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    end</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>59</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    show</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>60</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>62</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  def create</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>KeepDisk</td>
+    <td>ping</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context6');toggle('message6');toggle('full_message6')" ><span id='message6' style='display:block' >Unprotected mass assignment near line 39: self.update_attributes!(o.select do  [:bytes_total, :bytes_...</span><span id='full_message6' style='display:none'>Unprotected mass assignment near line 39: self.update_attributes!(o.select do  [:bytes_total, :bytes_free, :is_readable, :is_writable, :last_read_at, :last_write_at].collect(&amp;:to_s).index(k)  end.merge(:last_ping_at =&gt; (Time.now)))</span><table id='context6' class='context' style='display:none'><caption>app/models/keep_disk.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>34</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>      logger.info &quot;Ping: secret mismatch: received \&quot;#{o[:ping_secret]}\&quot; != \&quot;#{self.ping_secret}\&quot;&quot;</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>35</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      return nil</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>36</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    end</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>38</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    @bypass_arvados_authorization = true</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>39</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    self.update_attributes!(o.select { |k,v|</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>40</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                             [:bytes_total,</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>41</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                              :bytes_free,</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>42</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                              :is_readable,</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>43</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                              :is_writable,</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>44</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                              :last_read_at,</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>User</td>
+    <td>create_user_repo_link</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context8');toggle('message8');toggle('full_message8')" ><span id='message8' style='display:block' >Unprotected mass assignment near line 347: Link.create(:tail_uuid =&gt; (self.uuid), :head_uuid =&gt; (Repo...</span><span id='full_message8' style='display:none'>Unprotected mass assignment near line 347: Link.create(:tail_uuid =&gt; (self.uuid), :head_uuid =&gt; (<span class="user_input">Repository.create(:name =&gt; (repo_name))[:uuid]</span>), :link_class =&gt; &quot;permission&quot;, :name =&gt; &quot;can_manage&quot;)</span><table id='context8' class='context' style='display:none'><caption>app/models/user.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>342</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>    # create repo, if does not already exist</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>343</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    repo ||= Repository.create(name: repo_name)</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>344</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    logger.info { &quot;repo uuid: &quot; + repo[:uuid] }</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>346</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    repo_perm = Link.create(tail_uuid: self.uuid,</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>347</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            head_uuid: repo[:uuid],</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>348</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            link_class: 'permission',</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>349</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                            name: 'can_manage')</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>350</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    logger.info { &quot;repo permission: &quot; + repo_perm[:uuid] }</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>351</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    return repo_perm</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>352</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>User</td>
+    <td>create_vm_login_permission_link</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context9');toggle('message9');toggle('full_message9')" ><span id='message9' style='display:block' >Unprotected mass assignment near line 389: Link.create(:tail_uuid =&gt; (self.uuid), :head_uuid =&gt; (Virt...</span><span id='full_message9' style='display:none'>Unprotected mass assignment near line 389: Link.create(:tail_uuid =&gt; (self.uuid), :head_uuid =&gt; (<span class="user_input">VirtualMachine.where(:uuid =&gt; (vm_uuid)).first</span>[:uuid]), :link_class =&gt; &quot;permission&quot;, :name =&gt; &quot;can_login&quot;, :properties =&gt; ({ &quot;username&quot; =&gt; (repo_name) }))</span><table id='context9' class='context' style='display:none'><caption>app/models/user.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>385</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>      if perm_exists</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>386</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        login_perm = perm_exists</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>387</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      else</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>388</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        login_perm = Link.create(tail_uuid: self.uuid,</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>389</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                                 head_uuid: vm[:uuid],</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>390</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                                 link_class: 'permission',</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>391</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                                 name: 'can_login',</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>392</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>                                 properties: {'username' =&gt; repo_name})</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>393</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>        logger.info { &quot;login permission: &quot; + login_perm[:uuid] }</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>394</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      end</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>UserSessionsController</td>
+    <td>send_api_token_to</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/mass_assignment/">Mass Assignment</a></td>
+    <td><div class='warning_message' onClick="toggle('context5');toggle('message5');toggle('full_message5')" ><span id='message5' style='display:block' >Unprotected mass assignment near line 136: ApiClientAuthorization.new(:user =&gt; (user), :api_client =&gt;...</span><span id='full_message5' style='display:none'>Unprotected mass assignment near line 136: ApiClientAuthorization.new(:user =&gt; (user), :api_client =&gt; (<span class="user_input">ApiClient.find_or_create_by_url_prefix((callback_url.match(/^.*?:\/\/[^\/]+/)[0] + &quot;/&quot;))</span>), :created_by_ip_address =&gt; (remote_ip), :scopes =&gt; ([&quot;all&quot;]))</span><table id='context5' class='context' style='display:none'><caption>app/controllers/user_sessions_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>132</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>    api_client_auth = ApiClientAuthorization.</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>133</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      new(user: user,</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>134</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          api_client: @api_client,</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>135</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          created_by_ip_address: remote_ip,</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>136</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>          scopes: [&quot;all&quot;])</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>137</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    api_client_auth.save!</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>139</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    if callback_url.index('?')</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>140</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>      callback_url += '&amp;'</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>141</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    else</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+  <tr>
+    <td><span class='weak-confidence'>Weak</span></td>
+    <td>UserSessionsController</td>
+    <td>send_api_token_to</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/redirect/">Redirect</a></td>
+    <td><div class='warning_message' onClick="toggle('context10');toggle('message10');toggle('full_message10')" ><span id='message10' style='display:block' >Possible unprotected redirect near line 147: redirect_to((((callback_url + &quot;&amp;&quot;) or (callback_url + &quot;?...</span><span id='full_message10' style='display:none'>Possible unprotected redirect near line 147: redirect_to((((callback_url + &quot;&amp;&quot;) or (callback_url + &quot;?&quot;)) + (&quot;api_token=&quot; + <span class="user_input">ApiClientAuthorization.new(:user =&gt; (user), :api_client =&gt; (ApiClient.find_or_create_by_url_prefix((callback_url.match(/^.*?:\/\/[^\/]+/)[0] + &quot;/&quot;))), :created_by_ip_address =&gt; (remote_ip), :scopes =&gt; ([&quot;all&quot;])).api_token</span>)))</span><table id='context10' class='context' style='display:none'><caption>app/controllers/user_sessions_controller.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>142</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>      callback_url += '?'</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>143</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    end</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>144</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    callback_url += 'api_token=' + api_client_auth.api_token</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>145</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    redirect_to callback_url</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>146</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>148</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  def cross_origin_forbidden</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>149</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>    send_error 'Forbidden', status: 403</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>150</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  end</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>151</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>end</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+  
+</table>
+<p>Model Warnings</p>
+<table>
+  <tr>
+    <th>Confidence</th>
+    <th>Model</th>
+    <th>Warning Type</th>
+    <th>Message</th>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>ApiClient</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>ApiClientAuthorization</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>AuthorizedKey</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Collection</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Commit</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>CommitAncestor</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Group</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Human</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>JobTask</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>KeepDisk</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>KeepService</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Link</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Log</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Node</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>PipelineInstance</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>PipelineTemplate</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Repository</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Specimen</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>Trait</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>User</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>UserAgreement</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='high-confidence'>High</span></td>
+    <td>VirtualMachine</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td>Mass assignment is not restricted using attr_accessible</td>
+  </tr>
+
+  <tr>
+    <td><span class='med-confidence'>Medium</span></td>
+    <td>ArvadosModel</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td><div class='warning_message' onClick="toggle('context14');toggle('message14');toggle('full_message14')" >attr_accessible is recommended over attr_protected near line 8<table id='context14' class='context' style='display:none'><caption>app/models/arvados_model.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>3</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>class ArvadosModel &lt; ActiveRecord::Base</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>4</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  self.abstract_class = true</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>6</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  include CurrentApiClient      # current_user, current_api_client, etc.</pre>
+            </td>
+          </tr>
+          <tr class='context alt error'>
+            <td class='context_line'>
+              <pre class='context'>8</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  attr_protected :created_at</pre>
+            </td>
+          </tr>
+          <tr class='context near_error'>
+            <td class='context_line'>
+              <pre class='context'>9</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  attr_protected :modified_by_user_uuid</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>10</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  attr_protected :modified_by_client_uuid</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>11</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  attr_protected :modified_at</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>12</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  after_initialize :log_start_state</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>13</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  before_save :ensure_permission_to_save</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+
+  <tr>
+    <td><span class='med-confidence'>Medium</span></td>
+    <td>Job</td>
+    <td><a rel="no-referrer" href="http://brakemanscanner.org/docs/warning_types/attribute_restriction/">Attribute Restriction</a></td>
+    <td><div class='warning_message' onClick="toggle('context15');toggle('message15');toggle('full_message15')" >attr_accessible is recommended over attr_protected near line 5<table id='context15' class='context' style='display:none'><caption>app/models/job.rb</caption>        <tr class='context first'>
+          <td class='context_line'>
+            <pre class='context'>1</pre>
+          </td>
+          <td class='context'>
+            <pre class='context'>class Job &lt; ArvadosModel</pre>
+          </td>
+        </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>2</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  include HasUuid</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>3</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  include KindAndEtag</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>4</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  include CommonApiTemplate</pre>
+            </td>
+          </tr>
+          <tr class='context error'>
+            <td class='context_line'>
+              <pre class='context'>5</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  attr_protected :arvados_sdk_version, :docker_image_locator</pre>
+            </td>
+          </tr>
+          <tr class='context alt near_error'>
+            <td class='context_line'>
+              <pre class='context'>6</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  serialize :script_parameters, Hash</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>7</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  serialize :runtime_constraints, Hash</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>8</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  serialize :tasks_summary, Hash</pre>
+            </td>
+          </tr>
+          <tr class='context'>
+            <td class='context_line'>
+              <pre class='context'>9</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  before_create :ensure_unique_submit_id</pre>
+            </td>
+          </tr>
+          <tr class='context alt'>
+            <td class='context_line'>
+              <pre class='context'>10</pre>
+            </td>
+            <td class='context'>
+              <pre class='context'>  after_commit :trigger_crunch_dispatch_if_cancelled, :on =&gt; :update</pre>
+            </td>
+          </tr>
+</table></div></td>
+  </tr>
+
+</table></body></html>

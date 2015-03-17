@@ -1,0 +1,88 @@
+
+great resources:
+
+http://wiki.apache.org/cassandra/GettingStarted
+http://cassandra.apache.org/doc/cql3/CQL-1.2.html
+# open data zrh
+# kaggle
+
+
+C:\data\apache-cassandra-2.0.9
+C:\data\apache-cassandra-2.0.0
+C:\data\apache-cassandra-1.2.9
+
+cd C:\data\apache-cassandra-1.2.9\bin
+cassandra -f
+
+cassandra-cli #instead of cqlsh
+
+export PATH=$PATH:/cygdrive/c/Apps/Python27/
+cd /cygdrive/c/data/apache-cassandra-1.2.9/bin
+
+-----------------------------------------------------------------
+
+Exception in thread "main" java.lang.UnsupportedClassVersionError: org/apache/cassandra/service/CassandraDaemon : Unsupp
+orted major.minor version 51.0
+http://stackoverflow.com/questions/19333220/cassandrajava-lang-unsupportedclassversionerror
+
+<<< cassandra.yaml >>>
+
+data_file_directories:
+    - C:/data/apache-cassandra-1.2.9/_data
+# /var/lib/cassandra/data
+
+# commit log
+commitlog_directory: C:/data/apache-cassandra-1.2.9/_commitlog
+# /var/lib/cassandra/commitlog
+
+# saved caches
+saved_caches_directory: C:/data/apache-cassandra-1.2.9/_saved_caches
+#/var/lib/cassandra/saved_caches
+
+
+<<< log4j-server.properties >>>
+
+#log4j.appender.R.File=/var/log/cassandra/system.log
+log4j.appender.R.File=C:/data/apache-cassandra-1.2.9/_log
+
+-------------------------------------------------------------
+
+[default@unknown] CREATE KEYSPACE mykeyspace;
+f2f9ad20-feb7-3f2b-bfe1-36259ecaab78
+
+[default@unknown] USE mykeyspace;
+Authenticated to keyspace: mykeyspace
+
+CREATE TABLE users (
+  user_id int PRIMARY KEY,
+  fname text,
+  lname text
+);
+Syntax error at position 7: no viable alternative at input 'TABLE'
+http://stackoverflow.com/questions/20292822/syntax-error-at-position-7-no-viable-alternative-at-input-table
+http://www.cygwin.com/ml/cygwin/2002-01/msg00198.html
+
+ /cygdrive/c/data/apache-cassandra-1.2.9/bin
+$ ./cqlsh
+No appropriate python interpreter found.
+
+# wrong -> set PATH=$PATH;/cygdrive/c/Apps/Python27
+/cygdrive/c/Data/Profiles/
+export PATH=$PATH:/cygdrive/c/Apps/Python27/
+
+cd /cygdrive/c/data/apache-cassandra-1.2.9/bin
+
+SELECT * FROM users;
+
+nodetool -host 127.0.0.1 -p 7199 status
+
+-----------------------------------------------------
+
+main issues overcome since 10:30 [kinda fun to be hacking & problem solving again...):
+
+1. java version and cassandra (downgrade to 1.2.9 because we don't have java 1.7)
+2. configuration of data/log/etc. paths
+3. cqlsh - run from cygwin
+4. change path to include python, so that it works  export PATH=$PATH:/cygdrive/c/Apps/Python27/
+
+

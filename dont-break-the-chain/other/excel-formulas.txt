@@ -1,0 +1,10 @@
+
+=isblank(a3) OR isblank(b3)
+
+=OR(isblank(a3), isblank(b3))
+
+=OR(NOT(isblank(a3)), NOT(isblank(b3)))
+
+=OR(NOT(ISBLANK(A3)); NOT(ISBLANK(B3)))
+
+=OR(NOT(ISBLANK(A7)); NOT(ISBLANK(D7:G7)))

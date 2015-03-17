@@ -1,0 +1,37 @@
+
+export PATH=$PATH:/cygdrive/c/Apps/Python27/
+
+use mykeyspace;
+
+
+C:\data\apache-cassandra-1.2.9\cassandra-gui-0.8.0-beta1
+
+http://stackoverflow.com/questions/18159538/import-csv-file-into-cassandra
+
+I want to import a CSV file into cassandra. When I write this command on cassandra cqlsh, I got an error: command is:
+COPY table ( ID,  name) FROM 'table.csv' WITH HEADER = TRUE;
+
+use mykeyspace;
+
+CREATE TABLE words (
+  id int PRIMARY KEY,
+  name text
+);
+
+COPY words (id, name) FROM 'test_v2.csv' WITH HEADER = TRUE;
+
+DBeaver
+
+use mykeyspace;
+select * from users;
+select * from words;
+
+select count(*) from mykeyspace.users;
+
+select id from mykeyspace.words;
+select name from mykeyspace.words;
+
+describe tables;
+
+/* oh, I guess the problem is that it doesn't really show text fields, and
+ * and error handling seems to be crap */

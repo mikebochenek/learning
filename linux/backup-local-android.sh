@@ -11,6 +11,7 @@ cd backup-android-$MYNOW
 
 # new HP laptop
 cp -r /home/mike/AndroidstudioProjects/TouchMemoryCH/ .
+cp -r /home/mike/AndroidstudioProjects/GrindingGrids/ .
 
 cd /tmp
 tar cvf backup-NEW-android-$MYNOW.tar /tmp/backup-android-$MYNOW/*

@@ -26,6 +26,7 @@ git clone https://github.com/mikebochenek/cvparse
 git clone https://github.com/mikebochenek/idone
 git clone https://github.com/mikebochenek/eventual
 git clone https://github.com/mikebochenek/idonep
+git clone https://github.com/mikebochenek/swiss-memory
 
 # other repos
 git clone https://github.com/jjenkov/scale

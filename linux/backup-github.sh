@@ -27,6 +27,7 @@ git clone https://github.com/mikebochenek/idone
 git clone https://github.com/mikebochenek/eventual
 git clone https://github.com/mikebochenek/idonep
 git clone https://github.com/mikebochenek/swiss-memory
+git clone https://github.com/mikebochenek/bitcoinj-scala-examples
 
 # other repos
 git clone https://github.com/jjenkov/scale

@@ -1,0 +1,19 @@
+
+# show all commands ever executed
+history
+
+# clear history - http://askubuntu.com/questions/191999/how-to-clear-bash-history-completely
+history -c
+history -w
+
+
+### cool commands in VIM
+
+# VIM open current document in browser
+:!open % 
+
+# print hardcopy...somehow magically
+:hardcopy
+
+# convert to html
+:TOhtml	

@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Backbone"
+date:   2011-10-04 21:55:31
+categories: coding
+---
+
+Backbone supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.
+
+## Introduction
+
+When working on a web application that involves a lot of JavaScript, one of the first things you learn is to stop tying your data to the DOM. It’s all too easy to create JavaScript applications that end up as tangled piles of jQuery selectors and callbacks, all trying frantically to keep data in sync between the HTML UI, your JavaScript logic, and the database on your server. For rich client-side applications, a more structured approach is often helpful.
+
+With Backbone, you represent your data as Models, which can be created, validated, destroyed, and saved to the server. Whenever a UI action causes an attribute of a model to change, the model triggers a “change” event; all the Views that display the model’s data are notified of the event, causing them to re-render. You don’t have to write the glue code that looks into the DOM to find an element with a specific id, and update the HTML manually — when the model changes, the views simply update themselves.
+
+[http://andyet.net/blog/2010/oct/29/building-a-single-page-app-with-backbonejs-undersc/](http://andyet.net/blog/2010/oct/29/building-a-single-page-app-with-backbonejs-undersc/)
+
+## The Goals
+
+So, how do we want our app to behave? Here are the ideals as I see them.
+
+1. All state/models for your app should live in one place.
+2. Any change in that model should be automatically reflected in the UI, whether that’s in one place or many.
+3. Clean/maintainable code structure.
+4. Writing as little “glue code” as possible.
+
+Backbone doesn’t attempt to give you widgets or application objects or even really give you views. It basically gives you a few key objects to help you structure your code. Namely, Models, Collections and Views. Ultimately what it provides is some basic tools that you can use to build a clean MVC app in the client. We get some useful base objects for those and an event architecture for handling changes.
+
+All from: [http://documentcloud.github.com/backbone/](http://documentcloud.github.com/backbone/)

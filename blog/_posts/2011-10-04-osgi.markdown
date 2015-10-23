@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "OSGi - what is OSGi"
+date:   2011-10-04 18:47:35
+categories: reading
+---
+
+The OSGi framework defines a dynamic module system for Java. It gives you better control over the structure of your code, the ability to dynamically manage your code’s lifecycle, and a loosely coupled approach for code collaboration. Even better, it’s fully documented in a very elaborate specification. Unfortu-nately, the specification was written for people who are going to implement it rather than use it. In the first part of this book, we’ll remedy this situation by effectively creating a user-oriented companion guide to the OSGi framework specification. We’ll delve into its details by breaking it into three layers: module, lifecycle, and services. We’ll explain what you need to understand from the spec-ification to effectively use OSGi technology.

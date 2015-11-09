@@ -2,7 +2,9 @@ PS1="[ \d \t \w ] "
 
 alias dropbox='~/.dropbox-dist/dropboxd &'
 alias idone='cd ~/code/idonep && ~/tools/play-2.2.6/play'
+alias playfw='~/tools/play-2.2.6/play'
 alias liteide='~/tools/liteide/bin/liteide &'
+alias tor='cd ~/tools/tor-browser_en-US && ./start-tor-browser.desktop'
 
 alias ruby214='source /home/mike/.rvm/scripts/rvm && rvm --default use 2.1.4'
 alias arvapi='ruby214 && cd ~/github/arvados/services/api && bundle install && bundle exec rails server --port=3030'
@@ -13,3 +15,5 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/mike/tools/scala-2.10.4/bin
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH=$PATH:/home/mike/tools/bin

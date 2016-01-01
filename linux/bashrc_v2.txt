@@ -2,6 +2,7 @@ PS1="[ \d \t \w ] "
 
 alias dropbox='~/.dropbox-dist/dropboxd &'
 alias idone='cd ~/code/idonep && ~/tools/play-2.2.6/play'
+alias presto='cd ~/Documents/prestop && ~/tools/play-2.2.6/play'
 alias playfw='~/tools/play-2.2.6/play'
 alias liteide='~/tools/liteide/bin/liteide &'
 alias tor='cd ~/tools/tor-browser_en-US && ./start-tor-browser.desktop'

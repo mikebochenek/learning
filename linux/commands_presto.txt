@@ -7,6 +7,10 @@ package
 cd ~/tools/spark-1.6.1-bin-hadoop2.6/bin && ./spark-shell --driver-class-path ~/tools/mysql-connector-java-5.1.38.jar -i ~/Dropbox/presto_private/private_notes/spark-01.scala 
 cd ~/tools/spark-1.6.1-bin-hadoop2.6/bin && ./spark-shell --driver-class-path ~/tools/mysql-connector-java-5.1.38.jar --jars ~/Documents/prestop/target/scala-2.10/bitesapp_2.10-1.0-SNAPSHOT.jar -i ~/Dropbox/presto_private/private_notes/spark-01.scala 
 
+mac:
+cd ~/dev/spark-1.6.1-bin-hadoop2.6/bin && ./spark-shell --driver-class-path ~/dev/mysql-connector-java-5.1.38.jar --jars ~/dev/play-2.2.5/prestop/target/scala-2.10/bitesapp_2.10-1.0-SNAPSHOT.jar -i ~/Dropbox/presto_private/private_notes/spark-01.scala 
+
+
 # ------------ play -------------
 
 # find all java files and count the number of lines

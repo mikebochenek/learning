@@ -49,3 +49,16 @@ sudo /usr/bin/play-2.2.5/play stop
 sudo /usr/bin/play-2.2.5/play
 clean
 start 8069
+
+
+
+# --------- android code ----------
+cd ~/AndroidStudioProjects/Bitesapp
+find app/src -name '*.java' | xargs wc -l
+find app/src/main/res -name '*.xml' | xargs wc -l
+
+# count the number of commits
+git log --pretty=oneline
+git log --pretty=format:"%h %cd %s"
+git log --pretty=format:"%h %cr %s"
+git log --pretty=format:"%h %cr %s" | wc

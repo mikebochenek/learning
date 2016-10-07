@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "Books read from May 2014 to October 2016"
+date:   2016-10-07 21:50:02
+categories: reading
+---
+
+Below is a list of books I had read between May 2014 and October 2016
+
+64. The Five Dysfunctions of a Team by Patrick Lencioni
+65. Train to Trieste by Domnica Radulescu
+66. Communion town: a city in ten chapters by Sam Thompson
+67. The Girl Who Played with Fire by Stieg Larsson
+68. The Wolf of Wall Street by Jordan Belfort
+69. Strange Weather in Tokyo by Hiromi Kawakami
+70. Ill Wind by Kevin J. Anderson and Doug Beason
+71. Learning Spark by Holden Karau, Andy Konwinski, Matei Zaharia
+72. Homeland: Carrie's Run by Andrew Kaplan
+73. Colorless Tsukuru Tazaki by Haruki Murakami
+74. Them by Jon Ronson
+75. The Education of Little Tree by Asa Earl Carter
+76. Zero to One by Peter Thiel and Blake Masters
+77. California by Edan Lepucki
+78. The October List by Jeffery Deaver
+79. The Best American Nonrequired Reading 2008 
+80. The Marseille Caper by Peter Mayle
+81. The Best Book in the World by Peter Stjernström
+82. The Hitchhiker's Guide to the Galaxy by Douglas Adams
+83. The Restaurant at the End of the Universe by Douglas Adams
+84. We Put the Baby in Sitter 3 by Cassandra Zara [Kindle Edition]
+85. Remove Negative Thinking by Helga Klopcic and KC Harry [Kindle Edition] 
+86. Meditation: Learn How To Meditate The Easy Way In Less Than 24 Hours by Robert Junior [Kindle Edition]
+87. The Passion Thief by Anne McCarthy Strauss [Kindle Edition]
+88. Robot Dreams by Isaac Asimov
+89. Youth by Isaac Asimov
+90. The Caves of Steel by Isaac Asimov
+91. Man in the Dark by Paul Auster (library)
+92. The Children Act by Ian McEwan (library)
+95. 2600 Magazine: The Hacker Quarterly - Spring 2014
+96. 2600 Magazine: The Hacker Quarterly - Autumn 2014
+97. 2600 Magazine: The Hacker Quarterly - Winter 2014-2015 [Kindle Edition]
+98. 2600 Magazine: The Hacker Quarterly - Spring 2012 [Kindle Edition]
+99. 2600 Magazine: The Hacker Quarterly - Winter 2011-2012 [Kindle Edition]
+100. The Naked Sun by Isaac Asimov [Kindle] finished around 24.05.2015
+101. 2600 Magazine: The Hacker Quarterly - Spring 2015 [Kindle Edition]
+102. No Good Deed by M.P. McDonald [Kindle]
+103. Code Breakers: Alpha by Colin F. Barnes [Kindle] 
+104. Dark Web by T.J. Brearton [Kindle] 
+105. Cain Project by Geoffrey Girard
+106. The Java EE Architect's Handbook by Derek C. Ashmore
+107. Pinball 1973 by Haruki Marukami  [Kindle] 
+108. Wind by Haruki Marukami [Kindle] 
+109. Running Home by Barbara Ellen Brink [Kindle] 
+110. Confessions of a Texan in Tokyo by Grace Buchele Mineta [Kindle] 09.09.2015
+111. Nikola Tesla by Sean Patrick [Kindle]
+112. Clarity by Loretta Lost [Kindle]
+113. South of the Border, West of the Sun by Haruki Murakami (RE-READ 22.10.2015)
+114. Love in the Time of Cholera by Gabriel García Márquez [Kindle] 08.11.2015
+115. The Good Father Paperback by Noah Hawley [library] 17.11.2015
+116. The Buried Giant by Kazuo Ishiguro [library] 05.12.2015
+117. Metamorphosis by Franz Kafka [Kindle] 20.12.2015
+118. A Wild Sheep Chase by Haruki Murakami (RE-READ 28.12.2015)
+119. New Japanese Voices: The Best Contemporary Fiction From Japan [Kindle 05.01.2016]
+120. Smashing Book #4 - New Perspectives on Web Design by various authors 10.01.2016
+121. The Stars, Like Dust by Isaac Asimov [Kindle]
+122. Starship Troopers by Robert A. Heinlein [Kindle 12.02.2016]
+123. 2600 Magazine: The Hacker Quarterly - Autumn 2015 [Kindle 22.02.2016]
+124. Corporate Agility by Charles Grantham and James Ware [15.03.2016]
+125. The Elephant Vanishes by Haruki Murakami (re-read) [03.04.2016]
+126. Norwegian Wood by Haruki Murakami (re-read) [25.04.2016]
+127. The Picture of Dorian Gray by Oscar Wilde (library) [27.04.2016]
+128. The Snows of Kilimanjaro by Ernest Hemingway [01.05.2016]
+129. Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future by Ashlee Vance [04.05.2016]
+130. Solar by Ian McEwan (library) [11.05.2016]
+131. What She Left Behind by Ellen Marie Wiseman (library) [22.05.2016]
+132. Dance, Dance, Dance by Haruki Murakami (re-read?) Kindle [08.06.2016]
+133. Rules of Engagement by Chad Hennings [01.07.2016]
+134. Blind Willow, Sleeping Woman by Haruki Murakami (Kindle) [08.07.2016]
+135. Hausfrau by Jill Alexander Essbaum (Kindle) [18.07.2016]
+136. Tuesdays with Morrie by Mitch Albom (Kindle)
+137. Snow Country by Yasunari Kawabata (Kindle) [11.08.2016]
+138. 2600 Magazine: The Hacker Quarterly - Summer 2016 [Kindle Edition 22.08.2016]
+139. Momilies by Michelle Slung [29.08.2016]
+140. The Pagan Lord by Bernard Cornwell (Library) [31.08.2016]
+141. Academy Street by Mary Costello (Library) [13.09.2016]
+142. The Innovators by Walter Isaacson [18.09.2016]
+143. Family Album by Penelope Lively (Library) [25.09.2016]
+144. The Polish Boxer by Eduardo Halfon (Library) [01.10.2016]

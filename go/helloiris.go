@@ -2,6 +2,8 @@ package main
 
 import (
 	"database/sql"
+	"log"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/kataras/iris"
@@ -13,6 +15,9 @@ func main() {
 	dbtest()
 
 	iris.Get("/", func(ctx *iris.Context) {
+		logger := log.New(os.Stdout, "logger: ", log.Lshortfile) //TODO seems inefficient to create a new one each time
+		logger.Print("get request for /")
+
 		ctx.Write("Hello, %s", "World!\n")
 		ctx.Write(ctx.RequestHeader("User-Agent"))
 		ctx.Write("\n")

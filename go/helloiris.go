@@ -1,9 +1,16 @@
 package main
 
-import "github.com/kataras/iris"
+import (
+	"database/sql"
+
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/kataras/iris"
+)
 
 func main() {
 	iris.Config.IsDevelopment = true // this will reload the templates on each request
+
+	dbtest()
 
 	iris.Get("/", func(ctx *iris.Context) {
 		ctx.Write("Hello, %s", "World!\n")
@@ -21,4 +28,21 @@ func main() {
 	})
 
 	iris.Listen(":8080")
+}
+
+func dbtest() {
+	db, err := sql.Open("mysql", "test:@/presto")
+	if err != nil {
+		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
+	}
+	defer db.Close()
+
+	//var id int
+	stmtOut, err := db.Prepare("SELECT id,email FROM user")
+	//err = stmtOut.Query().Scan(&id)
+	if err != nil {
+		panic(err.Error()) // proper error handling instead of panic in your app
+	}
+	defer stmtOut.Close()
+
 }

@@ -32,7 +32,13 @@ func main() {
 		})
 	})
 
+	iris.Get("/hi", hi)
+
 	iris.Listen(":8080")
+}
+
+func hi(ctx *iris.Context) {
+	ctx.MustRender("hi.html", struct{ Name string }{Name: "iris"})
 }
 
 func dbtest() {

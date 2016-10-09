@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Hi Iris</title>
+</head>
+<body>
+    <h1>Hi {{.Name}}</h1>
+	
+	<p>
+Let's say:
+{{ if eq .Name "iris" }}
+Hello, StackOverflow!
+{{ else if eq .Name "bar" }}
+Hello, World!
+{{ end }}	
+	</p>
+</body>
+</html>

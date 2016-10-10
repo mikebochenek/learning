@@ -9,13 +9,21 @@ import (
 	"github.com/kataras/iris"
 )
 
+type person struct {
+	name string
+	age  int
+}
+
 func main() {
-	iris.Config.IsDevelopment = true // this will reload the templates on each request
+	logger := log.New(os.Stdout, "logger: ", log.Lshortfile) //TODO seems inefficient to create a new one each time
+	iris.Config.IsDevelopment = true                         // this will reload the templates on each request
+
+	me := person{"mike", 9}
+	logger.Print("person " + me.name)
 
 	dbtest()
 
 	iris.Get("/", func(ctx *iris.Context) {
-		logger := log.New(os.Stdout, "logger: ", log.Lshortfile) //TODO seems inefficient to create a new one each time
 		logger.Print("get request for /")
 
 		ctx.Write("Hello, %s", "World!\n")
@@ -55,5 +63,4 @@ func dbtest() {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
 	defer stmtOut.Close()
-
 }

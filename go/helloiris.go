@@ -19,6 +19,7 @@ func main() {
 	iris.Config.IsDevelopment = true                         // this will reload the templates on each request
 
 	me := person{"mike", 9}
+	changeName(&me)
 	logger.Print("person " + me.name)
 
 	dbtest()
@@ -47,6 +48,10 @@ func main() {
 
 func hi(ctx *iris.Context) {
 	ctx.MustRender("hi.html", struct{ Name string }{Name: "iris"})
+}
+
+func changeName(p *person) {
+	p.name = "new " + p.name
 }
 
 func dbtest() {

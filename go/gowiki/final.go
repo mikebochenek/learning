@@ -1,7 +1,6 @@
 // Copyright 2010 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
-
 // https://golang.org/doc/articles/wiki/final.go?m=text
 
 package main
@@ -86,6 +85,5 @@ func main() {
 	http.HandleFunc("/view/", makeHandler(viewHandler))
 	http.HandleFunc("/edit/", makeHandler(editHandler))
 	http.HandleFunc("/save/", makeHandler(saveHandler))
-
 	http.ListenAndServe(":9292", nil)
 }

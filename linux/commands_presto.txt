@@ -62,3 +62,9 @@ git log --pretty=oneline
 git log --pretty=format:"%h %cd %s"
 git log --pretty=format:"%h %cr %s"
 git log --pretty=format:"%h %cr %s" | wc
+
+
+# ---------- swift 2 code ----------
+cd ~/Documents/presto-bites/bitesrepo
+find . -name '*.swift' | xargs wc -l
+git log --pretty=format:"%h %cr %s"

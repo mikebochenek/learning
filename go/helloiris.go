@@ -1,12 +1,7 @@
 package main
 
 import (
-	"database/sql"
-	"log"
-	"os"
-
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/kataras/iris"
 )
 
 type person struct {
@@ -14,7 +9,8 @@ type person struct {
 	age  int
 }
 
-func main() {
+/*
+func main_other() {
 	logger := log.New(os.Stdout, "logger: ", log.Lshortfile) //TODO seems inefficient to create a new one each time
 	iris.Config.IsDevelopment = true                         // this will reload the templates on each request
 
@@ -69,3 +65,4 @@ func dbtest() {
 	}
 	defer stmtOut.Close()
 }
+*/

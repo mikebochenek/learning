@@ -12,6 +12,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"time"
 
 	// Imports the Google Cloud Speech API client package.
 	"golang.org/x/net/context"
@@ -21,6 +22,7 @@ import (
 )
 
 func main() {
+	start := time.Now()
 	ctx := context.Background()
 
 	// Creates a client.
@@ -59,7 +61,8 @@ func main() {
 			fmt.Printf("\"%v\" (confidence=%3f)\n", alt.Transcript, alt.Confidence)
 		}
 	}
-	fmt.Printf("done\n")
+	elapsed := time.Now().Sub(start)
+	fmt.Printf("done in %d nanoseconds (%d milliseconds)\n", elapsed, (elapsed / 1000 / 1000))
 }
 
 // [END speech_quickstart]

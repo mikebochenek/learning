@@ -11,6 +11,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 
 	// Imports the Google Cloud Speech API client package.
 	"golang.org/x/net/context"
@@ -29,7 +30,7 @@ func main() {
 	}
 
 	// Sets the name of the audio file to transcribe.
-	filename := "/Users/Mike/Downloads/audio.raw"
+	filename := os.Args[1] //"/Users/Mike/Downloads/audio.raw"
 
 	// Reads the audio file into memory.
 	data, err := ioutil.ReadFile(filename)
@@ -53,7 +54,6 @@ func main() {
 	}
 
 	// Prints the results.
-	fmt.Printf("%s", resp)
 	for _, result := range resp.Results {
 		for _, alt := range result.Alternatives {
 			fmt.Printf("\"%v\" (confidence=%3f)\n", alt.Transcript, alt.Confidence)

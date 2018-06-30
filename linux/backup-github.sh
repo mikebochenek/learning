@@ -35,10 +35,8 @@ git clone https://github.com/mikebochenek/sparktest
 git clone https://github.com/mikebochenek/datasciencecoursera
 
 
-# other repos
-git clone https://github.com/jjenkov/scale
-
 cd /tmp
 tar cvf backup-$MYNOW.tar /tmp/backup-$MYNOW/*
 gzip backup-$MYNOW.tar
-cp backup*.gz ~/Dropbox/backups/
+# cp backup*.gz ~/Dropbox/backups/
+cp backup*.gz ~/Documents/backups/

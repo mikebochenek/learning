@@ -29,6 +29,12 @@ git clone https://github.com/mikebochenek/idonep
 git clone https://github.com/mikebochenek/swiss-memory
 git clone https://github.com/mikebochenek/bitcoinj-scala-examples
 
+git clone https://github.com/mikebochenek/zoo-ethereum
+git clone https://github.com/mikebochenek/spark
+git clone https://github.com/mikebochenek/sparktest
+git clone https://github.com/mikebochenek/datasciencecoursera
+
+
 # other repos
 git clone https://github.com/jjenkov/scale
 

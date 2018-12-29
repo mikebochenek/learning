@@ -1,8 +1,8 @@
 package main
 
-import (
+/* import (
 	_ "github.com/go-sql-driver/mysql"
-)
+) */
 
 type person struct {
 	name string

@@ -86,4 +86,3 @@ func main() {
 	http.HandleFunc("/edit/", makeHandler(editHandler))
 	http.HandleFunc("/save/", makeHandler(saveHandler))
 	http.ListenAndServe(":9292", nil) // nice and easy
-}

@@ -29,10 +29,14 @@ git clone https://github.com/mikebochenek/idonep
 git clone https://github.com/mikebochenek/swiss-memory
 git clone https://github.com/mikebochenek/bitcoinj-scala-examples
 
-# other repos
-git clone https://github.com/jjenkov/scale
+git clone https://github.com/mikebochenek/zoo-ethereum
+git clone https://github.com/mikebochenek/spark
+git clone https://github.com/mikebochenek/sparktest
+git clone https://github.com/mikebochenek/datasciencecoursera
+
 
 cd /tmp
 tar cvf backup-$MYNOW.tar /tmp/backup-$MYNOW/*
 gzip backup-$MYNOW.tar
-cp backup*.gz ~/Dropbox/backups/
+# cp backup*.gz ~/Dropbox/backups/
+cp backup*.gz ~/Documents/backups/

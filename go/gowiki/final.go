@@ -56,6 +56,7 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	saveWiki(p.Title, p.Body)
 	http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 

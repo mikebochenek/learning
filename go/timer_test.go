@@ -17,17 +17,17 @@ func TestTimer(t *testing.T) {
 	}
 
 	// (A)
-	time.AfterFunc(5*time.Second, func() {
+	time.AfterFunc(1*time.Second, func() {
 		fmt.Printf("(A) expired \n")
 	})
 
 	// (B) create a Timer object
-	timer := time.NewTimer(5 * time.Second)
+	timer := time.NewTimer(1 * time.Second)
 	<-timer.C
 	fmt.Printf("(B) expired \n")
 
 	// (C) time.After() returns timer.C internally
-	<-time.After(5 * time.Second)
+	<-time.After(1 * time.Second)
 	fmt.Printf("(C) expired \n")
 
 	fmt.Println("Hello World!")

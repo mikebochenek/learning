@@ -1,13 +1,49 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
+
+/**
+ * page 165 of Discrete Mathematics and Its Applications by Kenneth H. Rosen
+ * programming question #4:  find as many primes as possible of the form n^2 + 1
+ */
+func TestN2PlusOnePrime(t *testing.T) {
+	max := 100
+	for i := 1; i < max; i += 1 {
+		n := i*i + 1
+		isPrime := prime(n)
+		if isPrime {
+			//fmt.Println("is it prime?", isPrime, i, n)
+		}
+	}
+}
+
+/**
+ * page 165 of Discrete Mathematics and Its Applications by Kenneth H. Rosen
+ * programming question #3:
+ * show that n^2 + n + 41 is prime for 0 <= n <= 39
+ * (and not for n=40)
+ */
+func TestN2PlusNPlus41Prime(t *testing.T) {
+	max := 100
+	for i := 1; i <= max; i += 1 {
+		n := i*i + i + 41
+		isPrime := prime(n)
+
+		if !isPrime {
+			t.Errorf("prime(%v) should true, but got %v (i=%v)", n, isPrime, i)
+		}
+
+		//fmt.Println("is prime?", isPrime, i, n)
+	}
+}
 
 /**
  * page 164 of Discrete Mathematics and Its Applications by Kenneth H. Rosen
  * question #6. Given a positive integer, determine whether it is prime.
  */
 func prime(x int) bool {
-
 	for i := 2; i < x; i += 2 {
 		if x%i == 0 {
 			return false

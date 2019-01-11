@@ -1,0 +1,33 @@
+
+>>> 2**60
+1152921504606846976
+>>> 2**30
+1073741824
+
+create table primes (
+    id integer not null AUTO_INCREMENT,
+    created timestamp,
+    prime bigint,
+    primary key (id)
+);
+-- truncate primes;
+
+mysql> select count(*) from primes;
+mysql> select max(prime) from primes;
+mysql> select * from primes where prime > 260000;
+
+/var/lib/jenkins/tools/org.jenkinsci.plugins.golang.GolangInstallation/go_1.11/bin/go build
+
+[ frankfurt Fri Jan 11 22:16:44 ~/perpetual ] /var/lib/jenkins/tools/org.jenkinsci.plugins.golang.GolangInstallation/go_1.11/bin/go build
+[ frankfurt Fri Jan 11 22:17:13 ~/perpetual ] ./perpetual &
+[1] 30320
+
+---------
+
+create table wiki (
+    id integer not null AUTO_INCREMENT,
+    created timestamp,
+    filename VARCHAR(96),
+    content text,
+    primary key (id)
+);

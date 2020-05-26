@@ -1,8 +1,6 @@
 # https://realpython.com/python3-object-oriented-programming/
-
 class Dog:
-    # Initializer / Instance Attributes
-    def __init__(self, name, age):
+    def __init__(self, name, age): # Initializer / Instance Attributes
         self.name = name
         self.age = age
     def bark(self):
@@ -10,8 +8,7 @@ class Dog:
     def doginfo(self):
         print(self.name + " is " + str(self.age) + " year(s) old.")
         
-# Child class (inherits from Dog class)
-class RussellTerrier(Dog):
+class RussellTerrier(Dog): # Child class (inherits from Dog class)
     def bark(self):
         print('barks loudly!')
         
@@ -21,5 +18,4 @@ dog.bark()
 dog.doginfo()
 
 RussellTerrier('pino', 5).bark()
-
 print(isinstance(dog, RussellTerrier))

@@ -1,0 +1,13 @@
+#!/bin/sh
+rm /var/www/bochenek.ch/status.txt
+date >> /var/www/bochenek.ch/status.txt
+uptime >> /var/www/bochenek.ch/status.txt
+echo '\n' >> /var/www/bochenek.ch/status.txt
+free >> /var/www/bochenek.ch/status.txt
+echo '\n' >> /var/www/bochenek.ch/status.txt
+df >> /var/www/bochenek.ch/status.txt
+echo '\n' >> /var/www/bochenek.ch/status.txt
+service --status-all >> /var/www/bochenek.ch/status.txt
+echo '\n' >> /var/www/bochenek.ch/status.txt
+apache2ctl -S >> /var/www/bochenek.ch/status.txt
+

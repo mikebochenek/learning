@@ -52,6 +52,23 @@ cd /etc/alternatives
 ln -f -s /usr/lib/jvm/java-7-oracle/jre/bin/java java
 ln -f -s /usr/lib/jvm/java-7-oracle/bin/javac javac
 
-
 # start rabbit MQ
 ~/Dev/rabbitmq_server-3.2.4/sbin/rabbitmq-server 
+
+# check python env "health"
+python -c 'import sys; print(sys.path)'
+
+# connect to postgreSQL as root
+sudo -u postgres psql
+
+# count all commits
+git rev-list --count master
+
+# my version of ubuntu is?
+lsb_release -a
+
+# show all services and their status
+service --status-all
+
+# nicer DF
+df -h --total

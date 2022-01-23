@@ -41,4 +41,10 @@ countries = sorted(x.items(), key=lambda i: i[1], reverse=True)
 
 #plt.pie(users.c, labels=users.role, autopct='%1.1f%%')
 #plt.pie(country_tags.total.head(20), labels=country_tags.country.head(20), autopct='%1.1f%%')
-plt.barh(country_tags.country.head(25), width=country_tags.total.head(25), color="green")
+#plt.barh(country_tags.country.head(25), width=country_tags.total.head(25), color="green")
+
+import seaborn as sns
+sns.barplot(country_tags.total.head(25), country_tags.country.head(25), 
+            palette=sns.color_palette("Blues"), # http://man.hubwiz.com/docset/Seaborn.docset/Contents/Resources/Documents/tutorial/color_palettes.html 
+            #saturation=0.6,
+            orient = 'h')

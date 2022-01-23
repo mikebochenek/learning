@@ -10,7 +10,7 @@ import pymysql.cursors
 import json
 
 def fetchData(sql):
-    connection = pymysql.connect(host='localhost', user='test2', password='test2', db='test3beta', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='test2', password='test2', db='beta', cursorclass=pymysql.cursors.DictCursor)
     try:
         with connection.cursor() as cursor:
             cursor.execute(sql)

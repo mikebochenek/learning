@@ -24,5 +24,5 @@ sns.relplot(
 """
 
 # https://stackoverflow.com/questions/46793448/plotting-series-using-seaborn
-head = companies.head(18)
+head = companies.head(25)
 sns.barplot(head.values, head.index, orient = 'h')

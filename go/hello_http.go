@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 /*
@@ -17,10 +18,11 @@ func main() {
 		param1 := req.URL.Query().Get("param1")
 		x, err := strconv.Atoi(param1)
 		if err != nil {
-			println("invalid input") // funny that this check is "forced" onto the developer
+			//println("invalid input") // funny that this check is "forced" onto the developer
+		} else {
+			println(time.Now().Format(time.StampMilli), "processing input", param1, "gives", prime(x))
+			fmt.Fprintln(w, x, "is prime?", prime(x))
 		}
-		println("request input", param1)
-		fmt.Fprintln(w, x, "is prime?", prime(x))
 	})
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

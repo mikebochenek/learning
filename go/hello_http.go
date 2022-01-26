@@ -20,8 +20,9 @@ func main() {
 		if err != nil {
 			//println("invalid input") // funny that this check is "forced" onto the developer
 		} else {
-			println(time.Now().Format(time.StampMilli), "processing input", param1, "gives", prime(x))
-			fmt.Fprintln(w, x, "is prime?", prime(x))
+			start := time.Now()
+			println(start.Format(time.StampMilli), "processing input", param1, "gives", prime(x), fib(x), time.Now().Sub(start))
+			fmt.Fprintln(w, x, "is prime?", prime(x), "Fibonacci", fib(x))
 		}
 	})
 	log.Fatal(http.ListenAndServe(":8080", nil))
@@ -34,4 +35,11 @@ func prime(x int) bool {
 		}
 	}
 	return true
+}
+
+func fib(a int) int {
+	if a < 2 {
+		return a
+	}
+	return fib(a-1) + fib(a-2)
 }

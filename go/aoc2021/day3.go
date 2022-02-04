@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-//	"strconv"
+	"strconv"
 )
 
 func main() {
@@ -19,14 +19,26 @@ func main() {
 
 	gamma := 0
 	epsilon := 0
+	var total int64 = 0
+	var lines int64 = 0
 	for scanner.Scan() {
 		word := scanner.Text()
-		fmt.Println(word)
+		lines = lines + 1
+
+		if i, err := strconv.ParseInt(word, 2, 64); err != nil {
+			fmt.Println(err)
+		} else {
+			fmt.Println(lines, i, word)
+			total = total + i
+		}
+		// is most common the average? what would be least common, then?
 	}
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
 	}
+
+	fmt.Println(total, lines, total * 1.0 / lines)
 
 	fmt.Println("\nresults:", gamma, epsilon, gamma*epsilon)
 }

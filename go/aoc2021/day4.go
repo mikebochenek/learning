@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	//	"strconv"
+	"strconv"
 )
 
 func main() {
@@ -21,10 +21,19 @@ func main() {
 	for scanner.Scan() {
 		word := scanner.Text()
 		lines = lines + 1
-		fmt.Println(lines, word)
+		fmt.Println(lines, safeParse(word))
 	}
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
+	}
+}
+
+func safeParse(g string) int {
+	if i, err := strconv.Atoi(g); err != nil {
+		fmt.Println(err)
+		return -1
+	} else {
+		return i
 	}
 }

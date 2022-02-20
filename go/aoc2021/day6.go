@@ -25,9 +25,9 @@ func main() {
 		for i, number := range numbers {
 			pos[i] = safeParse(number)
 		}
-		//fmt.Println("test after 18 days?:", 5934 == smartSimulate(pos, 80))
-		fmt.Println("test after 18 days?:", 26 == smartSimulate(pos, 18))
-		fmt.Println("test after 18 days?:", 26 == simulate(pos, 18)) // old simulate destroys input array!
+		fmt.Println("\ttest after 80 days?:", 5934 == smartSimulate(pos, 80))
+		fmt.Println("\ttest after 18 days?:", 26 == smartSimulate(pos, 18))
+		fmt.Println("\ttest after 18 days?:", 26 == simulate(pos, 18)) // old simulate destroys input array!
 	}
 
 	if err := scanner.Err(); err != nil {

@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/day6-0.txt")
+	f, err := os.Open("/home/mike/Documents/day6-1.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -27,7 +27,8 @@ func main() {
 		}
 		fmt.Println("\ttest after 80 days?:", 5934 == smartSimulate(pos, 80))
 		fmt.Println("\ttest after 18 days?:", 26 == smartSimulate(pos, 18))
-		fmt.Println("\ttest after 18 days?:", 26 == simulate(pos, 18)) // old simulate destroys input array!
+		fmt.Println("\ttest after 256 days?:", smartSimulate(pos, 256))
+		//fmt.Println("\ttest after 18 days?:", 26 == simulate(pos, 18)) // old simulate destroys input array!
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -45,10 +46,11 @@ func smartSimulate(p []int, days int) int {
 
 	for i := 0; i < days; i++ {
 		counts[9] = counts[0]             // new fish
-		counts[6] = counts[6] + counts[0] // respawn parent
+		counts[7] = counts[7] + counts[0] // respawn parent
 		for j := 0; j < 9; j++ {
 			counts[j] = counts[j+1]
 		}
+		counts[9] = 0 // aha - missing this reset was the bug that haunted me!
 
 		total = sumup(counts)
 		fmt.Println("after day", (i + 1), "\t\t\t len:", total, "\t", counts)
@@ -100,4 +102,14 @@ sys	0m0.184s
 
 switching to 256 days gives me:
 fatal error: runtime: out of memory
+
+
+Mon Feb 21 20:50:37 CET 2022
+after day 256 			 len: 1574445493136 	 [141639703600 157315335343 170273085353 185236487147 204747801901 218724675965 244825441756 118574737858 133108224213 0]
+after 256 there are 1574445493136
+	test after 256 days?: 1574445493136
+
+real	0m0.600s
+user	0m0.765s
+sys	0m0.122s
 */

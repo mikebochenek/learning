@@ -19,7 +19,7 @@ func main() {
 	scanner.Split(bufio.ScanLines)
 
 	var lines = 0
-	const size = 1000
+	const size = 10  //00
 	var p1 [size][]string
 	var p2 [size][]string
 	for scanner.Scan() {
@@ -41,28 +41,40 @@ func main() {
 			p2x := safeParse(p2[i][0])
 			p2y := safeParse(p2[i][1])
 
+			startY := p1y
+			endY := p2y
+			if p2y < p1y {
+				startY = p2y
+				endY = p1y
+			}
+
+			startX := p1x
+			endX := p2x
+			if p2x < p1x {
+				startX = p2x
+				endX = p1x
+			}
+
 			if p1x == p2x { // vertical
-				startY := p1y
-				endY := p2y
-				if p2y < p1y {
-					startY = p2y
-					endY = p1y
-				}
 				//fmt.Println("vertical at x", p1x, startY, endY)
 				for j := startY; j <= endY; j++ {
 					matrix[j][p1x] = matrix[j][p1x] + 1
 				}
-			}
-			if p1y == p2y { // horizontal
-				startX := p1x
-				endX := p2x
-				if p2x < p1x {
-					startX = p2x
-					endX = p1x
-				}
+			} else if p1y == p2y { // horizontal
 				//fmt.Println("horizontal at y", p1y, startX, endX)
 				for j := startX; j <= endX; j++ {
 					matrix[p1y][j] = matrix[p1y][j] + 1
+				}
+			} else if (p1x > p2x) { // diagonal -  
+				fmt.Println("\t\tdiagonal_A y", startY, endY, " x", startX, endX)
+				for j := startX; j <= endX; j++ {
+					matrix[startY+j-startX][j] = matrix[startY+j-startX][j] + 1
+				}
+			} else if (p1x < p2x) { // diagonal -  
+				fmt.Println("\t\tdiagonal_B y", startY, endY, " x", startX, endX)
+				for j := startX; j <= endX; j++ {
+					//matrix[j][startY+j-startX] = matrix[j][startY+j-startX] + 1
+					//matrix[startX+j-startY][j] = matrix[startX+j-startY][j] + 1
 				}
 			}
 		}
@@ -75,6 +87,7 @@ func main() {
 				count = count + 1
 			}
 		}
+		fmt.Println(matrix[i])
 	}
 
 	fmt.Println("count:", count, "maxOverlap:", 2)

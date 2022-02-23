@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/day5-0.txt") // open file
+	f, err := os.Open("/home/mike/Documents/day5-1.txt") // open file
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -19,7 +19,7 @@ func main() {
 	scanner.Split(bufio.ScanLines)
 
 	var lines = 0
-	const size = 10  //00
+	const size = 2000  //00
 	var p1 [size][]string
 	var p2 [size][]string
 	for scanner.Scan() {
@@ -66,14 +66,15 @@ func main() {
 					matrix[p1y][j] = matrix[p1y][j] + 1
 				}
 			} else if (p1x > p2x) { // diagonal -  
-				fmt.Println("\t\tdiagonal_A y", startY, endY, " x", startX, endX)
+				//fmt.Println("\t\tdiagonal_A y", startY, endY, " x", startX, endX)
 				for j := startX; j <= endX; j++ {
 					matrix[startY+j-startX][j] = matrix[startY+j-startX][j] + 1
 				}
 			} else if (p1x < p2x) { // diagonal -  
-				fmt.Println("\t\tdiagonal_B y", startY, endY, " x", startX, endX)
+				//fmt.Println("\t\tdiagonal_B y", startY, endY, " x", startX, endX)
 				for j := startX; j <= endX; j++ {
-					//matrix[j][startY+j-startX] = matrix[j][startY+j-startX] + 1
+					matrix[endY-j+startX][j] = matrix[endY-j+startX][j] + 1
+					//matrix[startY+j-startX][j] = matrix[startY+j-startX][j] + 1
 					//matrix[startX+j-startY][j] = matrix[startX+j-startY][j] + 1
 				}
 			}
@@ -87,7 +88,7 @@ func main() {
 				count = count + 1
 			}
 		}
-		fmt.Println(matrix[i])
+		//fmt.Println(matrix[i])
 	}
 
 	fmt.Println("count:", count, "maxOverlap:", 2)

@@ -1,4 +1,5 @@
-pragma solidity ^0.4.0;
+pragma solidity >=0.4.16 <0.9.0;
+
 contract Token {
     mapping (address => uint) public balances;
     function Token() {

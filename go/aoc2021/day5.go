@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/day5-1.txt") // open file
+	f, err := os.Open("/home/mike/Documents/day5-0.txt") // open file
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -19,7 +19,7 @@ func main() {
 	scanner.Split(bufio.ScanLines)
 
 	var lines = 0
-	const size = 2000  //00
+	const size = 10 //2000  //10
 	var p1 [size][]string
 	var p2 [size][]string
 	for scanner.Scan() {
@@ -35,7 +35,7 @@ func main() {
 
 	for i := 0; i < size; i++ {
 		if p1[i] != nil && p2[i] != nil {
-			fmt.Println(p1[i], p2[i])
+			//fmt.Println(p1[i], p2[i])
 			p1x := safeParse(p1[i][0])
 			p1y := safeParse(p1[i][1])
 			p2x := safeParse(p2[i][0])
@@ -77,6 +77,8 @@ func main() {
 					//matrix[startY+j-startX][j] = matrix[startY+j-startX][j] + 1
 					//matrix[startX+j-startY][j] = matrix[startX+j-startY][j] + 1
 				}
+			} else {
+				fmt.Println("should never get here, right?")
 			}
 		}
 	}
@@ -84,14 +86,16 @@ func main() {
 	count := 0
 	for i := 0; i < size; i++ {
 		for j := 0; j < size; j++ {
-			if matrix[i][j] > 1 { //== maxOverlap) {
+			if matrix[i][j] >= 2 {
 				count = count + 1
 			}
 		}
-		//fmt.Println(matrix[i])
+		if (lines < 20) {
+			fmt.Println(matrix[i])
+		}
 	}
 
-	fmt.Println("count:", count, "maxOverlap:", 2)
+	fmt.Println("count:", count, "maxOverlap:", 2, "len(p1):", len(p1), "lines:", lines)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)

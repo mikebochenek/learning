@@ -23,8 +23,8 @@ func main() {
 		line := scanner.Text()
 		lines = lines + 1
 		if len(line) > 0 && len(line) < 15 {
-			words := strings.Split(line, " ")
-			fmt.Println("at line:", lines, "parsed:", safeParse(words[0]))
+			words := strings.Split(strings.Replace(line, "  ", " ", -1), " ")
+			fmt.Println("at line:", lines, "parsed:", safeParse(words[1]))
 		}
 	}
 

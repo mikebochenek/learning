@@ -28,6 +28,7 @@ func main() {
 	}
 
 	const size = 500 //15
+	var box[size/5]int
 	var b [size][5]int
 	var lines = 0
 	for scanner.Scan() {
@@ -62,7 +63,7 @@ func main() {
 					hc = hc + 1
 				}
 			}
-			if hc == 5 {
+			if hc == 5 && box[i/5] == 0 {
 				var sum = 0
 				for x := (i / 5) * 5; x < (i/5)*5+5; x++ {
 					for y := 0; y < 5; y++ {
@@ -72,10 +73,11 @@ func main() {
 						}
 					}
 				}
-				fmt.Println(b)
+				//fmt.Println(b)
 
 				fmt.Println("lastnum:", nums[j], "sum:", sum, "box:", i/5, " -->", (nums[j] * sum))
-				os.Exit(0)
+				//os.Exit(0)
+				box[i/5] = 1
 			}
 		}
 
@@ -89,26 +91,27 @@ func main() {
 					vc = vc + 1
 				}
 			}
-			if vc == 5 {
+			if vc == 5 && box[i/5] == 0 {
 				var sum = 0 // sum calculation stays exactly the same...
 				for x := (i / 5) * 5; x < (i/5)*5+5; x++ {
 					for y := 0; y < 5; y++ {
 						if b[x][y] > 0 {
 							sum = sum + b[x][y]
-							fmt.Println(b[x][y])
+							//fmt.Println(b[x][y])
 						}
 					}
 				}
-				fmt.Println(b)
+				//fmt.Println(b)
 
 				fmt.Println("lastnum:", nums[j], "sum:", sum, "box:", i/5, " -->", (nums[j] * sum))
-				os.Exit(0)
+				//os.Exit(0)
+				box[i/5] = 1
 			}
 		}
 
 	}
 
-	fmt.Println(b)
+	//fmt.Println(b)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)

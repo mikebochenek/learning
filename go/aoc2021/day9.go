@@ -7,9 +7,13 @@ import (
 	"strconv"
 )
 
+const W = 5  //100
+const H = 10 //100
+const FILENAME = "day9-0"
+
 func main() {
 	//	lines: 100 lowPoint: 221 totalRisk: 504
-	f, err := os.Open("/home/mike/Documents/aoc/day9-0.txt")
+	f, err := os.Open("/home/mike/Documents/aoc/" + FILENAME + ".txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -18,8 +22,6 @@ func main() {
 	scanner := bufio.NewScanner(f)
 	scanner.Split(bufio.ScanLines)
 
-	const W = 5  //100
-	const H = 10 //100
 	lines := 0
 	var m [W][H]int
 	var lp [W][H]int
@@ -50,24 +52,38 @@ func main() {
 	}
 	//fmt.Println(m)
 	//fmt.Println(lp)
-	
+
 	// part II hints: 9 is the breaker, consider largest 3 basins (only)
-	var a,b,c = 0,0,0
+	var a, b, c = 0, 0, 0
 	for i := 0; i < W; i++ {
 		for j := 0; j < H; j++ {
 			if lp[i][j] > 0 {
-				var tmp [W][H]int
-				tmp[0][0] = 0
-				fmt.Println("\t-> here", i, j)
+				newBasin := basin(lp, m, i, j)
+				if newBasin > a {
+					if newBasin > b && newBasin < c {
+
+					} else if newBasin > c {
+
+					} else {
+						a = newBasin
+					}
+				}
 			}
 		}
 	}
 
-	fmt.Println("\n\tlines:", lines, "lowPoint:", lowPoint, "totalRisk:", totalRisk, "basins:", a,b,c)
+	fmt.Println("\n\tlines:", lines, "lowPoint:", lowPoint, "totalRisk:", totalRisk, "basins:", a, b, c)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
 	}
+}
+
+func basin(lp [W][H]int, m [W][H]int, i int, j int) int {
+	var tmp [W][H]int
+	tmp[0][0] = 0
+	fmt.Println("\t-> here", i, j)
+	return 1
 }
 
 func safeParse(g string) int {

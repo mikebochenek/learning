@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	//	lines: 100 lowPoint: 221 totalRisk: 504
 	f, err := os.Open("/home/mike/Documents/aoc/day9-0.txt")
 	if err != nil {
 		fmt.Println(err)
@@ -32,6 +33,7 @@ func main() {
 		lines = lines + 1
 	}
 
+	var lowPoint = 0
 	var totalRisk = 0
 	for i := 0; i < W; i++ {
 		for j := 0; j < H; j++ {
@@ -42,14 +44,26 @@ func main() {
 				(i == (W-1) || m[i+1][j] > val) { // bottom adjacent
 				lp[i][j] = val + 1
 				totalRisk = totalRisk + val + 1
+				lowPoint++
+			}
+		}
+	}
+	//fmt.Println(m)
+	//fmt.Println(lp)
+	
+	// part II hints: 9 is the breaker, consider largest 3 basins (only)
+	var a,b,c = 0,0,0
+	for i := 0; i < W; i++ {
+		for j := 0; j < H; j++ {
+			if lp[i][j] > 0 {
+				var tmp [W][H]int
+				tmp[0][0] = 0
+				fmt.Println("\t-> here", i, j)
 			}
 		}
 	}
 
-	// part II hints: 9 is the breaker, consider largest 3 basins (only)
-	//fmt.Println(m)
-	//fmt.Println(lp)
-	fmt.Println("\n\tlines:", lines, "totalRisk:", totalRisk)
+	fmt.Println("\n\tlines:", lines, "lowPoint:", lowPoint, "totalRisk:", totalRisk, "basins:", a,b,c)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)

@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	const size = 12//1000
-	f, err := os.Open("/home/mike/Documents/aoc/day3-0.txt")
+	const size = 1000
+	f, err := os.Open("/home/mike/Documents/aoc/day3-1.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -75,15 +75,31 @@ func main() {
 	// Part II
 	var c = ""
 	for i := 0; i < digits; i++ {
-		if (gamma[i]==epsilon[i]) {
-			fmt.Println("\t\t\ttie breaker at", i) 
+		var common = '1'
+		c1s := 0
+		c0s := 0
+		for j := 0; j < size; j++ {
+			if words[j] != "00000" && words[j] != "" {
+				if words[j][i] == '0' {
+					c0s++
+				} else {
+					c1s++
+				}
+			}
 		}
+		if c1s < c0s {
+			common = '0'
+		}
+		if c1s == c0s {
+			fmt.Println("tie breaker needed at ", i)
+		}
+
 		for j := 0; j < size; j++ {
 			if words[j] == "00000" || words[j] == "" {
 
 			} else {
 				c = words[j]
-				if words[j][i] != gamma[i] {
+				if words[j][i] != byte(common) {
 					words[j] = ""
 				}
 			}
@@ -97,12 +113,31 @@ func main() {
 
 	words = words2
 	for i := 0; i < digits; i++ {
+		var common = '0'
+		c1s := 0
+		c0s := 0
+		for j := 0; j < size; j++ {
+			if words[j] != "00000" && words[j] != "" {
+				if words[j][i] == '0' {
+					c0s++
+				} else {
+					c1s++
+				}
+			}
+		}
+		if c1s < c0s {
+			common = '1'
+		}
+		if c1s == c0s {
+			fmt.Println("tie breaker needed at ", i)
+		}
+
 		for j := 0; j < size; j++ {
 			if words[j] == "00000" || words[j] == "" {
 
 			} else {
 				c = words[j]
-				if words[j][i] != epsilon[i] {
+				if words[j][i] != byte(common) {
 					words[j] = ""
 				}
 			}

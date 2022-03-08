@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-const FILENAME = "day10-1"
+const FILENAME = "day10-0"
 const size = 90
 
 func main() {
@@ -25,18 +25,34 @@ func main() {
 	for scanner.Scan() {
 		word := scanner.Text()
 		s := score(word)
-		total += s
 		//fmt.Println("\t", word, s)
-		words[lines] = word
-		lines++
+		if (s == 0) {
+			words[lines] = word
+			lines++
+			total += autocomplete(word)
+		} else {
+			//essentially discard
+		}
 	}
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
 	}
 
+	fmt.Println(len(words), words)
 	fmt.Println("\tlines:", lines, len(words), "\tTOTAL:", total)
 }
+
+/*
+): 1 point.
+]: 2 points.
+}: 3 points.
+>: 4 points.
+*/
+func autocomplete(w string) int {
+	return 0;
+}
+
 
 func score(w string) int {
 	var s = make(stack, 0)
@@ -102,16 +118,14 @@ func penalize(c byte) int {
 	}
 }
 
-// https://stackoverflow.com/questions/28541609/looking-for-reasonable-stack-implementation-in-golang
-type stack []int
+type stack []int // https://stackoverflow.com/questions/28541609/looking-for-reasonable-stack-implementation-in-golang
 
 func (s stack) Push(v int) stack {
 	return append(s, v)
 }
 
 func (s stack) Pop() (stack, int) {
-	// FIXME: What do we do if the stack is empty, though?
-	if len(s) == 0 {
+	if len(s) == 0 { //What do we do if the stack is empty, though?
 		fmt.Println("empty stack!", s)
 	}
 

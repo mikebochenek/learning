@@ -70,7 +70,7 @@ func score(w string) int {
 		} else if w[i] == ')' {
 			s, v = s.Pop()
 			if v != 3 {
-				//fmt.Println(s, v, i)
+				//suggest here?! fmt.Println(s, v, i)
 				return penalize(w[i])
 			}
 		} else if w[i] == ']' {

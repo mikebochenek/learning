@@ -50,9 +50,17 @@ func main() {
 >: 4 points.
 */
 func autocomplete(w string) int {
+	if (w == ")") {
+		return 1
+	} else if (w == "]") {
+		return 2
+	} else if (w == "}") {
+		return 3
+	} else if (w == ">") {
+		return 4
+	}
 	return 0;
 }
-
 
 func score(w string) int {
 	var s = make(stack, 0)

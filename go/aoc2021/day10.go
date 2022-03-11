@@ -26,7 +26,7 @@ func main() {
 		word := scanner.Text()
 		s := score(word)
 		//fmt.Println("\t", word, s)
-		if (s == 0) {
+		if s == 0 {
 			words[lines] = word
 			lines++
 			total += autocomplete(word)
@@ -50,16 +50,16 @@ func main() {
 >: 4 points.
 */
 func autocomplete(w string) int {
-	if (w == ")") {
+	if w == ")" {
 		return 1
-	} else if (w == "]") {
+	} else if w == "]" {
 		return 2
-	} else if (w == "}") {
+	} else if w == "}" {
 		return 3
-	} else if (w == ">") {
+	} else if w == ">" {
 		return 4
 	}
-	return 0;
+	return 0
 }
 
 func score(w string) int {

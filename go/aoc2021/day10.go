@@ -4,9 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 )
 
-const FILENAME = "day10-0"
+const FILENAME = "day10-1"
 const size = 90
 
 func main() {
@@ -18,18 +19,20 @@ func main() {
 
 	scanner := bufio.NewScanner(f)
 	scanner.Split(bufio.ScanWords)
-
+	
 	var lines = 0
 	var total = 0
 	var words [size]string
+	var scores []int
 	for scanner.Scan() {
 		word := scanner.Text()
 		s := score(word)
 		//fmt.Println("\t", word, s)
-		if s == 0 {
+		if s < 0 { // or <= 0
 			words[lines] = word
 			lines++
-			total += autocomplete(word)
+			total += s * -1
+			scores = append(scores, s*-1)
 		} else {
 			//essentially discard
 		}
@@ -39,7 +42,10 @@ func main() {
 		fmt.Println(err)
 	}
 
-	fmt.Println(len(words), words)
+	//fmt.Println(len(words), words)
+	sort.Ints(scores)
+	fmt.Println(len(scores), scores)
+	fmt.Println("\t middle score", scores[len(scores)/2])
 	fmt.Println("\tlines:", lines, len(words), "\tTOTAL:", total)
 }
 
@@ -101,6 +107,40 @@ func score(w string) int {
 			}
 		}
 
+	}
+	//fmt.Println("\t\t", s, len(s))
+
+	var total = 0
+	max := len(s)
+	for i := 0; i < max; i++ {
+		total = total * 5
+		s, v = s.Pop()
+		total = total + translate(v)
+		//fmt.Println(" - ", total, v, translate(v))
+	}
+	//fmt.Println("\t\t\t\t", total)
+
+	return -1 * total
+}
+
+/*
+): 1 point.
+]: 2 points.
+}: 3 points.
+>: 4 points.
+*/
+func translate(i int) int {
+	if i == 3 {
+		return 1
+	}
+	if i == 57 {
+		return 2
+	}
+	if i == 1197 {
+		return 3
+	}
+	if i == 25137 {
+		return 4
 	}
 	return 0
 }

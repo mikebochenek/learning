@@ -33,9 +33,14 @@ func main() {
 	}
 
 	var flash = 0
+	var prevFlash = 0
 
-	for i := 0; i <= 100; i++ {
-		fmt.Println("\nafter step", i, "flashes:", flash)
+	for i := 0; i <= 1000; i++ {
+		//fmt.Println("\nafter step", i, "flashes:", flash, " prevFlashes", prevFlash)
+		if (flash - prevFlash == 100) {
+			fmt.Println("what a hack...", i)
+		}
+		prevFlash = flash
 		//printNicely(m)
 
 		for j := 0; j < SIZE; j++ {

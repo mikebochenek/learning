@@ -24,7 +24,7 @@ func main() {
 	var m [SIZE][SIZE]int
 	for scanner.Scan() {
 		line := scanner.Text()
-		fmt.Println(line, len(line))
+		//fmt.Println(line, len(line))
 		for j := 0; j < len(line); j++ {
 			x := safeParse(string(line[j]))
 			m[lines][j] = x
@@ -32,10 +32,31 @@ func main() {
 		lines = lines + 1
 	}
 
-	fmt.Println(m)
+	var flash = 0
+
+	for i := 0; i <= 4; i++ {
+		fmt.Println("\nafter", i, "iterations:")
+		printNicely(m)
+
+		for j := 0; j < SIZE; j++ {
+			for k := 0; k < SIZE; k++ {
+				m[j][k] = m[j][k] + 1
+			}
+		}
+
+		
+	}
+
+	fmt.Println("\n\tflashes", flash)
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
+	}
+}
+
+func printNicely(m[SIZE][SIZE] int) {
+	for i := 0; i < SIZE; i++ {
+		fmt.Println(m[i])
 	}
 }
 

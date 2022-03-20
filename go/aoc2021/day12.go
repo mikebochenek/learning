@@ -8,10 +8,10 @@ import (
 )
 
 func main() { //https://adventofcode.com/2021/day/12
-	readProcess("day12-0")
-	readProcess("day12-1")
-	readProcess("day12-2")
-	readProcess("day12")
+	fmt.Println("\t=> expected 10, got: ", readProcess("day12-0"))
+	fmt.Println("\t=> expected 19, got: ", readProcess("day12-1"))
+	fmt.Println("\t=> expected 226, got: ", readProcess("day12-2"))
+	fmt.Println("\t=> actual puzzle: ", readProcess("day12"))
 }
 
 func readProcess(filename string) int {
@@ -30,6 +30,7 @@ func readProcess(filename string) int {
 		word := scanner.Text()
 		words = append(words, word)
 	}
+	var paths = 0
 
 	var startCaveText = ""
 	for i := 0; i < len(words); i++ { // find one start node
@@ -42,8 +43,7 @@ func readProcess(filename string) int {
 
 	// anyways, we probably need to handle duplicates and graph cycles..
 	for i := 0; i < len(words); i++ {
-		//TODO
-		//Question: is building the tree struct the right approach?
+		//TODO + Question: is building the tree struct the right approach?
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -51,7 +51,12 @@ func readProcess(filename string) int {
 	}
 
 	fmt.Println("total words:", len(words))
-	return 0
+	return paths
+}
+
+func addCave(s string) Cave {
+	var c Cave
+	return c
 }
 
 func createCave(s string) Cave {

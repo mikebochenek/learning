@@ -36,7 +36,7 @@ func solve(filename string, size int) int {
 		lines = lines + 1
 	}
 
-	for i := 0; i < 1; /*len(folds)*/ i++ {
+	for i := 0; i < len(folds); i++ {
 		foldingLine := safeParse(strings.Split(folds[i], "=")[1])
 		if strings.HasPrefix(folds[i], "fold along x=") {
 			m = foldLeft(m, foldingLine)
@@ -85,8 +85,9 @@ func foldLeft(m [SIZE][SIZE]int, at int) [SIZE][SIZE]int {
 }
 
 func printNicely(m [SIZE][SIZE]int) {
-	for i := 0; i < SIZE; i++ {
-		//fmt.Println(m[i])
+	s := 46 // gives LRFJBJEH
+	for i := 0; i < s /*SIZE*/; i++ {
+		fmt.Println(m[i][:s])
 	}
 }
 

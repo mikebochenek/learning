@@ -28,7 +28,7 @@ func main() {
 	}
 
 	const size = 500 //15
-	var box[size/5]int
+	var box [size / 5]int
 	var b [size][5]int
 	var lines = 0
 	for scanner.Scan() {

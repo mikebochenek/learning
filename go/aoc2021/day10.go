@@ -19,7 +19,7 @@ func main() {
 
 	scanner := bufio.NewScanner(f)
 	scanner.Split(bufio.ScanWords)
-	
+
 	var lines = 0
 	var total = 0
 	var words [size]string

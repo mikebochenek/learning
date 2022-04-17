@@ -65,12 +65,12 @@ func main() {
 				for j := startX; j <= endX; j++ {
 					matrix[p1y][j] = matrix[p1y][j] + 1
 				}
-			} else if (p1x > p2x) { // diagonal -  
+			} else if p1x > p2x { // diagonal -
 				//fmt.Println("\t\tdiagonal_A y", startY, endY, " x", startX, endX)
 				for j := startX; j <= endX; j++ {
 					matrix[startY+j-startX][j] = matrix[startY+j-startX][j] + 1
 				}
-			} else if (p1x < p2x) { // diagonal -  
+			} else if p1x < p2x { // diagonal -
 				//fmt.Println("\t\tdiagonal_B y", startY, endY, " x", startX, endX)
 				for j := startX; j <= endX; j++ {
 					matrix[endY-j+startX][j] = matrix[endY-j+startX][j] + 1
@@ -90,7 +90,7 @@ func main() {
 				count = count + 1
 			}
 		}
-		if (lines < 20) {
+		if lines < 20 {
 			fmt.Println(matrix[i])
 		}
 	}

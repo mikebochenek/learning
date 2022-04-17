@@ -44,13 +44,13 @@ func readProcess(filename string) int {
 	// anyways, we probably need to handle duplicates and graph cycles..
 	for i := 0; i < len(words); i++ {
 		//TODO + Question: is building the tree struct the right approach?
-		if (words[i] != startCaveText) { // skip duplicate
+		if words[i] != startCaveText { // skip duplicate
 			fmt.Println("outer for loop with", i, words[i])
 			addCave(words[i], root)
 		}
 	}
 
-	//TODO print all possible paths starting at root node 
+	//TODO print all possible paths starting at root node
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
@@ -64,7 +64,7 @@ func addCave(s string, r Cave) Cave {
 	//var c Cave
 	fmt.Println("... adding cave:", s)
 	names := strings.Split(s, "-")
-	if (r.name == names[0]) {
+	if r.name == names[0] {
 		var target Cave
 		target.name = names[1]
 		target.link = append(target.link, r) // backlink?
@@ -95,8 +95,8 @@ func createCave(s string) Cave {
 }
 
 type Cave struct {
-	name    string
+	name string
 	//parent	*Cave //do I even need? https://stackoverflow.com/questions/8261058/invalid-recursive-type-in-a-struct-in-go
 	//visited bool
-	link    []Cave
+	link []Cave
 }

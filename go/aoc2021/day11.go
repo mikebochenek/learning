@@ -37,7 +37,7 @@ func main() {
 
 	for i := 0; i <= 1000; i++ {
 		//fmt.Println("\nafter step", i, "flashes:", flash, " prevFlashes", prevFlash)
-		if (flash - prevFlash == 100) {
+		if flash-prevFlash == 100 {
 			fmt.Println("what a hack...", i)
 		}
 		prevFlash = flash

@@ -41,45 +41,54 @@ func readProcess(filename string) int {
 		fmt.Println(err)
 	}
 
-	t = runEvolutions(m, t)
-	return mostLeastCommonDiff(t)
+	return runEvolutions(m, t)
 }
 
-func runEvolutions(m map[string]string, t string) string {
-	for i := 0; i < 10; i++ {
-		var newT string = ""
-		for j := 1; j < len(t); j++ {
-			key := t[j-1 : j+1]
-			//fmt.Println("?", key, m[key])
-			newT = newT + t[j-1:j] + m[key] // + t[j:j+1]
-		}
-		newT = newT + t[len(t)-1:len(t)]
-		//fmt.Println ((i+1), t, newT)
+func runEvolutions(m map[string]string, t string) int {
+	c := make(map[byte]int)
+	mc := make(map[string]int)
 
-		t = newT //evolution!!
+	for j := 1; j < len(t); j++ { //init
+		key := t[j-1 : j+1]
+		mc[key]++
+		c[t[j]]++
 	}
+	c[t[0]]++
 
-	//fmt.Println(len(t))
-	return t
-}
+	for i := 0; i < 40; i++ {
+		newmc := make(map[string]int)
 
-func mostLeastCommonDiff(s string) int {
-	m := make(map[byte]int)
-	for j := 1; j < len(s); j++ {
-		m[s[j]] += 1
+		for k, v := range mc {
+			child := m[k]
+			dad := k[0:1] + child
+			mom := child + k[1:2]
+			//fmt.Println(i, k,v, dad, mom)
+
+			if v > 0 {
+				//fmt.Println("increasing ", mom[0], v)
+				c[mom[0]] = c[mom[0]] + v
+				newmc[mom] = newmc[mom] + v
+				newmc[dad] = newmc[dad] + v
+			}
+		}
+
+		mc = newmc
+		//fmt.Println("\t*", i+1, mc, c)
 	}
 
 	most := 0
-	least := 10000000
-	for _, v := range m {
+	least := 9223372036854775807 //https://stackoverflow.com/questions/6878590/the-maximum-value-for-an-int-type-in-go
+	total := 0
+	for _, v := range c {
 		if most < v {
 			most = v
 		}
 		if least > v {
 			least = v
 		}
+		total += v
 	}
 
-	//fmt.Println(m, most, least)
+	fmt.Println("\t\t\t", "most:", most, "least:", least, "total:", total)
 	return (most - least)
 }

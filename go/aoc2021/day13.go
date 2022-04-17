@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-const SIZE = 16
+const SIZE = 2000 //16
 
 func solve(filename string, size int) int {
 	f, err := os.Open("/home/mike/Documents/aoc/" + filename + ".txt")
@@ -31,14 +31,20 @@ func solve(filename string, size int) int {
 		} else if len(line) > 1 {
 			x := safeParse(strings.Split(line, ",")[0])
 			y := safeParse(strings.Split(line, ",")[1])
-			m[y][x] = 1
+			m[y][x] = 1 // isn't this kinda backwards?
 		}
 		lines = lines + 1
 	}
 
-	for i := 0; i < len(folds); i++ {
+	for i := 0; i < 1; /*len(folds)*/ i++ {
+		foldingLine := safeParse(strings.Split(folds[i], "=")[1])
+		if strings.HasPrefix(folds[i], "fold along x=") {
+			m = foldLeft(m, foldingLine)
+		} else if strings.HasPrefix(folds[i], "fold along y=") {
+			m = foldUp(m, foldingLine)
+		}
 		printNicely(m)
-		fmt.Println(count(m), "after", folds[i])
+		fmt.Println("\t-->", count(m), "after", folds[i], "fold at:", foldingLine)
 	}
 
 	fmt.Println("\n\tlines:", lines, "folds:", folds)
@@ -51,12 +57,36 @@ func solve(filename string, size int) int {
 
 func main() {
 	fmt.Println("solve gives", solve("day13-0", 12))
-	//fmt.Println("solve gives", solve("day13-1", 2000))
+	fmt.Println("solve gives", solve("day13-1", 2000))
+}
+
+func foldUp(m [SIZE][SIZE]int, at int) [SIZE][SIZE]int {
+	for i := at; i < SIZE; i++ {
+		for j := 0; j < SIZE; j++ {
+			if m[i][j] == 1 {
+				m[at*2-i][j] = 1
+				m[i][j] = 0
+			}
+		}
+	}
+	return m // do I really need to return?
+}
+
+func foldLeft(m [SIZE][SIZE]int, at int) [SIZE][SIZE]int {
+	for i := 0; i < SIZE; i++ {
+		for j := at; j < SIZE; j++ {
+			if m[i][j] == 1 {
+				m[i][at*2-j] = 1
+				m[i][j] = 0
+			}
+		}
+	}
+	return m // do I really need to return?
 }
 
 func printNicely(m [SIZE][SIZE]int) {
 	for i := 0; i < SIZE; i++ {
-		fmt.Println(m[i])
+		//fmt.Println(m[i])
 	}
 }
 

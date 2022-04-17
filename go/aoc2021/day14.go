@@ -9,7 +9,7 @@ import (
 
 func main() { //https://adventofcode.com/2021/day/12
 	fmt.Println("\t=> expected 1588, got: ", readProcess("day14-0"))
-	fmt.Println("\t=> got: ", readProcess("day14-1"))
+	fmt.Println("\t=> expected 4517, got: ", readProcess("day14-1"))
 }
 
 func readProcess(filename string) int {
@@ -37,6 +37,15 @@ func readProcess(filename string) int {
 		}
 	}
 
+	if err := scanner.Err(); err != nil {
+		fmt.Println(err)
+	}
+
+	t = runEvolutions(m, t)
+	return mostLeastCommonDiff(t)
+}
+
+func runEvolutions(m map[string]string, t string) string {
 	for i := 0; i < 10; i++ {
 		var newT string = ""
 		for j := 1; j < len(t); j++ {
@@ -51,13 +60,7 @@ func readProcess(filename string) int {
 	}
 
 	//fmt.Println(len(t))
-
-	if err := scanner.Err(); err != nil {
-		fmt.Println(err)
-	}
-
-	return mostLeastCommonDiff(t)
-
+	return t
 }
 
 func mostLeastCommonDiff(s string) int {

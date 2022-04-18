@@ -18,13 +18,15 @@ func main() {
 	scanner := bufio.NewScanner(f)
 	scanner.Split(bufio.ScanLines)
 
-	var nums []int
+	const S = 10
+	var nums [S][S]int
+	count := 0
 	if scanner.Scan() {
 		line := strings.Split(scanner.Text(), ",")
-		nums = make([]int, len(line))
 		for j := 0; j < len(line); j++ {
-			nums[j] = safeParse(line[j])
+			nums[count][j] = safeParse(line[j])
 		}
+		count++
 	}
 	
 	if err := scanner.Err(); err != nil {

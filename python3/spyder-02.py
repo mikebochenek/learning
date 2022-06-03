@@ -5,7 +5,7 @@ Spyder Editor - This is another temporary script file for playing around in 2022
 
 import matplotlib.pyplot as plt
 import pandas as pd
-df = pd.read_csv('/home/mike/ownCloud/Documents/linkedin-export/Connections.csv')
+df = pd.read_csv('/home/mike/ownCloud/Documents/backups/linkedin-export/Connections.csv')
 #print(df.info())
 companies = (df.groupby(['Company']).size().sort_values(ascending=False))
 print(companies.head(20))

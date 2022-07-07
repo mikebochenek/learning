@@ -2,10 +2,12 @@
 # https://en.wikipedia.org/wiki/Mandelbrot_set
 
 import matplotlib.image
+from numba import cuda
+from numba import jit #https://github.com/harrism/numba_examples/blob/master/mandelbrot_numba.ipynb
 from datetime import datetime
 
+@jit
 def generate(w, h, max_iterations):
-    startTime = datetime.now()
 
     matrix = [[0 for x in range(w)] for y in range(h)] 
 
@@ -23,12 +25,13 @@ def generate(w, h, max_iterations):
                 iteration = iteration + 1
                 
             matrix[j][i] = iteration  
-    
-    print(datetime.now() - startTime, 'time taken to generate', w, h, 'max:', max_iterations) 
-
+            
     return matrix
 
+startTime = datetime.now()
 array = generate(800, 600, 40)
+print(datetime.now() - startTime, 'time taken to generate', 800, 600, 'max:', 40) 
+
 outputfile = '/tmp/mandelbrot.png'
 matplotlib.image.imsave(outputfile, array)
 print (outputfile)

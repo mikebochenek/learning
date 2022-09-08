@@ -17,6 +17,12 @@ df = pd.read_csv('/home/mike/ownCloud/Documents/backups/linkedin-export/Connecti
 companies = (df.groupby(['Company']).size().sort_values(ascending=False))
 # print(df.tail(20))     # last 20
 # print(df.iloc[::2, 0]) # even/odd
-print(df.iat[12,0])      # https://note.nkmk.me/en/python-pandas-at-iat-loc-iloc/
+print(df.iat[24,4])      # https://note.nkmk.me/en/python-pandas-at-iat-loc-iloc/
+
+df = pd.read_csv("/home/mike/Documents/opendata/ds_salaries.csv") 
+print(df["salary_in_usd"].mean())
+#print(df.describe())
+#print(df.groupby(["employee_residence"]).size())
+#print(df.groupby(["employee_residence"]).mean())
 
 print(datetime.now() - startTime, 'linkedin-export shape:', df.shape) 

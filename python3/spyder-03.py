@@ -21,7 +21,7 @@ print(df.iat[24,4])      # https://note.nkmk.me/en/python-pandas-at-iat-loc-iloc
 
 df = pd.read_csv("/home/mike/Documents/opendata/ds_salaries.csv") 
 print(df["salary_in_usd"].mean())
-#print(df.describe())
+print(df.describe())
 #print(df.groupby(["employee_residence"]).size())
 #print(df.groupby(["employee_residence"]).mean())
 

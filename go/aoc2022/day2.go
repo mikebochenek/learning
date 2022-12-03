@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/aoc/day2-0.txt")
+	f, err := os.Open("/home/mike/Documents/aoc/day2-1.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -20,25 +20,25 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 		// A for Rock, B for Paper, and C for Scissors
-		// X for Rock, Y for Paper, and Z for Scissors
+		// X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win
 		if (       line == "A Y") {
-			score += (2 + 6)
+			score += (1 + 3)
 		} else if (line == "B X") {
 			score += (1 + 0)
 		} else if (line == "C Z") {
-			score += (3 + 3)
+			score += (1 + 6)
 		} else if (line == "A X") {
-			score += (1 + 3)
-		} else if (line == "A Z") {
 			score += (3 + 0)
+		} else if (line == "A Z") {
+			score += (2 + 6)
 		} else if (line == "B Y") {
 			score += (2 + 3)
 		} else if (line == "B Z") {
 			score += (3 + 6)
 		} else if (line == "C X") {
-			score += (1 + 6) 
+			score += (2 + 0) 
 		} else if (line == "C Y") {
-			score += (2 + 0)
+			score += (3 + 3)
 		}
 	}
 

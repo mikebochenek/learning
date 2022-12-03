@@ -18,14 +18,21 @@ func main() {
 	scanner.Split(bufio.ScanLines)
 
 	score := 0
+	var lines []string
+
 	for scanner.Scan() {
 		line := scanner.Text()
-		first := line[0:len(line)/2]
-		second := line[len(first):len(line)]
+		lines = append(lines, line)
+	}
+	for j := 2; j < len(lines); j+=3 {
+		first := lines[j-2]
+		second := lines[j-1]
+		third := lines[j]
 
 		priority := first[0]
 		for i := 0; i < len(first); i++ {
-			if (bytes.Contains([]byte(second), []byte{first[i]})) {
+			if (bytes.Contains([]byte(second), []byte{first[i]}) && 
+			    bytes.Contains([]byte(third), []byte{first[i]})) {
 				priority = first[i]
 				if (priority >= 97) {
 					priority = priority - 96

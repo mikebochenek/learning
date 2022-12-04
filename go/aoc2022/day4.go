@@ -37,10 +37,10 @@ func main() {
 		s2[0] = safeParse(s2str[0])
 		s2[1] = safeParse(s2str[1])
 
-		if (s1[0] >= s2[0] && s1[0] <= s2[1] && s1[1] >= s2[0] && s1[1] <= s2[1]) {
+		if (s1[1] >= s2[0] && s1[1] <= s2[1]) {
 			score += 1
 			fmt.Println(" yes1 ", s1, s2)
-		} else if (s2[0] >= s1[0] && s2[0] <= s1[1] && s2[1] >= s1[0] && s2[1] <= s1[1]) {
+		} else if (s2[1] >= s1[0] && s2[1] <= s1[1]) {
 			score += 1
 			fmt.Println(" yes2 ", s1, s2)
 		} else {

@@ -1,7 +1,7 @@
 learning
 ========
 
-various learning notes and exercises
+collection of various learning notes and exercises
 
 * appway (java, uml)
 * arduino (working example from years back)

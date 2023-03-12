@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "workbench.tips.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "git.confirmSync": false,
+
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.go$",
+                "cmd": "echo ' ' && date && go run ${file}"
+            },
+            {
+                "match": "\\.py$",
+                "cmd": "python3 ${file}"
+            }
+        ]
+    }
+}
+

@@ -26,3 +26,15 @@ assert(isPrime(3))
 assert(13 == findNthPrime(6))
 
 print('What is the 10 001st prime number?', findNthPrime(10001), (datetime.now()-startTime))
+
+
+# https://projecteuler.net/problem=38
+def pandigital(n, m):
+    v = ''
+    for i in m:
+        v = v + str(n * i)
+        #print (i, v)
+    return v
+
+assert('192384576' == pandigital(192, (1,2,3)))
+assert('918273645' == pandigital(9, (1,2,3,4,5)))

@@ -38,3 +38,12 @@ def pandigital(n, m):
 
 assert('192384576' == pandigital(192, (1,2,3)))
 assert('918273645' == pandigital(9, (1,2,3,4,5)))
+
+
+# https://projecteuler.net/problem=41
+# We shall say that an n-digit number is pandigital if it makes use of all 
+# the digits 1 to n exactly once. For example, 2143 is a 4-digit 
+# pandigital and is also prime.
+# What is the largest n-digit pandigital prime that exists?
+def pandigitalprime(n):
+    return False

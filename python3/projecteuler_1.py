@@ -47,3 +47,20 @@ assert('918273645' == pandigital(9, (1,2,3,4,5)))
 # What is the largest n-digit pandigital prime that exists?
 def pandigitalprime(n):
     return False
+
+
+# https://projecteuler.net/problem=3
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143?
+def primeFactor(x):
+    for k in range(x):
+        t = (x - k - 1)
+        m = x % t
+        if (m == 0):
+            # print ('pk', k, m, x, t)
+            if (isPrime(t)):
+                return t
+    return -1
+
+assert (29 == primeFactor(13195))
+# print (primeFactor(600851475143)) # way too slow!

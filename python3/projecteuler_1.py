@@ -62,5 +62,18 @@ def primeFactor(x):
                 return t
     return -1
 
+def primeFactorRecursive(x):
+    #print ('rec', x)
+
+    if (isPrime(x)):
+        return x
+    for k in range(x):
+        if (x % (k+2) == 0):
+            #print ('...', (k+2))
+            return primeFactorRecursive(int(x / (k+2)))
+    #if x > 1 & isPrime(x):
+    return x
+
+assert (29 == primeFactorRecursive(13195))
 assert (29 == primeFactor(13195))
-# print (primeFactor(600851475143)) # way too slow!
+print (primeFactorRecursive(600851475143)) # way too slow!

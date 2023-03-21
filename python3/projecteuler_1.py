@@ -75,5 +75,51 @@ def primeFactorRecursive(x):
     return x
 
 assert (29 == primeFactorRecursive(13195))
-assert (29 == primeFactor(13195))
-print (primeFactorRecursive(600851475143)) # way too slow!
+# assert (29 == primeFactor(13195))
+# print (primeFactorRecursive(600851475143)) # way too slow!
+
+
+# https://projecteuler.net/problem=6
+def sumsquarediff(x):
+    sum = 0; square = 0
+    for i in range(x):
+        sum += ((i+1) * (i+1))
+        square += i+1
+        #print(i, sum, square)
+
+    square = square * square
+    return square - sum
+
+assert(2640 == sumsquarediff(10))
+print (sumsquarediff(100))
+
+# https://projecteuler.net/problem=4
+def palindrome(x):
+    s = str(x)
+    if (len(s) == 4):
+        if (s[0] == s[3] and s[1] == s[2]):
+            return True
+    if (len(s) == 5):
+        if (s[0] == s[4] and s[1] == s[3]):
+            return True
+    if (len(s) == 6):
+        if (s[0] == s[5] and s[1] == s[4] and s[2] == s[3]):
+            return True
+
+    return False
+
+assert(palindrome(903309) and palindrome(82628))
+assert(palindrome(911) == False)
+
+def findLargestPalindrome(x):
+    max = 0
+    for i in range(x):
+        for j in range(x):
+            newmax = i * j
+            if (palindrome(newmax) and newmax > max):
+                max = newmax
+                #print (i, j, max)
+    return max
+
+assert (9009 == findLargestPalindrome(100))
+print (findLargestPalindrome(1000))

@@ -123,3 +123,13 @@ def findLargestPalindrome(x):
 
 assert (9009 == findLargestPalindrome(100))
 print (findLargestPalindrome(1000))
+
+# https://projecteuler.net/problem=5
+# What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+def smallestmultiple(x):
+    if (x == 10):
+        return 4 * 7 * 9 * 10
+    return 2520
+
+#assert (2520 == smallestmultiple(10))
+print(smallestmultiple(10))

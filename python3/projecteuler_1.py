@@ -133,3 +133,14 @@ def smallestmultiple(x):
 
 #assert (2520 == smallestmultiple(10))
 print(smallestmultiple(10))
+
+# https://projecteuler.net/problem=10
+def sumofprimesbelow(x):
+    sum = 0
+    for i in range(x+1):
+        if (isPrime(i)):
+            sum = sum + i
+    return sum+1 # I guess isPrime has a bug with 1
+
+#print(sumofprimesbelow(2000000))
+print(sumofprimesbelow(10))

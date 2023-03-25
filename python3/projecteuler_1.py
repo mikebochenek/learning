@@ -144,3 +144,16 @@ def sumofprimesbelow(x):
 
 #print(sumofprimesbelow(2000000))
 print(sumofprimesbelow(10))
+
+# https://projecteuler.net/problem=16
+# curious how python behaves "out of the box"
+def powerdigitsum(x):
+    v = str(2**x)
+    sum = 0
+    for i in range(len(v)):
+        #print ('....', int(v[i]))
+        sum = sum + int(v[i])
+    return sum
+
+assert (26 == powerdigitsum(15))
+print (powerdigitsum(1000))

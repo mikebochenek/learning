@@ -25,7 +25,7 @@ startTime = datetime.now()
 assert(isPrime(3))
 assert(13 == findNthPrime(6))
 
-print('What is the 10 001st prime number?', findNthPrime(10001), (datetime.now()-startTime))
+# print('What is the 10 001st prime number?', findNthPrime(10001), (datetime.now()-startTime))
 
 
 # https://projecteuler.net/problem=38
@@ -91,7 +91,7 @@ def sumsquarediff(x):
     return square - sum
 
 assert(2640 == sumsquarediff(10))
-print (sumsquarediff(100))
+print ('  #6', sumsquarediff(100))
 
 # https://projecteuler.net/problem=4
 def palindrome(x):
@@ -122,7 +122,7 @@ def findLargestPalindrome(x):
     return max
 
 assert (9009 == findLargestPalindrome(100))
-print (findLargestPalindrome(1000))
+print ('  #4', findLargestPalindrome(1000))
 
 # https://projecteuler.net/problem=5
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
@@ -132,7 +132,7 @@ def smallestmultiple(x):
     return 2520
 
 #assert (2520 == smallestmultiple(10))
-print(smallestmultiple(10))
+print('  #5', smallestmultiple(10))
 
 # https://projecteuler.net/problem=10
 def sumofprimesbelow(x):
@@ -143,7 +143,7 @@ def sumofprimesbelow(x):
     return sum+1 # I guess isPrime has a bug with 1
 
 #print(sumofprimesbelow(2000000))
-print(sumofprimesbelow(10))
+print(' #10', sumofprimesbelow(10))
 
 # https://projecteuler.net/problem=16
 # curious how python behaves "out of the box"
@@ -156,4 +156,6 @@ def powerdigitsum(x):
     return sum
 
 assert (26 == powerdigitsum(15))
-print (powerdigitsum(1000))
+print (' #16', powerdigitsum(1000))
+
+print ('and it only took...', (datetime.now()-startTime))

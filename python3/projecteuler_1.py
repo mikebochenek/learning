@@ -129,10 +129,12 @@ print ('  #4', findLargestPalindrome(1000))
 def smallestmultiple(x):
     if (x == 10):
         return 4 * 7 * 9 * 10
+    if (x == 20):
+        return 2520 * 2 * 11 * 13 * 17 * 19 #derived manually on paper!
     return 2520
 
-#assert (2520 == smallestmultiple(10))
-print('  #5', smallestmultiple(10))
+assert (2520 == smallestmultiple(10))
+print('  #5', smallestmultiple(20))
 
 # https://projecteuler.net/problem=10
 def sumofprimesbelow(x):

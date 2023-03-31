@@ -160,4 +160,25 @@ def powerdigitsum(x):
 assert (26 == powerdigitsum(15))
 print (' #16', powerdigitsum(1000))
 
+# https://projecteuler.net/problem=20
+def factorial(x):
+    f = 1
+    for i in range(x):
+        f = f * (x - i)
+    return f
+
+def factorialdigitsum(x):
+    f = factorial(x)
+    s = str(f)
+    sum = 0
+    for i in range (len(s)):
+        sum = sum + int(s[i])
+    return sum
+
+assert(3628800 == factorial(10))
+assert(27 == factorialdigitsum(10))
+
+print ('#20', factorialdigitsum(100)) 
+# pretty impressive that such large numbers are handled 'out-of-the-box'
+
 print ('and it only took...', (datetime.now()-startTime))

@@ -122,7 +122,7 @@ def findLargestPalindrome(x):
     return max
 
 assert (9009 == findLargestPalindrome(100))
-print ('  #4', findLargestPalindrome(1000))
+# print ('  #4', findLargestPalindrome(1000)) # this one runs slowly
 
 # https://projecteuler.net/problem=5
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
@@ -178,7 +178,7 @@ def factorialdigitsum(x):
 assert(3628800 == factorial(10))
 assert(27 == factorialdigitsum(10))
 
-print ('#20', factorialdigitsum(100)) 
+print (' #20', factorialdigitsum(100)) 
 # pretty impressive that such large numbers are handled 'out-of-the-box'
 
-print ('and it only took...', (datetime.now()-startTime))
+print (' > and it only took: ', (datetime.now()-startTime))

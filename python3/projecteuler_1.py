@@ -181,4 +181,21 @@ assert(27 == factorialdigitsum(10))
 print (' #20', factorialdigitsum(100)) 
 # pretty impressive that such large numbers are handled 'out-of-the-box'
 
+# https://projecteuler.net/problem=25
+def fibonacci(x):
+    f1 = 1; f2 = 1; i = 0
+    while True:
+        t = f1 + f2
+        f1 = f2
+        f2 = t
+        i = i + 1
+        # print(t, i+2)
+        s = str(t)
+        if (len(s) >= x):
+            # break
+            return i+2
+
+assert(12 == fibonacci(3))
+print (' #25', fibonacci(1000))
+
 print (' > and it only took: ', (datetime.now()-startTime))

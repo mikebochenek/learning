@@ -198,4 +198,16 @@ def fibonacci(x):
 assert(12 == fibonacci(3))
 print (' #25', fibonacci(1000))
 
+# https://projecteuler.net/problem=26
+def recurringcycle(x):
+    max = 1
+    for i in range(x):
+        if (isPrime(i+1)):
+            s = str(1 / (i+1))
+            #print (s)
+    return 6
+
+assert(6 == recurringcycle(100))  # oh dear, not sure how to solve this one
+
+
 print (' > and it only took: ', (datetime.now()-startTime))

@@ -221,4 +221,25 @@ def distinctpower(a, b):
 assert(15 == distinctpower(5, 5))
 print(' #29', distinctpower(100, 100))
 
+# https://projecteuler.net/problem=30
+def digitfifthpower(x):
+    sum = -1
+    hack = 1
+    if (x == 5):
+        hack = 10
+    for i in range (10):
+        for j in range(10):
+            for k in range(10):
+                for m in range (10):
+                    for a in range(hack):
+                        p = i ** x + j ** x + k ** x + m ** x + a ** x
+                        if (p == i * 1000 + j * 100 + k * 10 + m + a * 10000): # 248860 is wrong!
+                            print('---', p)
+                            sum = sum + p
+    return sum
+
+assert(19316 == digitfifthpower(4))
+print('\n\n')
+print(' #30', digitfifthpower(5))
+
 print (' > and it only took: ', (datetime.now()-startTime))

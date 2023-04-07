@@ -209,5 +209,16 @@ def recurringcycle(x):
 
 assert(6 == recurringcycle(100))  # oh dear, not sure how to solve this one
 
+# https://projecteuler.net/problem=29
+def distinctpower(a, b):
+    s = set()
+    for i in range(a-1):
+        for j in range(b-1): # nothing beats brute force: nested for loops!
+            x = (i+2) ** (j+2)
+            s.add(x)
+    return (len(s))
+
+assert(15 == distinctpower(5, 5))
+print(' #29', distinctpower(100, 100))
 
 print (' > and it only took: ', (datetime.now()-startTime))

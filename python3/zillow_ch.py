@@ -4,10 +4,18 @@
 Created on Sat Apr  8 17:42:27 2023
 """
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv') #'Distribution_of_income.csv')
-# print(df.info())
+
+"""
+print(df.info())
+bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011 & TAX_RATE_CODE == 2'))
+print(bycode['NUMBER_OF_TAXPAYERS'].sum()) # 2687
+bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011').groupby(['TAX_RATE_CODE']).sum())
+print(bycode)
+2687 / 4574
+"""
 
 def calcP(d):
     sumt = d['NUMBER_OF_TAXPAYERS'].sum()
@@ -17,3 +25,24 @@ def calcP(d):
 
 zollikon = calcP(df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011'))
 maur = calcP(df.query('MUNICIPALITY == "Maur" & YEAR == 2011'))
+
+def score(s):
+    d = calcP(df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
+    return ((d['INCOME_GROUP_CODE'] * d['percentage']).sum())
+
+u = df['MUNICIPALITY'].unique()
+for _u in (u):
+    s = score(_u)
+    if (s > 999): #(s < 540):
+        print (' *** ', _u, s)
+    else:
+        None
+        #print(_u, s)
+
+print('\nHerrliberg', score('Herrliberg'))
+print('Rüschlikon', score('Rüschlikon'))
+print('Zollikon', score('Zollikon'))
+print('Küsnacht', score('Küsnacht '))
+print('Dietikon', score('Dietikon'))
+print('Wetzikon', score('Wetzikon'))
+print('Maur', score('Maur'))

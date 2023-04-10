@@ -30,22 +30,26 @@ def score(s):
     d = calcP(df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
     return ((d['INCOME_GROUP_CODE'] * d['percentage']).sum())
 
-def findmedian(s):
+def findpercentile(s, p):
     d = calcP(df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
     d['cumulative'] = d['percentage'].cumsum()
-    return d.query('cumulative > 50').iloc[0,0]
+    return d.query('cumulative > ' + str(p)).iloc[0,0]
+
+def findmedian(s):
+    return findpercentile(s, 50)
 
 u = df['MUNICIPALITY'].unique()
 for _u in (u):
     s = score(_u)
     m = findmedian(_u)
+    p90 = findpercentile(_u, 10)
     if (s > 999): #(s < 540):
-        print (' *** ', _u, m, s)
+        print (' *** ', _u, m, p90, s)
     else:
         None
         #print(_u, m, s)
 
-print('\nRüschlikon', score('Rüschlikon'))
-print('Dietikon', findmedian('Dietikon'), score('Dietikon'))
-print('Wetzikon', findmedian('Wetzikon'), score('Wetzikon'))
-print('Maur', findmedian('Maur'), score('Maur'))
+print('\ncity median p90 p95 score') #of special interest are:
+ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
+for o in ofinterest:
+    print(o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), score(o))

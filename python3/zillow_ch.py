@@ -6,7 +6,7 @@ Created on Sat Apr  8 17:42:27 2023
 
 # import matplotlib.pyplot as plt
 import pandas as pd
-df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv') #'Distribution_of_income.csv')
+df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv')
 
 """
 print(df.info())

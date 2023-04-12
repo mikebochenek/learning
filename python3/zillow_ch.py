@@ -23,9 +23,6 @@ def calcP(d):
     d['percentage'] = d['NUMBER_OF_TAXPAYERS'] / sumt * 100
     return d[['INCOME_GROUP_CODE', 'percentage']]
 
-zollikon = calcP(df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011'))
-maur = calcP(df.query('MUNICIPALITY == "Maur" & YEAR == 2011'))
-
 def score(s):
     d = calcP(df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
     return ((d['INCOME_GROUP_CODE'] * d['percentage']).sum())

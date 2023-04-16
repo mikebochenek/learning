@@ -9,21 +9,19 @@ import pandas as pd
 df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv')
 
 """
-print(df.info())
 bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011 & TAX_RATE_CODE == 2'))
 print(bycode['NUMBER_OF_TAXPAYERS'].sum()) # 2687
 bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011').groupby(['TAX_RATE_CODE']).sum())
-print(bycode)
-2687 / 4574
+print(bycode) # 2687 / 4574
 """
 
-def calcP(d):
+def calcP(d):  #calculate 'percentile' and add to new column
     sumt = d['NUMBER_OF_TAXPAYERS'].sum()
     d = d.sort_values(by=['INCOME_GROUP_CODE'], ascending=False)
     d['percentage'] = d['NUMBER_OF_TAXPAYERS'] / sumt * 100
     return d[['INCOME_GROUP_CODE', 'percentage']]
 
-def score(s):
+def score(s): #rough score: higher percentage in higher brackets, gives higher score
     d = calcP(df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
     return ((d['INCOME_GROUP_CODE'] * d['percentage']).sum())
 

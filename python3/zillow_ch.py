@@ -15,6 +15,25 @@ bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011').groupby(['TAX_RA
 print(bycode) # 2687 / 4574
 """
 
+def mid(d):
+    if d <= 30:
+        return d * 10000 - 5000
+    elif d <= 45:
+        return 300000 + (d - 30) * 50000 - 25000
+    else:
+        return 0
+
+assert 5000 == mid(1) and 95000 == mid(10)
+assert 215000 == mid(22) and 375000 == mid(32) and 925000 == mid(43)
+
+def average(s):
+    d = (df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
+    totalIncome = 0; totalPayers = 0
+    for index, row in d.iterrows():
+        totalIncome = totalIncome + mid(row['INCOME_GROUP_CODE']) * row['NUMBER_OF_TAXPAYERS']
+        totalPayers = totalPayers + row['NUMBER_OF_TAXPAYERS']
+    return totalIncome / totalPayers
+
 def calcP(d):  #calculate 'percentile' and add to new column
     sumt = d['NUMBER_OF_TAXPAYERS'].sum()
     d = d.sort_values(by=['INCOME_GROUP_CODE'], ascending=False)
@@ -33,6 +52,12 @@ def findpercentile(s, p):
 def findmedian(s):
     return findpercentile(s, 50)
 
+
+print('\ncity median p90 p95 score average') #of special interest are:
+ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
+for o in ofinterest:
+    print(o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), "%.1f" % score(o), "%.1f" % average(o))
+
 u = df['MUNICIPALITY'].unique()
 for _u in (u):
     s = score(_u)
@@ -43,8 +68,3 @@ for _u in (u):
     else:
         None
         #print(_u, m, s)
-
-print('\ncity median p90 p95 score') #of special interest are:
-ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
-for o in ofinterest:
-    print(o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), score(o))

@@ -7,6 +7,7 @@ Created on Sat Apr  8 17:42:27 2023
 # import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv')
+ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
 
 """
 bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011 & TAX_RATE_CODE == 2'))
@@ -28,10 +29,15 @@ assert 215000 == mid(22) and 375000 == mid(32) and 925000 == mid(43)
 
 def average(s):
     d = (df.query('MUNICIPALITY == "' + s + '" & YEAR == 2011'))
-    totalIncome = 0; totalPayers = 0
+    totalIncome = 0; totalPayers = 0; runningAverage = 0
+    sumt = d['NUMBER_OF_TAXPAYERS'].sum()
     for index, row in d.iterrows():
-        totalIncome = totalIncome + mid(row['INCOME_GROUP_CODE']) * row['NUMBER_OF_TAXPAYERS']
-        totalPayers = totalPayers + row['NUMBER_OF_TAXPAYERS']
+        midIncome = mid(row['INCOME_GROUP_CODE'])
+        count = row['NUMBER_OF_TAXPAYERS']
+        totalIncome = totalIncome + midIncome * count
+        totalPayers = totalPayers + count
+        runningAverage = runningAverage + midIncome * count / sumt
+    #print (' DEBUG -> ', runningAverage, 'vs.', (totalIncome / totalPayers))
     return totalIncome / totalPayers
 
 def calcP(d):  #calculate 'percentile' and add to new column
@@ -54,7 +60,6 @@ def findmedian(s):
 
 
 print('\ncity median p90 p95 score average') #of special interest are:
-ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
 for o in ofinterest:
     print(o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), "%.1f" % score(o), "%.1f" % average(o))
 

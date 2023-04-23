@@ -16,7 +16,7 @@ bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011').groupby(['TAX_RA
 print(bycode) # 2687 / 4574
 """
 
-def mid(d):
+def mid(d): # see ../ruby/zillow-play1.rb
     if d <= 30:
         return d * 10000 - 5000
     elif d <= 45:
@@ -57,7 +57,6 @@ def findpercentile(s, p):
 
 def findmedian(s):
     return findpercentile(s, 50)
-
 
 print('\ncity median p90 p95 score average') #of special interest are:
 for o in ofinterest:

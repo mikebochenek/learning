@@ -11,5 +11,15 @@ def mc(i):
     return False
 
 assert (mc(111111) and False == mc(223450) and False == mc(123789))
-
 # 240298-784956
+
+
+# https://cryptography.io/en/latest/ -- also crypto101 would be fun
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+print(key)
+
+
+import hashlib
+s = hashlib.sha256(b"https://docs.python.org/3/library/hashlib.html").hexdigest()
+print (s)

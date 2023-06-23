@@ -19,7 +19,9 @@ from cryptography.fernet import Fernet
 key = Fernet.generate_key()
 print(key)
 
-
 import hashlib
 s = hashlib.sha256(b"https://docs.python.org/3/library/hashlib.html").hexdigest()
+
+from hashlib import blake2b
+s = blake2b(b'https://docs.python.org/3/library/hashlib.html#creating-hash-objects').hexdigest()
 print (s)

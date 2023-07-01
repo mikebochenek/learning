@@ -18,14 +18,19 @@ def mc(i): #meets criteria?
             return False
         if (str(i)[j] == str(i)[j+1]):
             adjacent = True
+
+            # Part II below (breaks existing asserts)
+            # the two adjacent matching digits are not part of a larger group of matching digits
+            if (j < (digits-2) and str(i)[j+1] == str(i)[j+2]):
+                adjacent = False
+            if (j > 0 and str(i)[j+1] == str(i)[j-1]): #893 is too high still
+                adjacent = False
+                #print (i) -- anti-example: 779999
         
     return adjacent
 
-    #if i == 111111:
-    #    return True
-    #return False
-
-assert (mc(111111) and False == mc(223450) and False == mc(123789))
+#assert (mc(111111) and False == mc(223450) and False == mc(123789))
+assert (mc(112233) and False == mc(123444) and mc(111122))
 
 count = 0
 for i in range(240298,784956): # 240298-784956

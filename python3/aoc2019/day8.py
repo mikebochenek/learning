@@ -14,23 +14,31 @@ def split(s, w, t):
     zeros = array.array('i')
     ones = array.array('i')
     twos = array.array('i')
-    for l in range(0, layers):
+    for i in range(0, t):
         count0 = 0
         count1 = 0
         count2 = 0
-        for i in range(0, t):
-            for j in range(0, w):
+        line = ''
+        for j in range(0, w):
+            for l in range(0, layers):
+    
                 #print (s[l*layers_size+i*w+j])
                 if('0' == s[l*layers_size+i*w+j]):
                     count0 = count0 + 1
+                    line = line + ' '
+                    break
                 if('1' == s[l*layers_size+i*w+j]):
                     count1 = count1 + 1
+                    line = line + '8'
+                    break
                 if('2' == s[l*layers_size+i*w+j]):
                     count2 = count2 + 1
                     
-        zeros.append(count0)
-        ones.append(count1)
-        twos.append(count2)
+            zeros.append(count0)
+            ones.append(count1)
+            twos.append(count2)
+
+        print(line)
 
     #print(zeros)
     #print(len(s), layers, zeros, ones, twos)
@@ -41,10 +49,12 @@ def split(s, w, t):
         if (fewest >= zeros[l]):
             fewest = zeros[l]
             ans = twos[l]*ones[l]
-            print(ans, l, fewest, ones[l], twos[l])
+            #print(ans, l, fewest, ones[l], twos[l])
 
 with open('/home/mike/Documents/aoc/2019/day_8.txt') as f:
     lines = f.read().splitlines()
 
-split(sample, 3, 2)
+#split(sample, 3, 2)
+split('0222112222120000', 2, 2)
+print('\n---\n')
 split(lines[0], 25, 6)

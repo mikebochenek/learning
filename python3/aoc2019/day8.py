@@ -6,8 +6,6 @@
 
 import array
 
-sample = '123456789012'
-
 def split(s, w, t):
     layers = int(len(s) / w / t)
     layers_size = int(len(s) / layers)
@@ -54,7 +52,7 @@ def split(s, w, t):
 with open('/home/mike/Documents/aoc/2019/day_8.txt') as f:
     lines = f.read().splitlines()
 
-#split(sample, 3, 2)
+#split('123456789012', 3, 2)
 split('0222112222120000', 2, 2)
-print('\n---\n')
+print('---\n')
 split(lines[0], 25, 6)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: mike - Created on Fri Jun 23 22:22:40 2023 
-but somehow to lazy or can't think of code 
+at the start somehow too lazy or can't think of code, but got it eventually.. 
 """
 
 def mc(i): #meets criteria?

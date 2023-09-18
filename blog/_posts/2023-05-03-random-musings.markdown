@@ -5,7 +5,7 @@ date:   2023-05-03 15:37:21
 categories: thoughts
 ---
 
-Below is an excerpt from previously "private" google doc - April2023
+Below is an excerpt from previously _private_ google doc (April2023)
 
 ## Weekend mornings are nice
 Because it’s quiet and distraction free, and I can just gaze outside with a clear mind and think about the days ahead.  I want to do fitness on the days when I am working from home - and I should make a reminder for myself in my work calendar to make it concrete.
@@ -13,7 +13,7 @@ Because it’s quiet and distraction free, and I can just gaze outside with a cl
 On the engineering side, I was just thinking that it would be nice
 - To use python/spyder correctly: only re-run changed code / cells
 - Winning some swisscom bounties would be cool
--Spend more time reading DSM code or trying spring boot (I’ve been thinking about this for ages now!)
+- Spend more time reading DSM code or trying spring boot (I’ve been thinking about this for ages now!)
 
 I am very happy that we were able to book most of the Italy trip itineraries yesterday very painlessly.  Maybe the preparation helped, or maybe we are both tired of the various negotiations.  One of the nicest things so far is that it may not turn out to be very expensive after all.
 

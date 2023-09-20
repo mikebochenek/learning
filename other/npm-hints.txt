@@ -1,0 +1,9 @@
+# less frequently used or known npm commands
+npm run
+npm list
+npm list --depth=0
+
+npm home jquery
+npm repo jquery
+
+npm outdated

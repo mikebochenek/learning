@@ -1,4 +1,4 @@
-# less frequently used or known npm commands
+# less frequently used or known npm commands (from youtube - gasp!)
 npm run
 npm list
 npm list --depth=0

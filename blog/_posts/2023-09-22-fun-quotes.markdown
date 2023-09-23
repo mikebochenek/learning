@@ -17,3 +17,8 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 - L: Can we have pasta on Sunday? (match day)
 - M: Do you mean for dinner?  or lunch? 
 - L: BREAKFAST.
+
+## A few thoughts or ideas managed to sneak in as well
+- I will probably have a different boss next year (promotion?)
+- Ask chatGPT for some ideas, but use that to come up with others
+- I have *three* very good books on AI / ML - I should really study them

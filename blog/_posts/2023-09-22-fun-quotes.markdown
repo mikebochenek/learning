@@ -9,6 +9,7 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 
 ## Thinking to myself
 - Real canadians pour maple syrup into their tea, instead of honey or milk
+- sometimes you just need a break or something different...
 
 ## Nicknames
 - Long Island Mike

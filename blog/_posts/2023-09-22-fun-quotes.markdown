@@ -13,6 +13,7 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 
 ## Nicknames
 - Long Island Mike
+- Drazen & Deputies
 
 ## True conversation
 - L: Can we have pasta on Sunday? (match day)

@@ -20,6 +20,11 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 - M: Do you mean for dinner?  or lunch? 
 - L: BREAKFAST.
 
+## Motivation
+- What we do in life, echoes in eternity
+- Sometimes you climb out of bed in the morning and you think, I’m not going to make it, but you laugh inside – remembering all the times you’ve felt that way.
+- I’m just an alcoholic who became a writer so that I would be able to stay in bed until noon. 
+
 ## A few thoughts or ideas managed to sneak in as well
 - I will probably have a different boss next year (promotion?)
 - Ask chatGPT for some ideas, but use that to come up with others

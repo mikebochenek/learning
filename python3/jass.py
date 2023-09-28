@@ -1,4 +1,5 @@
 # https://stackoverflow.com/questions/4932438/how-to-create-a-custom-string-representation-for-a-class-object
+# non-functioning implementation of jass (when did I even write this?)
 from random import shuffle
 from datetime import datetime
 

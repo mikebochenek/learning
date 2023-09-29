@@ -25,6 +25,11 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 - Sometimes you climb out of bed in the morning and you think, I’m not going to make it, but you laugh inside – remembering all the times you’ve felt that way.
 - I’m just an alcoholic who became a writer so that I would be able to stay in bed until noon. 
 
+## Movies (back then they were better somehow)
+- Footloose: overcoming things as a teenager
+- Psycho: a classic horror movie
+- New Spiderman
+
 ## A few thoughts or ideas managed to sneak in as well
 - I will probably have a different boss next year (promotion?)
 - Ask chatGPT for some ideas, but use that to come up with others

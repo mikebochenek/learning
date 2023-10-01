@@ -35,3 +35,5 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 - I will probably have a different boss next year (promotion?)
 - Ask chatGPT for some ideas, but use that to come up with others
 - I have *three* very good books on AI / ML - I should really study them
+- like pandas but for tree-structured data (i.e. XML or JSON)
+- non-english chat gpt (polish, [german liaon](https://laion.ai/blog/leo-lm/))

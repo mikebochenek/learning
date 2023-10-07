@@ -1,12 +1,11 @@
 from datetime import datetime
-
 import io
 import requests
 
 startTime = datetime.now()
 
 #url="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv"
-url = "https://www.bochenek.ch/career/index.html"
+url = "https://bochenek.ch/career/index.html"
 s=requests.get(url).content
 print (len(s), 'total bytes')
 

@@ -30,10 +30,10 @@ print(isPrime(25), end=', ')
 print(isPrime(983), end=', ')
 print(isPrime(23244)) # 23244 = 2 x 2 x 3 x 13 x 149
 
-print(isPrime(3000761)) # http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
-print(isPrime(300001649))
-print(isPrime(5000001707))
-print(isPrime(50000000189))
-print(isPrime(500000001637))
+assert(isPrime(3000761)) # http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
+assert(isPrime(300001649))
+assert(isPrime(5000001707))
+assert(isPrime(50000000189))
+assert(isPrime(500000001637))
 
 print(datetime.now() - startTime, 'time taken to calculate large primes') 

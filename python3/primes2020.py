@@ -7,16 +7,14 @@ startTime = datetime.now()
 #url="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv"
 url = "https://bochenek.ch/career/index.html"
 s=requests.get(url).content
-print (len(s), 'total bytes')
-
-print(datetime.now() - startTime, 'time taken to download career/index from bochenek.ch') # usually takes 0:00:00.113123
+print (len(s), 'total bytes',
+       datetime.now() - startTime, 'time taken to download career/index from bochenek.ch') # usually takes 0.11 to 0.25s
 
 def isPrime(x):
     n = x**(1/2)
     for k in range(int(n)):
         if (x % (k+2) == 0):
             return False
-        
     return True
 
 startTime = datetime.now()

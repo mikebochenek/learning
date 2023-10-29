@@ -20,7 +20,7 @@ st.dataframe(data)
 st.title ("It's fun and addictive")
 st.header("because it looks pretty")
 st.markdown("..and because it's fast")
-st.code("import streamlit as st")
+st.code("pip3 install streamlit")
 st.subheader("can also quickly generate latex (math)")
 st.latex(r''' a+a r^1+a r^2+a r^3 ''')
 

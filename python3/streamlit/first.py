@@ -8,6 +8,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from dateutil import parser
+from datetime import datetime
 
 st.title("My First Line Plot with Streamlit")
 data = pd.DataFrame({
@@ -15,9 +17,27 @@ data = pd.DataFrame({
     "salary": [85000, 52000, 80000, 105000, 130000, 139000]})
 plt.plot(data["year"], data["salary"]) # Plot the data
 st.pyplot()  # Show the plot in the Streamlit app
-st.dataframe(data)
+# st.dataframe(data)
 
 st.title ("It's fun and addictive")
+
+birth = parser.parse('1979-03-11')
+ch = parser.parse('2011-05-28')
+today = datetime.today() #.date()  # datetime.date(datetime.now())
+age = today - birth
+
+# st.write(age)
+# st.write((today-ch) / age)
+
+countries = pd.DataFrame({
+    "country": ['pl', 'de', 'ca', 'us', 'ch'],         
+    "days": [3800, 630, 4000, 2000, (today-ch).days]})
+
+
+fig, ax = plt.subplots()
+ax.pie(countries.days, labels=countries.country)
+st.pyplot()
+
 st.header("because it looks pretty")
 st.markdown("..and because it's fast")
 st.code("pip3 install streamlit")
@@ -31,7 +51,6 @@ st.write("from https://docs.streamlit.io/library/get-started/main-concepts")
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
-
 st.line_chart(chart_data)
 
 st.write("super easy to also plot a map based on GPS coords")

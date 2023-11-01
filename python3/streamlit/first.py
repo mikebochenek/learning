@@ -19,6 +19,12 @@ plt.plot(data["year"], data["salary"]) # Plot the data
 st.pyplot()  # Show the plot in the Streamlit app
 # st.dataframe(data)
 
+officepresence = pd.DataFrame({
+    "month": ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october"],
+    "percentage": [50, 70, 52, 50, 53, 64, 46, 53, 52, 57]
+})
+st.dataframe(officepresence)
+
 st.title ("It's fun and addictive")
 
 birth = parser.parse('1979-03-11')

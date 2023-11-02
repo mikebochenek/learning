@@ -11,6 +11,7 @@ import numpy as np
 from dateutil import parser
 from datetime import datetime
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("My First Line Plot with Streamlit")
 data = pd.DataFrame({
     "year": [2001, 2004, 2005, 2007, 2008, 2015],         

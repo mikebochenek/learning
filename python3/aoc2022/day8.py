@@ -15,6 +15,9 @@ def countv(name):
                 count+=1
 
             # from left
+            for x in range(0, idy):
+                if (y < line[x]):
+                    break # definitively wrong
 
             # from right
 

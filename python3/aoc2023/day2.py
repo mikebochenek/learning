@@ -13,6 +13,9 @@ def sum_possible(filename):
         games = line.split(':')[1].split(';')
         #print(len(games))
         possible = True
+        min_red = 0
+        min_green = 0
+        min_blue = 0
         for game in games:
             counts = game.split(',')
 
@@ -29,11 +32,21 @@ def sum_possible(filename):
                     possible = False
                     #print('not possible', c, color)
 
-        if possible:
-            total = total + game_num
+                if (color == 'red' and c > min_red):
+                    min_red = c
+                if (color == 'green' and c > min_green):
+                    min_green = c
+                if (color == 'blue' and c > min_blue):
+                    min_blue = c
+
+        power = min_red * min_green * min_blue
+        #print('done', min_red, min_green, min_blue, power)
+
+        #if possible:
+        total = total + power #game_num
     
     print('total possible', total)
     return total
 
 print(sum_possible('day2-0') == 8)
-print(sum_possible('day2-1'))
+print(sum_possible('day2-1'))   # part two took < 40 mins (08:48 to approx. 09:25)

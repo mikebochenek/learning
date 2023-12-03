@@ -4,7 +4,7 @@ def sum_possible(filename):
     max_green = 13
     max_blue = 14
 
-    with open('/Users/mike/Documents/aoc2023/'+filename+'.txt') as f:
+    with open('/Users/mike/ownCloud/Documents/aoc2023/'+filename+'.txt') as f:
         lines = f.read().splitlines()
 
     total = 0

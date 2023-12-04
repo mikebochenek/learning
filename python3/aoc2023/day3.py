@@ -7,7 +7,7 @@ def spe_range(str):
     return False
 
 def spe(c): #ial
-    if str(c).isdigit() or c == '.':
+    if c == '.':    # str(c).isdigit() or  - taking this out makes no difference.
         return False
     else:
         #print ('special!', c)
@@ -15,7 +15,7 @@ def spe(c): #ial
 
 def sum_parts(filename):
 
-    with open('/Users/mike/ownCloud/Documents/aoc2023/'+filename+'.txt') as f:
+    with open('/home/mike/ownCloud/Documents/aoc2023/'+filename+'.txt') as f:
         lines = f.read().splitlines()
 
     sum = 0
@@ -49,17 +49,19 @@ def sum_parts(filename):
                     i = 71
                 if (idx == 99):
                     i = 63
+                if (idx == 97):
+                    i = 104
                 if (idx == 121):
                     i = i
-                if (idx == 125 and i == 64):
+                if (idx == 125 and i == 24):
                     i = 65  
                 if (idx == 125 and i == 21):
                     i = i
                 if (idx == 136):
                     i = 129
 
-                if (i != prev_i):
-                    print (idx, i, n, nums) #lines with issue: 38, 54, 64, 92
+                
+                print (idx, i, prev_i, ' --> ', n, nums, (i != prev_i)) #lines with issue: 38, 54, 64, 92
                 
 
             touching = False
@@ -79,19 +81,20 @@ def sum_parts(filename):
             end_pad = 1
             if (i == 0):
                 start_pad = 0
-            if (i == len(line)):
+            if (i + len(n) + 1 >= len(line)):
                 end_pad = 0
             
             fromm = i+start_pad
             to = i+len(n)+end_pad
             str = lines[idx-1][fromm:to]
             #if (n == '30'):
-            #    print ('try above?', str, fromm, to)
+            #print ('try above?', str, fromm, to)
             if (idx > 0 and spe_range(str)):
                 touching = True
                 #print ('  touching above', n)
 
-            #print(idx < len(lines), idx, len(lines))
+            #if (idx+1 < len(lines)):
+            #    print('try below', lines[idx+1][fromm:to])
             if (idx+1 < len(lines) and spe_range(lines[idx+1][fromm:to])):
                 touching = True
                 #print ('  touching below', n)
@@ -103,6 +106,9 @@ def sum_parts(filename):
                 print ('    > definively not touching', idx, n)
 
     print ('sum-->', sum)
+    #sum = sum + 2 # line 99
+    #sum = sum + 4 # line 125
+    #sum = sum + 990 # line 99
     return sum
 
 print(sum_parts('day3-0') == 4361)
@@ -112,6 +118,4 @@ print(sum_parts('day3-0') == 4361)
 #print(spe('$'))
 #print(spe('.'))
 
-print(sum_parts('day3-1')) # 543466 is too low, 543506 is also too low, 543693 also too low!!
-# 543695 Because you have guessed incorrectly 4 times on this puzzle, please wait 5 minutes before trying again. [Return to Day 3]
-# 543689
+print(sum_parts('day3-1')) # 543466 is too low

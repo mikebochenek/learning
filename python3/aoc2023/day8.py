@@ -27,17 +27,11 @@ def steps(filename):
     count = 0
     # p = '11A'
     found = 0
-    while (found < len(s) and count <= 6000):
+    while (found <= len(s) and count <= 600):
     #for count in range(0,len(ins)):
         found = 0
         new_s = list(s)
         for idx, p in enumerate(s):
-
-            if (p[2] == 'Z'):
-                found += 1
-            if (found >= len(s)):
-                print ('end!!', count-1)
-                return (count-1) / len(s)
 
             current = m[p]
             direction = ins[int(count / len(s)) % len(ins)] 
@@ -50,7 +44,14 @@ def steps(filename):
 
             new_s[idx] = p
 
-            #print (idx, s, direction, current, p, found)
+            if (p[2] == 'Z'):
+                found += 1
+            if (found >= len(s)):
+                print ('end!!', count)
+                return (count) / len(s)
+
+            if (count % 1 == 0 or found > 1):
+                print (count, idx, s, direction, current, p, found)
 
         s = new_s
 
@@ -59,7 +60,7 @@ def steps(filename):
 #print(steps('day8-0') == 2)
 #print(steps('day8-0b') == 6)
 print(steps('day8-0c') == 6)
-print('my answer', steps('day8-1'))
+# print('my answer', steps('day8-1'))
 
 # my answer 3.8333333333333335
 

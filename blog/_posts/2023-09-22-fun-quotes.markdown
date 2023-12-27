@@ -43,5 +43,5 @@ Instead of new random ideas, below are some fun memorable quotes from this year.
 - non-technical hacking of chat GPT: i.e. plant ideas (like inception movie) or maybe taking advantage of what chat GPT would recommend in the stock market (and doing opposite)
 
 ## Coding Projects
-- https://github.com/iusztinpaul/hands-on-llms
-- https://austinhenley.com/blog/challengingprojects.html
+- [hands-on-llms](https://github.com/iusztinpaul/hands-on-llms)
+- [challengingprojects](https://austinhenley.com/blog/challengingprojects.html)

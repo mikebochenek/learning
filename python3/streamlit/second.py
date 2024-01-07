@@ -14,14 +14,16 @@ def affordability(income, price, down):
     mortgage = price - down
     monthly_cost = (mortgage * 0.06 + amortization) / 12
     monthly_income = income/12*0.33 # how much can be afforded monthly
-    print ('  own equity', equity, 'monthly', monthly_cost, 'vs.', monthly_income)
-    return (equity >= 0.2) and (monthly_cost <= monthly_income)
+    a = (equity >= 0.2) and (monthly_cost <= monthly_income)
+    st.write(a, 'equity %', equity, 'monthly cost ', monthly_cost, 'vs. income', monthly_income)
+    return a
 
 def recalc():
     a = affordability(income, price, down)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.title("Mortgage calculator")
+st.title("buyer helper thingy")
+st.header('mortgage + affordability + sbb + tax score')
 
 income = st.slider('yearly income', 0, 1000000, value=100000, step=1000, on_change=recalc)
 down = st.slider('down payment', 0, 10000000, value=200000, step=1000, on_change=recalc)

@@ -25,7 +25,7 @@ htab, mtab, ptab, stab = st.tabs(["home", "mortgage", "properties", "settings"])
 
 with htab:
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    st.title("buyer helper thingy")
+    st.title("buyer/helper/thingy")
 
 with mtab:
     st.header('mortgage + affordability + sbb + tax score')

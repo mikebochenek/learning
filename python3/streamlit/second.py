@@ -21,10 +21,21 @@ def affordability(income, price, down):
 def recalc():
     a = affordability(income, price, down)
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.title("buyer helper thingy")
-st.header('mortgage + affordability + sbb + tax score')
+htab, mtab, ptab, stab = st.tabs(["home", "mortgage", "properties", "settings"])
 
-income = st.slider('yearly income', 0, 1000000, value=100000, step=1000, on_change=recalc)
-down = st.slider('down payment', 0, 10000000, value=200000, step=1000, on_change=recalc)
-price = st.slider('purchase price', 0, 10000000, value=1000000, step=1000, on_change=recalc)
+with htab:
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    st.title("buyer/helper/thingy")
+
+with mtab:
+    st.header('mortgage + affordability + sbb + tax score')
+    income = st.slider('yearly income', 10000, 1000000, value=100000, step=1000, on_change=recalc)
+    down = st.slider('down payment', 20000, 10000000, value=200000, step=1000, on_change=recalc)
+    price = st.slider('purchase price', 300000, 10000000, value=1000000, step=1000, on_change=recalc)
+
+with ptab:
+    st.header("properties")
+
+with stab:
+    st.header("settings")
+

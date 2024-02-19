@@ -8,11 +8,11 @@ def generate():
   responses = model.generate_content(
     """Read the below multiple choice question carefully, and provide the best answer:
 
-	Git. You are working on a clean Git install with no special configurations. While on the main branch, you create a new branch called mybranch, check it out, and commit data to it. Then, you check out the main branch and give the command git merge mybranch. What is the outcome of this operation?
-	(a) A rebase, creating conflicts during the merge
-	(b) A fast-forward merge, where main tip is moved to mybranch tip
-	(c) A three-way merge, where main is deleted after being merged with mybranch
-	(d) A failure because main and mybranch contain different commits""",
+	Git. You first sum 2 and two, and then multiply the result by four. What is the outcome of this operation?
+	(a) 16
+	(b) 10
+	(c) sixteen
+	(d) A failure because you cannot add before multiplication""",
     generation_config={
         "max_output_tokens": 2048,
         "temperature": 0.9,

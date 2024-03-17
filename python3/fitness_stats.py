@@ -28,19 +28,15 @@ data = np.random.randint(0, 1, len(dates))
 
 # events = pd.to_datetime(df.head(8).get('date'),format="%d.%m.%Y")
 from datetime import datetime
+types = ['','swimming','running','football']
 start = datetime.strptime('01.01.2024', "%d.%m.%Y")
 for d in df.iterrows(): # it ain't pretty, but does the job 
     date = d[1][2]
     if (isinstance(date, str) and ('2024' in date)):
         dObj = datetime.strptime(date, "%d.%m.%Y")
         diff = dObj - start 
-        print('date', dObj, type(date), d[1][4], diff.days)
-        
-        if  ('football' == d[1][4]):
-            data[diff.days] = 3
-        if  ('running' == d[1][4]):
-            data[diff.days] = 2
-        if  ('swimming' == d[1][4]):
-            data[diff.days] = 1
+        idx = types.index(d[1][4])
+        data[diff.days] = idx
+        #print('date', dObj, type(date), d[1][4], diff.days, idx)
 
 july.heatmap(dates, data, title='Fitness Activity', cmap="github")

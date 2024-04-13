@@ -10,7 +10,7 @@ pip install july   <- https://stackoverflow.com/questions/32485907/matplotlib-an
 import pandas as pd
 import calmap
 
-filename = '/home/mike/ownCloud/fitness_March8_2024.csv'
+filename = '/home/mike/ownCloud/fitness_latest.csv'
 df = pd.read_csv(filename)
 
 # example #1 
@@ -28,7 +28,7 @@ data = np.random.randint(0, 1, len(dates))
 
 # events = pd.to_datetime(df.head(8).get('date'),format="%d.%m.%Y")
 from datetime import datetime
-types = ['','swimming','running','football']
+types = ['','biking', 'swimming','running','football']
 start = datetime.strptime('01.01.2024', "%d.%m.%Y")
 for d in df.iterrows(): # it ain't pretty, but does the job 
     date = d[1][2]

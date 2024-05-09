@@ -34,3 +34,8 @@ sample='http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève'
 
 data, duration = fetchurl(sample)
 print ('(minimum)_duration:', duration, sample)
+
+# or is this even better?
+# https://search.ch/timetable/api/route.json?from=Einsiedeln&to=Z%C3%BCrich,+F%C3%B6rrlibuckstr.+60
+
+# http://transport.opendata.ch/v1/locations?type=address&query=Z%C3%BCrich,+F%C3%B6rrlibuckstr.+60

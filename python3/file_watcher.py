@@ -10,6 +10,7 @@ import requests
 https://www.ezone.co.uk/blog/using-developer-tools-to-transfer-files-on-android.html
 *** 'find and pull movies out of camera storage' ***
 adb shell 'find /storage/emulated/0/DCIM/Camera/ -name "*.mp4" -print0' | xargs -0 -n 1 adb pull
+? and where do I get the OCR again? from the view controller? 
 '''
 
 path_to_watch = "/home/mike/Pictures"

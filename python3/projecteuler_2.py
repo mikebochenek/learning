@@ -1,6 +1,8 @@
 # https://projecteuler.net/problem=885
 
 def f885(n):
+    if n <= 0:
+        return 0
     s_n = str(n)
     digits = []
     for s in s_n: # kinda brute force
@@ -15,11 +17,11 @@ def s885(n): # Let s(n) be the sum of f(d) for all positive integers d of n digi
     # print ('max', max)
     sum = 0
     for i in range (max):
-        sum = sum + 1 #f885(i)
+        sum = sum + f885(i)
     ans = sum % 1123455689
-    return 45 # ans
+    return sum
 
 assert (334 == (f885(3403)))
 assert (45 == s885(1)) # should be 45
-# assert (1543545675 == s885(5)) # should be 1543545675
-# print (s885(18))
+assert (1543545675 == s885(5)) # should be 1543545675
+print (s885(18))

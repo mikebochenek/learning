@@ -18,13 +18,18 @@ compared using the Arrays. equals method. Because this compares the length and c
 returns true.
 */
 
-public void arrayExairiple ()
-  String[] arrayl = new String[]{”a’, “b”, “C”);
-  String[] array2 = new String[]{”a”, “b”, “c”);
+import java.util.Arrays;
+
+class ArraysEqualsAndDeepEquals {
+  
+ public void arrayExairiple () {
+  String[] arrayl = new String[]{"a", "b", "c"};
+  String[] array2 = new String[]{"a", "b", "c"};
 
   // Reference equality tested: prints ‘false’
   System.out.println(arrayl.equals (array2));
 
   // Equality of array elements tested: prints ‘true’
-  System.cut.println(Arrays.equals(arrayl, array2));
+  System.out.println(Arrays.equals(arrayl, array2));
+ }  
 }

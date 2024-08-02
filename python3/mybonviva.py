@@ -26,5 +26,6 @@ def hello_prophet():
 filename = '/home/mike/ownCloud/Documents/bills/bonviva/SC-Transactions_2024-05-26_11-01-45.csv'
 df = pd.read_csv(filename)
 df.info()
+print ('\naverage amount:', df['Amount'].mean())
 
 

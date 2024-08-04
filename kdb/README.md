@@ -1,6 +1,6 @@
 # Background
 
-feels like I wanted to learn this a bit more for over two decades
+It really feels like I wanted to learn this a bit more for over two decades.  On the other hand, I doubt I will have the will power to continue, and that work/life will cooperate with few distractions.
 
 # Links 
 

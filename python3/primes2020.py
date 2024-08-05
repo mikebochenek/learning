@@ -33,5 +33,7 @@ assert(isPrime(300001649))
 assert(isPrime(5000001707))
 assert(isPrime(50000000189))
 assert(isPrime(500000001637))
+assert(isPrime(999553561583))
+assert(isPrime(99553561483))
 
 print(datetime.now() - startTime, 'time taken to calculate large primes') 

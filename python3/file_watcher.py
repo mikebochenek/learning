@@ -11,7 +11,14 @@ https://www.ezone.co.uk/blog/using-developer-tools-to-transfer-files-on-android.
 *** 'find and pull movies out of camera storage' ***
 adb shell 'find /storage/emulated/0/DCIM/Camera/ -name "*.mp4" -print0' | xargs -0 -n 1 adb pull
 ? and where do I get the OCR again? from the view controller? 
+
+~/Android/Sdk/platform-tools/adb shell 'find /storage/self/primary/DCIM/Camera/ -name "IMG_20240818*.jpg" -print0' | xargs -0 -n 1 ~/Android/Sdk/platform-tools/adb pull
 '''
+
+cmd1 = "~/Android/Sdk/platform-tools/adb shell 'find /storage/self/primary/DCIM/Camera/ -name \"IMG_"
+# IMG_20240818*.jpg
+cmd_filemask = "20240818" # IMG_20240818_174542_865 or IMG_20240818_174555_341 
+cmd2 = "*.jpg\" -print0' | xargs -0 -n 1 ~/Android/Sdk/platform-tools/adb pull"
 
 path_to_watch = "/home/mike/Pictures"
 print(datetime.now(), '*starting to watch path: "',path_to_watch,'"')
@@ -28,6 +35,8 @@ print (urlexists('https://bochenek.ch/tmp/aoc2023/ocr/Screenshot%20from%202024-0
 while 1:
     sleep(0.1)
     now = datetime.now()
+    d = now.strftime('%Y%m%d_%H%M') #'2024-08-21 19:27:01.859555'
+    # print(now, '--->', d)
 
     after = dict ([(f, None) for f in os.listdir (path_to_watch)])
     added = [f for f in after if not f in before]

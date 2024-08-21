@@ -127,5 +127,5 @@ def detect_text_uri(uri):
         )
 # [END vision_text_detection_gcs]
 
-t = detect_text('/home/mike/Downloads/20240202_153004.jpg')
-print(t)
+# t = detect_text('/home/mike/Downloads/20240202_153004.jpg')
+# print(t)

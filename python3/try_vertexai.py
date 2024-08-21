@@ -23,12 +23,3 @@ def generate(q):
   for response in responses:
     print(response.text, end="")
 
-
-generate(
-    """Read the below multiple choice question carefully, and provide the best answer:
-
-  Git. You first sum 2 and two, and then multiply the result by four. What is the outcome of this operation?
-  (a) 16
-  (b) 10
-  (c) sixteen
-  (d) A failure because you cannot add before multiplication""")

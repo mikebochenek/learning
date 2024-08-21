@@ -5,6 +5,9 @@ import os
 from datetime import datetime
 import requests
 
+# from try_vertexai import generate
+from ocr import detect_text
+
 '''
 ? maybe can be combined with "new" photos from: 
 https://www.ezone.co.uk/blog/using-developer-tools-to-transfer-files-on-android.html
@@ -25,13 +28,6 @@ print(datetime.now(), '*starting to watch path: "',path_to_watch,'"')
 
 before = dict ([(f, None) for f in os.listdir (path_to_watch)])
 
-# https://stackoverflow.com/questions/2486145/python-check-if-url-to-jpg-exists
-def urlexists(path):
-    r = requests.head(path)
-    return r.status_code == requests.codes.ok
-
-print (urlexists('https://bochenek.ch/tmp/aoc2023/ocr/Screenshot%20from%202024-02-18%2022-38-47.png'))
-
 while 1:
     sleep(0.1)
     now = datetime.now()
@@ -48,3 +44,17 @@ while 1:
     else:
         before = after
         #print(now, "no change", len(before))
+
+
+# print (detect_text('/home/mike/Downloads/20240202_153004.jpg'))
+
+'''
+generate(
+    """Read the below multiple choice question carefully, and provide the best answer:
+
+  Git. You first sum 2 and two, and then multiply the result by four. What is the outcome of this operation?
+  (a) 16
+  (b) 10
+  (c) sixteen
+  (d) A failure because you cannot add before multiplication""")
+'''

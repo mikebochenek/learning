@@ -2,28 +2,15 @@
 
 from time import sleep
 import os
+import sys
 from datetime import datetime
 import requests
 
-# from try_vertexai import generate
+from try_vertexai import generate
 from ocr import detect_text
 
-'''
-? maybe can be combined with "new" photos from: 
-https://www.ezone.co.uk/blog/using-developer-tools-to-transfer-files-on-android.html
-*** 'find and pull movies out of camera storage' ***
-adb shell 'find /storage/emulated/0/DCIM/Camera/ -name "*.mp4" -print0' | xargs -0 -n 1 adb pull
-? and where do I get the OCR again? from the view controller? 
-
-~/Android/Sdk/platform-tools/adb shell 'find /storage/self/primary/DCIM/Camera/ -name "IMG_20240818*.jpg" -print0' | xargs -0 -n 1 ~/Android/Sdk/platform-tools/adb pull
-'''
-
-cmd1 = "~/Android/Sdk/platform-tools/adb shell 'find /storage/self/primary/DCIM/Camera/ -name \"IMG_"
-# IMG_20240818*.jpg
-cmd_filemask = "20240818" # IMG_20240818_174542_865 or IMG_20240818_174555_341 
-cmd2 = "*.jpg\" -print0' | xargs -0 -n 1 ~/Android/Sdk/platform-tools/adb pull"
-
-path_to_watch = "/home/mike/Pictures"
+sep = '\n---------------\n'
+path_to_watch = sys.argv[1] # "/home/mike/Pictures"
 print(datetime.now(), '*starting to watch path: "',path_to_watch,'"')
 
 before = dict ([(f, None) for f in os.listdir (path_to_watch)])
@@ -37,8 +24,13 @@ while 1:
     after = dict ([(f, None) for f in os.listdir (path_to_watch)])
     added = [f for f in after if not f in before]
     if added:
-        print(now, "Added: ", ", ".join (added))
+        print('  ', now, "Added: ", ", ".join (added))
         # print (added)  # is an array of strings - i.e. ['Screenshot from 2024-02-18 22-05-59.png']
+        for a in added:
+            dt = detect_text(path_to_watch + '/' + a)
+            print (dt, sep)            
+            a = generate(dt)
+            print (a, sep)
         before = after
         #break
     else:

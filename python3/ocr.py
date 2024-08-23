@@ -5,6 +5,7 @@ Created on Sun Aug 18 17:25:26 2024
 @author: mike
 """
 
+import sys
 from subprocess import CalledProcessError
 import subprocess 
 from django.conf import settings
@@ -99,3 +100,7 @@ def detect_text(path):
 
 # t = detect_text('/home/mike/Downloads/20240202_153004.jpg')
 # print(t)
+
+if sys.argv[1] != '' and os.path.isfile(sys.argv[1]):
+	t = detect_text(sys.argv[1])
+	print(t)

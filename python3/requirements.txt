@@ -13,3 +13,5 @@ seaborn~=0.12.2
 prophet~=1.1.5
 micrograd~=0.1.0
 
+yfinance~=0.2.43
+

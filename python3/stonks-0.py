@@ -29,16 +29,18 @@ def get_data(st): #get if it doesn't exist - pickle serialization
             return ticker_reconstructed
     else:
         d = yf.Ticker(st)
-        logging.info(d.info)
+        # logging.info(d.info)
+        hist = d.history(period="6mo") # https://pypi.org/project/yfinance/#quick-start
+        # logging.info(type(hist)) # <class 'pandas.core.frame.DataFrame'>
 
-        #with open(pickle_filename , "wb") as outfile:
-            # pickle.dump(d, outfile)
-            #logging.info('save to local pickle cache' + pickle_filename)
+        with open(pickle_filename , "wb") as outfile:
+            pickle.dump(hist, outfile)
+            logging.info('save to local pickle cache' + pickle_filename)
 
         return d
     
 
-# msft = get_data("MSFT")
+msft = get_data("MSFT")
 nvda = get_data("NVDA")
 ubsg = get_data("UBSG")
 sdz  = get_data("SDZ")

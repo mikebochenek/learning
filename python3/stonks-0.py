@@ -9,6 +9,7 @@ import yfinance as yf
 import logging
 import pickle
 import os
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO,
     # filename="/tmp/app.log", # ideally https://docs.python.org/3/library/logging.handlers.html#logging.handlers.RotatingFileHandler
@@ -39,10 +40,12 @@ def get_data(st): #get if it doesn't exist - pickle serialization
 
         return d
     
+startTime = datetime.now()
 
 msft = get_data("MSFT")
 nvda = get_data("NVDA")
 ubsg = get_data("UBSG")
 sdz  = get_data("SDZ")
 
-
+# logging.info(msft)
+logging.info(' ->> all done: ' + str(datetime.now() - startTime)) 

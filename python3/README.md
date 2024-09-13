@@ -12,3 +12,12 @@ Compile all with:
 ~~~
 python3 -m compileall . -q -f
 ~~~
+
+### Luke coding
+
+1. Tiger jython (some kind of IDE)
+2. [tutorials link](https://python-online.ch/)
+3. libs to import
+* nicrobit
+* neopixel 
+

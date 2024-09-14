@@ -13,7 +13,12 @@ from datetime import datetime
 import logging
 from google.cloud import vision
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/mike/Documents/prestoch-ae89fcfa026f.json"    
+
+gcreds = "/home/mike/Documents/prestoch-ae89fcfa026f.json"
+if os.path.isfile(gcreds):
+	os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = gcreds    
+else:
+	print('no creds!', gcreds)
 
 # copied from: /var/lib/jenkins/workspace/chequeli/01-Login
 # originally from https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/vision/cloud-client/detect/detect.py
@@ -101,6 +106,8 @@ def detect_text(path):
 # t = detect_text('/home/mike/Downloads/20240202_153004.jpg')
 # print(t)
 
-if sys.argv[1] != '' and os.path.isfile(sys.argv[1]):
+if len(sys.argv) > 1 and sys.argv[1] != '' and os.path.isfile(sys.argv[1]):
 	t = detect_text(sys.argv[1])
 	print(t)
+else:
+	print('provide filename as argument')

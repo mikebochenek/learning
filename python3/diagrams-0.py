@@ -21,6 +21,7 @@ from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
 from diagrams.onprem.queue import Kafka
 
+# and then later open with firefox ->  file:///tmp/advanced_web_service_with_on-premise.png
 with Diagram("/tmp/Advanced Web Service with On-Premise", show=False):
     ingress = Nginx("ingress")
 

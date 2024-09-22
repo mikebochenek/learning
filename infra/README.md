@@ -11,4 +11,5 @@ notes and concepts that should help long term
 
 # Links
 
-TODO
+* generally: google, stackoverflow, youtube, pluralsight
+* TODO

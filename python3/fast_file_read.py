@@ -14,8 +14,10 @@ def testreadcsv(filename):
     fullpath = '/Users/mike/Downloads/' + filename + '.csv'
     if (os.path.isfile(fullpath) == False):
         print ('lets download it then')
-        # urllib.request.urlretrieve(files.get(filename), fullpath)
+        urllib.request.urlretrieve(files.get(filename), fullpath)
         # urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)>
+    else:
+        print ('already exists', fullpath)
 
     with open(fullpath) as f:
         for line in f:

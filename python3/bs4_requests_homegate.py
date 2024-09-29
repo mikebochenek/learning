@@ -5,6 +5,21 @@ import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
 
+
+def tryTor():
+    print('with tor/onion...')
+    session = requests.session()
+    session.proxies = {}
+    session.proxies['http'] = 'socks5h://localhost:9050'
+    session.proxies['https'] = 'socks5h://localhost:9050' 
+
+    r = session.get("http://httpbin.org/ip")
+    print(r.text) #now https://www.iplocation.net/ip-lookup shows Germany?!
+
+tryTor()
+
+
+listingID = '4001518650' #will always get outdated... 
 startTime = datetime.now()
 
 def fetchurl(URL):
@@ -28,7 +43,7 @@ def fetchurl(URL):
 # fetchurl("https://realpython.github.io/fake-jobs/")
 
 # I wonder how we can download images or gather other stats
-fetchurl("https://www.homegate.ch/rent/3002739596")
+fetchurl("https://www.homegate.ch/rent/"+listingID)
 
 # would it contain refs to images like this?
 img1 = "https://media2.homegate.ch/f_auto/t_web_dp_large/listings/hau/3002739596/image/45133f8602fe3038dd8d9368e717c028.jpg"

@@ -11,6 +11,11 @@ import requests
 import json
 from datetime import datetime
 
+locations = [8576202, # Zollikon, Felbenstrasse
+    8503059, # Zürich Stadelhofen, Bahnhof
+    "8591329"] # "Zürich, Saalsporthalle" 
+
+## TODO: would be nice to do lazy-fetch (saving locally, also for debugging..)
 def fetchurl(URL):
     page = requests.get(URL)
     connection_data = json.loads(page.text)
@@ -28,9 +33,9 @@ def fetchurl(URL):
         
     return connection_data, minimum_duration
 
-
-sample='http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève'
+# sample='http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève'
 # sample='https://transport.opendata.ch/v1/connections?from=Zollikon&to=Stadelhofen'
+sample='https://transport.opendata.ch/v1/connections?from='+str(locations[2])+'&to='+str(locations[0])
 
 data, duration = fetchurl(sample)
 print ('(minimum)_duration:', duration, sample)

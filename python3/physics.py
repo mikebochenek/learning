@@ -10,7 +10,8 @@ def velocity(t, t0, s, s0):
 def convert_to_km_per_h(v):
     return 0
 
-print(velocity(41.8,32,100,0), 'm/s')
+result = velocity(41.8,32,100,0)
+print(f"{result:.2f}", 'm/s')
 
 def strecke_at(t, t0, s0, v):
     return v * (t-t0) + s0

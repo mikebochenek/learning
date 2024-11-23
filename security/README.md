@@ -2,7 +2,7 @@
 
 Quite embarrassing that it took me ad/malware and over 1200 days, to upgrade to paid version of Antivirus 
 
-## and running Tor
+## learning by doing (running Tor)
 
 ~~~
 (base) mike@hp:~/Documents/code/learning$ tor
@@ -17,3 +17,6 @@ Sep 28 11:42:48.092 [err] Reading config failed--see warnings above.
 (base) mike@hp:~/Documents/code/learning$ 
 ~~~
 
+## reads (study and make notes)
+
+* [a generic security model for Web services](https://cacm.acm.org/research-highlights/a-security-model-for-web-based-communication/)

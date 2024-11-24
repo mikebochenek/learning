@@ -33,11 +33,20 @@ def fetchurl(URL):
         
     return connection_data, minimum_duration
 
+def fetchurl_S(URL):
+    page = requests.get(URL)
+    connection_data = json.loads(page.text)
+    min_duration = connection_data.get('min_duration');
+    print ('min_duration:', min_duration)
+    return min_duration / 60
+
 # sample='http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève'
 # sample='https://transport.opendata.ch/v1/connections?from=Zollikon&to=Stadelhofen'
-sample='https://transport.opendata.ch/v1/connections?from='+str(locations[2])+'&to='+str(locations[0])
+# sample='https://transport.opendata.ch/v1/connections?from='+str(locations[2])+'&to='+str(locations[0])
+# data, duration = fetchurl(sample)
 
-data, duration = fetchurl(sample)
+sample = 'https://search.ch/timetable/api/route.json?from=Zollikon,Gustav-Maurer-str+15A&to=Z%C3%BCrich,+Uetlibergstrasse.+231'
+duration = fetchurl_S(sample)
 print ('(minimum)_duration:', duration, sample)
 
 # or is this even better?

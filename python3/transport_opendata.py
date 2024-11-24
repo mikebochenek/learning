@@ -9,6 +9,7 @@ https://github.com/OpendataCH/Transport/blob/master/web/examples/connections.php
 """
 import requests
 import json
+import sys
 from datetime import datetime
 
 locations = [8576202, # Zollikon, Felbenstrasse
@@ -37,18 +38,38 @@ def fetchurl_S(URL):
     page = requests.get(URL)
     connection_data = json.loads(page.text)
     min_duration = connection_data.get('min_duration');
-    print ('min_duration:', min_duration)
-    return min_duration / 60
+    #print ('min_duration:', min_duration)
+    return int(min_duration / 60)
 
 # sample='http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève'
 # sample='https://transport.opendata.ch/v1/connections?from=Zollikon&to=Stadelhofen'
 # sample='https://transport.opendata.ch/v1/connections?from='+str(locations[2])+'&to='+str(locations[0])
 # data, duration = fetchurl(sample)
 
-sample = 'https://search.ch/timetable/api/route.json?from=Zollikon,Gustav-Maurer-str+15A&to=Z%C3%BCrich,+Uetlibergstrasse.+231'
-duration = fetchurl_S(sample)
-print ('(minimum)_duration:', duration, sample)
+start = 'Zollikon,Gustav-Maurer-str+15A' # default 
+if len(sys.argv) > 1:
+    start = sys.argv[1]
+#sample = 'https://search.ch/timetable/api/route.json?from='+start+'&to=Z%C3%BCrich,+Uetlibergstrasse.+231'
+#duration = fetchurl_S(sample)
+#print ('(minimum)_duration:', duration, sample)
 
+print ('  start:', start)
+
+destinations = ['Minervastrasse 14, Zürich',
+    'Zürich, Therese-Giehse-Str. 6',
+    'Rämistrasse 101, Zürich',
+    'Bleulerstrasse 49, 8008 Zürich',
+    'Uetlibergstrasse 231, 8045 Zürich',
+    'Flurstrasse 68,8048 Zürich']
+
+final_list = []
+for dest in destinations:
+    sample = 'https://search.ch/timetable/api/route.json?from='+start+'&to='+dest
+    duration = fetchurl_S(sample)
+    print ('  (minimum)_duration:', duration, dest)
+    final_list.append(duration)
+
+print ('\n', final_list)
 # or is this even better?
 # https://search.ch/timetable/api/route.json?from=Einsiedeln&to=Z%C3%BCrich,+F%C3%B6rrlibuckstr.+60
 

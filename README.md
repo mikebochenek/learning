@@ -1,7 +1,7 @@
 learning
 ========
 
-collection of various learning notes and exercises
+Small collection of my various learning notes and exercises
 
 * appway (java, uml)
 * arduino (working example from years back)
@@ -11,12 +11,15 @@ collection of various learning notes and exercises
 * clojure (syntax tricks)
 * coffeescript (basics only)
 * cpp (time nano, fibonacci)
+* d3 (diagrams and visualizations)
 * dart (very basic)
 * dont-break-the-chain
 * go (all the hype these days)
 * hadoop (getting started)
 * html5
+* infra (good for career / job security - more about running, then building)
 * julia (hello world)
+* kdb (seems to have enough OSS + community)
 * linux (syntax, configs, alias, etc.)
 * nlp-jurafsky (natural language processing, questions, diagrams)
 * opengl

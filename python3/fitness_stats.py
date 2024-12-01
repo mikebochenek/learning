@@ -10,7 +10,7 @@ pip install july   <- https://stackoverflow.com/questions/32485907/matplotlib-an
 import pandas as pd
 import calmap
 
-filename = '/home/mike/ownCloud/fitness_latest.csv'
+filename = '../data_csv/fitness_latest.csv'
 df = pd.read_csv(filename)
 
 # example #1 
@@ -23,12 +23,12 @@ events = pd.Series(np.random.randn(len(days)), index=days)
 # example #2
 import july
 from july.utils import date_range
-dates = date_range("2024-01-01", "2024-08-31")
+dates = date_range("2024-01-01", "2024-12-31")
 data = np.random.randint(0, 1, len(dates))
 
 # events = pd.to_datetime(df.head(8).get('date'),format="%d.%m.%Y")
 from datetime import datetime
-types = ['','biking', 'swimming','running','football']
+types = ['','biking', 'swimming','running','football', 'basketball']
 start = datetime.strptime('01.01.2024', "%d.%m.%Y")
 for d in df.iterrows(): # it ain't pretty, but does the job 
     date = d[1][2]

@@ -49,6 +49,7 @@ def fetchurl_S(URL):
 # data, duration = fetchurl(sample)
 
 start = 'Zollikon,Gustav-Maurer-str+15A' # default 
+start = 'Güetlistrasse 24, 8620 Wetzikon'
 if len(sys.argv) > 1:
     start = sys.argv[1]
 #sample = 'https://search.ch/timetable/api/route.json?from='+start+'&to=Z%C3%BCrich,+Uetlibergstrasse.+231'

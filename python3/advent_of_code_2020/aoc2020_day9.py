@@ -27,7 +27,7 @@ for k in range (len(numbers)):
         notfound = numbers[k+preamble]
 print (numbers)
 
-print ('\n\n------------part 2---------\n\n')
+print ('\n--- part 2 ----\n')
 
 for i, x in enumerate(numbers):
     total = x

@@ -41,3 +41,5 @@ Along the way discovered new features such as FTP+Thunderbird minimize to tray (
 
 ## Conclusion
 It almost felt like a mini Christmas present for myself, because it somehow worked, and brought me joy :-)
+
+Maybe next I can try to re-purpose my old iPad?  despite being 13-14 years old, I was able to browse the internet this month, so maybe no change really required.

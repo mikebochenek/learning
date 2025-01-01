@@ -65,10 +65,11 @@ destinations = ['Minervastrasse 14, Zürich',
 
 final_list = []
 print ('  start:', start)
+startTime = datetime.now()
 for dest in destinations:
     sample = 'https://search.ch/timetable/api/route.json?from='+start+'&to='+dest
     duration = fetchurl_S(sample)
     print ('  (minimum)_duration:', duration, dest)
     final_list.append(duration)
 
-print ('\n', final_list)
+print ('\n', final_list, int((datetime.now() - startTime).total_seconds() * 1000), 'ms expired')

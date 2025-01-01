@@ -14,6 +14,7 @@ https://search.ch/timetable/api/route.json?from=Einsiedeln&to=Z%C3%BCrich,+F%C3%
 import requests
 import json
 import sys
+import platform
 from datetime import datetime
 
 locations = [8576202, # Zollikon, Felbenstrasse
@@ -72,4 +73,5 @@ for dest in destinations:
     print ('  (minimum)_duration:', duration, dest)
     final_list.append(duration)
 
-print ('\n', final_list, int((datetime.now() - startTime).total_seconds() * 1000), 'ms expired')
+print ('\n', final_list, int((datetime.now() - startTime).total_seconds() * 1000), 
+    'ms expired, on', platform.system(), platform.release())

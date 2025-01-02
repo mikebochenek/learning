@@ -23,9 +23,11 @@ At first I wanted to keep the install very minimal, but I quickly got carried aw
 | --------- | --------- | -------- |
 | Brave | BraveBrowserSetup-BRV011.exe | a "secure" browser | 
 | Citrix | CitrixWorkspaceApp.exe | needed for work | 
+| DiskInternals Linux Reader | Linux_Reader 4.22.5 | access _old_ linux SSDs |
 | FTP client | FileZilla_3.68.1_win64_sponsored2-setup.exe | manage bochenek domain | 
 | Firefox | Firefox Installer.exe | a "secure" browser | 
 | git | Git-2.47.1-64-bit.exe | coding | 
+| golang | go1.23.4.windows-amd64 | coding |
 | citrix add-on | HDX_RealTime_Media_Engine_2.9.600_for_Windows.msi | needed for work | 
 | java | jdk-21_windows-x64_bin.exe | coding | 
 | KeePass | KeePass-2.57.1-Setup.exe | password management | 
@@ -41,5 +43,7 @@ Along the way discovered new features such as FTP+Thunderbird minimize to tray (
 
 ## Conclusion
 It almost felt like a mini Christmas present for myself, because it somehow worked, and brought me joy :-)
+
+I think a small part why I felt happy is because it's good for the environment, and also because re-installing the workspace from scratch allows me to keep an minimal workspace (just how I want it)
 
 Maybe next I can try to re-purpose my old iPad?  despite being 13-14 years old, I was able to browse the internet this month, so maybe no change really required.

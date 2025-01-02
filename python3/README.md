@@ -21,3 +21,11 @@ python3 -m compileall . -q -f
 * nicrobit
 * neopixel 
 
+### Basic environment management with conda & pip
+
+~~~
+conda create -n first
+conda info --envs
+conda activate first 
+pip install -r ./requirements.txt
+~~~

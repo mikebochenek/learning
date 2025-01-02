@@ -19,4 +19,5 @@ Sep 28 11:42:48.092 [err] Reading config failed--see warnings above.
 
 ## reads (study and make notes)
 
-* [a generic security model for Web services](https://cacm.acm.org/research-highlights/a-security-model-for-web-based-communication/)
+* [A generic security model for Web services](https://cacm.acm.org/research-highlights/a-security-model-for-web-based-communication/)
+* [Parrot Anafi Drone Reverse Engineering](https://www.hardbreak.wiki/network-analysis/protocols/application-layer/proprietary-protocols/parrot-anafi-drone-reverse-engineering)

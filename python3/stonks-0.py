@@ -8,6 +8,7 @@ Created on Sat Aug 31 11:53:00 2024 based on https://algotrading101.com/learn/ya
 import yfinance as yf
 import logging
 import pickle
+import platform
 import os
 from datetime import datetime
 
@@ -20,7 +21,10 @@ logging.basicConfig(level=logging.INFO,
 # https://machinelearningmastery.com/a-gentle-introduction-to-serialization-for-python/
 # neat thing about stack-overflow coding, is that one discovers interesting areas of the web...
 def get_data(st): #get if it doesn't exist - pickle serialization
-    path = '/home/mike/Documents/opendata/ticker/'
+    if ('Windows' == platform.system()):
+        path = 'C:/Users/mike/Documents/opendata/ticker/'
+    else:
+        path = '/home/mike/Documents/opendata/ticker/'
     pickle_filename = path + st + '.pickle'
 
     if (os.path.isfile(pickle_filename)):

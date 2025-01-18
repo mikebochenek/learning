@@ -32,7 +32,7 @@ startTime = datetime.now()
 array = generate(800, 600, 40)
 print(datetime.now() - startTime, 'time taken to generate', 800, 600, 'max:', 40) 
 
-outputfile = '/tmp/mandelbrot.png'
+outputfile = 'C:/Users/mike/mandelbrot.png' # '/tmp/mandelbrot.png'
 matplotlib.image.imsave(outputfile, array)
 print (outputfile)
 

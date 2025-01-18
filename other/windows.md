@@ -7,6 +7,14 @@ or
 systeminfo | find "System Boot Time"
 ~~~
 
+Can be also added to profile.ps as shown below
+~~~
+Function uptime {
+	wmic path Win32_OperatingSystem get LastBootUpTime 
+	systeminfo | find "System Boot Time"
+}
+~~~
+
 ### execution policy
 After setting up conda init, needed to allow scripts according to [this link](https:/go.microsoft.com/fwlink/?LinkID=135170)
 ~~~

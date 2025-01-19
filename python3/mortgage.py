@@ -20,7 +20,7 @@ def affordability(income, price, down):
     # incidental expenses is 1% of the purchase price.
     # imputed mortgage interest is based on a long-term average interest rate of 5%.
     mortgage = price - down
-    monthly_cost = int((mortgage * 0.06 + amortization*12) / 12)
+    monthly_cost = int((mortgage * 0.06 + amortization*12) / 12)  # ?? what is 0.06 ? rate ? 
     monthly_income = income/12*0.33 # how much can be afforded monthly
 
     print ('  own equity', equity, 'monthly', monthly_cost, 'vs.', monthly_income)
@@ -32,6 +32,12 @@ def calculate_amortization(PV, r):
     n = 15
     output= -1 * (PV*r)/(((1/(1+r)**n))-1)  # formula calculated using sum of infinite GP series
     return output/12
+
+print (affordability(147000, 1200000, (320000+118000)))
+rates = [0.0095, 0.01, 0.015, 0.0145, 0.015, 0.018, 0.02]
+for rate in rates:
+    print (int((1180000-(320000+118000)) / 12 * rate), 'per month at', rate)
+print ('----\n')
 
 assert (affordability(150000, 800000, 300000))
 assert (False == affordability(150000, 800000, 100000)) # not enough downpayment

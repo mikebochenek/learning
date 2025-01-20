@@ -36,7 +36,7 @@ def calculate_amortization(PV, r):
 print (affordability(147000, 1200000, (320000+118000)))
 rates = [0.0095, 0.01, 0.015, 0.0145, 0.015, 0.018, 0.02]
 for rate in rates:
-    print (int((1180000-(320000+118000)) / 12 * rate), 'per month at', rate)
+    print ('{:>4}'.format(int((1180000-(320000+118000)) / 12 * rate)), 'per month at', rate)
 print ('----\n')
 
 assert (affordability(150000, 800000, 300000))

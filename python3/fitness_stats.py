@@ -24,22 +24,22 @@ events = pd.Series(np.random.randn(len(days)), index=days)
 # example #2
 import july
 from july.utils import date_range
-dates = date_range("2024-01-01", "2024-12-31")
+dates = date_range("2025-01-01", "2025-12-31")
 data = np.random.randint(0, 1, len(dates))
 
 # events = pd.to_datetime(df.head(8).get('date'),format="%d.%m.%Y")
 from datetime import datetime
 types = ['','biking', 'swimming','running','football', 'basketball']
-start = datetime.strptime('01.01.2024', "%d.%m.%Y")
+start = datetime.strptime('01.01.2025', "%d.%m.%Y")
 for d in df.iterrows(): # it ain't pretty, but does the job 
     date = d[1][2]
-    if (isinstance(date, str) and ('2024' in date)):
+    if (isinstance(date, str) and ('2025' in date)):
         dObj = datetime.strptime(date, "%d.%m.%Y")
         diff = dObj - start 
         idx = types.index(d[1][4])
         data[diff.days] = idx
         #print('date', dObj, type(date), d[1][4], diff.days, idx)
 
-july.heatmap(dates, data, title='Fitness Activity', cmap="github")
+july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
 plt.savefig('C:\\Users\\mike\\ownCloud\\Documents\\fitness\\fitness_latest.png')

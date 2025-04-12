@@ -9,9 +9,13 @@ pip install july   <- https://stackoverflow.com/questions/32485907/matplotlib-an
 
 import pandas as pd
 import calmap
+import platform
 from matplotlib import pyplot as plt
+from datetime import datetime
 
+startTime = datetime.now()
 filename = '../data_csv/fitness_latest.csv'
+outfilename = 'C:\\Users\\mike\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 
 # example #1 
@@ -42,4 +46,8 @@ for d in df.iterrows(): # it ain't pretty, but does the job
 
 july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
-plt.savefig('C:\\Users\\mike\\ownCloud\\Documents\\fitness\\fitness_latest.png')
+plt.savefig(outfilename)
+
+print ('\t', datetime.now(), len(data), 'total fitness entries', 
+    int((datetime.now() - startTime).total_seconds() * 1000), 
+    'ms expired, on', platform.system(), platform.release(), 'created:\n\t', outfilename)

@@ -35,19 +35,28 @@ data = np.random.randint(0, 1, len(dates))
 from datetime import datetime
 types = ['','biking', 'swimming','running','football', 'basketball']
 start = datetime.strptime('01.01.2025', "%d.%m.%Y")
+
+count2024=0
+count2025=0
+
 for d in df.iterrows(): # it ain't pretty, but does the job 
     date = d[1][2]
+    if (isinstance(date, str) and ('2024' in date)):
+        count2024 += 1
+
     if (isinstance(date, str) and ('2025' in date)):
+        count2025 += 1
+        print(date)
         dObj = datetime.strptime(date, "%d.%m.%Y")
         diff = dObj - start 
         idx = types.index(d[1][4])
         data[diff.days] = idx
         #print('date', dObj, type(date), d[1][4], diff.days, idx)
 
-july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
+# july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
-plt.savefig(outfilename)
+# plt.savefig(outfilename)
 
-print ('\t', datetime.now(), len(data), 'total fitness entries', 
-    int((datetime.now() - startTime).total_seconds() * 1000), 
-    'ms expired, on', platform.system(), platform.release(), 'created:\n\t', outfilename)
+print ('\t', datetime.now(), '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(data), 
+    '\n\t', int((datetime.now() - startTime).total_seconds() * 1000), 
+    'ms expired, on', platform.system(), platform.release(), 'created:', outfilename)

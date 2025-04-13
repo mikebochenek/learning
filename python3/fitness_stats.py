@@ -46,7 +46,6 @@ for d in df.iterrows(): # it ain't pretty, but does the job
 
     if (isinstance(date, str) and ('2025' in date)):
         count2025 += 1
-        print(date)
         dObj = datetime.strptime(date, "%d.%m.%Y")
         diff = dObj - start 
         idx = types.index(d[1][4])

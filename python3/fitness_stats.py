@@ -14,7 +14,7 @@ from matplotlib import pyplot as plt
 from datetime import datetime
 
 startTime = datetime.now()
-filename = '../data_csv/fitness_latest.csv'
+filename = 'C:\\Users\\mike\\Downloads\\fitness_log_2.csv'
 outfilename = 'C:\\Users\\mike\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 
@@ -52,9 +52,9 @@ for d in df.iterrows(): # it ain't pretty, but does the job
         data[diff.days] = idx
         #print('date', dObj, type(date), d[1][4], diff.days, idx)
 
-# july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
+july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
-# plt.savefig(outfilename)
+plt.savefig(outfilename)
 
 print ('\t', datetime.now(), '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(data), 
     '\n\t', int((datetime.now() - startTime).total_seconds() * 1000), 

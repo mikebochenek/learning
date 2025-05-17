@@ -20,3 +20,10 @@ After setting up conda init, needed to allow scripts according to [this link](ht
 ~~~
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 ~~~
+
+### visual code studio shortcuts + tips&tricks
+To switch between *terminal* and *code editor* try [ref link](https://superuser.com/questions/1270103/how-to-switch-the-cursor-between-terminal-and-code-in-vscode)
+* to go to the terminal: Ctrl + ~ 
+* to go back to the editor: Ctrl + 1 
+
+Also good to check Release Notes (re: AI / agents / code assist etc.)

@@ -42,3 +42,10 @@ conda info --envs
 conda activate first 
 pip install -r ./requirements.txt
 ~~~
+
+### Install Spyder IDE
+
+Not recommended (better to do a seperate env - as written [here](https://docs.spyder-ide.org/current/installation.html))
+~~~
+pip install spyder numpy scipy pandas matplotlib sympy cython
+~~~

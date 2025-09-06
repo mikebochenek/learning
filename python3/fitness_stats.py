@@ -14,8 +14,8 @@ from matplotlib import pyplot as plt
 from datetime import datetime
 
 startTime = datetime.now()
-filename = 'C:\\Users\\mike\\Downloads\\fitness_log_2.csv'
-outfilename = 'C:\\Users\\mike\\ownCloud\\Documents\\fitness\\fitness_latest.png'
+filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_09_06.csv'
+outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 
 # example #1 

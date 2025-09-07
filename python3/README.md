@@ -42,6 +42,7 @@ conda info --envs
 conda activate first 
 pip install -r ./requirements.txt
 ~~~
+Note that basing new env off '-c conda-forge python=3.10' is important, because it resolves this versioning issue: AttributeError: module 'matplotlib.cbook' has no attribute 'MatplotlibDeprecationWarning'
 
 ### Install Spyder IDE
 

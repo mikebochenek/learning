@@ -56,6 +56,9 @@ july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden
 
 plt.savefig(outfilename)
 
-print ('\t', datetime.now(), '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(data), 
+print ('\t', datetime.now(), '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(df), 
     '\n\t', int((datetime.now() - startTime).total_seconds() * 1000), 
+    '2024 avg:', round((count2024*1.0/(52-7)), 2), '2025 avg:', round((count2025*1.0/(36)), 2),
     'ms expired, on', platform.system(), platform.release(), 'created:', outfilename)
+# max 2025 04.09.2025 (week 36) TODO - need to update manually above
+# min 2024 1,Thursday,15.02.2024,,running (a.k.a. where it all started - week #7)

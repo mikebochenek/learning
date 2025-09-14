@@ -40,7 +40,7 @@ count2024=0
 count2025=0
 
 for d in df.iterrows(): # it ain't pretty, but does the job 
-    date = d[1][2]
+    date = d[1].iloc[2]  # d[1][2]
     if (isinstance(date, str) and ('2024' in date)):
         count2024 += 1
 

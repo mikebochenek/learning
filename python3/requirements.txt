@@ -1,8 +1,8 @@
 scikit-learn>=1.5.0
-pandas~=1.1
+pandas~=2.3
 keras~=3.8
 
-google-cloud-storage==2.9.0
+google-cloud-storage==2.18.0
 google-cloud-vision==3.4.2
 
 diagrams~=0.23.3
@@ -21,4 +21,4 @@ matplotlib~=3.7.1
 
 vertexai~=1.9
 
-google-adk
+google-adk~=1.16

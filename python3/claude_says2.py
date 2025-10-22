@@ -5,21 +5,26 @@
 from PIL import Image
 
 # List of input JPEG files
-image_files = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg']
+image_files = ['03-17.png','04-13.png','05-17.png','06-23.png','07-31.png','08-31.png'] #,'12-01.png']
+image_folder = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\'
+prefix_2024= 'fitness_2024-'
+prefix_2025= 'fitness_latest_'
+output_fn = image_folder+'output_2024.gif'
+#['2025-04-12.png','2025_05_01.png','2025_06_08.png','2025-04-12.png']
 
 # Load all images
-images = [Image.open(img) for img in image_files]
+images = [Image.open(image_folder+prefix_2024+img) for img in image_files]
 
 # Save as animated GIF
 images[0].save(
-    'output.gif',
+    output_fn,
     save_all=True,
     append_images=images[1:],
     duration=500,  # Duration per frame in milliseconds
     loop=0  # 0 means loop forever
 )
 
-print("Animated GIF created successfully as 'output.gif'")
+print("Animated GIF created successfully as " + output_fn)
 
 '''
 alternative

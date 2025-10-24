@@ -9,22 +9,26 @@ image_files = ['03-17.png','04-13.png','05-17.png','06-23.png','07-31.png','08-3
 image_folder = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\'
 prefix_2024= 'fitness_2024-'
 prefix_2025= 'fitness_2025_'
-output_fn = image_folder+'output_2024.gif'
-#['04-12.png','05_01.png','06_08.png','04-12.png']
+image_files_2025 = ['04-12.png','05_01.png','06_08.png','04-12.png']
 
-# Load all images
+def create_gif(images, output_fn):
+    # Save as animated GIF
+    images[0].save(
+        output_fn,
+        save_all=True,
+        append_images=images[1:],
+        duration=500,  # Duration per frame in milliseconds
+        loop=0  # 0 means loop forever
+    )
+    print("Animated GIF created successfully as " + output_fn)
+
+# Load all images for 2024
 images = [Image.open(image_folder+prefix_2024+img) for img in image_files]
+create_gif(images, image_folder+'output_2024.gif')
 
-# Save as animated GIF
-images[0].save(
-    output_fn,
-    save_all=True,
-    append_images=images[1:],
-    duration=500,  # Duration per frame in milliseconds
-    loop=0  # 0 means loop forever
-)
-
-print("Animated GIF created successfully as " + output_fn)
+# Load all images for 2025
+images = [Image.open(image_folder+prefix_2025+img) for img in image_files_2025]
+create_gif(images, image_folder+'output_2025.gif')
 
 '''
 alternative

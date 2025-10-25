@@ -9,7 +9,7 @@ image_files = ['03-17.png','04-13.png','05-17.png','06-23.png','07-31.png','08-3
 image_folder = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\'
 prefix_2024= 'fitness_2024-'
 prefix_2025= 'fitness_2025_'
-image_files_2025 = ['04-12.png','05_01.png','06_08.png','04-12.png']
+image_files_2025 = ['04-12.png','09_14.png']
 
 def create_gif(images, output_fn):
     # Save as animated GIF

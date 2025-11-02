@@ -19,8 +19,9 @@ Below is what I had to do over the last two days to upgrade the laptop.
 
 ## List of installed applications
 At first I wanted to keep the install very minimal, but I quickly got carried away, when I realized that the performance is actually half decent.
-| software  | version   | comment  |
-| --------- | --------- | -------- |
+
+| software | version | comment |
+| --- | --- | --- |
 | Brave | BraveBrowserSetup-BRV011.exe | a "secure" browser | 
 | Citrix | CitrixWorkspaceApp.exe | needed for work | 
 | DiskInternals Linux Reader | Linux_Reader 4.22.5 | access _old_ linux SSDs |

@@ -8,6 +8,8 @@ categories: idea
 ## Background
 In a way this is a follow up to the "rebuild" post - because again, the main reason I need a new device is to connect to work
 
+Amazingly I was able to find _just_ the right laptop - 279 CHF total out of pocket cost, after applying 50 CHF voucher.
+
 ## HP Multimedia Laptop 
 Model number: 15,6" FHD Intel Core i3 4,1 GHz 16GB DDR4 512GB SSD Windows 11 Office 2024 (58850780)
 
@@ -25,3 +27,11 @@ Model number: 15,6" FHD Intel Core i3 4,1 GHz 16GB DDR4 512GB SSD Windows 11 Off
 * weight: 1.74 kg
 
 ## self-hosted images
+
+![hp1]({{ site.url }}/img/dev_screenshots/hp1.png)
+<hr/>
+![hp2]({{ site.url }}/img/dev_screenshots/hp2.png)
+<hr/>
+![hp3]({{ site.url }}/img/dev_screenshots/hp3.png)
+<hr/>
+![hp4]({{ site.url }}/img/dev_screenshots/hp4.png)

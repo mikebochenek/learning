@@ -48,7 +48,7 @@ for d in df.iterrows(): # it ain't pretty, but does the job
         count2025 += 1
         dObj = datetime.strptime(date, "%d.%m.%Y")
         diff = dObj - start 
-        idx = types.index(d[1][4])
+        idx = types.index(d[1][4]) if d[1][4] in types else 1 # default empty to easy (biking) https://claude.ai/chat/dc7f2b9d-4631-43d7-91cf-36dde1c455f7
         data[diff.days] = idx
         #print('date', dObj, type(date), d[1][4], diff.days, idx)
 

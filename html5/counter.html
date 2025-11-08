@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>how long as it been?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="static/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="/static/app.css" rel="stylesheet">
+</head>
+<body class="home">
+<div class="container">
+    <h2>hard to believe that...</h2>
+
+    <div><i class="material-icons">person</i> I am already: <div id="mike"></div></div>
+    <div><i class="material-icons">person</i> been running / doing fitness for: <div id="fitness"></div></div>
+    <div><i class="material-icons">people_outline</i> We've been married for: <div id="marriage"></div></div>
+    <div><i class="material-icons">mood</i> Luke is already: <div id="luke"></div></div>
+    <div><i class="material-icons">mood</i> Kassia is already (July-7): <div id="kassia"></div></div>
+    <div><i class="material-icons">mood</i> Mikey is already (Nov-9): <div id="mikey"></div></div>
+    <div><i class="material-icons">work</i> I've been coding professionally for <div id="coding"></div></div>
+    <div><i class="material-icons">work</i> I've been working @CS for <div id="cs"></div></div>
+    <div><i class="material-icons">work</i> UBS tookover CS annoucement: <div id="ubs"></div></div>
+    <div><i class="material-icons">work</i> Retirement could be <b>earliest</b> in <div id="retire"></div></div>
+    <div><i class="material-icons">work</i> Retirement must be <b>latest</b> in <div id="fretire"></div></div>
+
+    <br><hr>
+    <img src="https://bochenek.ch/img/fitness_2024.png"></img>
+
+    <br><hr>
+    <img src="https://bochenek.ch/img/fitness_latest.png"></img>
+
+    <br><hr>
+    <img src="https://scdcentre.com/wp-content/uploads/the-psychology-of-happiness.jpg" width='20%'></img>
+
+  <script>
+  diff = function(date1, date2) { // https://stackoverflow.com/questions/7763327/how-to-calculate-date-difference-in-javascript
+    var diff = new Date(date2.getTime() - date1.getTime());
+    return ((diff.getUTCFullYear() - 1970) + " years " + diff.getUTCMonth() + ' months ' + (diff.getUTCDate() - 1) + ' days');
+  }
+  $(document).ready(function(){
+    var d = new Date();
+    var day = d.getDate()+1;
+    var month = d.getMonth()+1;
+    var year = d.getFullYear() ;
+    $('#marriage').replaceWith(diff(new Date('2008-05-30'), d));
+    $('#luke').replaceWith(diff(new Date('2008-09-07'), d));
+    $('#kassia').replaceWith(diff(new Date('2015-07-07'), d));
+    $('#mikey').replaceWith(diff(new Date('2017-11-09'), d));
+    $('#mike').replaceWith(diff(new Date('1979-03-11'), d));
+    $('#coding').replaceWith(diff(new Date('2001-09-01'), d));
+    $('#cs').replaceWith(diff(new Date('2011-05-30'), d));
+    $('#ubs').replaceWith(diff(new Date('2023-03-19'), d));
+    $('#retire').replaceWith(diff(d, new Date('2037-03-11')));
+    $('#fretire').replaceWith(diff(d, new Date('2044-03-11')));
+  });
+  </script>
+
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+

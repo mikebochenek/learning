@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>links, notes, etc.</title>
+	<meta name="author" content="Mike" />
+	<!-- Date: 28.12.2015 -->
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+<script>
+$( document ).ready(function() {
+  var newTotal = 1062 * 34; // 425 + 637 = 1062
+  var d = new Date();
+  var month = d.getMonth()+1;
+  var year = d.getFullYear() ;
+  var monthly = 1615; // 8500 * 19% = 1615
+  var dynamic = ((year - 2014) * 12 + (month - 3)) * monthly;
+  //console.log('dynamic: ' + (dynamic/monthly));
+  newTotal = newTotal + dynamic;
+  //console.log(newTotal);		
+  //$('#total').replaceWith(newTotal);
+  $('#datets').replaceWith(d);
+});
+</script>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6"> 
+      <h2>May 2016</h2>
+      <table class="table table-striped">
+      	<tr><td>28.05.2016</td></tr>
+        <tr><td><a href="https://patents.google.com/patent/US20160125463A1/en">Kaderjan & Alex SFSF patent</a></td></tr>
+        <tr><td><a href="https://www.entrepreneur.com/article/275478">home office setups</a></td></tr>
+        <tr><td>27.05.2016</td></tr>
+        <tr><td><a href="https://www.crunchbase.com/#/home/index">read crunchbase news more</a></td></tr>
+        <tr><td><a href="https://scholar.google.com/citations?user=1JGmalgAAAAJ&hl=en">big data ETH spark guru</a></td></tr>
+        <tr><td><a href="https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/">react tutorial</a></td></tr>
+        <tr><td><a href="http://www.mensxp.com/special-features/today/30761-why-we-are-not-happy-despite-our-well-paying-jobs-and-happening-social-lives.html">happiness</a></td></tr>
+        <tr><td><a href="https://medium.com/@stuartawillson/therohnos-who-really-gets-hurt-when-startups-blow-up-and-what-to-do-about-it-2110330d7880#.tr316329s">startup blowups</a></td></tr>
+        <tr><td><a href="https://github.com/kaandedeoglu/KDCircularProgress">iOS swift library</a></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+      </table>
+
+
+      <div id="datets">ts</div>
+    </div>
+    <div class="col-md-3"></div>
+ 
+  </div>
+</div>
+
+
+</body>
+</html>
+

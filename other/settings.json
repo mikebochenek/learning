@@ -13,6 +13,10 @@
                 "cmd": "echo ' ' && date && go run ${file}"
             },
             {
+                "match": "\\.zig$",
+                "cmd": "zig run ${file}"
+            },
+            {
                 "match": "\\.py$",
                 "cmd": "python3 ${file}"
             }

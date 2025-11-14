@@ -4,7 +4,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-using namespace std;
+// using namespace std;
 
 int timeexample();
 
@@ -45,7 +45,7 @@ int timeexample() {
    // http://stackoverflow.com/questions/275004/c-timer-function-to-provide-time-in-nano-seconds
    //clock_gettime(CLOCK_REALTIME, &ts); // Works on Linux
 
-   for (i = 0; i < 10; i++) {
+   for (i = 0; i < 12; i++) {
       if(nanosleep(&tim , &tim2) < 0 ) {
          printf("Nano sleep system call failed \n");
          return -1;

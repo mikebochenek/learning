@@ -17,8 +17,16 @@
                 "cmd": "zig run ${file}"
             },
             {
+                "match": "\\.c$",
+                "cmd": "zig cc ${file} && a.exe"
+            },
+            {
+                "match": "\\.cpp$",
+                "cmd": "zig cc ${file} && a.exe"
+            },
+            {
                 "match": "\\.py$",
-                "cmd": "python3 ${file}"
+                "cmd": "python ${file}"
             }
         ]
     }

@@ -1,5 +1,3 @@
-fe-week1.layout
-fe-week1.cbp
-fe-week1.depend
-obj/
-bin/
+*.exe
+*.obj
+*.pdb

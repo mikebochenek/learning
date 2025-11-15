@@ -7,28 +7,14 @@
     "git.confirmSync": false,
 
     "emeraldwalk.runonsave": {
-        "commands": [
-            {
-                "match": "\\.go$",
-                "cmd": "echo ' ' && date && go run ${file}"
-            },
-            {
-                "match": "\\.zig$",
-                "cmd": "zig run ${file}"
-            },
-            {
-                "match": "\\.c$",
-                "cmd": "zig cc ${file} && a.exe"
-            },
-            {
-                "match": "\\.cpp$",
-                "cmd": "zig cc ${file} && a.exe"
-            },
-            {
-                "match": "\\.py$",
-                "cmd": "python ${file}"
-            }
+       "commands": [
+            { "match": "\\.go$",  "cmd": "echo ' ' && date && go run ${file}" },
+            { "match": "\\.zig$", "cmd": "zig run ${file}" },
+            { "match": "\\.c$",   "cmd": "zig cc ${file}" },
+            { "match": "\\.java$","cmd": "java ${file}" },
+            { "match": "\\.cpp$", "cmd": "zig cc ${file} && a.exe" },
+            { "match": "\\.py$",  "cmd": "python ${file}" }
         ]
-    }
+     }
 }
 

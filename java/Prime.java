@@ -19,6 +19,7 @@ public class Prime {
 	}
 
 	public static void main(String[] args) { //} testFromWikipedia() {
+		long startTS = System.currentTimeMillis();
 		assert(!isPrime(23244)); // 23244 = 2 x 2 x 3 x 13 x 149
 
         // http://en.wikipedia.org/wiki/Prime_number#Definition_and_examples
@@ -37,10 +38,13 @@ public class Prime {
 				859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941,
 				947, 953, 967, 971, 977, 983, 991, 997 };
 
-		for (int i = 0; i < primes.length; i++) {
-			assert (isPrime(primes[i])); // " + primes[i] + " is in fact prime.", 
+		for (int j = 0; j < 1000; j++) {
+			for (int i = 0; i < primes.length; i++) {
+				assert (isPrime(primes[i])); // " + primes[i] + " is in fact prime.", 
+			}
 		}
 
         System.out.println("all done: if see this, it means all asserts passed!");
+		System.out.println((System.currentTimeMillis() - startTS) + "ms");
 	}
 }

@@ -24,7 +24,7 @@ assert(recursive_fuel(1969) == 966)
 assert(recursive_fuel(100756) == 50346)
 
 
-with open('/tmp/day1.txt') as f:
+with open('c:\\dev\\data\\aoc\\2019_day1.txt') as f:
     lines = f.read().splitlines()
 
 sum = 0

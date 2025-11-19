@@ -28,6 +28,6 @@ for (String line : lines) {
     total += fuel(i);
 }
 
-out.println("aoc -> " + lines.size() + " part I: " + total);
+out.println(java.time.LocalTime.now().toString() + " " + lines.size() + " part I: " + total);
 
 /exit

@@ -1,6 +1,6 @@
 import java.nio.file.*;
 import java.util.List;
-// import static System.out.println;
+import static java.lang.System.out;
 
 /* https://claude.ai/chat/26f09566-c2b9-495e-b116-c4487d98cde9
  * whats the simplest or shortest java code snippet to read multiple lines from an input file?
@@ -14,17 +14,13 @@ int fuel(int mass) {
 
 int recursive_fuel(int mass) {
     f = fuel(mass);
-    if (f <= 0) {
-        return 0;
-    } else {
-        return recursive_fuel(f) + f;
-    }
+    return (f <= 0) ? 0 : (recursive_fuel(f) + f);
 }
 
 assert(false); // ?!
-System.out.println((fuel(1969) == 654) + " and " + (fuel(100756) == 33583));
+out.println((fuel(1969) == 654) + " and " + (fuel(100756) == 33583));
 
-System.out.println("part II test:" + (recursive_fuel(14) == 2));
+out.println("part II test:" + (recursive_fuel(14) == 2));
 
 int total = 0;
 for (String line : lines) {
@@ -32,7 +28,6 @@ for (String line : lines) {
     total += fuel(i);
 }
 
-System.out.println("aoc -> " + lines.size() + " part I: " + total);
-
+out.println("aoc -> " + lines.size() + " part I: " + total);
 
 /exit

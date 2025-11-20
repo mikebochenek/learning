@@ -13,21 +13,23 @@ int fuel(int mass) {
 }
 
 int recursive_fuel(int mass) {
-    f = fuel(mass);
+    int f = fuel(mass);
     return (f <= 0) ? 0 : (recursive_fuel(f) + f);
 }
 
-assert(false); // ?!
+assert(false); // ?! doesn't work in jshell ? 
 out.println((fuel(1969) == 654) + " and " + (fuel(100756) == 33583));
-
 out.println("part II test:" + (recursive_fuel(14) == 2));
 
 int total = 0;
+int total_part2 = 0;
 for (String line : lines) {
     int i = Integer.parseInt(line);
     total += fuel(i);
+    total_part2 += recursive_fuel(i);
 }
 
-out.println(java.time.LocalTime.now().toString() + " " + lines.size() + " part I: " + total);
+out.println(java.time.LocalTime.now().toString() + " " + lines.size() 
+    + " part I: " + total + "  part II: " + total_part2);
 
 /exit

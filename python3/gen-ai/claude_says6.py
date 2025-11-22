@@ -117,7 +117,7 @@ class WebsiteScraper:
 if __name__ == "__main__":
     # Configure these:
     WEBSITE_URL = "https://mastodo.ch/"  # Change to your website
-    OUTPUT_DIR = "c:\\temp\\mastodo.ch"         # Where to save files
+    OUTPUT_DIR = "c:\\dev\\data\\mastodo.ch"         # Where to save files
     
     scraper = WebsiteScraper(WEBSITE_URL, OUTPUT_DIR)
     print(f"Starting to scrape {WEBSITE_URL}...")

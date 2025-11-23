@@ -23,5 +23,6 @@ Yet another batch of ideas that I have been thinking of recently...
 ## run on save extension
 - I love [run on save](https://github.com/emeraldwalk/vscode-runonsave) for Visual Studio Code - [settings.json](https://github.com/mikebochenek/learning/blob/master/other/settings.json)
 - might be cool to have counters or stats - on how often you save, and how often it runs successfully
+- junit / golang / python test runner (generally, I wonder who maintains that project)
 
 By the way, if you find any of the above ideas cool (or if you turn one of them into a multi-million-dollar business - gasp!) you can thank me anonymously by sending bitcoin. 

@@ -12,32 +12,26 @@ class WebsiteScraper:
         self.visited_urls = set()
         self.domain = urlparse(start_url).netloc
         
-        # Create output directory
-        Path(self.output_dir).mkdir(exist_ok=True)
+        Path(self.output_dir).mkdir(exist_ok=True) # Create output directory
     
-    def is_same_domain(self, url):
-        """Check if URL belongs to the same domain"""
+    def is_same_domain(self, url): # Check if URL belongs to the same domain
         return urlparse(url).netloc == self.domain
     
-    def normalize_url(self, url):
-        """Remove fragments and query parameters for consistency"""
+    def normalize_url(self, url): #Remove fragments and query parameters for consistency
         parsed = urlparse(url)
         return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
     
-    def get_local_path(self, url):
-        """Convert URL to local file path"""
+    def get_local_path(self, url): # Convert URL to local file path
         parsed = urlparse(url)
         path = parsed.path.lstrip('/')
         
-        # If it's just a domain, save as index.html
-        if not path or path.endswith('/'):
+        if not path or path.endswith('/'): # If it's just a domain, save as index.html
             path = os.path.join(path, 'index.html')
         
         local_path = os.path.join(self.output_dir, path)
         return local_path
     
-    def download_file(self, url, local_path):
-        """Download a file and save it locally"""
+    def download_file(self, url, local_path): #Download a file and save it locally
         try:
             resp = requests.get(url, timeout=10, allow_redirects=True)
             resp.raise_for_status()
@@ -45,9 +39,8 @@ class WebsiteScraper:
             # Create directories if needed
             os.makedirs(os.path.dirname(local_path), exist_ok=True)
             
-            # Save the file
             with open(local_path, 'wb') as f:
-                f.write(resp.content)
+                f.write(resp.content)  # Save the file
             
             print(f"✓ Downloaded: {url}")
             return resp.text, resp.headers.get('content-type', '')
@@ -55,10 +48,8 @@ class WebsiteScraper:
             print(f"✗ Error downloading {url}: {e}")
             return None, None
     
-    def extract_links(self, html, base_url):
-        """Extract all links from HTML content"""
+    def extract_links(self, html, base_url): # Extract all links from HTML content
         from html.parser import HTMLParser
-        
         links = []
         
         class LinkParser(HTMLParser):
@@ -78,25 +69,21 @@ class WebsiteScraper:
         absolute_links = [urljoin(base_url, link) for link in links]
         return absolute_links
     
-    def scrape(self, url=None):
-        """Recursively scrape the website"""
+    def scrape(self, url=None): # Recursively scrape the website
         if url is None:
             url = self.start_url
         
-        # Normalize and check if already visited
-        normalized_url = self.normalize_url(url)
+        normalized_url = self.normalize_url(url) # Normalize and check if already visited
         if normalized_url in self.visited_urls:
             return
         
         self.visited_urls.add(normalized_url)
         
-        # Only scrape same domain
-        if not self.is_same_domain(url):
+        if not self.is_same_domain(url): # Only scrape same domain
             print(f"⊘ Skipping external URL: {url}")
             return
         
-        # Download the page
-        local_path = self.get_local_path(url)
+        local_path = self.get_local_path(url) # Download the page
         html, content_type = self.download_file(url, local_path)
         
         if html is None:

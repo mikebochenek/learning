@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/aoc/day1-0.txt")
+	f, err := os.Open("c:\\dev\\data\\aoc\\2022_day1.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -52,7 +52,7 @@ func main() {
 
 func safeParse(g string) int {
 	if i, err := strconv.Atoi(g); err != nil {
-		fmt.Println("safeParse fails -> ", err)
+		//fmt.Println("safeParse fails -> ", err)
 		return -1
 	} else {
 		return i

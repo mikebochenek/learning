@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/home/mike/Documents/aoc/day3-1.txt")
+	f, err := os.Open("c:\\dev\\data\\aoc\\2022_day3.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -48,6 +48,7 @@ func main() {
 		fmt.Println(first, "  ", second)
 	}
 
+	// part I should be 7691 and part II 2508
 	fmt.Println("\n---> score: ", score)
 
 	if err := scanner.Err(); err != nil {

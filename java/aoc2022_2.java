@@ -15,7 +15,7 @@ public class aoc2022_2 { // just keep hacking, and testing the borders
     }
 
     public static void main(String[] args) { 
-        List<String> lines = read("c:\\dev\\data\\aoc\\2022_day2t.txt");
+        List<String> lines = read("c:\\dev\\data\\aoc\\2022_day2.txt");
         int ans = 0, ans2 = 0;
 
         // A for Rock, B for Paper, and C for Scissors
@@ -32,18 +32,20 @@ public class aoc2022_2 { // just keep hacking, and testing the borders
                 || ("B".equals(p[0]) && "X".equals(p[1]))) // rock loses against paper
                 || ("C".equals(p[0]) && "Y".equals(p[1]))) { // paper loses against scissors
                 score += 0;
-            } else if (0 == 0) { //TODO
+            } else if (("A".equals(p[0]) && "Y".equals(p[1])) // paper beats rock
+                || ("B".equals(p[0]) && "Z".equals(p[1])) // scissors beats paper
+                || ("C".equals(p[0]) && "X".equals(p[1]))) { // rock beats scissors
                 score += 6; // win
             } else {
                 score += 3; // tie 
             }
-            out.println(line + " -> " + score);
+            //out.println(line + " -> " + score);
 
             ans += score;            
         }
 
-        out.println("part I correct?  " + (ans == 66616));
+        out.println("part I correct?  " + (ans == 15632)); // 15 for t.txt (test input)
         out.println("part II correct? " + (ans2 == 199172));
-        out.println("\t" + lines.size() + " part I: " + ans + " part II: " + ans2 + "\n");
+        out.println("\tsize: " + lines.size() + " part I: " + ans + " part II: " + ans2 + "\n");
     }
 }

@@ -7,35 +7,43 @@ public class aoc2022_2 { // just keep hacking, and testing the borders
 
     public static List<String> read(String fn) {
         try {
-            List<String> lines = Files.readAllLines(Paths.get(fn)); 
-            return lines;
+            return Files.readAllLines(Paths.get(fn)); 
         } catch (java.io.IOException ioe) {
             out.println(ioe);
+            return null;
         }
-        return null;
     }
 
-    public static void main(String[] args) { //} testFromWikipedia() {
-        List<String> lines = read("c:\\dev\\data\\aoc\\2022_day1.txt");
+    public static void main(String[] args) { 
+        List<String> lines = read("c:\\dev\\data\\aoc\\2022_day2t.txt");
         int ans = 0, ans2 = 0;
 
-        int elfs[] = new int[lines.size() / 2] ;
-        int elfidx = 0;
+        // A for Rock, B for Paper, and C for Scissors
+        // X for Rock, Y for Paper, and Z for Scissors
         for (String line : lines) {
-            if ("".equals(line)) {
-                elfidx++; // blank line, is a new elf 
-            } else {
-                int y = Integer.parseInt(line);    
-                elfs[elfidx] += y;
-            }
-        }
+            String[] p = line.split(" ");
+            // do loss first & I wonder if there is a shortcut (1,2,3 - minus)
 
-        Arrays.sort(elfs);
-        ans2 = (elfs[elfs.length - 1] + elfs[elfs.length - 2] + elfs[elfs.length - 3]);
-        ans = (elfs[elfs.length - 1]);
+            int score = 1;
+            score += ("Y".equals(p[1])) ? 1 : 0;
+            score += ("Z".equals(p[1])) ? 2 : 0;
+
+            if (("A".equals(p[0]) && "Z".equals(p[1])  // scissors loses against rock
+                || ("B".equals(p[0]) && "X".equals(p[1]))) // rock loses against paper
+                || ("C".equals(p[0]) && "Y".equals(p[1]))) { // paper loses against scissors
+                score += 0;
+            } else if (0 == 0) { //TODO
+                score += 6; // win
+            } else {
+                score += 3; // tie 
+            }
+            out.println(line + " -> " + score);
+
+            ans += score;            
+        }
 
         out.println("part I correct?  " + (ans == 66616));
         out.println("part II correct? " + (ans2 == 199172));
-        out.println("\t" + lines.size() + " part I: " + ans + " part II: " + ans2);
+        out.println("\t" + lines.size() + " part I: " + ans + " part II: " + ans2 + "\n");
     }
 }

@@ -42,6 +42,9 @@ Friday I watched some [video(s)](https://www.youtube.com/watch?v=8BtHk-oNlN0) wh
 - move long term TODOs to a separate document
 - tag emails which *require* action with highly visible tag
 - daily github does not always have to be code: can also be markdown (blog ideas etc. or math)
-- the difficult part about fitness is **eating healthy** (less?)
+- the difficult part about fitness is eating healthy (less?)
 - simulated phishing attack for friends & family in Canada 
 - this christmas - buy less, and cleanup/give away more 
+- AoC thoughts & ideas
+    - how would Erik react to someone volunteering to take it over? 
+    - could I do AoC in a different language every day? only 12 this year (day #1 with SQL)

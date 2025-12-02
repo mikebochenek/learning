@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("c:\\dev\\data\\aoc\\2025_day2t.txt")
+	f, err := os.Open("c:\\dev\\data\\aoc\\2025_day2.txt")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -33,8 +33,17 @@ func main() {
 				v := strconv.Itoa(i)
 				//fmt.Println(len(v), v, v[:len(v)/2])
 				x := v[:len(v)/2]
-				if (strings.HasSuffix(v, x)) { // https://gobyexample.com/string-functions
-					fmt.Println("invalid", p, x)
+				if (len(x) > 0 && strings.HasSuffix(v, x)) { // https://gobyexample.com/string-functions
+					if (len(v) % 2 == 1) { // odd len
+						fmt.Println("\t\tmore checks", v)
+						if (v[len(v)/2] == x[0]) { 
+							invalid += i
+							fmt.Println("invalid", p, x, v)
+						}
+					} else {
+						invalid += i
+						fmt.Println("invalid", p, x, v)
+					}
 				}
 			}
 		}

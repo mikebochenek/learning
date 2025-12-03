@@ -14,7 +14,27 @@ public class aoc2025_3 {
         }
     }
 
+
     public static long max(String input, int depth) {
+        String ans = "";
+        for (int i = 0; i < depth; i++) { // amazing how simpler is better...!
+            //input = input.substring(0, input.length() - 1);
+            char[] charArray = input.substring(0, input.length() - (depth-1-i)).toCharArray(); // this was key - esp. depth-1-i
+            //charArray[charArray.length - 1] = '0'; // only needed for left digit
+            Arrays.sort(charArray);
+            String reverse = new StringBuffer(new String(charArray)).reverse().toString();
+            char maxDigit = reverse.charAt(0);
+            int idx = input.indexOf(maxDigit);
+            //out.println(idx + "\t\t" + input + "   " + reverse);
+            input = input.substring(idx+1);
+
+            ans += (""+Character.getNumericValue(maxDigit));
+        }
+
+        return Long.parseLong(ans); 
+    }
+
+    public static long max0(String input, int depth) {
         char[] charArray = input.toCharArray();
         charArray[charArray.length - 1] = '0'; // only needed for left digit
         Arrays.sort(charArray);
@@ -59,10 +79,10 @@ public class aoc2025_3 {
     public static void main(String[] args) { 
         out.println("------");        
         out.println("part I correct?  " + (calc("2025_day3t.txt", 2) == 357)); 
-        //out.println("part I answer  "   + (calc("2025_day3.txt", 2) == 16842)); 
+        out.println("part I answer  "   + (calc("2025_day3.txt", 2) == 16842)); 
 
         out.println("part II correct? " + (calc("2025_day3t.txt", 12) == 3121910778619l)); 
 
-        //out.println("part II correct? " + (ans2 == 14416)); 
+        out.println("part II answer  " + (calc("2025_day3.txt", 12) == 167523425665348l)); 
     }
 }

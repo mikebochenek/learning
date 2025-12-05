@@ -13,8 +13,7 @@ func main() {
 	fmt.Println("\t----> ", 739 == calc("2025_day5.txt", 1))
 	fmt.Println("\nPART II")
 	fmt.Println("\t----> ", 14 == calc("2025_day5t.txt", 2))
-	fmt.Println("\t----> ", 14 == calc("2025_day5.txt", 2))
-
+	//fmt.Println("\t----> ", 14 == calc("2025_day5.txt", 2))
 }
 
 func calc(fn string, part int) int {

@@ -4,12 +4,15 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 	"strconv"
 )
 
 func main() {
-	f, err := os.Open("c:\\dev\\data\\aoc\\2025_day4.txt")
+	fmt.Println("\n----> ", calc("2025_day4t.txt", 1))
+}
+
+func calc(fn string, part int) {
+	f, err := os.Open("c:\\dev\\data\\aoc\\" + fn) 
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -19,11 +22,13 @@ func main() {
 	scanner.Split(bufio.ScanLines)
 
 	var nums []int
-	invalid := 0
+//	invalid := 0
 	nums = append(nums, 0) // how do you append again? https://linuxhint.com/array-append-golang/
 	for scanner.Scan() {
 		line := scanner.Text()
-	fmt.Println("\n----> invalid:", invalid, nums)
+		fmt.Println(line)
+	}
+
 }
 
 func safeParse(g string) int {

@@ -6,12 +6,14 @@ import (
 	"os"
 	"strings"
 	"strconv"
+	"time"
 )
 
 func main() {
+	now := time.Now()
+	fmt.Println("\n\n*** ", now)
 	fmt.Println("\t----> ", 3 == calc("2025_day5t.txt", 1))
 	fmt.Println("\t----> ", 739 == calc("2025_day5.txt", 1))
-	fmt.Println("\nPART II")
 	fmt.Println("\t----> ", 14 == calc("2025_day5t.txt", 2))
 	//fmt.Println("\t----> ", 14 == calc("2025_day5.txt", 2))
 }
@@ -59,25 +61,30 @@ func calc(fn string, part int) int {
 		}
 	}
 
-	m := make(map[int]bool)
-
 	if (part == 2) {
-		for i := 0; i < len(from); i+=1 {
-			for j := from[i]; j <= to[i]; j+=1 {
-				m[j] = true
+		var eFrom [] int
+		var eTo [] int // extended/for answer purpose
+
+		for i := 0; i < len(from); i+= 1 {
+
+			if (i == 0) {
+				eFrom = append(eFrom, from[i])
+				eTo = append(eTo, to[i])
 			}
+
+			// check for overlaps, and add to extended from/to
+			// hmm... but won't merging be a big mess?!
+		}
+
+		fmt.Println(eFrom, eTo)
+
+		for i := 0; i < len(eFrom); i+= 1 {
+
 		}
 	}
-	
 
-
-	if part == 1 {
-		fmt.Println("part I:  will return", m, "for", fn)
-		return count
-	} else {
-		fmt.Println("part II: will return", len(m), "for", fn)
-		return len(m)
-	}
+	fmt.Println("part I/II:  will return", count, "for", fn)
+	return count
 }
 
 func safeParse(g string) int {

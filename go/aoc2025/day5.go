@@ -62,38 +62,53 @@ func calc(fn string, part int) int {
 	}
 
 	if (part == 2) {
-		var eFrom [] int
-		var eTo [] int // extended/for answer purpose
 
-		minFrom := 0
-		maxTo := 0
-
+		count = 0
 		for i := 0; i < len(from); i+= 1 {
 
-			if (i == 0) {
-				eFrom = append(eFrom, from[i])
-				eTo = append(eTo, to[i])
-				minFrom = from[i]
-				maxTo = to[i]
+			//fmt.Println(i)
+
+			dif := to[i] - from[i] + 1
+
+			if (dif <= 1) {
+				fmt.Println(from[i], to[i], dif, " ? ")
+			} //.... but sometimes diff=1 (meaning range is x to x...? )
+
+			// check for overlaps,
+			//  j := i !!! 
+			for j := (i+1); j < len(from); j+= 1 {
+				//fmt.Println(from[i], to[i], " vs.", from[j], to[j])
+				if (from[j] <= from[i] && to[j] <= to[i] && to[j] >= from[i]) {
+					dd := (to[j]-from[i]+1)
+					fmt.Println("! case 1:", dd)
+					dif -= dd
+				} else if (to[j] >= to[i] && from[j] <= to[i] && from[j] >= from[i]) {
+					dd := (to[i] - from[j]+1)
+					fmt.Println("! case 2:", dd)
+					dif -= (dd)
+				} else if (from[j] <= from[i] && to[j] >= to[i]) {
+					dd := (to[i] - from[i]+1)
+					fmt.Println("! case 3:", dd)
+					dif -= (dd)					
+				} else if (from[j] >= from[i] && to[j] <= to[i]) {
+					dd := (to[j] - from[j]+1)
+					fmt.Println("! case 4:", dd)
+					dif -= dd
+				}
+				// what about exact duplicates? shouldn't it be <= and >=  ?
 			}
 
-			if (from[i] < minFrom) {
-				minFrom = from[i]
-			}
-			if (to[i] > maxTo) {
-				maxTo = to[i]
+			if (dif > 1) {
+				count += dif
 			}
 
-
-			// check for overlaps, and add to extended from/to
-			// hmm... but won't merging be a big mess?!
+			// fmt.Println("dif", dif)
 		}
 
-		fmt.Println(eFrom, eTo, minFrom, maxTo, "dif", (maxTo-minFrom))
-
-		for i := 0; i < len(eFrom); i+= 1 {
-
-		}
+		//390437132487557 too high 18:34 
+		//392203548664963 would also be too high 19:01 :-( 
+		//342954507009352 is too low 19:08
+		//343735797336618 is too low 19:11
 	}
 
 	fmt.Println("part I/II:  will return", count, "for", fn)

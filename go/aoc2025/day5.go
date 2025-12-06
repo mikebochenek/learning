@@ -15,7 +15,7 @@ func main() {
 	fmt.Println("\t----> ", 3 == calc("2025_day5t.txt", 1))
 	fmt.Println("\t----> ", 739 == calc("2025_day5.txt", 1))
 	fmt.Println("\t----> ", 14 == calc("2025_day5t.txt", 2))
-	//fmt.Println("\t----> ", 14 == calc("2025_day5.txt", 2))
+	fmt.Println("\t----> ", 14 == calc("2025_day5.txt", 2))
 }
 
 func calc(fn string, part int) int {
@@ -65,18 +65,31 @@ func calc(fn string, part int) int {
 		var eFrom [] int
 		var eTo [] int // extended/for answer purpose
 
+		minFrom := 0
+		maxTo := 0
+
 		for i := 0; i < len(from); i+= 1 {
 
 			if (i == 0) {
 				eFrom = append(eFrom, from[i])
 				eTo = append(eTo, to[i])
+				minFrom = from[i]
+				maxTo = to[i]
 			}
+
+			if (from[i] < minFrom) {
+				minFrom = from[i]
+			}
+			if (to[i] > maxTo) {
+				maxTo = to[i]
+			}
+
 
 			// check for overlaps, and add to extended from/to
 			// hmm... but won't merging be a big mess?!
 		}
 
-		fmt.Println(eFrom, eTo)
+		fmt.Println(eFrom, eTo, minFrom, maxTo, "dif", (maxTo-minFrom))
 
 		for i := 0; i < len(eFrom); i+= 1 {
 

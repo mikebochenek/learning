@@ -77,14 +77,15 @@ func calc(fn string, part int) int {
 			// check for overlaps,
 			//  j := i !!! 
 			for j := (i+1); j < len(from); j+= 1 {
-				//fmt.Println(from[i], to[i], " vs.", from[j], to[j])
 				if (from[j] <= from[i] && to[j] <= to[i] && to[j] >= from[i]) {
 					dd := (to[j]-from[i]+1)
 					fmt.Println("! case 1:", dd)
+					fmt.Println("! 1", from[i], to[i], " vs.", from[j], to[j])
 					dif -= dd
 				} else if (to[j] >= to[i] && from[j] <= to[i] && from[j] >= from[i]) {
 					dd := (to[i] - from[j]+1)
 					fmt.Println("! case 2:", dd)
+					fmt.Println("! 2", from[i], to[i], " vs.", from[j], to[j])
 					dif -= (dd)
 				} else if (from[j] <= from[i] && to[j] >= to[i]) {
 					dd := (to[i] - from[i]+1)
@@ -98,9 +99,9 @@ func calc(fn string, part int) int {
 				// what about exact duplicates? shouldn't it be <= and >=  ?
 			}
 
-			if (dif > 1) {
+			//if (dif > 1) {
 				count += dif
-			}
+			//}
 
 			// fmt.Println("dif", dif)
 		}
@@ -109,6 +110,7 @@ func calc(fn string, part int) int {
 		//392203548664963 would also be too high 19:01 :-( 
 		//342954507009352 is too low 19:08
 		//343735797336618 is too low 19:11
+		//392610033443158 is not correct 19:29
 	}
 
 	fmt.Println("part I/II:  will return", count, "for", fn)

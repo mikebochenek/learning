@@ -5,7 +5,7 @@ def calc_total(filename):
     with open("c:\\dev\\data\\aoc\\" + filename) as f:
         lines = f.read().splitlines()
 
-
     return 0
 
-calc_total()
+
+calc_total("2025_day6t.txt")

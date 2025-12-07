@@ -111,6 +111,7 @@ func calc(fn string, part int) int {
 		//342954507009352 is too low 19:08
 		//343735797336618 is too low 19:11
 		//392610033443158 is not correct 19:29
+		//342954507009361 is too high 14:27 (Sun)
 	}
 
 	fmt.Println("part I/II:  will return", count, "for", fn)

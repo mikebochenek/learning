@@ -43,6 +43,9 @@ def calc_total(filename, part):
             if (alt != 0 and part == 2):
                 print ("split line=", line, "c=", c, "alt=", alt)
                 c *= alt
+
+                # wait.. multiplications is completely wrong! .. not sure what would be correct
+
             if (alt == 0 and part == 2):
                 pass # print (i)
 

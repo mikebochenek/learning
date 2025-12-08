@@ -107,10 +107,10 @@ func calc(fn string, part int) int {
 		}
 
 		//390437132487557 too high 18:34 
-		//392203548664963 would also be too high 19:01 :-( 
-		//342954507009352 is too low 19:08
-		//343735797336618 is too low 19:11
-		//392610033443158 is not correct 19:29
+		//392203548664963 would also be too high 19:01 :-(... 
+		//342954507009352 is too low 19:08 (sat)
+		//343735797336618 is too low 19:11 (sat) 
+		//392610033443158 is not correct 19:29 (sat)
 		//342954507009361 is too high 14:27 (Sun)
 	}
 

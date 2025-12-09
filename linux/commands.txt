@@ -72,3 +72,7 @@ service --status-all
 
 # nicer DF
 df -h --total
+
+# restart apache2 - as root@bochenek:/home/mikey# 
+systemctl restart apache2
+systemctl status apache2

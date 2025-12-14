@@ -42,10 +42,10 @@ Friday I watched some [video(s)](https://www.youtube.com/watch?v=8BtHk-oNlN0) wh
 ## personal improvements that I actually implemented
 - **up and not crying at the fates**
 - less is more - no need to join events like 💡Fintech Spotlights, Global Events & New Partnerships
-- move long term TODOs to a separate document
+- move long term TODOs to a separate document (not sure if that was a good idea)
 - tag emails which *require* action with highly visible tag
 - daily github does not always have to be code: can also be markdown (blog ideas etc. or math)
-- the difficult part about fitness is eating healthy (less?)
+- the difficult part about fitness is eating healthy (less? leftovers are OK)
 - simulated phishing attack for friends & family in Canada 
 - this christmas - buy less, and cleanup/give away more 
 - AoC thoughts & ideas

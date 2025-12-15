@@ -13,6 +13,23 @@ Compile all with:
 python3 -m compileall . -q -f
 ~~~
 
+#### directory structure
+
+~~~
+├───advent_of_code_2020
+│   └───data
+├───aoc2019
+├───aoc2022
+├───aoc2023
+├───aoc2025
+├───basics
+├───gen-ai
+├───puzzles
+├───streamlit
+│   └───.streamlit
+└───__pycache__
+~~~
+
 #### Windows 10
 C:\Users/mike\Documents\WindowsPowerShell\profile.ps1
 ~~~

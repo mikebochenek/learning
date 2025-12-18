@@ -170,7 +170,6 @@ Standing snacks are ghosts. They don’t count to your brain, so it asks for mor
 
 If you want, I can turn these into a one-week habit rollout so you’re not trying all five at once.
 
+# Sadly
 
-
-
-ChatGPT can make mi
+These are not really the answers I was looking for...i

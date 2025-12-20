@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.INFO,
 # neat thing about stack-overflow coding, is that one discovers interesting areas of the web...
 def get_data(st): #get if it doesn't exist - pickle serialization
     if ('Windows' == platform.system()):
-        path = 'C:/Users/mike/Documents/opendata/ticker/'
+        path = 'C:/Users/User/Documents/opendata/ticker/'
     else:
         path = '/home/mike/Documents/opendata/ticker/'
     pickle_filename = path + st + '.pickle'
@@ -48,8 +48,8 @@ startTime = datetime.now()
 
 msft = get_data("MSFT")
 nvda = get_data("NVDA")
-ubsg = get_data("UBSG")
-sdz  = get_data("SDZ")
+ubsg = get_data("UBS")
+sdz  = get_data("BTC-USD") # https://finance.yahoo.com/quote/BTC-USD/
 
 # logging.info(msft)
 logging.info(' ->> all done: ' + str(datetime.now() - startTime)) 

@@ -28,22 +28,22 @@ def get_data(st): #get if it doesn't exist - pickle serialization
     pickle_filename = path + st + '.pickle'
 
     if (os.path.isfile(pickle_filename)):
-        logging.info('load local ticker cache' + pickle_filename)
+        logging.info('<-- LOAD local ticker cache: ' + pickle_filename)
         with open(pickle_filename, "rb") as infile:
             ticker_reconstructed = pickle.load(infile)
             return ticker_reconstructed
     else:
         d = yf.Ticker(st)
-        # logging.info(d.info)
         hist = d.history(period="max") # https://pypi.org/project/yfinance/#quick-start
         # Value Meaning "1d" 1 day "5d" Last 5 days "1mo" Last 1 month "3mo" Last 3 months "6mo" Last 6 months
         #  "1y" 1 year "2y" 2 years "5y" 5 years "10y" 10 years 
         # "ytd" From January 1st this year "max" All available historical data
         # logging.info(type(hist)) # <class 'pandas.core.frame.DataFrame'>
+        # logging.info(d.info)
 
         with open(pickle_filename , "wb") as outfile:
             pickle.dump(hist, outfile)
-            logging.info('save to local pickle cache' + pickle_filename)
+            logging.info('--> SAVE to local pickle cache: ' + pickle_filename)
 
         return d
     
@@ -59,4 +59,4 @@ cad  = get_data("CHFCAD=X")
 jpy  = get_data("CHFJPY=X")
 
 # logging.info(msft)
-logging.info(' ->> all done: ' + str(datetime.now() - startTime)) 
+logging.info('\t ->> all done: ' + str(datetime.now() - startTime)) 

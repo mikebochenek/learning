@@ -17,3 +17,9 @@ git push -u origin master
 git reset --hard HEAD~1
 git rm --cached myfile
 ~~~
+
+# prettier log
+
+~~~
+git log --pretty="format:%ci %s"
+~~~

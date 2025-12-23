@@ -52,7 +52,7 @@ startTime = datetime.now()
 msft = get_data("MSFT")
 nvda = get_data("NVDA")
 ubsg = get_data("UBS")
-sdz  = get_data("BTC-USD") # https://finance.yahoo.com/quote/BTC-USD/
+btc  = get_data("BTC-USD") # https://finance.yahoo.com/quote/BTC-USD/
 sol  = get_data("SOL-USD") # https://finance.yahoo.com/quote/SOL-USD/
 eth  = get_data("ETH")
 cad  = get_data("CHFCAD=X")

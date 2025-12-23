@@ -66,4 +66,7 @@ Note that basing new env off '-c conda-forge python=3.10' is important, because 
 Not recommended (better to do a seperate env - as written [here](https://docs.spyder-ide.org/current/installation.html))
 ~~~
 pip install spyder numpy scipy pandas matplotlib sympy cython
+pip install jupyter
+
+jupyter notebook
 ~~~

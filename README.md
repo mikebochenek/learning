@@ -13,11 +13,13 @@ Small collection of my various learning notes and exercises
 * cpp (time nano, fibonacci)
 * d3 (diagrams and visualizations)
 * dart (very basic)
+* data_csv (used for machine learning or basic graphs)
 * dont-break-the-chain
 * go (all the hype these days)
 * hadoop (getting started)
 * html5
 * infra (good for career / job security - more about running, then building)
+* java (package-less ideal for run-on-save)
 * julia (hello world)
 * kdb (seems to have enough OSS + community)
 * linux (syntax, configs, alias, etc.)
@@ -29,6 +31,7 @@ Small collection of my various learning notes and exercises
 * python3 (very different from python - syntax tricks)
 * r (hello world)
 * ruby (syntax tricks)
+* rust (follow the trends...)
 * scala (programming puzzles)
 * scea (diagrams, pdfs)
 * security (hearbeat demo from 2014)
@@ -37,3 +40,4 @@ Small collection of my various learning notes and exercises
 * solidity (working example - with npm)
 * spark (samples)
 * sql (queries from past projects)
+* zig (only a few basic examples)

@@ -8,6 +8,13 @@ use chrono::prelude::*;
 
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
 fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
+    if cfg!(windows) { // https://stackoverflow.com/questions/43292357/how-can-one-detect-the-os-type-using-rust
+        println!("this is windows"); 
+        // can I try to rewrite filename?
+    } else if cfg!(unix) {
+        println!("this is unix alike");
+    }
+
     let file = File::open(filename).expect("no such file");
     let buf = BufReader::new(file);
     buf.lines()

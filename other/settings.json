@@ -11,6 +11,7 @@
             { "match": "\\.go$",  "cmd": "echo ' ' && date && go run ${file}" },
             { "match": "\\.zig$", "cmd": "zig run ${file}" },
             { "match": "\\.c$",   "cmd": "zig cc ${file}" },
+            { "match": "\\.rs$",  "cmd": "cd ${fileDirname}/.. && cargo run" },
             { "match": "\\.java$","cmd": "java ${file}" },
             { "match": "\\.jsh$", "cmd": "jshell ${file} --show-version --execution local" },
             { "match": "\\.cpp$", "cmd": "zig cc ${file} && a.exe" },

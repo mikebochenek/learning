@@ -1,0 +1,36 @@
+use std::{
+    fs::File,
+    io::{prelude::*, BufReader},
+    path::Path,
+};
+
+// https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
+fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
+    let file = File::open(filename).expect("no such file");
+    let buf = BufReader::new(file);
+    buf.lines()
+        .map(|l| l.expect("Could not parse line"))
+        .collect()
+}
+
+fn fuel(mass: i32) -> i32 {
+    return (mass / 3) - 2;
+}
+
+fn main() {
+    println!("Hello, world!");
+    //let lines = lines_from_file("/etc/hosts");
+    let lines = lines_from_file("/home/mike/Documents/aoc/2019/day1.txt");
+
+    let mut sum = 0;
+    for line in lines {
+        //println!("{:?}", line);
+        let parsed: i32 = line.parse().unwrap();
+        sum += fuel(parsed)
+    }
+
+    println!("test1 {}", 654 == fuel(1969));
+    println!("test2 {}", 33583 == fuel(100756));
+
+    println!("sum {} equal expected value? {}", sum, 3320816 == sum);
+}

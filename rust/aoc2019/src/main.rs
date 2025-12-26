@@ -25,7 +25,7 @@ fn main() {
     let mut sum = 0;
     for line in lines {
         //println!("{:?}", line);
-        let parsed: i32 = line.parse().unwrap();
+        let parsed: i32 = line.parse().unwrap(); // https://doc.rust-lang.org/rust-by-example/conversion/string.html
         sum += fuel(parsed)
     }
 

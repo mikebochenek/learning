@@ -2,7 +2,9 @@ use std::{
     fs::File,
     io::{prelude::*, BufReader},
     path::Path,
+    time::{SystemTime, UNIX_EPOCH},
 };
+use chrono::prelude::*;
 
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
 fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
@@ -31,6 +33,9 @@ fn main() {
 
     println!("test1 {}", 654 == fuel(1969));
     println!("test2 {}", 33583 == fuel(100756));
-
     println!("sum {} equal expected value? {}", sum, 3320816 == sum);
+
+    let e = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
+    let a = Utc::now().to_string();
+    println!("{} - {}", a, e)
 }

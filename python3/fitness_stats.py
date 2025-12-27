@@ -14,7 +14,8 @@ from matplotlib import pyplot as plt
 from datetime import datetime
 
 startTime = datetime.now()
-filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_11_13.csv'
+# filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_12_27.csv'
+filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
 outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 
@@ -54,7 +55,7 @@ for d in df.iterrows(): # it ain't pretty, but does the job
 
 july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
-plt.savefig(outfilename)
+# plt.savefig(outfilename)
 
 print ('\t', datetime.now(), '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(df), 
     ' - 2024 avg:', round((count2024*1.0/(52-7)), 2), '2025 avg:', round((count2025*1.0/(36)), 2),

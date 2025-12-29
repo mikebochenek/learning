@@ -9,8 +9,7 @@ use chrono::prelude::*;
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
 fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
     if cfg!(windows) { // https://stackoverflow.com/questions/43292357/how-can-one-detect-the-os-type-using-rust
-        println!("this is windows"); 
-        // can I try to rewrite filename?
+        println!("this is windows"); // can I try to rewrite filename?
     } else if cfg!(unix) {
         println!("this is unix alike");
     }
@@ -26,10 +25,8 @@ fn fuel(mass: i32) -> i32 {
     return (mass / 3) - 2;
 }
 
-fn main() {
-    println!("Hello, world!");
-    //let lines = lines_from_file("/etc/hosts");
-    let lines = lines_from_file("/home/mike/Documents/aoc/2019/day1.txt");
+fn day1() {
+    let lines = lines_from_file("/home/mike/Documents/aoc/2019/day1.txt"); // ("/etc/hosts");
 
     let mut sum = 0;
     for line in lines {
@@ -41,6 +38,12 @@ fn main() {
     println!("test1 {}", 654 == fuel(1969));
     println!("test2 {}", 33583 == fuel(100756));
     println!("sum {} equal expected value? {}", sum, 3320816 == sum);
+
+}
+fn main() {
+    println!("Hello, world!");
+
+    day1();
 
     let e = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
     let a = Utc::now().to_string();

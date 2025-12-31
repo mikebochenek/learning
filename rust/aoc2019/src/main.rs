@@ -43,7 +43,7 @@ fn day1() {
 }
 
 fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-in-rust-2158220607f2
-    println!("regex!");
+    println!("regex fun!");
 
     let re = Regex::new(r"^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$").unwrap();
     assert!(re.is_match("hello@example.com"));
@@ -61,5 +61,5 @@ fn main() {
 
     let e = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
     let a = Utc::now().to_string();
-    println!("{} - {}", a, e)
+    println!("{} ({} UTC)", a, e)
 }

@@ -10,13 +10,16 @@ use regex::Regex;
 
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
 fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
+    let mut path = "";
     if cfg!(windows) { // https://stackoverflow.com/questions/43292357/how-can-one-detect-the-os-type-using-rust
+        path = "C:/dev/data/aoc/2019";
         println!("this is windows"); // can I try to rewrite filename?
     } else if cfg!(unix) {
+        path = "/home/mike/Documents/aoc/2019/";
         println!("this is unix alike");
     }
 
-    let file = File::open(filename).expect("no such file");
+    let file = File::open(path+filename).expect("no such file");
     let buf = BufReader::new(file);
     buf.lines()
         .map(|l| l.expect("Could not parse line"))
@@ -28,7 +31,7 @@ fn fuel(mass: i32) -> i32 {
 }
 
 fn day1() {
-    let lines = lines_from_file("/home/mike/Documents/aoc/2019/day1.txt"); // ("/etc/hosts");
+    let lines = lines_from_file("day1.txt"); // ("/etc/hosts");
 
     let mut sum = 0;
     for line in lines {

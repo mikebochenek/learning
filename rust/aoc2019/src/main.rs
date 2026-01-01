@@ -9,17 +9,19 @@ use regex::Regex;
 
 
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
-fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String> {
-    let mut path = "";
+fn lines_from_file(filename: &str) -> Vec<String> {
+    let mut path: String = "".to_string();
     if cfg!(windows) { // https://stackoverflow.com/questions/43292357/how-can-one-detect-the-os-type-using-rust
-        path = "C:/dev/data/aoc/2019";
-        println!("this is windows"); // can I try to rewrite filename?
+        let p: &str = "C:/dev/data/aoc/2019/"; 
+        path = format!("{p}{filename}"); 
+        println!("windows trying to read {}", path); // can I try to rewrite filename?
     } else if cfg!(unix) {
-        path = "/home/mike/Documents/aoc/2019/";
-        println!("this is unix alike");
+        let p: &str = "/home/mike/Documents/aoc/2019/";
+        path = format!("{p}{filename}"); 
+        println!("unix trying read {}", path);
     }
 
-    let file = File::open(path+filename).expect("no such file");
+    let file = File::open(path).expect("no such file");
     let buf = BufReader::new(file);
     buf.lines()
         .map(|l| l.expect("Could not parse line"))
@@ -31,7 +33,8 @@ fn fuel(mass: i32) -> i32 {
 }
 
 fn day1() {
-    let lines = lines_from_file("day1.txt"); // ("/etc/hosts");
+    let filename: &str = "day1.txt";
+    let lines = lines_from_file(filename); // ("/etc/hosts");
 
     let mut sum = 0;
     for line in lines {

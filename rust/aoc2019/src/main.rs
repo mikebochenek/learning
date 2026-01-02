@@ -1,7 +1,6 @@
 use std::{
     fs::File,
     io::{prelude::*, BufReader},
-    path::Path,
     time::{SystemTime, UNIX_EPOCH},
 };
 use chrono::prelude::*;
@@ -43,8 +42,8 @@ fn day1() {
         sum += fuel(parsed)
     }
 
-    println!("test1 {}", 654 == fuel(1969));
-    println!("test2 {}", 33583 == fuel(100756));
+    assert!(654 == fuel(1969));
+    assert!(33583 == fuel(100756));
     println!("sum {} equal expected value? {}", sum, 3320816 == sum);
 }
 

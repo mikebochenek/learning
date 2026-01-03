@@ -17,7 +17,7 @@ fn lines_from_file(filename: &str) -> Vec<String> {
     } else if cfg!(unix) {
         let p: &str = "/home/mike/Documents/aoc/2019/";
         path = format!("{p}{filename}"); 
-        println!("unix trying read {}", path);
+        println!("unix trying to read {}", path);
     }
 
     let file = File::open(path).expect("no such file");
@@ -66,5 +66,5 @@ fn main() {
 
     let utc = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();
     let now = Utc::now().to_string();
-    println!("{} ({} UTC)", now, utc)
+    println!("\t{} ({} since unix epoch)", now, utc)
 }

@@ -7,8 +7,7 @@ use regex::Regex;
    cargo run 
    cargo build 
    cargo test */
-/*
-fn main() {
+fn original_guesser() {
     println!("Guess the number!");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
@@ -25,7 +24,6 @@ fn main() {
 
     println!("You guessed: {guess}");
 }
-*/
 
 fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-in-rust-2158220607f2
     println!("regex fun! why is this even here? LOL...");
@@ -40,6 +38,25 @@ fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-
 }
 
 
+fn string_replace() { // https://stackoverflow.com/questions/30154541/how-do-i-concatenate-strings 
+    // First method (Using concat!() ):
+    println!("{}", concat!("a", "b"));
+
+    // Second method (using push_str() and + operator):
+    let mut _a = "a".to_string();
+    let _b = "b".to_string();
+    let _c = "c".to_string();
+    _a.push_str(&_b);
+    println!("{}", _a);
+    println!("{}", _a + &_c);
+
+    // Third method (Using format!()):
+    let mut _a = "a".to_string();
+    let _b = "b".to_string();
+    let _c = format!("{}{}", _a, _b);
+    println!("{}", _c);
+}
+
 // can you generate a short program in rust that demonstrates what make is different from java or go?  
 // add comments to explain the strange parts to a newbie
 // https://claude.ai/chat/6a18b2df-2597-45cf-8db0-817b3a3d462f
@@ -49,6 +66,7 @@ fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-
 // When the owner goes out of scope, the value is automatically cleaned up.
 
 fn main() {
+    string_replace();
     regex_fun();
 
     // === OWNERSHIP BASICS ===

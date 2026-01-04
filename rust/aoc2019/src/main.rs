@@ -4,8 +4,6 @@ use std::{
     time::{SystemTime, UNIX_EPOCH},
 };
 use chrono::prelude::*;
-use regex::Regex;
-
 
 // https://stackoverflow.com/questions/30801031/read-a-file-and-get-an-array-of-strings
 fn lines_from_file(filename: &str) -> Vec<String> {
@@ -47,21 +45,7 @@ fn day1() {
     println!("sum {} equal expected value? {}", sum, 3320816 == sum);
 }
 
-fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-in-rust-2158220607f2
-    println!("regex fun! why is this even here? LOL...");
-
-    let re = Regex::new(r"^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$").unwrap();
-    assert!(re.is_match("hello@example.com"));
-    assert!(!re.is_match("hello@example")); // Missing .com
-
-    let re = Regex::new(r"^https?://[a-z0-9-.]{2,}\.[a-z]{2,4}(:[0-9]{2,5})?/?.*$").unwrap(); 
-    assert!(re.is_match("https://example.com")); 
-    assert!(!re.is_match("example.com")); // Missing https
-}
-
 fn main() {
-    regex_fun();
-
     day1();
 
     let utc = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_secs();

@@ -1,5 +1,6 @@
 use std::io;
 use rand::Rng;
+use regex::Regex;
 
 /* https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html 
    (base) PS C:\dev\code\learning\rust\guessing> dir .\target\debug\ 
@@ -26,6 +27,19 @@ fn main() {
 }
 */
 
+fn regex_fun() { // https://medium.com/coderhack-com/an-in-depth-guide-to-regex-in-rust-2158220607f2
+    println!("regex fun! why is this even here? LOL...");
+
+    let re = Regex::new(r"^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$").unwrap();
+    assert!(re.is_match("hello@example.com"));
+    assert!(!re.is_match("hello@example")); // Missing .com
+
+    let re = Regex::new(r"^https?://[a-z0-9-.]{2,}\.[a-z]{2,4}(:[0-9]{2,5})?/?.*$").unwrap(); 
+    assert!(re.is_match("https://example.com")); 
+    assert!(!re.is_match("example.com")); // Missing https
+}
+
+
 // can you generate a short program in rust that demonstrates what make is different from java or go?  
 // add comments to explain the strange parts to a newbie
 // https://claude.ai/chat/6a18b2df-2597-45cf-8db0-817b3a3d462f
@@ -35,6 +49,8 @@ fn main() {
 // When the owner goes out of scope, the value is automatically cleaned up.
 
 fn main() {
+    regex_fun();
+
     // === OWNERSHIP BASICS ===
     
     let s1 = String::from("hello");

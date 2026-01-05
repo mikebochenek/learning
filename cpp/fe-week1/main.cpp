@@ -12,8 +12,7 @@ void question1() {
     double total = 0.0;
     for (int i = 0; i < 20; i++) {
         total += 50000 / pow (1.1, i);
-        //cout << total << endl;
-        //printf ("%f\n", total);
+        printf ("%f\n", total);
     }
 }
 

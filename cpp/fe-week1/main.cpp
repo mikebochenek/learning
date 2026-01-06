@@ -31,6 +31,7 @@ int main() {
         fibonacci(i);
     }
     timeexample();
+
     return 0;
 }
 
@@ -40,6 +41,7 @@ int timeexample() {
    tim.tv_nsec = 100000000L;
    int i = 0;
    timespec ts;
+   double* myPtr = (double*)malloc(sizeof(double)*5);
 
    // http://stackoverflow.com/questions/275004/c-timer-function-to-provide-time-in-nano-seconds
    //clock_gettime(CLOCK_REALTIME, &ts); // Works on Linux
@@ -55,6 +57,6 @@ int timeexample() {
    }
 
    printf("Nano sleep successfull \n");
-
+   free(myPtr);
    return 0;
 }

@@ -27,8 +27,8 @@ int fibonacci(int i) {
 int main() {
     question1();
     for (int i = 0; i < 10; i++) {
-        //cout << fibonacci(i) << endl;
-        fibonacci(i);
+        int f = fibonacci(i);
+        printf ("fib: %i -> %i\n", i, f);
     }
     timeexample();
 
@@ -51,7 +51,7 @@ int timeexample() {
          printf("Nano sleep system call failed \n");
          return -1;
       } else {
-		  printf("%10d.%d\n", i / 10, i % 10);
+		  printf("%6d.%d\n", i / 10, i % 10);
 		  fflush(stdout);
 	  }
    }

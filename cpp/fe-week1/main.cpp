@@ -4,8 +4,6 @@
 #include <time.h>
 #include <sys/time.h>
 
-// using namespace std;
-
 int timeexample();
 
 void question1() {
@@ -37,8 +35,6 @@ int main() {
 
 int timeexample() {
    struct timespec tim, tim2;
-   tim.tv_sec  = 0;
-   tim.tv_nsec = 100000000L;
    int i = 0;
    timespec ts;
    double* myPtr = (double*)malloc(sizeof(double)*5);

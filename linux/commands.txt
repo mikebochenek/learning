@@ -76,3 +76,6 @@ df -h --total
 # restart apache2 - as root@bochenek:/home/mikey# 
 systemctl restart apache2
 systemctl status apache2
+
+# where are cron schedules/jobs stored?
+ls /etc/cron*

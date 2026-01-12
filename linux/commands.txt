@@ -80,5 +80,5 @@ systemctl status apache2
 # where are cron schedules/jobs stored?
 ls /etc/cron*
 crontab -e # add a job 
-crontab -l * list 
+crontab -l # list 
 service cron restart # restart to force..?

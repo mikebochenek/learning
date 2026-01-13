@@ -9,7 +9,7 @@ grep PRETTY /etc/os-release >> /var/www/bochenek.ch/status.txt
 echo '\n' >> /var/www/bochenek.ch/status.txt
 free >> /var/www/bochenek.ch/status.txt
 echo '\n' >> /var/www/bochenek.ch/status.txt
-df >> /var/www/bochenek.ch/status.txt
+df -h --total >> /var/www/bochenek.ch/status.txt
 echo '\n' >> /var/www/bochenek.ch/status.txt
 service --status-all >> /var/www/bochenek.ch/status.txt
 echo '\n' >> /var/www/bochenek.ch/status.txt

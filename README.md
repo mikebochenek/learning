@@ -40,4 +40,5 @@ Small collection of my various learning notes and exercises
 * solidity (working example - with npm)
 * spark (samples)
 * sql (queries from past projects)
+* typescript (yet another language - may come useful)
 * zig (only a few basic examples)

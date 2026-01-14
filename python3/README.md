@@ -70,3 +70,13 @@ pip install jupyter
 
 jupyter notebook
 ~~~
+
+##### New Spyder version
+
+Run the following command or commands in the Anaconda prompt to update manually:
+~~~
+conda install -c defaults spyder=6.1.0
+~~~
+
+Since you installed Spyder with Anaconda, please don't use pip to update it as that will break your installation.  For more information, visit our <a href="https://docs.spyder-ide.org/current/installation.html">installation guide</a>.
+

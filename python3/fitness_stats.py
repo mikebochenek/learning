@@ -14,8 +14,8 @@ from matplotlib import pyplot as plt
 from datetime import datetime
 
 startTime = datetime.now()
-# filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_12_27.csv'
-filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
+filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_12_27.csv'
+# filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
 outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 
@@ -68,3 +68,10 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
     'ms expired, on', platform.system(), platform.release(), 'created:', outfilename)
 # max 2025 04.09.2025 (week 36) TODO - need to update manually above
 # min 2024 1,Thursday,15.02.2024,,running (a.k.a. where it all started - week #7)
+
+
+# https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
+# import ConfigParser
+# config = ConfigParser.RawConfigParser()
+# config.read('ConfigFile.properties')
+

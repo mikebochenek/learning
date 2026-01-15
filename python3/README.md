@@ -42,7 +42,7 @@ If (Test-Path "C:\Users\mike\miniconda3\Scripts\conda.exe") {
 ~~~
 
 ### Luke coding
-
+(back in '24 or '25 ?)
 1. Tiger jython (some kind of IDE)
 2. [tutorials link](https://python-online.ch/)
 3. libs to import

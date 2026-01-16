@@ -44,3 +44,6 @@ assert (False == affordability(150000, 800000, 100000)) # not enough downpayment
 assert (False == affordability(101000, 800000, 200000)) # not enough income
 
 assert (calculate_amortization(15000, 0.07) > 120)
+
+cal = calculate_amortization(431000, 0.05)
+print ("\n", cal)

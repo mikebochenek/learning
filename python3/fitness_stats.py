@@ -71,7 +71,7 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
 
 
 # https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
-# import ConfigParser
-# config = ConfigParser.RawConfigParser()
-# config.read('ConfigFile.properties')
+import configparser
+config = configparser.RawConfigParser()
+config.read('secrets.txt')
 

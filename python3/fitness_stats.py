@@ -72,4 +72,7 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
 import configparser
 config = configparser.RawConfigParser()
 config.read('secrets.txt')
-print ('my url', config.get('urls', 'fitness_url'))
+fitnessurl = config.get('urls', 'fitness_url')
+from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
+# googledf = read_google_sheet(fitnessurl)
+

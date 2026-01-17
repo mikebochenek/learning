@@ -8,9 +8,7 @@ pip install july   <- https://stackoverflow.com/questions/32485907/matplotlib-an
 """
 
 import pandas as pd
-import calmap
 import platform
-from matplotlib import pyplot as plt
 from datetime import datetime
 
 startTime = datetime.now()
@@ -74,4 +72,4 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
 import configparser
 config = configparser.RawConfigParser()
 config.read('secrets.txt')
-
+print ('my url', config.get('urls', 'fitness_url'))

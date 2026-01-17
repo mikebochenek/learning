@@ -12,7 +12,7 @@ import platform
 from datetime import datetime
 
 startTime = datetime.now()
-filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2025_12_27.csv'
+filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2026_01_17.csv'
 # filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
 outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)

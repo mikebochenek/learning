@@ -12,10 +12,21 @@ import platform
 from datetime import datetime
 
 startTime = datetime.now()
+"""
 filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2026_01_17.csv'
 # filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
 outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
+"""
+
+# https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
+import configparser
+config = configparser.RawConfigParser()
+config.read('secrets.txt')
+fitnessurl = config.get('urls', 'fitness_url')
+from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
+df = read_google_sheet(fitnessurl)
+
 
 # example #1 
 import numpy as np; np.random.seed(sum(map(ord, 'calmap')))
@@ -66,13 +77,3 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
     'ms expired, on', platform.system(), platform.release(), 'created:', outfilename)
 # max 2025 04.09.2025 (week 36) TODO - need to update manually above
 # min 2024 1,Thursday,15.02.2024,,running (a.k.a. where it all started - week #7)
-
-
-# https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
-import configparser
-config = configparser.RawConfigParser()
-config.read('secrets.txt')
-fitnessurl = config.get('urls', 'fitness_url')
-from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
-# googledf = read_google_sheet(fitnessurl)
-

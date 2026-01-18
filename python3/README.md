@@ -65,6 +65,11 @@ Note that basing new env off '-c conda-forge python=3.10' is important, because 
 
 At some point need to check either *poetry* or *uv* (which are supposedly better!)
 
+~~~
+cargo install --locked uv
+~~~
+
+
 ### Install Spyder IDE
 
 Not recommended (better to do a seperate env - as written [here](https://docs.spyder-ide.org/current/installation.html))

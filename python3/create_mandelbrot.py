@@ -42,6 +42,7 @@ else:
 
 matplotlib.image.imsave(outputfile, array)
 print (outputfile)
+print(datetime.now() - startTime, 'total time, incl. file creation', 8000, 6000, 'max:', 40) 
 
 
 '''        

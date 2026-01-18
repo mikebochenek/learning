@@ -1,6 +1,7 @@
 # I can't believe I'm rewriting this the first time since 1998...
 # https://en.wikipedia.org/wiki/Mandelbrot_set
 
+import platform
 import matplotlib.image
 from numba import cuda
 from numba import jit #https://github.com/harrism/numba_examples/blob/master/mandelbrot_numba.ipynb
@@ -29,10 +30,16 @@ def generate(w, h, max_iterations):
     return matrix
 
 startTime = datetime.now()
-array = generate(800, 600, 40)
-print(datetime.now() - startTime, 'time taken to generate', 800, 600, 'max:', 40) 
+array = generate(8000, 6000, 40)
+print(datetime.now() - startTime, 'time taken to generate', 8000, 6000, 'max:', 40) 
 
-outputfile = 'C:/Users/Public/Pictures/mandelbrot.png' # '/tmp/mandelbrot.png'
+
+outputfile = 'C:/Users/Public/Pictures/mandelbrot.png'
+if ('Windows' == platform.system()):
+    Nil # keep default 
+else:
+    outputfile = '/tmp/mandelbrot.png'
+
 matplotlib.image.imsave(outputfile, array)
 print (outputfile)
 

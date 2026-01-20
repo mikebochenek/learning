@@ -15,6 +15,7 @@ python3 -m compileall . -q -f
 
 #### directory structure
 
+Although it can change, may be useful to show as an overview
 ~~~
 ├───advent_of_code_2020
 │   └───data
@@ -23,7 +24,7 @@ python3 -m compileall . -q -f
 ├───aoc2023
 ├───aoc2025
 ├───basics
-├───gen-ai
+├───gen_ai
 ├───puzzles
 ├───streamlit
 │   └───.streamlit

@@ -28,6 +28,7 @@ Although it can change, may be useful to show as an overview
 ├───puzzles
 ├───streamlit
 │   └───.streamlit
+├───try_uv
 └───__pycache__
 ~~~
 

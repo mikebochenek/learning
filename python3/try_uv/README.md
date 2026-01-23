@@ -1,6 +1,6 @@
 ### Intro
 
-Lets give it a short based on the [official tutorial](https://docs.astral.sh/uv/guides/projects/#creating-a-new-project)
+Why not give it a short based on the [official tutorial](https://docs.astral.sh/uv/guides/projects/#creating-a-new-project)?
 
 ~~~
 uv init

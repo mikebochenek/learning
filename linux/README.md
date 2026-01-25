@@ -19,3 +19,20 @@ A super neat window manager, which takes some time getting used to, but it has p
 - /usr/share/applications has links to other apps which cannot be found with alt+d (esp. visual code and sublime, etc.)
 - ~/.config/i3/config
 - already had a geany shortcut: bindsym $mod+Shift+g exec geany
+
+### My ~/.config/i3/config 
+
+~~~
+...
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+g exec geany
+#bindsym $mod+Shift+j exec /home/mike/Tools/eclipse/java-2021-09/eclipse/eclipse
+bindsym $mod+Shift+v exec /usr/share/code/code --unity-launch %F
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+}
+~~~
+

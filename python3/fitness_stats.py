@@ -19,6 +19,7 @@ outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png
 df = pd.read_csv(filename)
 """
 
+outfilename = '/home/mike/ownCloud/Documents/fitness/fitness_latest.png'
 # https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
 import configparser
 config = configparser.RawConfigParser()
@@ -35,7 +36,7 @@ days = np.random.choice(all_days, 500)
 events = pd.Series(np.random.randn(len(days)), index=days)
 #calmap.yearplot(events, year=2015)
 
-# example #2
+# example #2  https://stackoverflow.com/questions/32485907/matplotlib-and-numpy-create-a-calendar-heatmap
 import july
 from july.utils import date_range
 dates = date_range("2026-01-01", "2026-12-31")
@@ -68,7 +69,8 @@ for d in df.iterrows(): # it ain't pretty, but does the job
 
 july.heatmap(dates, data, title='Fitness Activity', cmap="github") #cmap="golden")
 
-# plt.savefig(outfilename)
+import matplotlib.pyplot as plt
+plt.savefig(outfilename)
 
 print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(df), 
     ' - 2024 avg:', round((count2024*1.0/(52-7)), 2), '2025 avg:', round((count2025*1.0/(52)), 2),

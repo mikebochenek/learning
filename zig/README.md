@@ -1,6 +1,6 @@
 # Intro
 
-Found myself a new toy: zig 
+Found myself a new toy: zig (although another part of me thinks to better invest time in python/java/sql/AI)
 
 ## install & learn
 

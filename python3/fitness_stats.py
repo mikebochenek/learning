@@ -15,26 +15,27 @@ startTime = datetime.now()
 """
 filename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_2026_01_17.csv'
 # filename = '/home/mike/Documents/code/learning/data_csv/fitness_latest.csv'
-outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
 df = pd.read_csv(filename)
 """
 
-outfilename = '/home/mike/ownCloud/Documents/fitness/fitness_latest.png'
-# https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
-import configparser
+# outfilename = '/home/mike/ownCloud/Documents/fitness/fitness_latest.png'
+outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
+import configparser # https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
 config = configparser.RawConfigParser()
 config.read('secrets.txt')
 fitnessurl = config.get('urls', 'fitness_url')
+
+import numpy as np
 from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
 df = read_google_sheet(fitnessurl)
 
-
-# example #1 
-import numpy as np; np.random.seed(sum(map(ord, 'calmap')))
+""" example #1 
+np.random.seed(sum(map(ord, 'calmap')))
 all_days = pd.date_range('1/15/2014', periods=700, freq='D')
 days = np.random.choice(all_days, 500)
 events = pd.Series(np.random.randn(len(days)), index=days)
 #calmap.yearplot(events, year=2015)
+"""
 
 # example #2  https://stackoverflow.com/questions/32485907/matplotlib-and-numpy-create-a-calendar-heatmap
 import july

@@ -29,6 +29,12 @@ import numpy as np
 from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
 df = read_google_sheet(fitnessurl)
 
+"""
+import pickle # save latest to a pickle.. wonder if it will keep changing
+with open("../data_csv/fitness.pickle" , "wb") as outfile:
+    pickle.dump(df, outfile)
+"""
+
 """ example #1 
 np.random.seed(sum(map(ord, 'calmap')))
 all_days = pd.date_range('1/15/2014', periods=700, freq='D')

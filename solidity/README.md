@@ -1,7 +1,18 @@
 
+# Restart 2026
+
+1. install nodejs with choco [link](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/)
+```
+choco search npm
+choco search node
+choco install nodejs
+```
+
+2. install solidity using [guide](https://docs.soliditylang.org/en/latest/installing-solidity.html)
+- TODO
+
 # Test 1
 http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html
-
 ```
 sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update

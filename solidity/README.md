@@ -7,6 +7,7 @@ choco search npm
 choco search node
 choco install nodejs
 ```
+(as root/admin!)
 
 2. install solidity using [guide](https://docs.soliditylang.org/en/latest/installing-solidity.html)
 ```

@@ -9,7 +9,10 @@ choco install nodejs
 ```
 
 2. install solidity using [guide](https://docs.soliditylang.org/en/latest/installing-solidity.html)
-- TODO
+```
+npm install --global solc
+--> added 9 packages in 3s
+```
 
 # Test 1
 http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html

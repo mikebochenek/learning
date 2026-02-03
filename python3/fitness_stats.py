@@ -6,7 +6,7 @@ pip install calmap <- https://pythonhosted.org/calmap/
 pip install july   <- https://stackoverflow.com/questions/32485907/matplotlib-and-numpy-create-a-calendar-heatmap
 @author: mike
 """
-
+import numpy as np
 import pandas as pd
 import platform
 from datetime import datetime
@@ -25,7 +25,6 @@ config = configparser.RawConfigParser()
 config.read('secrets.txt')
 fitnessurl = config.get('urls', 'fitness_url')
 
-import numpy as np
 from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
 df = read_google_sheet(fitnessurl)
 
@@ -50,7 +49,6 @@ dates = date_range("2026-01-01", "2026-12-31")
 data = np.random.randint(0, 1, len(dates))
 
 # events = pd.to_datetime(df.head(8).get('date'),format="%d.%m.%Y")
-from datetime import datetime
 types = ['','biking', 'swimming','running','football', 'basketball']
 start = datetime.strptime('01.01.2026', "%d.%m.%Y")
 

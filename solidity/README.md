@@ -1,7 +1,7 @@
 
 # Restart 2026
 
-1. install nodejs with choco [link](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/)
+### install nodejs with choco [link](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/)
 ```
 choco search npm
 choco search node
@@ -9,14 +9,14 @@ choco install nodejs
 ```
 (as root/admin!)
 
-2. install solidity using [guide](https://docs.soliditylang.org/en/latest/installing-solidity.html)
+### install solidity using [guide](https://docs.soliditylang.org/en/latest/installing-solidity.html)
 ```
 npm install --global solc
 --> added 9 packages in 3s
 ```
 
 # Test 1
-http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html
+[smart contract example](http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html)
 ```
 sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
@@ -26,8 +26,7 @@ solc --metadata SimpleStorage.sol
 ```
 
 # Test 2
-https://dzone.com/articles/ethereum-hello-world-example-using-solc-and-web3
-
+[hello world dzone example](https://dzone.com/articles/ethereum-hello-world-example-using-solc-and-web3)
 ```
 sudo npm install web3
    │  Update available 4.6.1 → 6.2.0    │

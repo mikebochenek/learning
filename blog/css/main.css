@@ -13,7 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+  background-color: #fcf6e1;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -354,7 +354,7 @@ a:visited { color: #205caa; }
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
-    background-color: white;
+    background-color:#fcf6e1;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

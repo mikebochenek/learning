@@ -24,11 +24,11 @@ Small collection of my various learning notes and exercises
 * kdb (seems to have enough OSS + community)
 * linux (syntax, configs, alias, etc.)
 * nlp-jurafsky (natural language processing, questions, diagrams)
+* old_python (syntax tricks for pre-version-3 python)
 * opengl
 * other (android)
 * puzzles (thoughtworks 2004: programming, math, logic, etc).
-* python (syntax tricks)
-* python3 (very different from python - syntax tricks)
+* python (very different from python2 - syntax tricks)
 * r (hello world)
 * ruby (syntax tricks)
 * rust (follow the trends...)

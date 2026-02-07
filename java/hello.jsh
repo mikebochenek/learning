@@ -30,4 +30,15 @@ System.out.println("minimal hello! at currentTimeMillis=" + System.currentTimeMi
 
 /** but writing snippets like this will not teach me about @autowired and fancy IDE highlighting, git cherrypicking etc.! */
 
+/** cut and paste: 
+@Autowired is an annotation in Spring Framework that enables dependency injection 
+for Java classes. It allows Spring to automatically inject dependencies into the class, 
+eliminating the need for manual configuration. This annotation can be used to inject 
+dependencies into fields, methods, and constructors.
+https://vicksheet.medium.com/understanding-autowired-in-spring-framework-benefits-and-types-5ce8815d99d7
+https://stackoverflow.com/questions/67727341/what-exactly-does-autowired-mean-in-java
+https://stackoverflow.com/questions/41839723/what-is-the-proper-way-to-do-checkout-with-rebase-and-then-push-the-merged-fil
+https://www.jetbrains.com/help/idea/manage-branches.html#checkout-Git-branch
+*/ 
+
 /exit

@@ -28,4 +28,6 @@ t2.start();
 
 System.out.println("minimal hello! at currentTimeMillis=" + System.currentTimeMillis());
 
+/** but writing snippets like this will not teach me about @autowired and fancy IDE highlighting, git cherrypicking etc.! */
+
 /exit

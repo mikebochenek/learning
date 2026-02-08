@@ -16,7 +16,7 @@ print("2. coding:", delta.days)
 
 planks = date(2025, 11, 16)
 delta = today - planks
-print("3. planks:", delta.days)
+print("3. planks:", delta.days, "KAPUTT!")
 
 fitness = date(2024, 2, 15)
 delta = today - fitness

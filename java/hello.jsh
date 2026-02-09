@@ -26,7 +26,7 @@ MyThread t2 = new MyThread(1, 1, 6);
 t1.start();
 t2.start(); 
 
-System.out.println("minimal hello! at currentTimeMillis=" + System.currentTimeMillis());
+System.out.println("minimal hello! at currentTimeMillis: " + System.currentTimeMillis());
 System.out.println("human readable time: " + java.time.Instant.now());
 
 /** but writing snippets like this will not teach me about @autowired and fancy IDE highlighting, git cherrypicking etc.! */

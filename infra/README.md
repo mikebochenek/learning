@@ -13,3 +13,6 @@ notes and concepts that should help long term
 
 * generally: google, stackoverflow, youtube, pluralsight
 * TODO
+
+# 
+[1️⃣ DevOps Interview Questions 👉 https://lnkd.in/dDcMy8Hi](https://github.com/bregman-arie/devops-exercises)

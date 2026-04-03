@@ -22,6 +22,8 @@ def s885(n): # Let s(n) be the sum of f(d) for all positive integers d of n digi
     return sum
 
 assert (334 == (f885(3403)))
+assert (1 == f885(100))
+assert (123 == f885(102030))
 assert (45 == s885(1)) # should be 45
 assert (1543545675 == s885(5)) # should be 1543545675
 # aha, this will never finish print (s885(18))

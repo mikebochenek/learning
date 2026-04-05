@@ -23,3 +23,8 @@ delta = today - fitness
 print("4. fitness:", round((delta.days/7), 1))
 
 print("  ", also)
+
+print("<<< other reminders :  up and not crying at the fates + harmless people >>> ")
+print(" a. I already know a lot, but tend to forget my habits under stress ")
+print(" b. less is more - oftentimes... ")
+print(" c. delegate more, way more - can I show you? am I doing this right? do you have a minute?")

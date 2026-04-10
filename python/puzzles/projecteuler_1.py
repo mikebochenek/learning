@@ -239,6 +239,8 @@ def digitfifthpower(x):
     return sum
 
 assert(19316 == digitfifthpower(4))
+assert(1301 == digitfifthpower(3))
+assert(248860 == digitfifthpower(5))
 print('\n\n')
 print(' #30', digitfifthpower(5))
 

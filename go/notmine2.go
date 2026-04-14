@@ -28,9 +28,17 @@ func toBoldSansSerif(text string) string {
 }
 
 func main() {
-	fmt.Println(toBoldSansSerif("Greater Zurich"))
-	// 𝗚𝗿𝗲𝗮𝘁𝗲𝗿 𝗭𝘂𝗿𝗶𝗰𝗵
+	original := "Greater Zurich 2024"
+	bold := toBoldSansSerif(original)
+	restored := fromBoldSansSerif(bold)
 
+
+	fmt.Println("Original: ", original)
+	fmt.Println("Bold:     ", bold)
+	fmt.Println("Restored: ", restored)
+	fmt.Println("Roundtrip OK:", original == restored)
+
+	fmt.Println(toBoldSansSerif("Greater Zurich"))
 	fmt.Println(toUnicodeBold("Greater Zurich", "bold-italic-sans"))
 }
 
@@ -54,6 +62,23 @@ func toUnicodeBold(text, style string) string {
 			result = append(result, rune(offsets[1]+(ch-'a')))
 		case ch >= '0' && ch <= '9':
 			result = append(result, rune(offsets[2]+(ch-'0')))
+		default:
+			result = append(result, ch)
+		}
+	}
+	return string(result)
+}
+
+func fromBoldSansSerif(text string) string {
+	result := []rune{}
+	for _, ch := range text {
+		switch {
+		case ch >= 0x1D5D4 && ch <= 0x1D5ED: // 𝗔–𝗭
+			result = append(result, 'A'+(ch-0x1D5D4))
+		case ch >= 0x1D5EE && ch <= 0x1D607: // 𝗮–𝘇
+			result = append(result, 'a'+(ch-0x1D5EE))
+		case ch >= 0x1D7EC && ch <= 0x1D7F5: // 𝟬–𝟵
+			result = append(result, '0'+(ch-0x1D7EC))
 		default:
 			result = append(result, ch)
 		}

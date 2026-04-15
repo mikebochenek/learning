@@ -28,7 +28,7 @@ func toBoldSansSerif(text string) string {
 }
 
 func main() {
-	original := "Greater Zurich 2024"
+	original := "Greater Zürich 2026"
 	bold := toBoldSansSerif(original)
 	restored := fromBoldSansSerif(bold)
 
@@ -69,6 +69,7 @@ func toUnicodeBold(text, style string) string {
 	return string(result)
 }
 
+/* all quite simple mathematics... */
 func fromBoldSansSerif(text string) string {
 	result := []rune{}
 	for _, ch := range text {

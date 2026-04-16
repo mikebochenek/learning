@@ -222,7 +222,7 @@ assert(15 == distinctpower(5, 5))
 print(' #29', distinctpower(100, 100))
 
 # https://projecteuler.net/problem=30
-def digitfifthpower(x):
+def sum_digit_power_numbers(x):
     sum = -1
     hack = 1
     if (x == 5):
@@ -238,10 +238,10 @@ def digitfifthpower(x):
                             sum = sum + p
     return sum
 
-assert(19316 == digitfifthpower(4))
-assert(1301 == digitfifthpower(3))
-assert(248860 == digitfifthpower(5))
+assert(19316 == sum_digit_power_numbers(4))
+assert(1301 == sum_digit_power_numbers(3))
+assert(248860 == sum_digit_power_numbers(5))
 print('\n\n')
-print(' #30', digitfifthpower(5))
+print(' #30', sum_digit_power_numbers(5))
 
 print (' > and it only took: ', (datetime.now()-startTime))

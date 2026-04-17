@@ -6,8 +6,8 @@ Miscellaneous Linux learnings and utilities:
 # Odd bits and pieces
 - ~/.python_history - seems to show all snippets execute from RLI ?
 
-# Funny that
-"My" local ubuntu doesn't have a root user (or at least one where I can do "su" to).  Instead, the recommend way is to always "sudo".  The funny bit is that I spent 10 minutes trying to remember the password!
+## Funny that
+My local Ubuntu 18.04.6 LTS doesn't have a root user (or at least one where I can do "su" to).  Instead, the recommend way is to always "sudo".  The funny bit is that I spent 10 minutes trying to remember the password!
 
 # i3
 A super neat window manager, which takes some time getting used to, but it has potential to improve productivity, or to be more exact, forces one to use the keyboard more and more.  Notes for myself:
@@ -40,4 +40,3 @@ bar {
         status_command i3status
 }
 ~~~
-

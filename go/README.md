@@ -15,3 +15,8 @@ Golang evolves just like everything these days: so we need to either [turn-off](
 go env -w GO111MODULE=off
 ~~~
 
+## version
+On Ubuntu
+~~~
+go version go1.10.4 linux/amd64
+~~~

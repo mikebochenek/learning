@@ -27,19 +27,17 @@ func toBoldSansSerif(text string) string {
 	return string(result)
 }
 
-func main() {
+func main() { 
 	original := "Greater Zürich 2026"
 	bold := toBoldSansSerif(original)
-	restored := fromBoldSansSerif(bold)
+	restored := fromBoldSansSerif(bold) 
 
-
-	fmt.Println("Original: ", original)
-	fmt.Println("Bold:     ", bold)
-	fmt.Println("Restored: ", restored)
-	fmt.Println("Roundtrip OK:", original == restored)
-
-	fmt.Println(toBoldSansSerif("Greater Zurich"))
-	fmt.Println(toUnicodeBold("Greater Zurich", "bold-italic-sans"))
+	fmt.Println(toBoldSansSerif(original))
+	fmt.Println(toUnicodeBold(original, "bold-italic-sans"))
+	fmt.Println("Original:    ", original)
+	fmt.Println("Bold:        ", bold)
+	fmt.Println("Restored:    ", restored)
+	fmt.Println("Roundtrip OK?", original == restored)
 }
 
 var boldStyles = map[string][3]rune{

@@ -86,25 +86,25 @@ hello world! with log [ 2025-12-25 14:15:11.113095341 +0100 CET m=+0.001804110 ]
 
 ![linux1]({{ site.url }}/img/dev_screenshots2/fract0.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%202024-07-07%20at%2019.25.58.png)
+![linux2]({{ site.url }}/img/dev_screenshots2/Screenshot%202024-07-07%20at%2019.25.58.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%202023-10-07%20at%2011.08.29.png)
+![linux3]({{ site.url }}/img/dev_screenshots2/Screenshot%202023-10-07%20at%2011.08.29.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%202024-02-18%20at%2015.25.22.png)
+![linux4]({{ site.url }}/img/dev_screenshots2/Screenshot%202024-02-18%20at%2015.25.22.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%202025-05-18%20082736.png)
+![linux5]({{ site.url }}/img/dev_screenshots2/Screenshot%202025-05-18%20082736.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202022-03-06%2009-59-22.png)
+![linux6]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202022-03-06%2009-59-22.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-02-18%2022-05-59.png)
+![linux7]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-02-18%2022-05-59.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-02-18%2022-27-45.png)
+![linux8]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-02-18%2022-27-45.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-04-14%2013-23-57.png)
+![linux9]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-04-14%2013-23-57.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-08-02%2023-22-49.png)
+![linux10]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-08-02%2023-22-49.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-09-22%2009-19-43.png)
+![linux11]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202024-09-22%2009-19-43.png)
 <hr/>
-![linux1]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202025-12-26%2013-26-45.png)
+![linux12]({{ site.url }}/img/dev_screenshots2/Screenshot%20from%202025-12-26%2013-26-45.png)
 <hr/>

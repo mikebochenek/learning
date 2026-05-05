@@ -18,6 +18,10 @@ toc ?
 - https://github.com/arnoldrobbins/LinuxByExample-2e
 - https://github.com/ghostty-org/ghostling
 - https://gist.github.com/bretonium/291f4388e2de89a43b25c135b44e41f0
+- https://github.com/0x0mer/CasNum
+- https://libresprite.github.io/#!/
+- http://karpathy.github.io/2026/02/12/microgpt/
+- https://github.com/huggingface/skills
 
 # Stalk people I know (socially)
 - Jeff U

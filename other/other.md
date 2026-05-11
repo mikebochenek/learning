@@ -22,6 +22,7 @@ toc ?
 - https://libresprite.github.io/#!/
 - http://karpathy.github.io/2026/02/12/microgpt/
 - https://github.com/huggingface/skills
+- https://github.com/PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build
 
 # Stalk people I know (socially)
 - Jeff U

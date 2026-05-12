@@ -27,3 +27,6 @@ toc ?
 # Stalk people I know (socially)
 - Jeff U
 - Jakob 
+
+# More doing, less reading/studying
+- children try more because they are not afraid..

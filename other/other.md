@@ -24,6 +24,8 @@ toc ?
 - https://github.com/huggingface/skills
 - https://github.com/PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build
 - https://github.com/FULU-Foundation/OrcaSlicer-bambulab
+- https://github.com/cactus-compute/needle
+- https://github.com/Genymobile/scrcpy/releases/tag/v4.0
 
 # Stalk people I know (socially)
 - Jeff U

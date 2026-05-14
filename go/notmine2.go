@@ -38,6 +38,8 @@ func main() {
 	fmt.Println("Bold:        ", bold)
 	fmt.Println("Restored:    ", restored)
 	fmt.Println("Roundtrip OK?", original == restored)
+
+	fmt.Println("\u2713")
 }
 
 var boldStyles = map[string][3]rune{

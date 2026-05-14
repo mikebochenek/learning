@@ -40,6 +40,11 @@ func main() {
 	fmt.Println("Roundtrip OK?", original == restored)
 
 	fmt.Println("\u2713")
+	fmt.Println("\u2705")
+	fmt.Println("\u2610")
+	// Checked Box: U+2611 (☑) or U+2705 (✅)Empty Box: U+2610 (☐)
+	// Smiley Face: U+263A (☺) or U+1F600 (😀)Check Mark: U+2713 (✓) or U+2714 (✔)
+
 }
 
 var boldStyles = map[string][3]rune{

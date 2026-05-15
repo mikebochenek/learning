@@ -26,6 +26,7 @@ toc ?
 - https://github.com/FULU-Foundation/OrcaSlicer-bambulab
 - https://github.com/cactus-compute/needle
 - https://github.com/Genymobile/scrcpy/releases/tag/v4.0
+- https://github.com/glouw/nibble
 
 # Stalk people I know (socially)
 - Jeff U

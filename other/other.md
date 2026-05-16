@@ -3,6 +3,7 @@ toc ?
 # Read "famous" papers/publications/PDFs 
 - attention is all it takes
 - bitcoin 
+- the subtle art 
 
 # Checkout interesting github projects 
 - https://github.com/nexu-io/open-design
@@ -27,10 +28,13 @@ toc ?
 - https://github.com/cactus-compute/needle
 - https://github.com/Genymobile/scrcpy/releases/tag/v4.0
 - https://github.com/glouw/nibble
+- https://github.com/neilsonnn/image-blaster
+- https://ljtn.github.io/epiq/
 
 # Stalk people I know (socially)
 - Jeff U
 - Jakob 
+- Adam G
 
 # More doing, less reading/studying
 - children try more because they are not afraid..

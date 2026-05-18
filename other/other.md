@@ -31,6 +31,7 @@ toc ?
 - https://github.com/neilsonnn/image-blaster
 - https://ljtn.github.io/epiq/
 - https://github.com/stepandel
+- https://github.com/tech4bot/rk3562deb
 
 # Stalk people I know (socially)
 - Jeff U

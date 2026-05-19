@@ -34,9 +34,9 @@ toc ?
 - https://github.com/tech4bot/rk3562deb
 
 # Stalk people I know (socially)
-- Jeff U
-- Jakob 
-- Adam G
+1. Jeff U.
+2. Jakob J.
+3. Adam G.
 
 # More doing, less reading/studying
 - children try more because they are not afraid..

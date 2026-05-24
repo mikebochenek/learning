@@ -33,6 +33,10 @@ toc ?
 - https://github.com/stepandel
 - https://github.com/tech4bot/rk3562deb
 - https://github.com/antoinezambelli/forge
+- https://github.com/Paulescu/chess-game
+- https://github.com/JustJasper/eosstb
+- https://github.com/jsiegenthaler/homebridge-eosstb / https://pypi.org/project/arris-dcx960/
+- https://github.com/schijndela/arrisdcx960
 
 # Stalk people I know (socially)
 1. Jeff U.

@@ -37,6 +37,7 @@ toc ?
 - https://github.com/JustJasper/eosstb
 - https://github.com/jsiegenthaler/homebridge-eosstb / https://pypi.org/project/arris-dcx960/
 - https://github.com/schijndela/arrisdcx960
+- https://github.com/geohot
 
 # Stalk people I know (socially)
 1. Jeff U.

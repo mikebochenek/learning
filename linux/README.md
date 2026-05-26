@@ -24,6 +24,7 @@ A super neat window manager, which takes some time getting used to, but it has p
 - power management: [xfce4-power-manager](https://www.reddit.com/r/i3wm/comments/32mqdd/what_do_you_use_for_power_management/)
 - screen resolution [xrandr](https://superuser.com/questions/1111788/i3-how-to-save-background-and-screen-resolution)
 - [xrandr --output HDMI-1 --mode 1920x1080](https://www.reddit.com/r/i3wm/comments/2wt3z2/how_to_change_screen_resolution/)
+- ? how to open a graphical filemanager again?
 
 ### My ~/.config/i3/config 
 

@@ -1,8 +1,8 @@
 # Parsing - Extract and analyze
 text = "Hello, World! 123"
-print(f"Characters: {list(text)}")
+print(f"Characters: {list(text)}") #print(f is new to me
 print(f"Uppercase: {text.upper()}")
-print(f"Count of 'o': {text.count('o')}")
+print(f"Count of 'o': {text.count('o')}") # two right?
 
 # Reversal - Flip it around
 print(f"\nReversed: {text[::-1]}")

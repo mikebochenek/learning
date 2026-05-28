@@ -40,7 +40,7 @@ toc ?
 - https://github.com/geohot
 - https://github.com/gekoh/yaGen
 - https://github.com/dueni
-
+- https://github.com/logannye/rosalind
 
 # Stalk people I know (socially)
 1. Jeff U.

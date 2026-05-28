@@ -41,6 +41,9 @@ toc ?
 - https://github.com/gekoh/yaGen
 - https://github.com/dueni
 - https://github.com/logannye/rosalind
+- https://github.com/BurntSushi/bttf
+- https://github.com/creusot-rs/creusot/tree/master
+- https://github.com/highpost/tailscale-macos-vm
 
 # Stalk people I know (socially)
 1. Jeff U.

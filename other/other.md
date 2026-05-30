@@ -45,6 +45,7 @@ toc ?
 - https://github.com/creusot-rs/creusot/tree/master
 - https://github.com/highpost/tailscale-macos-vm
 - https://github.com/HeidiSQL/HeidiSQL
+- https://github.com/HarleyCoops/Math-To-Manim
 
 # Stalk people I know (socially)
 1. Jeff U.

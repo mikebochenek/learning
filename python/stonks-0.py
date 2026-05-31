@@ -57,6 +57,8 @@ sol  = get_data("SOL-USD") # https://finance.yahoo.com/quote/SOL-USD/
 eth  = get_data("ETH")
 cad  = get_data("CHFCAD=X")
 jpy  = get_data("CHFJPY=X")
+# cbrs = get_data("CBRS")
+# axa  = get_data("CS.PA") #2026-05-31 09:47:28,751 - ERROR - $CS.PA: possibly delisted; no timezone found
 
 # logging.info(msft)
 logging.info('\t ->> all done: ' + str(datetime.now() - startTime)) 

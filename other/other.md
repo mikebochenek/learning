@@ -46,6 +46,7 @@ toc ?
 - https://github.com/highpost/tailscale-macos-vm
 - https://github.com/HeidiSQL/HeidiSQL
 - https://github.com/HarleyCoops/Math-To-Manim
+- https://github.com/nulldutra/sn
 
 # Stalk people I know (socially)
 1. Jeff U.

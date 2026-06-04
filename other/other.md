@@ -47,6 +47,11 @@ toc ?
 - https://github.com/HeidiSQL/HeidiSQL
 - https://github.com/HarleyCoops/Math-To-Manim
 - https://github.com/nulldutra/sn
+- https://github.com/duanebester/gooey
+- https://github.com/tsupplis/cpm86-crossdev
+- https://github.com/remysucre/prela
+- https://github.com/huawei-csl/KVarN
+- https://github.com/tastyeffectco/sandboxes
 
 # Stalk people I know (socially)
 1. Jeff U.

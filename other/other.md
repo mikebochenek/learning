@@ -53,6 +53,7 @@ toc ?
 - https://github.com/huawei-csl/KVarN
 - https://github.com/tastyeffectco/sandboxes
 - https://github.com/anthropics/defending-code-reference-harness
+- https://github.com/JorisAR/gaussian-point-splatting
 
 # Stalk people I know (socially)
 1. Jeff U.

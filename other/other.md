@@ -52,6 +52,7 @@ toc ?
 - https://github.com/remysucre/prela
 - https://github.com/huawei-csl/KVarN
 - https://github.com/tastyeffectco/sandboxes
+- https://github.com/anthropics/defending-code-reference-harness
 
 # Stalk people I know (socially)
 1. Jeff U.

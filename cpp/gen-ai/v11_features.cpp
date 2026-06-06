@@ -12,7 +12,7 @@
 
     v11_features.cpp:(.text+0xb79): undefined reference to `pthread_create'
 
-    (base) mike@hp:~/Documents/code/learning/cpp/gen-ai$ g++ -std=c++17 -pthread -lpthread v11_features.cpp -o cpp11_features
+    (base) mike@hp:~/Documents/code/learning/cpp/gen-ai$ g++ -std=c++17 -pthread -lpthread v11_features.cpp
 */
 
 #include <iostream>

@@ -38,14 +38,14 @@ void range_for_demo() {
     std::vector<int> v = {1, 2, 3, 4, 5};   // uniform initialisation
     for (auto x : v)
         std::cout << x << ' ';
-    std::cout << "\n";
+    std::cout << "  (range for demo)\n";
 }
 
 // ── 4. Lambda expressions ─────────────────────────────────────────────────────
 void lambda_demo() {
     int factor = 3;
     auto multiply = [factor](int x) { return x * factor; };
-    std::cout << "5 × 3 = " << multiply(5) << "\n";
+    std::cout << "5 × 3 = " << multiply(5) << "  (lambda!)\n";
 
     std::vector<int> v = {5, 1, 4, 2, 3};
     std::sort(v.begin(), v.end(), [](int a, int b){ return a < b; });
@@ -68,16 +68,14 @@ public:
 void smart_ptr_demo() {
     auto p = std::make_shared<int>(42);           // shared_ptr
     std::weak_ptr<int> wp = p;                    // weak_ptr
-    auto u = std::make_unique<std::string>("hi"); // unique_ptr (C++14 make_unique,
-    //                                             but unique_ptr itself is C++11)
+    auto u = std::make_unique<std::string>("hi"); // unique_ptr (C++14 make_unique, but unique_ptr itself is C++11)
     std::cout << "shared=" << *p << "  unique=" << *u << "\n";
 }
 
 // ── 7. Variadic templates ─────────────────────────────────────────────────────
 template<typename... Args>
 void print_all(Args&&... args) {
-    (std::cout << ... << args) << "\n";   // fold expression (C++17) for brevity;
-    // classic C++11 approach uses recursive unpacking
+    (std::cout << ... << args) << "\n";   // fold expression (C++17) for brevity; classic C++11 approach uses recursive unpacking
 }
 
 // ── 8. Tuple & std::tie ───────────────────────────────────────────────────────
@@ -108,26 +106,20 @@ struct Point {
 
 // ─────────────────────────────────────────────────────────────────────────────
 int main() {
-    // 1. nullptr
-    take_ptr(nullptr);
-
-    // 2. Enum class
-    Color c = Color::Green;
+    take_ptr(nullptr); // 1. nullptr
+    
+    Color c = Color::Green; // 2. Enum class
     std::cout << "color index: " << static_cast<int>(c) << "\n";
 
-    // 3. Range-for + auto
-    range_for_demo();
-
-    // 4. Lambdas
-    lambda_demo();
-
-    // 5. Move semantics
-    Buffer buf("hello");
+    range_for_demo(); // 3. Range-for + auto
+    
+    lambda_demo(); // 4. Lambdas
+    
+    Buffer buf("hello"); // 5. Move semantics
     Buffer buf2(std::move(buf));
     std::cout << "moved data: " << buf2.data() << "\n";
 
-    // 6. Smart pointers
-    smart_ptr_demo();
+    smart_ptr_demo(); // 6. Smart pointers
 
     // 7. Variadic template (using fold; works fine in C++17 mode)
     print_all("sum=", 1 + 2 + 3);

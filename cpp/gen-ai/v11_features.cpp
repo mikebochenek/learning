@@ -132,7 +132,7 @@ int main() {
     constexpr int f5 = factorial(5); // 10. constexpr
     std::cout << "5! = " << f5 << "\n"; 
 
-    Point p(1, 2 // 12. Delegating ctor);
+    Point p(1, 2); // 12. Delegating ctor);
     std::cout << "point z defaults to " << p.z << "\n";
 
     return 0;

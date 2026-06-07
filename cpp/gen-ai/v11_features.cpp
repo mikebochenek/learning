@@ -124,19 +124,15 @@ int main() {
     // 7. Variadic template (using fold; works fine in C++17 mode)
     print_all("sum=", 1 + 2 + 3);
 
-    // 8. Tuple
     auto [id, name, score] = make_record();   // structured bindings (C++17)
-    std::cout << name << " scored " << score << "\n";
+    std::cout << name << " scored " << score << "\n"; // 8. Tuple
 
-    // 9. Thread
-    thread_demo();
+    thread_demo(); // 9. Thread
 
-    // 10. constexpr
-    constexpr int f5 = factorial(5);
-    std::cout << "5! = " << f5 << "\n";
+    constexpr int f5 = factorial(5); // 10. constexpr
+    std::cout << "5! = " << f5 << "\n"; 
 
-    // 12. Delegating ctor
-    Point p(1, 2);
+    Point p(1, 2 // 12. Delegating ctor);
     std::cout << "point z defaults to " << p.z << "\n";
 
     return 0;

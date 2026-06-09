@@ -113,7 +113,7 @@ void filesystem_demo() {
 // ── 12. Parallel algorithms (execution policies) ──────────────────────────────
 // std::sort, std::transform, etc. accept an execution policy for parallelism.
 // Requires linking -ltbb on Linux; shown here for reference:
-    std::sort(std::execution::par, v.begin(), v.end());
+//   std::sort(std::execution::par, v.begin(), v.end());
 
 // ── 13. std::clamp ────────────────────────────────────────────────────────────
 void clamp_demo() {

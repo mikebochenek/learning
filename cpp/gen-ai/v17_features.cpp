@@ -127,53 +127,40 @@ void use_attributes([[maybe_unused]] int x) { /* x intentionally unused */ }
 
 // ─────────────────────────────────────────────────────────────────────────────
 int main() {
-    // 1. string_view
-    greet("world");                          // no copy made
+    greet("world");                          // 1. string_view : no copy made
     greet(std::string("from std::string"));  // works with std::string too
 
-    // 2. optional
-    for (auto s : {"42", "abc"}) {
+    for (auto s : {"42", "abc"}) { // 2. optional
         auto v = parse_int(s);
         std::cout << s << " -> " << (v ? std::to_string(*v) : "nullopt") << "\n";
     }
-
-    // 3. variant
-    print_number(7);
+    
+    print_number(7); // 3. variant
     print_number(3.14);
     print_number(std::string("pi"));
 
-    // 4. any
-    any_demo();
+    any_demo(); // 4. any
 
-    // 5. structured bindings
-    structured_bindings_demo();
+    structured_bindings_demo(); // 5. structured bindings
 
-    // 6. if with initialiser
-    if_init_demo();
+    if_init_demo(); // 6. if with initialiser
 
-    // 7. fold expressions
-    std::cout << "sum(1..5) = " << sum(1, 2, 3, 4, 5) << "\n";
+    std::cout << "sum(1..5) = " << sum(1, 2, 3, 4, 5) << "\n"; // 7. fold expressions
     print_all("fold: ", 1, " ", 2.5, " ", "hello");
 
-    // 8. if constexpr
-    describe(10);
+    describe(10); // 8. if constexpr
     describe(3.14);
     describe("text");
 
-    // 9. inline static
-    std::cout << "max_connections: " << Config::max_connections << "\n";
+    std::cout << "max_connections: " << Config::max_connections << "\n"; // 9. inline static
 
-    // 10. CTAD
-    ctad_demo();
+    ctad_demo(); // 10. CTAD
 
-    // 11. filesystem
-    filesystem_demo();
+    filesystem_demo(); // 11. filesystem
 
-    // 13. clamp
-    clamp_demo();
+    clamp_demo(); // 13. clamp
 
-    // 14. nodiscard (compiler warns if return value is discarded)
-    auto r = important_result();
+    auto r = important_result(); // 14. nodiscard (compiler warns if return value is discarded)
     use_attributes(r);
 
     return 0;

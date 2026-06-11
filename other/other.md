@@ -54,6 +54,7 @@ toc ?
 - https://github.com/tastyeffectco/sandboxes
 - https://github.com/anthropics/defending-code-reference-harness
 - https://github.com/JorisAR/gaussian-point-splatting
+- https://github.com/boringcollege/postgres-by-example
 
 # Stalk people I know (socially)
 1. Jeff U.

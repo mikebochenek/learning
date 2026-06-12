@@ -56,6 +56,7 @@ toc ?
 - https://github.com/JorisAR/gaussian-point-splatting
 - https://github.com/boringcollege/postgres-by-example
 - https://github.com/jasonswett/llm-skills/blob/main/tdd/SKILL.md
+- https://github.com/croqaz/vintage-LLM
 
 # Stalk people I know (socially)
 1. Jeff U.

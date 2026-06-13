@@ -2,3 +2,4 @@
 **/*.pdb
 **/a.exe
 **/*.lib
+**/mandelbrot.png

@@ -1,7 +1,7 @@
 // https://claude.ai/chat/66ee8fd7-e11c-45f1-8020-2ace5a66412f
 
 // mandelbrot.cpp — C++17 Mandelbrot set renderer → PNG
-// Compile: g++ -std=c++17 -O2 -o mandelbrot mandelbrot.cpp -lpng
+// Compile: g++ -std=c++17 -O2  mandelbrot.cpp -lpng
 // Output:  mandelbrot.png  (1920×1080, smooth HSV coloring)
 
 // (base) PS C:\dev\code\learning\cpp\gen-ai> zig c++ .\mandelbrot.cpp

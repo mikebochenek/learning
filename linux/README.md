@@ -41,3 +41,14 @@ bar {
         status_command i3status
 }
 ~~~
+
+### taking screenshots in i3
+
+One way would be with 'import outputfilename.png' [link](https://unix.stackexchange.com/questions/233345/how-can-i-easily-make-screenshots-of-screen-regions-on-arch-linux-with-i3-wm).
+
+Another way would be with maim and a short pre-delay [link](https://gist.github.com/dianjuar/ee774561a8bc02b077989bc17424a19f)
+~~~
+(base) mike@hp:~/Documents/code/learning/linux$ sleep 3 && maim "/home/$USER/Pictures/$(date)"
+(base) mike@hp:~/Documents/code/learning/linux$ sudo apt install maim
+~~~
+

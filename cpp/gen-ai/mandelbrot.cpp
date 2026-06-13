@@ -18,8 +18,8 @@
 #include <png.h>
 
 // ── Image / fractal parameters ────────────────────────────────────────────────
-constexpr int    WIDTH      = 1920;
-constexpr int    HEIGHT     = 1080;
+constexpr int    WIDTH      = 8000;
+constexpr int    HEIGHT     = 6000;
 constexpr int    MAX_ITER   = 512;
 constexpr double CENTER_X   = -0.75;
 constexpr double CENTER_Y   =  0.0;

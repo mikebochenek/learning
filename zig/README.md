@@ -18,3 +18,21 @@ And I can even compile some c & cpp code!
 (base) PS C:\dev\code\learning\cpp\fe-week1> zig cc .\main.cpp
 ```
 (old university code needs some tweaks or maybe I'm doing it wrong)
+
+## compiling c++
+
+On windows:
+```
+(base) PS C:\dev\code\learning\cpp\gen-ai> zig c++ v11_features.cpp  
+```
+
+## misc 
+
+what's even possible?
+```
+zig 
+```
+list available library paths
+```
+zig libc
+```

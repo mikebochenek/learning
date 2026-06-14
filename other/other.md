@@ -57,11 +57,19 @@ toc ?
 - https://github.com/boringcollege/postgres-by-example
 - https://github.com/jasonswett/llm-skills/blob/main/tdd/SKILL.md
 - https://github.com/croqaz/vintage-LLM
+- https://github.com/kekcleader/FreeOberon
 
 # Stalk people I know (socially)
-1. Jeff U.
-2. Jakob J.
-3. Adam G.
+1. Angus
+2. Dhiman 
+3. Jakob J.
+4. Adam G.
+5. Jeff U.
 
 # More doing, less reading/studying
 - children try more because they are not afraid..
+
+# Quotes
+- up and not crying @ fates
+- harmless people
+- music lyrics: the nights, all the crazy stuff I did, those will be my best memories, titanium

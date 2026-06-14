@@ -58,6 +58,7 @@ toc ?
 - https://github.com/jasonswett/llm-skills/blob/main/tdd/SKILL.md
 - https://github.com/croqaz/vintage-LLM
 - https://github.com/kekcleader/FreeOberon
+- https://github.com/tonsky/Sublime-Executor
 
 # Stalk people I know (socially)
 1. Angus

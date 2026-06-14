@@ -17,7 +17,7 @@
 #include <vector>
 #include <png.h>
 
-// ── Image / fractal parameters ────────────────────────────────────────────────
+// ── Image / fractal parameters ──────────────────────────────────
 constexpr int    WIDTH      = 8000;
 constexpr int    HEIGHT     = 6000;
 constexpr int    MAX_ITER   = 512;
@@ -25,7 +25,7 @@ constexpr double CENTER_X   = -0.75;
 constexpr double CENTER_Y   =  0.0;
 constexpr double ZOOM       =  2.5;   // half-width in complex-plane units
 
-// ── Smooth iteration count (avoids banding) ──────────────────────────────────
+// ── Smooth iteration count (avoids banding) ─────────────────────
 static double mandelbrot(double cx, double cy)
 {
     double zx = 0.0, zy = 0.0;

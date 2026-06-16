@@ -59,6 +59,7 @@ toc ?
 - https://github.com/croqaz/vintage-LLM
 - https://github.com/kekcleader/FreeOberon
 - https://github.com/tonsky/Sublime-Executor
+- https://github.com/a-funk/sharkclean-mcp
 
 # Stalk people I know (socially)
 1. Angus

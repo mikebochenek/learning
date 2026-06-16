@@ -118,7 +118,7 @@ static bool write_png(const char* path,
     return true;
 }
 
-// ── Main ─────────────────────────────────────────────────────────────────────
+// ── Main ───
 int main()
 {
     const double aspect = static_cast<double>(WIDTH) / HEIGHT;

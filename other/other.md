@@ -60,6 +60,8 @@ toc ?
 - https://github.com/kekcleader/FreeOberon
 - https://github.com/tonsky/Sublime-Executor
 - https://github.com/a-funk/sharkclean-mcp
+- https://github.com/Adam-CAD/CADAM
+- https://github.com/T8RIN/ImageToolbox/
 
 # Stalk people I know (socially)
 1. Angus

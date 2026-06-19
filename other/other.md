@@ -62,6 +62,7 @@ toc ?
 - https://github.com/a-funk/sharkclean-mcp
 - https://github.com/Adam-CAD/CADAM
 - https://github.com/T8RIN/ImageToolbox/
+- https://github.com/toinbox/simplerelay
 
 # Stalk people I know (socially)
 1. Angus

@@ -9,3 +9,9 @@ uv sync
 source .venv/bin/activate
 uv build
 ~~~
+
+### linux install
+
+~~~
+sudo snap install astral-uv --classic
+~~~

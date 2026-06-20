@@ -5,3 +5,4 @@ __pycache__/
 *$py.class
 secrets
 secrets.txt
+try_uv/try_uv.egg-info/*

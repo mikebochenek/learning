@@ -13,7 +13,7 @@ public class MyThread extends Thread {
       for(int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
          System.out.println("[Thread ID : " + this.getId() + "] i=" + i);
          try {
-            Thread.sleep((long)(Math.random() * 10));
+            Thread.sleep((long)(Math.random() * 13));
 
          } catch (InterruptedException ie) {}
       }

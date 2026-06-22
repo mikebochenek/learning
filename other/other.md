@@ -63,6 +63,11 @@ toc ?
 - https://github.com/Adam-CAD/CADAM
 - https://github.com/T8RIN/ImageToolbox/
 - https://github.com/toinbox/simplerelay
+- https://github.com/openai/codex/issues/28224
+- https://github.com/Intuned/selector-forge
+- https://github.com/kyle-ssg/kyde
+- https://github.com/golang/go/issues/80084
+- https://github.com/riverqueue/river
 
 # Stalk people I know (socially)
 1. Angus

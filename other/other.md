@@ -68,6 +68,7 @@ toc ?
 - https://github.com/kyle-ssg/kyde
 - https://github.com/golang/go/issues/80084
 - https://github.com/riverqueue/river
+- https://github.com/Amal-David/pagecast
 
 # Stalk people I know (socially)
 1. Angus

@@ -69,6 +69,10 @@ toc ?
 - https://github.com/golang/go/issues/80084
 - https://github.com/riverqueue/river
 - https://github.com/Amal-David/pagecast
+- https://github.com/baidu/Unlimited-OCR
+- https://github.com/End2End-Diffusion/diffusion-bench
+- https://github.com/dmtrKovalenko/ffs
+- https://github.com/context-labs/halo
 
 # Stalk people I know (socially)
 1. Angus

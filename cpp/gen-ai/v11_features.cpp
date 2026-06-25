@@ -132,6 +132,8 @@ int main() {
     constexpr int f5 = factorial(5); // 10. constexpr
     std::cout << "5! = " << f5 << "\n"; 
     std::cout << "10! = " << factorial(10) << "\n";
+    std::cout << "13! = " << factorial(13) << "\n";
+    std::cout << "17! = " << factorial(17) << "(lol: it wraps around!)\n";
 
     Point p(1, 2); // 12. Delegating ctor);
     std::cout << "point z defaults to " << p.z << "\n";

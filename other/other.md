@@ -73,6 +73,9 @@ toc ?
 - https://github.com/End2End-Diffusion/diffusion-bench
 - https://github.com/dmtrKovalenko/ffs
 - https://github.com/context-labs/halo
+- https://github.com/workweave/router
+- https://github.com/tomasz-lisowski/swsim
+- https://github.com/workweave/router
 
 # Stalk people I know (socially)
 1. Angus

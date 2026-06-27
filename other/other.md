@@ -76,6 +76,7 @@ toc ?
 - https://github.com/workweave/router
 - https://github.com/tomasz-lisowski/swsim
 - https://github.com/workweave/router
+- https://github.com/Tessil/hopscotch-map
 
 # Stalk people I know (socially)
 1. Angus
@@ -83,6 +84,7 @@ toc ?
 3. Jakob J.
 4. Adam G.
 5. Jeff U.
+(but somehow it feels like there isn't enough time..)
 
 # More doing, less reading/studying
 - children try more because they are not afraid..

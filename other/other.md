@@ -77,10 +77,11 @@ toc ?
 - https://github.com/tomasz-lisowski/swsim
 - https://github.com/workweave/router
 - https://github.com/Tessil/hopscotch-map
+- https://github.com/cauenapier/TownSquare/
 
 # Stalk people I know (socially)
 1. Angus
-2. Dhiman 
+2. [Dhiman](https://www.dhimantalapatra.com/) 
 3. Jakob J.
 4. Adam G.
 5. Jeff U.

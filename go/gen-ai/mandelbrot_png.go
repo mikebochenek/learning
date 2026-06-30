@@ -15,8 +15,8 @@ func main() {
     start := time.Now()
 
     const (
-        width       = 800
-        height      = 600
+        width       = 1600
+        height      = 1200
         maxIter     = 200
         scale       = 1.5
         centerX     = -0.5
@@ -64,6 +64,6 @@ func main() {
         panic(err)
     }
 
-    fmt.Printf("Saved Mandelbrot image to %s\n", outputPath)
+    fmt.Printf("Saved Mandelbrot image to %s (%d x %d))\n", outputPath, width, height)
     fmt.Printf("Total time: %s\n", time.Since(start))
 }

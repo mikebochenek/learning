@@ -5,6 +5,7 @@ import (
     "image"
     "image/color"
     "image/png"
+    "math"
     "os"
     "path/filepath"
     "time"
@@ -21,12 +22,7 @@ func main() {
 
     img := image.NewNRGBA(image.Rect(0, 0, width, height))
 
-    for y := 0; y < height; y++ {
-        for x := 0; x < width; x++ {
-            img.Set(x, y, color.White)
-        }
-    }
-
+    fillBackground(img, width, height)
     drawSierpinski(img, width, height, depth)
 
     outputDir := filepath.Join("c:\\", "tmp")
@@ -49,13 +45,21 @@ func main() {
     fmt.Printf("Total time: %s\n", time.Since(start))
 }
 
-func drawSierpinski(img *image.NRGBA, width, height, depth int) {
-    const scale = 2.0
+func fillBackground(img *image.NRGBA, width, height int) {
+    for y := 0; y < height; y++ {
+        t := float64(y) / float64(height-1)
+        bg := hsvToRGB(260.0+t*80.0, 0.65, 0.12+0.72*t)
+        for x := 0; x < width; x++ {
+            img.SetNRGBA(x, y, bg)
+        }
+    }
+}
 
+func drawSierpinski(img *image.NRGBA, width, height, depth int) {
     var draw func(x1, y1, x2, y2, x3, y3 float64, level int)
     draw = func(x1, y1, x2, y2, x3, y3 float64, level int) {
         if level == 0 {
-            drawTriangle(img, width, height, x1, y1, x2, y2, x3, y3)
+            drawTriangle(img, width, height, x1, y1, x2, y2, x3, y3, depth-level)
             return
         }
 
@@ -80,32 +84,70 @@ func drawSierpinski(img *image.NRGBA, width, height, depth int) {
     draw(topX, topY, leftX, bottomY, rightX, bottomY, depth)
 }
 
-func drawTriangle(img *image.NRGBA, width, height int, x1, y1, x2, y2, x3, y3 float64) {
-    minX := int(x1)
-    maxX := int(x1)
-    minY := int(y1)
-    maxY := int(y1)
-
-    for _, p := range []struct{ x, y float64 }{{x2, y2}, {x3, y3}} {
-        if int(p.x) < minX {
-            minX = int(p.x)
-        }
-        if int(p.x) > maxX {
-            maxX = int(p.x)
-        }
-        if int(p.y) < minY {
-            minY = int(p.y)
-        }
-        if int(p.y) > maxY {
-            maxY = int(p.y)
-        }
-    }
+func drawTriangle(img *image.NRGBA, width, height int, x1, y1, x2, y2, x3, y3 float64, level int) {
+    minX := int(math.Min(math.Min(x1, x2), x3))
+    maxX := int(math.Max(math.Max(x1, x2), x3))
+    minY := int(math.Min(math.Min(y1, y2), y3))
+    maxY := int(math.Max(math.Max(y1, y2), y3))
 
     for y := minY; y <= maxY; y++ {
         for x := minX; x <= maxX; x++ {
-            if x >= 0 && x < width && y >= 0 && y < height {
-                img.Set(x, y, color.Black)
+            if x < 0 || x >= width || y < 0 || y >= height {
+                continue
+            }
+            if pointInTriangle(float64(x), float64(y), x1, y1, x2, y2, x3, y3) {
+                hue := float64(level)*45.0 + float64(x+y)*0.2
+                c := hsvToRGB(hue, 0.75, 0.95)
+                img.SetNRGBA(x, y, c)
             }
         }
+    }
+}
+
+func pointInTriangle(px, py, x1, y1, x2, y2, x3, y3 float64) bool {
+    d1 := sign(px, py, x2, y2, x3, y3)
+    d2 := sign(px, py, x3, y3, x1, y1)
+    d3 := sign(px, py, x1, y1, x2, y2)
+
+    hasNeg := (d1 < 0) || (d2 < 0) || (d3 < 0)
+    hasPos := (d1 > 0) || (d2 > 0) || (d3 > 0)
+    return !(hasNeg && hasPos)
+}
+
+func sign(px, py, x1, y1, x2, y2 float64) float64 {
+    return (px-x1)*(y2-y1) - (x2-x1)*(py-y1)
+}
+
+func hsvToRGB(h, s, v float64) color.NRGBA {
+    h = math.Mod(h, 360)
+    if h < 0 {
+        h += 360
+    }
+
+    c := v * s
+    x := c * (1 - math.Abs(math.Mod(h/60, 2)-1))
+    m := v - c
+
+    var r, g, b float64
+    switch {
+    case h < 60:
+        r, g, b = c, x, 0
+    case h < 120:
+        r, g, b = x, c, 0
+    case h < 180:
+        r, g, b = 0, c, x
+    case h < 240:
+        r, g, b = 0, x, c
+    case h < 300:
+        r, g, b = x, 0, c
+    default:
+        r, g, b = c, 0, x
+    }
+
+    return color.NRGBA{
+        R: uint8((r + m) * 255),
+        G: uint8((g + m) * 255),
+        B: uint8((b + m) * 255),
+        A: 255,
     }
 }

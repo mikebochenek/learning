@@ -15,12 +15,15 @@ import (
 func main() {
     start := time.Now()
 
+    // Configure the canvas size and recursion depth for the fractal.
+
     const (
         width  = 800
         height = 800
         depth  = 8
     )
 
+    // Create a transparent canvas that will be filled by the recursive triangle drawing.
     img := image.NewNRGBA(image.Rect(0, 0, width, height))
     for y := 0; y < height; y++ {
         for x := 0; x < width; x++ {
@@ -28,9 +31,11 @@ func main() {
         }
     }
 
+    // Seed a random number generator so each sub-triangle can receive a slightly different color.
     rng := rand.New(rand.NewSource(time.Now().UnixNano()))
     drawSierpinski(img, width, height, depth, rng)
 
+    // Write the generated image to a temporary directory.
     outputDir := filepath.Join("c:\\", "tmp")
     if err := os.MkdirAll(outputDir, 0o755); err != nil {
         panic(err)
@@ -51,6 +56,7 @@ func main() {
     fmt.Printf("Total time: %s\n", time.Since(start))
 }
 
+// drawSierpinski recursively subdivides a triangle into smaller triangles and paints each leaf triangle.
 func drawSierpinski(img *image.NRGBA, width, height, depth int, rng *rand.Rand) {
     var draw func(x1, y1, x2, y2, x3, y3 float64, level int)
     draw = func(x1, y1, x2, y2, x3, y3 float64, level int) {
@@ -71,6 +77,7 @@ func drawSierpinski(img *image.NRGBA, width, height, depth int, rng *rand.Rand) 
         draw(mid31x, mid31y, mid23x, mid23y, x3, y3, level-1)
     }
 
+    // Position the original triangle near the center of the image with a little margin.
     topX := float64(width) / 2
     topY := 20.0
     leftX := 20.0
@@ -80,12 +87,14 @@ func drawSierpinski(img *image.NRGBA, width, height, depth int, rng *rand.Rand) 
     draw(topX, topY, leftX, bottomY, rightX, bottomY, depth)
 }
 
+// drawTriangle fills every pixel inside a given triangle with a random-ish color.
 func drawTriangle(img *image.NRGBA, width, height int, x1, y1, x2, y2, x3, y3 float64, level int, rng *rand.Rand) {
     minX := int(math.Min(math.Min(x1, x2), x3))
     maxX := int(math.Max(math.Max(x1, x2), x3))
     minY := int(math.Min(math.Min(y1, y2), y3))
     maxY := int(math.Max(math.Max(y1, y2), y3))
 
+    // Pick a base color for this triangle and add a small amount of variation to make it feel lively.
     hue := rng.Float64() * 360
     saturation := 0.55 + rng.Float64()*0.35
     value := 0.65 + rng.Float64()*0.3
@@ -104,6 +113,7 @@ func drawTriangle(img *image.NRGBA, width, height int, x1, y1, x2, y2, x3, y3 fl
     }
 }
 
+// pointInTriangle uses barycentric-style sign checks to decide whether a point lies inside a triangle.
 func pointInTriangle(px, py, x1, y1, x2, y2, x3, y3 float64) bool {
     d1 := sign(px, py, x2, y2, x3, y3)
     d2 := sign(px, py, x3, y3, x1, y1)
@@ -114,10 +124,12 @@ func pointInTriangle(px, py, x1, y1, x2, y2, x3, y3 float64) bool {
     return !(hasNeg && hasPos)
 }
 
+// sign computes the orientation of a point relative to a line segment.
 func sign(px, py, x1, y1, x2, y2 float64) float64 {
     return (px-x1)*(y2-y1) - (x2-x1)*(py-y1)
 }
 
+// hsvToRGB converts HSV values into a color.NRGBA so the triangles can be rendered with vivid colors.
 func hsvToRGB(h, s, v float64) color.NRGBA {
     h = math.Mod(h, 360)
     if h < 0 {

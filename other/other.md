@@ -81,6 +81,9 @@ toc ?
 - https://github.com/ogulcancelik/herdr
 - https://github.com/google/copybara
 - https://github.com/Chocobozzz/PeerTube
+- https://github.com/makerchecker/MakerChecker
+- https://github.com/HouzuoGuo/hzgl-air-bridge
+- https://github.com/christopherkarani/Swarm
 
 # Stalk people I know (socially)
 1. Angus

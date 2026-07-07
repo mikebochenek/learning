@@ -84,6 +84,8 @@ toc ?
 - https://github.com/makerchecker/MakerChecker
 - https://github.com/HouzuoGuo/hzgl-air-bridge
 - https://github.com/christopherkarani/Swarm
+- https://github.com/kklimuk/docx-cli
+- https://github.com/mplsllc/macsurf/releases/tag/v1.86
 
 # Stalk people I know (socially)
 1. Angus

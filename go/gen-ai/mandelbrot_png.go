@@ -8,6 +8,7 @@ import (
     "math/cmplx"
     "os"
     "path/filepath"
+    "runtime"
     "time"
 )
 
@@ -48,7 +49,12 @@ func main() {
         }
     }
 
-    outputDir := filepath.Join("c:\\", "tmp")
+    root := "/"
+    if runtime.GOOS == "windows" {
+        root = "c:\\"
+    }
+
+    outputDir := filepath.Join(root, "tmp")
     if err := os.MkdirAll(outputDir, 0o755); err != nil {
         panic(err)
     }

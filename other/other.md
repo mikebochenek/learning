@@ -87,6 +87,8 @@ toc ?
 - https://github.com/kklimuk/docx-cli
 - https://github.com/mplsllc/macsurf/releases/tag/v1.86
 - https://github.com/l-labs
+- https://github.com/cosmtrek/mindwalk
+- https://github.com/Wren6991/RISCBoy
 
 # Stalk people I know (socially)
 1. Angus

@@ -13,3 +13,6 @@ zig c++ .\v11_features.cpp
 
 ## other
 - consider updating vs code run-on-save to run and compile!
+~~~
+{ "match": "\\.cpp$", "cmd": "zig c++ ${file} && a.exe" },
+~~~

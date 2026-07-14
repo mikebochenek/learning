@@ -89,6 +89,7 @@ toc ?
 - https://github.com/l-labs
 - https://github.com/cosmtrek/mindwalk
 - https://github.com/Wren6991/RISCBoy
+- https://github.com/uzairmukadam/Linux-on-Android
 
 # Stalk people I know (socially)
 1. Angus

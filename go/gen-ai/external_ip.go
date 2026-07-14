@@ -81,7 +81,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "failed to fetch from %s: %v\n", svc.url, err)
 			continue
 		}
-		fmt.Printf("Your external IP address is: %s\n", ip)
+		fmt.Printf("[%s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
 		return
 	}
 

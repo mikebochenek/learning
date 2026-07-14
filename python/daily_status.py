@@ -1,6 +1,8 @@
 # idea is to print + email myself with something like:  if I commit today, it will make my streak X
-# ? does digital ocean work with emails atm?  days since May 30, 2011 ? 
-also = "2025: 162 2024: 125 (total : 350)  - 2024 avg: 2.78 2025 avg: 3.12"
+# ? does digital ocean work with emails atm?  days since May 30, 2011 ?
+# also = "2025: 162 2024: 125 (total : 350)  - 2024 avg: 2.78 2025 avg: 3.12"
+also = "  2026-07-14 12:04:26.250183 2026: 78 2025: 163 2024: 125 total fitness entries: 429  - 2024 avg: 2.78 2025 avg:
+ 3.13 2026 avg: 1.5 "
 itsok = "streak KAPUTT, but thats OK"
 from datetime import date
 today = date.today()
@@ -24,8 +26,12 @@ print("4. fitness:", round((delta.days/7), 1))
 
 print("  ", also)
 
+print("______")
+
 print("<<< other reminders :  up and not crying at the fates + harmless people >>> ")
 print(" a. I already know a lot, but tend to forget my habits under stress ")
 print(" b. less is more - oftentimes... ")
 print(" c. delegate more, way more - can I show you? am I doing this right? do you have a minute?")
 print(" d. be a chad, and just look cool doing normal things ")
+
+print("______")

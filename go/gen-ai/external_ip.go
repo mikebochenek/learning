@@ -6,12 +6,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math/rand"
 	"net/http"
 	"os"
 	"time"
 )
 
-// services to try, in order, in case one is down or blocked
+// services to try, in a random order, in case one is down or blocked
 var services = []struct {
 	url    string
 	parser func([]byte) (string, error)
@@ -72,19 +73,14 @@ func trimSpaceAndNewlines(s string) string {
 }
 
 func main() {
-	var lastErr error
+	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
+	svc := services[rng.Intn(len(services))]
 
-	for _, svc := range services {
-		ip, err := fetchIP(svc.url, svc.parser)
-		if err != nil {
-			lastErr = err
-			fmt.Fprintf(os.Stderr, "failed to fetch from %s: %v\n", svc.url, err)
-			continue
-		}
-		fmt.Printf("[%s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
-		return
+	ip, err := fetchIP(svc.url, svc.parser)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "failed to fetch from %s: %v\n", svc.url, err)
+		os.Exit(1)
 	}
 
-	fmt.Fprintf(os.Stderr, "all services failed, last error: %v\n", lastErr)
-	os.Exit(1)
+	fmt.Printf("[%s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
 }

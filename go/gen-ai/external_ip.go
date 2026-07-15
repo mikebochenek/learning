@@ -54,6 +54,9 @@ func fetchIP(url string, parser func([]byte) (string, error)) (string, error) {
 		return "", err
 	}
 
+	fmt.Printf("[debug] service=%s\n", url)
+	fmt.Printf("[debug] payload=%s\n", string(body))
+
 	ip, err := parser(body)
 	if err != nil {
 		return "", err

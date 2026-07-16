@@ -10,10 +10,9 @@ $ s390x-linux-gnu-gcc -static endian.c && qemu-s390x a.out
 int main(void)
 {
    uint32_t x = 0x12345678;
-   int i;
 
-   for (i = 0; i < sizeof(x); i++) {
-      printf(" mem[%d] = 0x%02x\n", i, ((char*)&x)[i]);
+   for (int i = 0; i < sizeof(x); i++) {
+      printf("\tmem[%d] = 0x%02x\n", i, ((char*)&x)[i]);
    }
 
    return 0;

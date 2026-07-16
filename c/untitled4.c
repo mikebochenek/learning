@@ -13,8 +13,8 @@ int main(void)
    int i;
 
    for (i = 0; i < sizeof(x); i++) {
-      printf("mem[%d] = 0x%02x\n", i, ((char*)&x)[i]);
-    }
+      printf(" mem[%d] = 0x%02x\n", i, ((char*)&x)[i]);
+   }
 
-    return 0;
+   return 0;
 }

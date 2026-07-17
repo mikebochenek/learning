@@ -10,7 +10,6 @@ int main(int argc, char **argv) {
    tim.tv_sec  = 0;
    tim.tv_nsec = 100000000L;
    int i = 0;
-
    struct timeval cur_time1, cur_time2, tdiff;
 
    gettimeofday(&cur_time1,NULL);
@@ -33,7 +32,7 @@ int main(int argc, char **argv) {
    // thx http://stackoverflow.com/questions/1444428/time-stamp-in-the-c-programming-language
    printf("end tdiff tv_sec:%ld tv_usec:%ld\n",tdiff.tv_sec, tdiff.tv_usec);
 
-   printf("Nano sleep successfull \n");
+   printf("Nano sleep successful \n");
 
    return 0;
 }

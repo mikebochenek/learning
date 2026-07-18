@@ -31,7 +31,7 @@ void play()
 	int x = 10;
 	c.suit = "blah";
 	printf("welcome to my world of pointers %p", &c);
-	printf("\n%d %d", sizeof(c.face), x);
+	printf("\n%ld %d", sizeof(c.face), x);
 	printf("\n%s", c.suit);
 	free(c.face);
 

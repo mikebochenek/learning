@@ -91,6 +91,8 @@ toc ?
 - https://github.com/Wren6991/RISCBoy
 - https://github.com/uzairmukadam/Linux-on-Android
 - https://github.com/alxndrTL/little-book-rl/
+- https://github.com/GoogleCloudPlatform/scion
+- https://github.com/scionproto/scion
 
 # Stalk people I know (socially)
 1. Angus

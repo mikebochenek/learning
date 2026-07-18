@@ -9,10 +9,10 @@ CFLAGS  = -g -Wall
 # the name to use for both the target source file, and the output file:
 TARGET = untitled1
  
-all: untitled1 untitled2
+all: untitled1 untitled2 untitled4
   
 $(TARGET): $(TARGET).c
 	$(CC) -o $(TARGET) $(TARGET).c $(LFLAGS)
 
 clean:
-	rm -f untitled1 untitled2
+	rm -f untitled1 untitled2 untitled3 untitle4

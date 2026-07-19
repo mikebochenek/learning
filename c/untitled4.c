@@ -15,7 +15,7 @@ int main(void) {
    struct tm *tm =localtime(&t0);
 
    for (int i = 0; i < sizeof(x); i++) {
-      printf("\tmem[%d] = 0x%02x\n", i, ((char*)&x)[i]);
+      printf("\tmemory[%d] = 0x%02x\n", i, ((char*)&x)[i]);
    }
 
    printf (" (%ti) ◼ %d-%d-%d ◼ %02d:%02d:%02d\n", 

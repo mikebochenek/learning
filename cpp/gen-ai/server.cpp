@@ -1,6 +1,7 @@
 // https://claude.ai/chat/31077505-6177-4343-a1c1-85cf6928bb4d
 // zig c++ -std=c++17 server.cpp
 // zig c++ -std=c++17 -target x86_64-windows-gnu server.cpp
+// zig c++ -std=c++17 -target x86_64-windows-gnu server.cpp -lws2_32
 
 #include <iostream>
 #include <string>

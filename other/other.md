@@ -93,12 +93,13 @@ toc ?
 - https://github.com/alxndrTL/little-book-rl/
 - https://github.com/GoogleCloudPlatform/scion
 - https://github.com/scionproto/scion
+- https://github.com/yc-software/qm
 
 # Stalk people I know (socially)
 1. Angus
 2. [Dhiman](https://www.dhimantalapatra.com/) 
 3. Jakob J.
-4. Adam G.
+4. [Adam G.](https://medium.com/@adamrgoodman/)
 5. Jeff U.
 (but somehow it feels like there isn't enough time..)
 

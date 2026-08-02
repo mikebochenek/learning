@@ -38,13 +38,24 @@
   <script>
   diff = function(date1, date2) { // https://stackoverflow.com/questions/7763327/how-to-calculate-date-difference-in-javascript
     var diff = new Date(date2.getTime() - date1.getTime());
-    return ((diff.getUTCFullYear() - 1970) + " years " + diff.getUTCMonth() + ' months ' + (diff.getUTCDate() - 1) + ' days');
+    s = (diff.getUTCFullYear() - 1970) + " years " + diff.getUTCMonth() + ' months ' + (diff.getUTCDate() - 1) + ' days'
+    console.log(s);
+    return s;
   }
+
+  pdiff = function(today, start, end) { // https://stackoverflow.com/questions/30929857/calculate-percentage-between-two-dates-in-javascript
+    s = Math.round(( ( today - start ) / ( end - start ) ) * 100) + "%";
+    console.log(s);  // difference as percentage completion 
+    return s;
+  }  
   $(document).ready(function(){
     var d = new Date();
     var day = d.getDate()+1;
     var month = d.getMonth()+1;
-    var year = d.getFullYear() ;
+    var year = d.getFullYear();
+    var csstart = new Date('2011-05-30');
+    var earliestRetirement = new Date('2039-03-11');
+    var fretired = new Date('2044-03-11');
     $('#marriage').replaceWith(diff(new Date('2008-05-30'), d));
     $('#luke').replaceWith(diff(new Date('2008-09-07'), d));
     $('#kassia').replaceWith(diff(new Date('2015-07-07'), d));
@@ -53,10 +64,10 @@
     $('#fitness').replaceWith(diff(new Date('2024-02-15'), d));
     $('#planks').replaceWith(diff(new Date('2025-11-16'), d));
     $('#coding').replaceWith(diff(new Date('2001-09-01'), d));
-    $('#cs').replaceWith(diff(new Date('2011-05-30'), d));
+    $('#cs').replaceWith(diff(csstart, d));
     $('#ubs').replaceWith(diff(new Date('2023-03-19'), d));
-    $('#retire').replaceWith(diff(d, new Date('2037-03-11')));
-    $('#fretire').replaceWith(diff(d, new Date('2044-03-11')));
+    $('#retire').replaceWith(diff(d, earliestRetirement) + " (" + pdiff(d, csstart, earliestRetirement) + ")");
+    $('#fretire').replaceWith(diff(d, fretired) + " (" + pdiff(d, csstart, fretired) + ")");
   });
   </script>
 

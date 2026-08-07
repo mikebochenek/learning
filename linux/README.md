@@ -33,7 +33,7 @@ A super neat window manager, which takes some time getting used to, but it has p
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+g exec geany
 #bindsym $mod+Shift+j exec /home/mike/Tools/eclipse/java-2021-09/eclipse/eclipse
-bindsym $mod+Shift+v exec /usr/share/code/code --unity-launch %F
+bindsym $mod+Shift+v exec /usr/share/code/code --unity-launch
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

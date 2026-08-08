@@ -96,6 +96,7 @@ toc ?
 - https://github.com/yc-software/qm
 - https://github.com/skylot/jadx
 - https://github.com/kdefarsi/karburetor
+- https://github.com/xoreaxeaxeax/repsych
 
 # Stalk people I know (socially)
 1. Angus

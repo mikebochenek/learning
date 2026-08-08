@@ -81,9 +81,9 @@ func main() {
 
 	ip, err := fetchIP(svc.url, svc.parser)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "failed to fetch from %s: %v\n", svc.url, err)
+		fmt.Fprintf(os.Stderr, "oh no! failed to fetch from %s: %v\n", svc.url, err)
 		os.Exit(1)
 	}
 
-	fmt.Printf("[%s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
+	fmt.Printf("[INFO %s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
 }

@@ -15,7 +15,6 @@ Almost exclusively from hacker news
 #### 09.08.2026 [don't be a pigeon - do your own things](https://www.experimental-history.com/p/incentives-are-for-losers)
 - nice story telling with baseball helmets 
 
-
 # Books
 
 ## News of the World by Paulette Jiles
@@ -25,5 +24,9 @@ Almost exclusively from hacker news
 
 # Videos
 
-## Polish Army modernization after Russia's invasion of Ukraine
-- [fast moving when it counts](https://www.youtube.com/watch?v=3BLjT87WMXY&authuser=0)
+- [Polish Army modernization after Russia's invasion of Ukraine](https://www.youtube.com/watch?v=3BLjT87WMXY&authuser=0)
+    - necessary and also good for the economy
+    - Poland learn from history and is mimicking USA in a good way
+    - makes one proud to be polish 
+    - Who knew South Korea was such a massive producer and exporter of arms?  makes sense if you have a crazy neighbour 
+    - fast moving when it counts

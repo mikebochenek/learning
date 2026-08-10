@@ -11,9 +11,15 @@ Almost exclusively from hacker news
 - book "Society of the Spectacle":  we watch people travel, instead of travelling ourselves, we look at fitness on insta, instead of
 #### 09.08.2026 [android server: termux + ansible](https://seg6.space/posts/phone-server/)
 - again shows that simliar minds come up with similar ideas
-- infrastructure as code using Ansible
+- infrastructure as code using Ansible **#learning**
 #### 09.08.2026 [don't be a pigeon - do your own things](https://www.experimental-history.com/p/incentives-are-for-losers)
 - nice story telling with baseball helmets 
+- society needs more rebels or at least people who question status quo
+#### 10.08.2026 [impressive 10 years of running](https://news.ycombinator.com/item?id=44522683)
+- motivating & genuinely makes me happy for the guy
+- the visualizations are stunning: https://nodaysoff.run/
+- makes me wonder why there is no real hacker-news for runners besides https://www.letsrun.com/forum
+- as usual too many haters or critics who have never run, it seems ...
 
 # Books
 

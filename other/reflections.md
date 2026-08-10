@@ -27,6 +27,7 @@ Almost exclusively from hacker news
 - Overall just OK:  I actually considered not finishing, which is rare.
 - The writing style is sorta difficult and includes my pet peeve of wrongly spelled words to show how differently non-native speakers misprenounce 
 - There is even a movie - see [YouTube trailer](https://www.youtube.com/watch?v=zTZDb_iKooI)
+- The books is mostly about cultural **acceptance** and **courage** to do the right thing (at the end, we are reminded that Native Americans value courage as a trait above everything else)
 
 # Videos
 
@@ -36,3 +37,5 @@ Almost exclusively from hacker news
     - makes one proud to be polish 
     - Who knew South Korea was such a massive producer and exporter of arms?  makes sense if you have a crazy neighbour 
     - fast moving when it counts
+- [AlphaGo](https://www.youtube.com/watch?v=WXuK6gekU1Y)
+    - was very inspiring when I first watched, and maybe I can do so again?

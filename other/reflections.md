@@ -29,6 +29,12 @@ Almost exclusively from hacker news
 - There is even a movie - see [YouTube trailer](https://www.youtube.com/watch?v=zTZDb_iKooI)
 - The books is mostly about cultural **acceptance** and **courage** to do the right thing (at the end, we are reminded that Native Americans value courage as a trait above everything else)
 
+## Animal Farm by George Orwell
+- Short but enjoyable beyond what I expected
+- Loved the names & subtle similarities
+- Boxer:  I will work harder
+- Retirement never comes
+
 # Videos
 
 - [Polish Army modernization after Russia's invasion of Ukraine](https://www.youtube.com/watch?v=3BLjT87WMXY&authuser=0)

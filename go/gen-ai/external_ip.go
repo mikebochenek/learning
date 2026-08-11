@@ -85,5 +85,9 @@ func main() {
 		os.Exit(1)
 	}
 
+	if ip != "93.184.20.166" {
+		panic(fmt.Sprintf("expected IP to be 93.184.20.166, got %s", ip))
+	} /* has been since 14.07.2026 */
+
 	fmt.Printf("[INFO %s] Your external IP address is: %s\n", time.Now().Format("2006-01-02 15:04:05"), ip)
 }

@@ -99,6 +99,7 @@ toc ?
 - https://github.com/xoreaxeaxeax/repsych
 - https://github.com/xoreaxeaxeax/asm-hall-of-shame
 - https://github.com/jkrauska/DONKEY.BAS
+- https://github.com/xoreaxeaxeax/skitter-creek-bath-salts
 
 # Stalk people I know (socially)
 1. Angus

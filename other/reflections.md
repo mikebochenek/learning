@@ -35,6 +35,10 @@ Almost exclusively from hacker news
 - Boxer:  I will work harder
 - Retirement never comes
 
+## In a Land of Paper Gods by Rebecca Mackenzie
+- I like the imaginary parts (somehow I feel our society is based on rules and conventions too much)
+- I literally cried when they sawed their own clothes from parachutes at the end
+
 # Videos
 
 - [Polish Army modernization after Russia's invasion of Ukraine](https://www.youtube.com/watch?v=3BLjT87WMXY&authuser=0)

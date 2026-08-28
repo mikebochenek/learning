@@ -101,6 +101,7 @@ toc ?
 - https://github.com/jkrauska/DONKEY.BAS
 - https://github.com/xoreaxeaxeax/skitter-creek-bath-salts
 - https://github.com/turtushig22-blip/tea5767-radio-tuner
+- https://github.com/calmrocks/ai-engineer-notebooks
 
 # Stalk people I know (socially)
 1. Angus
@@ -108,6 +109,7 @@ toc ?
 3. Jakob J.
 4. [Adam G.](https://medium.com/@adamrgoodman/)
 5. Jeff U.
+6. 2025/26 leavers
 (but somehow it feels like there isn't enough time..)
 
 # More doing, less reading/studying

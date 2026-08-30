@@ -102,6 +102,8 @@ toc ?
 - https://github.com/xoreaxeaxeax/skitter-creek-bath-salts
 - https://github.com/turtushig22-blip/tea5767-radio-tuner
 - https://github.com/calmrocks/ai-engineer-notebooks
+- https://github.com/mk6i/open-oscar-server
+- https://github.com/Lakr233/vphone-cli
 
 # Stalk people I know (socially)
 1. Angus

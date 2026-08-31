@@ -39,6 +39,10 @@ Almost exclusively from hacker news
 - I like the imaginary parts (somehow I feel our society is based on rules and conventions too much)
 - I literally cried when they sawed their own clothes from parachutes at the end
 
+## Tokyo ever after by Jean Emiko
+- Is this how teenagers talk nowadays?  The target audience is clear, and probably written in an attempt to turn into a movie and score $
+- There were a few loose ends in the plot, but overall it flowed nicely and I liked the unexpected turns (which is how life is)
+
 # Videos
 
 - [Polish Army modernization after Russia's invasion of Ukraine](https://www.youtube.com/watch?v=3BLjT87WMXY&authuser=0)

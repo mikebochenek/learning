@@ -104,6 +104,9 @@ toc ?
 - https://github.com/calmrocks/ai-engineer-notebooks
 - https://github.com/mk6i/open-oscar-server
 - https://github.com/Lakr233/vphone-cli
+- https://github.com/orcaset/orcaset-py
+- https://github.com/fregacmols/RotaryCell
+- https://github.com/carloslfu/slotstream
 
 # Stalk people I know (socially)
 1. Angus

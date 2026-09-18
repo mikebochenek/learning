@@ -3,7 +3,8 @@ toc ?
 # Read "famous" papers/publications/PDFs 
 - attention is all it takes
 - bitcoin 
-- the subtle art 
+- Zen and the Art of Motorcycle M ...
+- the subtle art of not giving a ...
 
 # Checkout interesting github projects 
 - https://github.com/nexu-io/open-design

@@ -109,6 +109,8 @@ toc ?
 - https://github.com/fregacmols/RotaryCell
 - https://github.com/carloslfu/slotstream
 - https://github.com/openTdataCH/ojp-demo-app-src
+- https://github.com/cloudflare/security-audit-skill
+- https://github.com/latent-spaces/brag
 
 # Stalk people I know (socially)
 1. Angus

@@ -111,6 +111,10 @@ toc ?
 - https://github.com/openTdataCH/ojp-demo-app-src
 - https://github.com/cloudflare/security-audit-skill
 - https://github.com/latent-spaces/brag
+- https://github.com/geastack/examples
+- https://github.com/General-Instinct/InstinctFlash
+- https://github.com/xCuri0/ReBarUEFI
+- https://github.com/hsfzxjy/npunlock
 
 # Stalk people I know (socially)
 1. Angus
@@ -119,6 +123,7 @@ toc ?
 4. [Adam G.](https://medium.com/@adamrgoodman/)
 5. Jeff U.
 6. 2025/26 leavers
+7. [Thorsten Walther](https://www.linkedin.com/in/thorstenwalther/)
 (but somehow it feels like there isn't enough time..)
 
 # More doing, less reading/studying

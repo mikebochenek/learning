@@ -115,6 +115,8 @@ toc ?
 - https://github.com/General-Instinct/InstinctFlash
 - https://github.com/xCuri0/ReBarUEFI
 - https://github.com/hsfzxjy/npunlock
+- https://github.com/christianrowlands/wavedigger
+- https://github.com/nestrilabs/virtio-nvgpu
 
 # Stalk people I know (socially)
 1. Angus

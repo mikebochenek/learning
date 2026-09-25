@@ -117,6 +117,7 @@ toc ?
 - https://github.com/hsfzxjy/npunlock
 - https://github.com/christianrowlands/wavedigger
 - https://github.com/nestrilabs/virtio-nvgpu
+- https://github.com/trotsky1997
 
 # Stalk people I know (socially)
 1. Angus

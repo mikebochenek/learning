@@ -118,6 +118,9 @@ toc ?
 - https://github.com/christianrowlands/wavedigger
 - https://github.com/nestrilabs/virtio-nvgpu
 - https://github.com/trotsky1997
+- https://github.com/dashersw/coyopedal
+- https://github.com/ahmd-sh/hntui
+- https://github.com/seamusc/papermono-shopping-list
 
 # Stalk people I know (socially)
 1. Angus

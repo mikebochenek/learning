@@ -10,9 +10,10 @@ CFLAGS  = -g -Wall
 TARGET = untitled1
  
 all: untitled1 untitled2 untitled4
+# untitled3 fails...
   
 $(TARGET): $(TARGET).c
 	$(CC) -o $(TARGET) $(TARGET).c $(LFLAGS)
 
 clean:
-	rm -f untitled1 untitled2 untitled3 untitle4
+	rm -f untitled1 untitled2 untitled3 untitled4

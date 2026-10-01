@@ -121,6 +121,9 @@ toc ?
 - https://github.com/dashersw/coyopedal
 - https://github.com/ahmd-sh/hntui
 - https://github.com/seamusc/papermono-shopping-list
+- https://github.com/maanHimself/OpenDLSS-NR
+- https://github.com/streetcomplete/StreetComplete/issues/5421
+- https://github.com/beatrizalmeidaf/papero-pdf-text-extractor
 
 # Stalk people I know (socially)
 1. Angus

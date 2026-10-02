@@ -124,6 +124,7 @@ toc ?
 - https://github.com/maanHimself/OpenDLSS-NR
 - https://github.com/streetcomplete/StreetComplete/issues/5421
 - https://github.com/beatrizalmeidaf/papero-pdf-text-extractor
+- https://github.com/Vibra-Ingenn/Janus
 
 # Stalk people I know (socially)
 1. Angus

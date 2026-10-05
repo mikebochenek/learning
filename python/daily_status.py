@@ -33,7 +33,7 @@ print("3. fitness:", round((delta.days/7), 1), "(weeks)", (delta.days), "(days)"
 print("  >", also)
 print("  > ",  round(400 / (delta.days/7), 2), "hardcoded 400! 112+163+125")
 
-print("______")
+print(" - - - - - ")
 
 print("<<< other reminders :  up and not crying at the fates + harmless people >>> ")
 print(" a. I already know a lot, but tend to forget my habits under stress ")
@@ -42,4 +42,4 @@ print(" c. delegate more, way more - can I show you? am I doing this right? do y
 print(" d. be more brave and take risks like a chad, and just look cool doing normal things")
 print(" e. smaller portions - eating healthy is the hard part:  practice denying myself sweets")
 
-print("______         \_(ツ)_/¯")
+print("                   \_(ツ)_/¯")

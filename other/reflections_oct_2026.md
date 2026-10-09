@@ -16,9 +16,8 @@ Software engineering moat is disappearing (you don't need a CS degree to build -
 ## non-tech ideas
 - mini-library esp. for _rare_ languages 
 
-
-
 # Blog posts etc.
 
 - [might be fun to visit, even if afternoon only](https://vis.ethz.ch/en/events/1128)
 - [anti patterns in software blogging - so true!](https://refactoringenglish.com/blog/anti-patterns-software-blogging/)
+- [another article with new insights on vibe coding](https://htmx.org/essays/yes-and/)

@@ -21,3 +21,4 @@ Software engineering moat is disappearing (you don't need a CS degree to build -
 - [might be fun to visit, even if afternoon only](https://vis.ethz.ch/en/events/1128)
 - [anti patterns in software blogging - so true!](https://refactoringenglish.com/blog/anti-patterns-software-blogging/)
 - [another article with new insights on vibe coding](https://htmx.org/essays/yes-and/)
+- (AI and human extinction and fear)[https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/]

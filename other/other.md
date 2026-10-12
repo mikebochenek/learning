@@ -126,6 +126,13 @@ toc ?
 - https://github.com/beatrizalmeidaf/papero-pdf-text-extractor
 - https://github.com/Vibra-Ingenn/Janus
 - https://github.com/allenv0/SCM
+- https://github.com/UBS-AG
+- https://github.com/UBS-IB
+- https://github.com/UBS-IB/bayesian_tree
+- https://github.com/UBS-AG/vllm
+- https://github.com/UBS-AG/architecture-as-code
+- https://github.com/finos
+
 
 # Stalk people I know (socially)
 1. Angus

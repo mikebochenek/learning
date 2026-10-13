@@ -132,7 +132,8 @@ toc ?
 - https://github.com/UBS-AG/vllm
 - https://github.com/UBS-AG/architecture-as-code
 - https://github.com/finos
-
+- https://github.com/prabanta-dev/janas
+- https://github.com/jeff87654/busy-beaver/blob/main/BB10/1RB0RA_1LC1LF_1RD0LB_1RA1LE_1LI0LC_0RG1LD_1RH1LG_1LC0RG_0LJ0LI_1RZ0LC.md
 
 # Stalk people I know (socially)
 1. Angus

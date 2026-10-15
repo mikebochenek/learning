@@ -143,6 +143,7 @@ toc ?
 5. Jeff U.
 6. 2025/26 leavers
 7. [Thorsten Walther](https://www.linkedin.com/in/thorstenwalther/)
+8. Raghu 
 (but somehow it feels like there isn't enough time..)
 
 # More doing, less reading/studying

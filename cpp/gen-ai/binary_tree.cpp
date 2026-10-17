@@ -12,6 +12,7 @@ public:
     Tree(Tree const & lft, T val, Tree const & rgt);
 };
 
+template<class T>
 struct Node
 {
     Node(std::shared_ptr<const Node> const & lft
@@ -26,4 +27,13 @@ struct Node
 };
 
 int main() {
+    using IntNode = Node<int>;
+
+    auto left = std::make_shared<const IntNode>(nullptr, 1, nullptr);
+    auto right = std::make_shared<const IntNode>(nullptr, 3, nullptr);
+    auto root = std::make_shared<const IntNode>(left, 2, right);
+
+    std::cout << root->_lft->_val << ' '
+              << root->_val << ' '
+              << root->_rgt->_val << '\n';
 }

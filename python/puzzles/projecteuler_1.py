@@ -147,6 +147,17 @@ def sumofprimesbelow(x):
 #print(sumofprimesbelow(2000000))
 print(' #10', sumofprimesbelow(10))
 
+
+# https://projecteuler.net/problem=15
+def latticepaths(x):
+    # https://en.wikipedia.org/wiki/Lattice_path#Counting_lattice_paths
+    # C(2n, n) = (2n)! / (n!)^2
+    f = factorial(2*x)
+    return int(f / (factorial(x) * factorial(x)))
+print (' #15', latticepaths(20))
+assert (latticepaths(2) == 6)
+
+
 # https://projecteuler.net/problem=16
 # curious how python behaves "out of the box"
 def powerdigitsum(x):

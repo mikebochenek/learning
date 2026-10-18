@@ -4,10 +4,15 @@
 Created on Sat Apr  8 17:42:27 2023
 """
 
-# import matplotlib.pyplot as plt
 import pandas as pd
-df = pd.read_csv('/home/mike/Downloads/swiss-zillow/Distribution_of_income.csv')
-ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Rüschlikon', 'Zollikon')
+from datetime import datetime
+import platform
+path = 'c:/Users/user/ownCloud/Documents/swiss-zillow/'
+if platform.system() == "Linux":
+    path = "/home/mike/Downloads/swiss-zillow/"
+
+df = pd.read_csv(path+"Distribution_of_income.csv")
+ofinterest = ('Wetzikon', 'Dietikon', 'Egg', 'Maur', 'Zollikon') # 'Rüschlikon', 
 
 """
 bycode = (df.query('MUNICIPALITY == "Zollikon" & YEAR == 2011 & TAX_RATE_CODE == 2'))
@@ -58,17 +63,20 @@ def findpercentile(s, p):
 def findmedian(s):
     return findpercentile(s, 50)
 
-print('\ncity median p90 p95 score average') #of special interest are:
+print('\n', datetime.now(), ' - of special interest are: city median p90 p95 score average')
 for o in ofinterest:
-    print(o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), "%.1f" % score(o), "%.1f" % average(o))
+    print('  ', o, findmedian(o), findpercentile(o, 10), findpercentile(o, 5), "%.1f" % score(o), "%.1f" % average(o))
 
+
+print('\nall cities with score above 999: city, median, p90, score')
 u = df['MUNICIPALITY'].unique()
 for _u in (u):
+    city = _u.replace('ü', 'u') # for easier reading
     s = score(_u)
     m = findmedian(_u)
     p90 = findpercentile(_u, 10)
     if (s > 999): #(s < 540):
-        print (' *** ', _u, m, p90, s)
+        print ('  ', city, m, p90, "%.2f" % s)
     else:
         None
         #print(_u, m, s)

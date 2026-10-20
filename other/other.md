@@ -136,6 +136,10 @@ toc ?
 - https://github.com/jeff87654/busy-beaver/blob/main/BB10/1RB0RA_1LC1LF_1RD0LB_1RA1LE_1LI0LC_0RG1LD_1RH1LG_1LC0RG_0LJ0LI_1RZ0LC.md
 - https://github.com/fyzugx/DEsk
 - https://github.com/antirez/c64-hw-simulator
+- https://github.com/google-pytorch/torch_tpu
+- https://github.com/deepseek-ai/DeepInfer
+- https://github.com/tywr/Nordwand-Mono
+- https://github.com/AbdullahAlhariri/penmentor
 
 # Stalk people I know (socially)
 1. Angus

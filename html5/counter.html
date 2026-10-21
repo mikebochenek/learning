@@ -23,6 +23,7 @@
     <div><i class="material-icons">work</i> I've been coding professionally for <div id="coding"></div></div>
     <div><i class="material-icons">work</i> I've been working @CS for <div id="cs"></div></div>
     <div><i class="material-icons">work</i> UBS tookover CS annoucement: <div id="ubs"></div></div>
+    <div><i class="material-icons">work</i> Time left until ESOS unlock: <div id="esos"></div></div>
     <div><i class="material-icons">work</i> Retirement could be <b>earliest</b> in <div id="retire"></div></div>
     <div><i class="material-icons">work</i> Retirement must be <b>latest</b> in <div id="fretire"></div></div>
 
@@ -63,6 +64,7 @@
     $('#coding').replaceWith(diff(new Date('2001-09-01'), d));
     $('#cs').replaceWith(diff(csstart, d));
     $('#ubs').replaceWith(diff(new Date('2023-03-19'), d));
+    $('#esos').replaceWith(diff(d, new Date('2029-03-19')));
     $('#retire').replaceWith(diff(d, earliestRetirement) + " (" + pdiff(d, csstart, earliestRetirement) + ")");
     $('#fretire').replaceWith(diff(d, fretired) + " (" + pdiff(d, csstart, fretired) + ")");
   });

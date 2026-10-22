@@ -17,7 +17,7 @@ int main() {
     if (coffeeLevel == 100)
         goto celebrate;
 
-    cout << "This line never prints.\n";
+    cout << "Lets skip redundant redundancies.\n";
 
     celebrate:
     cout << "Sipping coffee happily... ahh!\n";

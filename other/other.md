@@ -140,6 +140,7 @@ toc ?
 - https://github.com/deepseek-ai/DeepInfer
 - https://github.com/tywr/Nordwand-Mono
 - https://github.com/AbdullahAlhariri/penmentor
+- https://github.com/amitavroy
 
 # Stalk people I know (socially)
 1. Angus

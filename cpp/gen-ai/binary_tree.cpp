@@ -31,14 +31,14 @@ struct Node
 
 int main() {
     const auto start_time = std::chrono::system_clock::now();
+    const auto start_timestamp = std::chrono::system_clock::to_time_t(start_time);
     using IntNode = Node<int>;
 
     auto left = std::make_shared<const IntNode>(nullptr, 1, nullptr);
-    auto right = std::make_shared<const IntNode>(nullptr, 3, nullptr);
-    auto root = std::make_shared<const IntNode>(left, 2, right);
+    auto right = std::make_shared<const IntNode>(nullptr, 13, nullptr);
+    auto root = std::make_shared<const IntNode>(left, 7, right);
 
-    const auto start_timestamp = std::chrono::system_clock::to_time_t(start_time);
-    std::cout << "Binary tree test finished --> start time: " // →
+    std::cout << "Our binary tree test finished --> start time: " // →
               << std::put_time(std::localtime(&start_timestamp), "%Y-%m-%d %H:%M:%S")
               << "\n Node count: 3\n Root: " << root->_val
               << " (left: " << root->_lft->_val

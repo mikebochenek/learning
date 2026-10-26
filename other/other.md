@@ -141,6 +141,9 @@ toc ?
 - https://github.com/tywr/Nordwand-Mono
 - https://github.com/AbdullahAlhariri/penmentor
 - https://github.com/amitavroy
+- https://github.com/KrushnaVardhanReddy/PaperPilot
+- https://github.com/RFnexus/partyline
+- https://github.com/DilawarShafiq/nietzschian-debugger
 
 # Stalk people I know (socially)
 1. Angus

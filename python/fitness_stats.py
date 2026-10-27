@@ -27,6 +27,7 @@ fitnessurl = config.get('urls', 'fitness_url')
 
 from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
 df = read_google_sheet(fitnessurl)
+lifting_df = read_google_sheet(fitnessurl, 3)  # but wait, it always reads the first sheet!! 
 
 """
 import pickle # save latest to a pickle.. wonder if it will keep changing

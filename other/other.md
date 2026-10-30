@@ -146,6 +146,7 @@ toc ?
 - https://github.com/DilawarShafiq/nietzschian-debugger
 - https://github.com/owls-on-wires/keplearn
 - https://github.com/SheepSeb/tinyworldformer
+- https://github.com/mottopanikeiku/doomformer
 
 # Stalk people I know (socially)
 1. Angus

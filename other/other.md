@@ -144,6 +144,8 @@ toc ?
 - https://github.com/KrushnaVardhanReddy/PaperPilot
 - https://github.com/RFnexus/partyline
 - https://github.com/DilawarShafiq/nietzschian-debugger
+- https://github.com/owls-on-wires/keplearn
+- https://github.com/SheepSeb/tinyworldformer
 
 # Stalk people I know (socially)
 1. Angus

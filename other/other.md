@@ -147,6 +147,7 @@ toc ?
 - https://github.com/owls-on-wires/keplearn
 - https://github.com/SheepSeb/tinyworldformer
 - https://github.com/mottopanikeiku/doomformer
+- https://github.com/kevinraymond/florilegium
 
 # Stalk people I know (socially)
 1. Angus

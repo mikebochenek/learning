@@ -4,30 +4,17 @@ import psutil
 import datetime
 
 def get_boot_time():
-    # Get boot time in seconds since epoch
-    boot_time_seconds = psutil.boot_time()
-    
-    # Convert to datetime object
-    boot_time = datetime.datetime.fromtimestamp(boot_time_seconds)
-    
-    return boot_time
+    boot_time_seconds = psutil.boot_time() # Get boot time in seconds since epoch    
+    return datetime.datetime.fromtimestamp(boot_time_seconds) # Convert to datetime object
 
 def main():
     try:
         boot_time = get_boot_time()
         print(f"System boot time: {boot_time.strftime('%Y-%m-%d %H:%M:%S')}")
-        
-        # Calculate uptime
-        current_time = datetime.datetime.now()
-        uptime = current_time - boot_time
-        
-        # Format uptime
+        uptime = datetime.datetime.now() - boot_time # Calculate uptime
         days = uptime.days
-        hours, remainder = divmod(uptime.seconds, 3600)
-        minutes, seconds = divmod(remainder, 60)
-        
+        hours, remainder = divmod(uptime.seconds, 3600); minutes, seconds = divmod(remainder, 60) # Format uptime
         print(f"System uptime: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds")
-        
     except Exception as e:
         print(f"Error getting boot time: {e}")
 

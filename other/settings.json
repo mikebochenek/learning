@@ -1,22 +1,28 @@
 {
-    "workbench.colorTheme": "Default Light+",
-    "workbench.tips.enabled": false,
-    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Quiet Light",
+    "security.workspace.trust.untrustedFiles": "open",
     "editor.minimap.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "git.confirmSync": false,
 
     "emeraldwalk.runonsave": {
-       "commands": [
-            { "match": "\\.go$",  "cmd": "echo ' ' && date && go run ${file}" },
+    
+        "commands": [
+            { "match": "\\.go$",  "cmd": "go run ${file}" },
             { "match": "\\.zig$", "cmd": "zig run ${file}" },
-            { "match": "\\.c$",   "cmd": "zig cc ${file}" },
             { "match": "\\.rs$",  "cmd": "cd ${fileDirname}/.. && cargo run" },
+            { "match": "\\.c$",   "cmd": "zig cc ${file} && a.exe" },
             { "match": "\\.java$","cmd": "java ${file}" },
             { "match": "\\.jsh$", "cmd": "jshell ${file} --show-version --execution local" },
             { "match": "\\.cpp$", "cmd": "zig c++ ${file} && a.exe" },
-            { "match": "\\.py$",  "cmd": "python ${file}" }
+            { "match": "\\.py$",  "cmd": "C:\\ProgramData\\anaconda3\\python ${file}" }
         ]
-     }
+    },
+    "extensions.ignoreRecommendations": true,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "chat.tools.terminal.autoApprove": {
+        "/^Set-Location 'C:\\\\dev\\\\code\\\\mydjango'; python manage\\.py check; if \\(\\$LASTEXITCODE -eq 0\\) \\{ python manage\\.py makemigrations --check --dry-run --noinput \\}$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
-

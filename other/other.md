@@ -148,6 +148,7 @@ toc ?
 - https://github.com/SheepSeb/tinyworldformer
 - https://github.com/mottopanikeiku/doomformer
 - https://github.com/kevinraymond/florilegium
+- https://github.com/NVIDIA/auto-ontology
 
 # Stalk people I know (socially)
 1. Angus

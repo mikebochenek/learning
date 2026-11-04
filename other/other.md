@@ -149,6 +149,11 @@ toc ?
 - https://github.com/mottopanikeiku/doomformer
 - https://github.com/kevinraymond/florilegium
 - https://github.com/NVIDIA/auto-ontology
+- https://github.com/Muvon/octomind
+
+# interesting papers from arXiv 
+- [Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics](https://arxiv.org/html/2512.12602v4)
+- [The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer](https://arxiv.org/abs/2605.29713)
 
 # Stalk people I know (socially)
 1. Angus

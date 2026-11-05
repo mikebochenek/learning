@@ -150,6 +150,9 @@ toc ?
 - https://github.com/kevinraymond/florilegium
 - https://github.com/NVIDIA/auto-ontology
 - https://github.com/Muvon/octomind
+- https://github.com/biolend83/tubehaus
+- https://github.com/AGGIB/Stroq
+- https://github.com/saragordic/window-sweaters
 
 # interesting papers from arXiv 
 - [Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics](https://arxiv.org/html/2512.12602v4)

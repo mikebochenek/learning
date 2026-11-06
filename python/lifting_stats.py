@@ -36,3 +36,5 @@ for _, row in df.dropna(subset=["date"]).iterrows():
 
 july.heatmap(dates, data, title="Fitness Lifting", cmap="github")
 plt.savefig(outfilename)
+
+print (f"lifting {len(valid_dates)} days - heatmap saved to {outfilename}")

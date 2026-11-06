@@ -32,7 +32,7 @@ year_start = datetime(year, 1, 1)
 for _, row in df.dropna(subset=["date"]).iterrows():
     date = row["date"].to_pydatetime()
     if date.year == year:
-        data[(date - year_start).days] += int(row["sum"])
+        data[(date - year_start).days] += (int(row["sum"])*1.1)
 
 july.heatmap(dates, data, title="Fitness Lifting", cmap="github")
 plt.savefig(outfilename)

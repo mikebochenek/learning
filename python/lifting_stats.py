@@ -40,7 +40,7 @@ for _, row in df.dropna(subset=["date"]).iterrows():
         v = v / 2
         data[(date - year_start).days] += v
 
-july.heatmap(dates, data, title="Fitness Lifting", cmap="github")
+july.heatmap(dates, data, title="Fitness Lifting", cmap="golden")
 plt.savefig(outfilename)
 
 print (f"lifting {len(valid_dates)} days - heatmap saved to {outfilename}")

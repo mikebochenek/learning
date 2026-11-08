@@ -30,20 +30,9 @@ def read_google_sheet(sheet_url, sheet_name=0):
     
     spreadsheet_id = match.group(1)
     
-    # Convert the URL to export format
-    export_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/export?format=csv"
-    
-    # If a sheet name is specified (for non-default sheets), add gid parameter
-    if isinstance(sheet_name, str):
-        # Note: gid parameter would need the actual sheet ID, which is harder to extract
-        # For simplicity, this version works best with the first sheet
-        print("Warning: sheet_name as string is not fully supported. Reading first sheet.")
-    elif isinstance(sheet_name, int) and sheet_name > 0:
-        print("Warning: Reading specific sheet by index requires additional setup.")
-        print("This simple method reads the first sheet. Use gid parameter for other sheets.")
-    
-    # Read the CSV data into a DataFrame
-    df = pd.read_csv(export_url)
+    # XLSX export lets pandas select a worksheet by name or index.
+    export_url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/export?format=xlsx"
+    df = pd.read_excel(export_url, sheet_name=sheet_name)
     
     return df
 

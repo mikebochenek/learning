@@ -27,7 +27,6 @@ fitnessurl = config.get('urls', 'fitness_url')
 
 from gen_ai.claude_says7_google_sheets_reader import read_google_sheet
 df = read_google_sheet(fitnessurl)
-lifting_df = read_google_sheet(fitnessurl, 0)  # but wait, it always reads the first sheet!! 
 
 """
 import pickle # save latest to a pickle.. wonder if it will keep changing
@@ -86,3 +85,38 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
     '\n\t', int((datetime.now() - startTime).total_seconds() * 1000), 
     'ms expired, on', platform.system(), platform.release(), 'created:', outfilename)
 # min 2024 1,Thursday,15.02.2024,,running (a.k.a. where it all started - week #7)
+
+# --------
+
+
+outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\lifting_latest.png'
+
+df = read_google_sheet(fitnessurl, 1)  # but wait, it always reads the first sheet!! 
+df["date"] = pd.to_datetime(df["date"], format="%d.%m.%Y", errors="coerce")
+df["sum"] = pd.to_numeric(df["sum"], errors="coerce").fillna(0)
+
+valid_dates = df["date"].dropna()
+if valid_dates.empty:
+    raise ValueError(f"No valid dates found in {filename}")
+
+year = int(valid_dates.dt.year.max())
+dates = date_range(f"{year}-01-01", f"{year}-12-31")
+data = np.zeros(len(dates), dtype=int)
+year_start = datetime(year, 1, 1)
+
+for _, row in df.dropna(subset=["date"]).iterrows():
+    date = row["date"].to_pydatetime()
+    if date.year == year:
+        v = int(row["sum"])
+        if v < 4:
+            v = 3
+        if v > 8:
+            v = 8
+        v = v / 2
+        data[(date - year_start).days] += v
+
+july.heatmap(dates, data, title="Fitness Lifting", cmap="golden")
+plt.savefig(outfilename)
+
+expired2 = int((datetime.now() - startTime).total_seconds() * 1000)
+print (f"#lifting-proudly {len(valid_dates)} days - heatmap saved to {outfilename} - {expired2} ms" )

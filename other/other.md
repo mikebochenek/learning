@@ -153,6 +153,8 @@ toc ?
 - https://github.com/biolend83/tubehaus
 - https://github.com/AGGIB/Stroq
 - https://github.com/saragordic/window-sweaters
+- https://github.com/wolveflake/wolvekafka
+- https://github.com/GoogleChrome/modern-web-guidance
 
 # interesting papers from arXiv 
 - [Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics](https://arxiv.org/html/2512.12602v4)

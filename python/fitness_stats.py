@@ -73,6 +73,14 @@ plt.savefig(outfilename)
 
 week_of_year = datetime.now().isocalendar().week
 
+#TODO clear sensitive data! 
+import sys
+if len(sys.argv) > 1 and sys.argv[1] == "--pickle":
+    import pickle
+    with open("../data_csv/fitness.pickle" , "wb") as outfile:
+        pickle.dump(df, outfile)
+        print (f"\tPickle file saved to ../data_csv/fitness.pickle")
+
 print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', count2024, 'total fitness entries:', len(df), 
     ' - 2024 avg:', round((count2024*1.0/(52-7)), 2), '2025 avg:', round((count2025*1.0/(52)), 2),
     '2026 avg:', round((count2026*1.0/(week_of_year)), 2),
@@ -112,7 +120,6 @@ for _, row in df.dropna(subset=["date"]).iterrows():
 july.heatmap(dates, data, title="Fitness Lifting", cmap="golden")
 plt.savefig(outfilename)
 
-import sys
 if len(sys.argv) > 1 and sys.argv[1] == "--pickle":
     import pickle
     with open("../data_csv/lifting.pickle" , "wb") as outfile:

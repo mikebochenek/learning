@@ -155,6 +155,10 @@ toc ?
 - https://github.com/saragordic/window-sweaters
 - https://github.com/wolveflake/wolvekafka
 - https://github.com/GoogleChrome/modern-web-guidance
+- https://github.com/FrigadeHQ/yogurt
+- https://github.com/klad-app/klad
+- https://github.com/OpenTSLM/TimeNet
+- https://github.com/mcp
 
 # interesting papers from arXiv 
 - [Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics](https://arxiv.org/html/2512.12602v4)

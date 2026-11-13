@@ -159,6 +159,11 @@ toc ?
 - https://github.com/klad-app/klad
 - https://github.com/OpenTSLM/TimeNet
 - https://github.com/mcp
+- https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md
+- https://github.com/hyperionaidev/smolmaxxing/
+
+# codeberg
+- https://codeberg.org/wvhulle/bootvine
 
 # interesting papers from arXiv 
 - [Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics](https://arxiv.org/html/2512.12602v4)

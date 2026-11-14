@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 import platform
 from datetime import datetime
+import platform
 
 startTime = datetime.now()
 """
@@ -19,7 +20,11 @@ df = pd.read_csv(filename)
 """
 
 # outfilename = '/home/mike/ownCloud/Documents/fitness/fitness_latest.png'
-outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\fitness_latest.png'
+outPath = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\'
+if ('Windows' != platform.system()):
+    outPath = '/tmp/'
+
+outfilename = outPath + 'fitness_latest.png'
 import configparser # https://stackoverflow.com/questions/3595363/properties-file-in-python-similar-to-java-properties
 config = configparser.RawConfigParser()
 config.read('secrets.txt')
@@ -90,8 +95,7 @@ print ('\t', datetime.now(), '2026:', count2026, '2025:', count2025, '2024:', co
 
 # --------
 
-
-outfilename = 'C:\\Users\\User\\ownCloud\\Documents\\fitness\\lifting_latest.png'
+outfilename = outPath + 'lifting_latest.png'
 
 df = read_google_sheet(fitnessurl, 1)  # but wait, it always reads the first sheet!! 
 df["date"] = pd.to_datetime(df["date"], format="%d.%m.%Y", errors="coerce")
@@ -128,4 +132,4 @@ if len(sys.argv) > 1 and sys.argv[1] == "--pickle":
 
 
 expired2 = int((datetime.now() - startTime).total_seconds() * 1000)
-print (f"#lifting-proudly {len(valid_dates)} days - heatmap saved to {outfilename} - {expired2} ms" )
+print (f"\t#lifting-proudly {len(valid_dates)} days - heatmap saved to {outfilename} - {expired2} ms" )

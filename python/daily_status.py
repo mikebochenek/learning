@@ -43,3 +43,4 @@ print(" d. be more brave and take risks like a chad, and just look cool doing no
 print(" e. smaller portions - eating healthy is the hard part:  practice denying myself sweets")
 
 print("                   \_(ツ)_/¯")
+print(" . ")

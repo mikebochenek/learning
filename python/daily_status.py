@@ -44,3 +44,11 @@ print(" e. smaller portions - eating healthy is the hard part:  practice denying
 
 print("                   \_(ツ)_/¯")
 print(" . ")
+
+# Source - https://stackoverflow.com/a/6086063
+# Posted by user193476, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-11-14, License - CC BY-SA 3.0
+
+import subprocess
+proc = subprocess.Popen(['python', 'fitness_stats.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print(proc.communicate()[0])

@@ -161,6 +161,7 @@ toc ?
 - https://github.com/mcp
 - https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md
 - https://github.com/hyperionaidev/smolmaxxing/
+- https://github.com/ggml-org/ggml
 
 # codeberg
 - https://codeberg.org/wvhulle/bootvine

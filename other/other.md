@@ -162,6 +162,9 @@ toc ?
 - https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md
 - https://github.com/hyperionaidev/smolmaxxing/
 - https://github.com/ggml-org/ggml
+- https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax
+- https://github.com/Tthanh2k6/turbo-browser-mcp
+- https://github.com/matheuzgomes/gawain
 
 # codeberg
 - https://codeberg.org/wvhulle/bootvine

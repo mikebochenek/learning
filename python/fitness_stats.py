@@ -110,9 +110,11 @@ dates = date_range(f"{year}-01-01", f"{year}-12-31")
 data = np.zeros(len(dates), dtype=int)
 year_start = datetime(year, 1, 1)
 
+total = 0
 for _, row in df.dropna(subset=["date"]).iterrows():
     date = row["date"].to_pydatetime()
     if date.year == year:
+        total += int(row["sum"])
         v = int(row["sum"])
         if v < 4:
             v = 3
@@ -132,4 +134,4 @@ if len(sys.argv) > 1 and sys.argv[1] == "--pickle":
 
 
 expired2 = int((datetime.now() - startTime).total_seconds() * 1000)
-print (f"\t#lifting-proudly {len(valid_dates)} days - heatmap saved to {outfilename} - {expired2} ms" )
+print (f"\t#lifting-proudly:  {total/len(valid_dates):.2f} avg - {len(valid_dates)} days - heatmap saved to {outfilename} - {expired2} ms" )

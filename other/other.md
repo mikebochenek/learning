@@ -165,6 +165,8 @@ toc ?
 - https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax
 - https://github.com/Tthanh2k6/turbo-browser-mcp
 - https://github.com/matheuzgomes/gawain
+- https://github.com/crmne/zapfast
+- https://github.com/withcoral/coral
 
 # codeberg
 - https://codeberg.org/wvhulle/bootvine

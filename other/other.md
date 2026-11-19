@@ -167,6 +167,8 @@ toc ?
 - https://github.com/matheuzgomes/gawain
 - https://github.com/crmne/zapfast
 - https://github.com/withcoral/coral
+- https://github.com/pickysysadmin/logitech-harmony-ir-archive
+- https://github.com/onlook-dev/onlook/
 
 # codeberg
 - https://codeberg.org/wvhulle/bootvine

@@ -78,6 +78,7 @@ plt.savefig(outfilename)
 
 week_of_year = datetime.now().isocalendar().week
 
+#print(df['excercises completed'].to_string(index=False))
 #TODO clear sensitive data! 
 import sys
 if len(sys.argv) > 1 and sys.argv[1] == "--pickle":

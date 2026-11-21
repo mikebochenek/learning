@@ -36,7 +36,7 @@ print(datetime.now() - startTime, 'time taken to generate', 8000, 6000, 'max:', 
 
 outputfile = 'C:/Users/Public/Pictures/mandelbrot.png'
 if ('Windows' == platform.system()):
-    Nil # keep default 
+    pass # keep default 
 else:
     outputfile = '/tmp/mandelbrot.png'
 

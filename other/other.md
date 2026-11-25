@@ -169,6 +169,11 @@ toc ?
 - https://github.com/withcoral/coral
 - https://github.com/pickysysadmin/logitech-harmony-ir-archive
 - https://github.com/onlook-dev/onlook/
+- https://github.com/mjwsolo/localcode
+- https://github.com/gulivan/worker755
+- https://github.com/AFK-surf/xnulinux
+- https://github.com/mikuta0407/win4wine 
+- https://github.com/samcorcos/legatum/issues/147
 
 # codeberg
 - https://codeberg.org/wvhulle/bootvine
